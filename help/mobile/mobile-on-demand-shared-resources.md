@@ -9,13 +9,17 @@ exl-id: 4b3acc7c-f1f7-4837-ae3a-9435d6ce1349
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '273'
 ht-degree: 0%
-
 ---
-
 # Upload de recursos compartilhados {#uploading-shared-resources}
 
 {{ue-over-mobile}}
@@ -24,7 +28,7 @@ As ações de gerenciamento de conteúdo são os blocos fundamentais que ajudam 
 
 >[!NOTE]
 >
->Para saber mais sobre as considerações de design para aplicativos do AEM Mobile, consulte [Considerações de design para aplicativos do AEM Mobile](https://helpx.adobe.com/br/digital-publishing-solution/help/design-app.html) na Ajuda Online.
+>Para saber mais sobre as considerações de design para aplicativos do AEM Mobile, consulte [Considerações de design para aplicativos do AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) na Ajuda Online.
 
 >[!CAUTION]
 >
@@ -43,7 +47,7 @@ Depois de configurar e associar seu aplicativo a uma Configuração na nuvem, vo
 Siga estas etapas para fazer upload dos recursos compartilhados de um artigo:
 
 1. Selecione o artigo no bloco **Gerenciar artigos**.
-1. Clique em **Carregar Recursos Compartilhados** para carregar seus recursos de HTML compartilhados.
+1. Clique em **Carregar Recursos Compartilhados** para carregar seus recursos compartilhados do HTML.
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
@@ -51,9 +55,9 @@ Siga estas etapas para fazer upload dos recursos compartilhados de um artigo:
 
 Depois de saber como criar e publicar conteúdo, consulte
 
-* [Desenvolvimento de conteúdo AEM para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Desenvolvimento de conteúdo do AEM para o AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
 * [Administração de conteúdo para usar o AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
 Ou ainda precisa aprender sobre os tópicos de criação, consulte
 
-[Criação de conteúdo AEM para aplicativos AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
+[Criação de conteúdo do AEM para aplicativos AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)

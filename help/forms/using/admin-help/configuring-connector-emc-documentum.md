@@ -1,6 +1,6 @@
 ---
 title: Configurando o conector para o EMC Documentum
-description: Saiba como configurar o Connector for EMC Documentum para permitir a comunicação entre formulários AEM e o EMC Documentum.
+description: Saiba como configurar o Connector for EMC Documentum para permitir a comunicação entre o AEM Forms e o EMC Documentum.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
@@ -9,26 +9,40 @@ exl-id: a31a496f-87b9-43c0-a98c-5f6ca5d11690
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 0%
-
+source-wordcount: '1043'
+ht-degree: 1%
 ---
-
 # Configurando o conector para o EMC Documentum {#configuring-connector-for-emc-documentum}
 
 >[!NOTE]
 > 
 > Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
-O Connector for EMC Documentum permite a comunicação entre formulários AEM e o EMC Documentum. Para obter informações adicionais em segundo plano, consulte &quot;Conectores para ECM&quot; na [Referência de Serviços](https://www.adobe.com/go/learn_aemforms_services_63).
+O Connector for EMC Documentum permite a comunicação entre o AEM Forms e o EMC Documentum. Para obter informações adicionais em segundo plano, consulte &quot;Conectores para ECM&quot; na [Referência de Serviços](https://www.adobe.com/go/learn_aemforms_services_63).
 
 A configuração do Connector for EMC Documentum envolve a configuração da conexão do servidor e das credenciais do repositório.
 
 >[!NOTE]
 >
->Em versões anteriores, os ativos podiam ser armazenados em um repositório ECM. Na versão atual, os ativos são armazenados no repositório nativo de formulários AEM e os serviços do Provedor do repositório foram descontinuados. A migração de ativos de um repositório de ECM para o repositório de formulários AEM é feita ao fazer uma atualização para formulários AEM. Para obter mais informações, consulte o Guia de atualização de formulários AEM para o servidor de aplicativos.
+>Em versões anteriores, os ativos podiam ser armazenados em um repositório ECM. Na versão atual, os ativos são armazenados no repositório nativo do AEM Forms e os serviços do Provedor do repositório foram descontinuados. A migração de ativos de um repositório ECM para o repositório do AEM Forms é feita ao fazer um upgrade para o AEM Forms. Para obter mais informações, consulte o Guia de atualização de formulários do AEM para o servidor de aplicativos.
 
 ## Configuração da conexão do servidor {#configuring-the-server-connection}
 
@@ -110,7 +124,7 @@ Se o Content Repository Connector for EMC Documentum Service e/ou o Repository S
 
 Algumas etapas manuais são necessárias para garantir que o recurso Request for Sharing of Task Queue (Solicitação de compartilhamento de fila de tarefas) no Workspace funcione corretamente com o Connector for EMC Documentum.
 
-1. Depois que os formulários AEM forem implantados e o Workbench for instalado, faça logon no Workbench e abra a visualização Recursos. Você determinará onde o arquivo QueueSharing.swf está localizado nessa visualização.
+1. Depois que o AEM Forms for implantado e o Workbench for instalado, faça logon no Workbench e abra a visualização Recursos. Você determinará onde o arquivo QueueSharing.swf está localizado nessa visualização.
 1. Arraste o arquivo QueueSharing.swf da Exibição de recursos para a área de trabalho do Windows ou um local equivalente, dependendo do seu sistema operacional.
 1. No console de administração, clique em Services > Connector for EMC Documentum > Configuration Settings.
 1. Em Repository Service Provider Information (Informações do provedor de serviços do repositório), altere o provedor do repositório configurado para EMC Documentum Repository Provider.

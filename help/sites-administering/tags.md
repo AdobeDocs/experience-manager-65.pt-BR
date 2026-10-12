@@ -9,13 +9,22 @@ exl-id: ff041ef0-e566-4373-818e-76680ff668d8
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 3545595dd67b5703d357964a752bf8979a38ea55
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1795'
+source-wordcount: '1796'
 ht-degree: 2%
-
 ---
-
 # Administração de tags {#administering-tags}
 
 As tags são um método rápido e fácil de classificar conteúdo em um site. Elas podem ser consideradas palavras-chave ou rótulos (metadados) que permitem que o conteúdo seja encontrado mais rapidamente como resultado de uma pesquisa.
@@ -40,22 +49,22 @@ Alguns recursos de tags na AEM incluem:
 * A restrição principal para tags recém-criadas é que elas devem ser exclusivas em um namespace específico.
 * O título de uma tag não deve incluir caracteres de separação de caminho de tag (nem eles serão exibidos, se presentes)
 
-   * dois pontos `:` - delimita a marca de namespace
-   * barra `/` - delimita submarcas
+  * dois pontos `:` - delimita a marca de namespace
+  * barra `/` - delimita submarcas
 
 * As tags podem ser aplicadas por autores e visitantes do site. Independentemente do criador, todas as formas de tags são disponibilizadas para seleção, tanto ao atribuir a uma página quanto ao pesquisar.
 * As marcas podem ser criadas e sua taxonomia modificada por membros do grupo &quot;administradores de marcas&quot; e membros que tenham direitos de modificação para `/content/cq:tags`.
 
-   * Uma tag que contém tags secundárias é chamada de tag de container
-   * Uma tag que não é uma tag container é chamada de tag folha
-   * Um namespace de tag é uma tag folha ou container
+  * Uma tag que contém tags secundárias é chamada de tag de container
+  * Uma tag que não é uma tag container é chamada de tag folha
+  * Um namespace de tag é uma tag folha ou container
 
-* As marcas são usadas pelo [componente de Pesquisa](https://helpx.adobe.com/br/experience-manager/core-components/using/quick-search.html) para facilitar a localização do conteúdo.
-* As marcas são usadas pelo [componente de Teaser](https://helpx.adobe.com/br/experience-manager/core-components/using/teaser.html), que monitora a nuvem de marcas de um usuário para fornecer conteúdo direcionado.
+* As marcas são usadas pelo [componente de Pesquisa](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html) para facilitar a localização do conteúdo.
+* As marcas são usadas pelo [componente de Teaser](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html), que monitora a nuvem de marcas de um usuário para fornecer conteúdo direcionado.
 * Se a marcação for um aspecto importante do seu conteúdo
 
-   * empacotar tags com as páginas que as usam
-   * verifique se as [permissões de tag](#setting-tag-permissions) habilitam o acesso de leitura
+  * empacotar tags com as páginas que as usam
+  * verifique se as [permissões de tag](#setting-tag-permissions) habilitam o acesso de leitura
 
 ## Console de marcação {#tagging-console}
 
@@ -69,9 +78,9 @@ Para acessar o console de Marcação:
 * entrar com privilégios administrativos
 * da navegação global
 
-   * selecionar **`Tools`**
-   * selecionar **`General`**
-   * selecionar **`Tagging`**
+  * selecionar **`Tools`**
+  * selecionar **`General`**
+  * selecionar **`Tagging`**
 
 ![managing_tags_usingthetagasministrationconsole](assets/managing_tags_usingthetagasministrationconsolea.png)
 
@@ -252,30 +261,30 @@ As permissões de tag são [&#39;seguras (por padrão)&#39;](/help/sites-adminis
 
 * na instância do autor
 
-   * entrar com privilégios administrativos
-   * acessar o [Console de Segurança](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
+  * entrar com privilégios administrativos
+  * acessar o [Console de Segurança](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
 
-      * por exemplo, vá até http://localhost:4502/useradmin
+    * por exemplo, navegue até http://localhost:4502/useradmin
 
-   * no painel esquerdo, selecione o grupo (ou usuário) para o qual a [permissão de leitura](/help/sites-administering/security.md#permissions) será concedida
-   * no painel direito, localize o **Caminho &#x200B;** para o namespace da tag
+  * no painel esquerdo, selecione o grupo (ou usuário) para o qual a [permissão de leitura](/help/sites-administering/security.md#permissions) será concedida
+  * no painel direito, localize o **Caminho **para o namespace da tag
 
-      * por exemplo, `/content/cq:tags/mycommunity`
+    * por exemplo, `/content/cq:tags/mycommunity`
 
-   * selecione o `checkbox`na coluna **Read**
-   * selecione **Salvar**
+  * selecione o `checkbox`na coluna **Read**
+  * selecione **Salvar**
 
 ![chlimage_1-204](assets/chlimage_1-204.png)
 
 * verifique se todas as instâncias de publicação têm as mesmas permissões
 
-   * uma abordagem é [criar um pacote](/help/sites-administering/package-manager.md#package-manager) do namespace no autor
+  * uma abordagem é [criar um pacote](/help/sites-administering/package-manager.md#package-manager) do namespace no autor
 
-      * na guia `Advanced`, para `AC Handling`, selecione `Overwrite`
+    * na guia `Advanced`, para `AC Handling`, selecione `Overwrite`
 
-   * replicar o pacote
+  * replicar o pacote
 
-      * escolha `Replicate` no gerenciador de pacotes
+    * escolha `Replicate` no gerenciador de pacotes
 
 ## Gerenciamento de tags em diferentes idiomas {#managing-tags-in-different-languages}
 
@@ -295,7 +304,7 @@ Depois que todas as traduções forem inseridas, selecione **Salvar** para sair 
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 
-Em geral, o idioma escolhido para a tag é retirado do idioma da página, quando disponível. Quando o widget [`tag` &#x200B;](/help/sites-developing/building.md#tagging-on-the-client-side) é usado em outros casos (por exemplo, em formulários ou caixas de diálogo), o idioma da marca depende do contexto.
+Em geral, o idioma escolhido para a tag é retirado do idioma da página, quando disponível. Quando o widget [`tag` ](/help/sites-developing/building.md#tagging-on-the-client-side) é usado em outros casos (por exemplo, em formulários ou caixas de diálogo), o idioma da marca depende do contexto.
 
 Em vez de usar a configuração de idioma da página, o console Marcação usa a configuração de idioma do usuário. No console de marcação, para a tag &quot;Animais&quot;, &quot;Animaux&quot; seria exibido para um usuário que define o idioma para francês em suas propriedades de usuário.
 

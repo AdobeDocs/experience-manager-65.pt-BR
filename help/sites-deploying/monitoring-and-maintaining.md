@@ -10,13 +10,22 @@ feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '5999'
+source-wordcount: '6001'
 ht-degree: 0%
-
 ---
-
 # Monitoramento e manutenção da instância do Adobe Experience Manager{#monitoring-and-maintaining-your-aem-instance}
 
 Depois que as instâncias do AEM forem implantadas, você deverá monitorar e manter a operação, o desempenho e a integridade.
@@ -126,7 +135,7 @@ Para expurgar versões de um site, proceda da seguinte forma:
    ![Configuração de Limpeza de Versão](assets/version-purge-configuration.png)
 
    * **Limpar caminhos**
-Defina o caminho inicial do conteúdo a ser removido; por exemplo, `/content/wknd`.
+     Defina o caminho inicial do conteúdo a ser removido; por exemplo, `/content/wknd`.
 
      >[!CAUTION]
      >
@@ -136,17 +145,17 @@ Defina o caminho inicial do conteúdo a ser removido; por exemplo, `/content/wkn
 
    * **Limpar versões recursivamente**
 
-      * Desmarque se desejar expurgar apenas o nó definido pelo caminho.
-      * Selecione se quiser expurgar o nó definido pelo seu caminho e seus descendentes.
+     * Desmarque se desejar expurgar apenas o nó definido pelo caminho.
+     * Selecione se quiser expurgar o nó definido pelo seu caminho e seus descendentes.
 
    * **Número máximo de versões**
-Defina o número máximo de versões (para cada nó) que deseja manter. Deixe em branco para não usar esta configuração.
+     Defina o número máximo de versões (para cada nó) que deseja manter. Deixe em branco para não usar esta configuração.
 
    * **Número mínimo de versões**
-Defina o número mínimo de versões (para cada nó) que deseja manter. Deixe em branco para não usar esta configuração.
+     Defina o número mínimo de versões (para cada nó) que deseja manter. Deixe em branco para não usar esta configuração.
 
    * **Idade máxima da versão**
-Defina o tempo de vida máximo da versão em dias (para cada nó) que você deseja manter. Deixe em branco para não usar esta configuração.
+     Defina o tempo de vida máximo da versão em dias (para cada nó) que você deseja manter. Deixe em branco para não usar esta configuração.
 
    Depois **Salvar**.
 
@@ -219,37 +228,37 @@ Vários arquivos de log são mantidos no servidor de arquivos em que você insta
 
 * `<cq-installation-dir>/crx-quickstart/logs`
 
-   * `access.log`
-Todas as solicitações de acesso ao WCM do AEM e ao repositório estão registradas aqui.
+  * `access.log`
+    Todas as solicitações de acesso ao WCM do AEM e ao repositório estão registradas aqui.
 
-   * `audit.log`
-As ações de moderação são registradas aqui.
+  * `audit.log`
+    As ações de moderação são registradas aqui.
 
-   * `error.log`
-Mensagens de erro (de vários níveis de gravidade) são registradas aqui.
+  * `error.log`
+    Mensagens de erro (de vários níveis de gravidade) são registradas aqui.
 
-   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=pt-BR)
-Este log só será usado se [!DNL Dynamic Media] estiver habilitado. Ele fornece estatísticas e informações analíticas usadas para analisar o comportamento do processo interno do ImageServer.
+  * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
+    Este log só será usado se [!DNL Dynamic Media] estiver habilitado. Ele fornece estatísticas e informações analíticas usadas para analisar o comportamento do processo interno do ImageServer.
 
-   * `request.log`
-Cada solicitação de acesso é registrada aqui junto com a resposta.
+  * `request.log`
+    Cada solicitação de acesso é registrada aqui junto com a resposta.
 
-   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=pt-BR)
-Este log só será usado se [!DNL Dynamic Media] estiver habilitado. O log de acesso s7registra cada solicitação feita a [!DNL Dynamic Media] até `/is/image` e `/is/content`.
+  * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
+    Este log só será usado se [!DNL Dynamic Media] estiver habilitado. O log de acesso s7registra cada solicitação feita a [!DNL Dynamic Media] até `/is/image` e `/is/content`.
 
-   * `stderr.log`
-Mantém mensagens de erro, novamente de diferentes níveis de gravidade, geradas durante a inicialização. Por padrão, o nível de log está definido como `Warning` ( `WARN`)
+  * `stderr.log`
+    Mantém mensagens de erro, novamente de diferentes níveis de gravidade, geradas durante a inicialização. Por padrão, o nível de log está definido como `Warning` ( `WARN`)
 
-   * `stdout.log`
-Contém mensagens de registro indicando eventos durante a inicialização.
+  * `stdout.log`
+    Contém mensagens de registro indicando eventos durante a inicialização.
 
-   * `upgrade.log`
-Fornece um log de todas as operações de atualização executadas a partir dos pacotes `com.day.compat.codeupgrade` e `com.adobe.cq.upgradesexecutor`.
+  * `upgrade.log`
+    Fornece um log de todas as operações de atualização executadas a partir dos pacotes `com.day.compat.codeupgrade` e `com.adobe.cq.upgradesexecutor`.
 
 * `<cq-installation-dir>/crx-quickstart/repository/segmentstore`
 
-   * `journal.log`
-Informações de diário de revisão.
+  * `journal.log`
+    Informações de diário de revisão.
 
 >[!NOTE]
 >
@@ -316,9 +325,9 @@ Em determinadas circunstâncias, talvez você queira criar um arquivo de log per
 
      Valor: especifique os serviços OSGi para os quais o Logger registrará mensagens; por exemplo, todos os seguintes:
 
-      * `org.apache.sling`
-      * `org.apache.felix`
-      * `com.day`
+     * `org.apache.sling`
+     * `org.apache.felix`
+     * `com.day`
 
    * Nome: `org.apache.sling.commons.log.level`
 
@@ -328,13 +337,13 @@ Em determinadas circunstâncias, talvez você queira criar um arquivo de log per
 
    * Configure os outros parâmetros conforme necessário:
 
-      * Nome: `org.apache.sling.commons.log.pattern`
+     * Nome: `org.apache.sling.commons.log.pattern`
 
-        Tipo: `String`
+       Tipo: `String`
 
-        Value: especifique o padrão da mensagem de log conforme necessário; por exemplo,
+       Value: especifique o padrão da mensagem de log conforme necessário; por exemplo,
 
-        `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
+       `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
 
    >[!NOTE]
    >
@@ -411,17 +420,17 @@ Em determinadas circunstâncias, talvez você queira criar um arquivo de log per
 
    * Configure os outros parâmetros conforme necessário:
 
-      * Nome: `org.apache.sling.commons.log.file.number`
+     * Nome: `org.apache.sling.commons.log.file.number`
 
-        Tipo: `Long`
+       Tipo: `Long`
 
-        Valor: especifique o número de arquivos de log que deseja manter; por exemplo, `5`
+       Valor: especifique o número de arquivos de log que deseja manter; por exemplo, `5`
 
-      * Nome: `org.apache.sling.commons.log.file.size`
+     * Nome: `org.apache.sling.commons.log.file.size`
 
-        Tipo: `String`
+       Tipo: `String`
 
-        Valor: especifique conforme necessário para controlar a rotação de arquivos por tamanho/data; por exemplo, `'.'yyyy-MM-dd`
+       Valor: especifique conforme necessário para controlar a rotação de arquivos por tamanho/data; por exemplo, `'.'yyyy-MM-dd`
 
    >[!NOTE]
    >
@@ -568,19 +577,19 @@ Todas essas informações devem ser obtidas, classificadas e analisadas antes qu
 
 * Antes de você ter um problema de desempenho:
 
-   * recolher o máximo de informações possível para desenvolver um bom conhecimento do funcionamento do sistema em circunstâncias normais
+  * recolher o máximo de informações possível para desenvolver um bom conhecimento do funcionamento do sistema em circunstâncias normais
 
 * Quando você tiver um problema de desempenho:
 
-   * tente replicá-lo com um navegador da web padrão (ou preferencialmente mais), em um cliente diferente que você saiba que tem bom desempenho geral e/ou no próprio servidor (se possível)
-   * verifique se algo (relacionado ao sistema) foi alterado em um espaço de tempo adequado e se alguma dessas alterações pode ter afetado o desempenho
-   * faça perguntas como:
+  * tente replicá-lo com um navegador da web padrão (ou preferencialmente mais), em um cliente diferente que você saiba que tem bom desempenho geral e/ou no próprio servidor (se possível)
+  * verifique se algo (relacionado ao sistema) foi alterado em um espaço de tempo adequado e se alguma dessas alterações pode ter afetado o desempenho
+  * faça perguntas como:
 
-      * o problema ocorre somente em momentos específicos?
-      * o problema ocorre somente em páginas específicas?
-      * as outras solicitações serão afetadas?
+    * o problema ocorre somente em momentos específicos?
+    * o problema ocorre somente em páginas específicas?
+    * as outras solicitações serão afetadas?
 
-   * colete o máximo de informações possível para comparar com seu conhecimento do sistema em circunstâncias normais:
+  * colete o máximo de informações possível para comparar com seu conhecimento do sistema em circunstâncias normais:
 
 ### Ferramentas para Monitorar e Analisar Desempenho {#tools-for-monitoring-and-analyzing-performance}
 
@@ -719,15 +728,15 @@ Este log tem uma linha por solicitação ou resposta:
 * Uma seta indicando se é uma solicitação (seta apontando para a direita) ou uma resposta (seta para a esquerda).
 * Para solicitações de, a linha contém:
 
-   * o método (normalmente, GET, HEAD ou POST)
-   * a página solicitada
-   * o protocolo
+  * o método (normalmente, GET, HEAD ou POST)
+  * a página solicitada
+  * o protocolo
 
 * Para respostas, a linha contém:
 
-   * o código de status (200 significa &quot;sucesso&quot;, 404 significa &quot;página não encontrada&quot;
-   * o tipo MIME
-   * o tempo de resposta
+  * o código de status (200 significa &quot;sucesso&quot;, 404 significa &quot;página não encontrada&quot;
+  * o tipo MIME
+  * o tempo de resposta
 
 Usando scripts pequenos, você pode extrair as informações necessárias do arquivo de log e montar as estatísticas desejadas. Nessas estatísticas, é possível ver quais páginas ou tipos de páginas estão lentas e se o desempenho geral é satisfatório.
 
@@ -769,7 +778,7 @@ Testes devem ser feitos para determinar quantos usuários simultâneos o sistema
 ### Usar rlog.jar para encontrar solicitações com tempos de longa duração {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
 O AEM inclui várias ferramentas auxiliares no seguinte:
-
+`<cq-installation-dir>/crx-quickstart/opt/helpers`
 
 Uma dessas ferramentas, `rlog.jar`, pode ser usada para classificar rapidamente `request.log` de modo que as solicitações sejam exibidas por duração, do mais longo ao menor tempo.
 
@@ -1098,9 +1107,9 @@ Veja a seguir uma lista de sugestões sobre o que verificar se você começa a e
 >
 >Consulte também os seguintes artigos para obter mais informações:
 >
->* [Despejos de thread](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=pt-BR)
->* [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=pt-BR)
->* [Analisar usando o criador de perfil interno](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=pt-BR)
+>* [Despejos de thread](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+>* [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+>* [Analisar usando o criador de perfil interno](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
 >
 
 ### Memória insuficiente {#out-of-memory}
@@ -1116,7 +1125,7 @@ Nesses casos, verifique:
 * As configurações JVM usadas para [iniciar o AEM](/help/sites-deploying/deploy.md#getting-started)
 * Base de conhecimento:
 
-* [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=pt-BR)
+* [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
 
 ### E/S de disco {#disk-i-o}
 
@@ -1124,17 +1133,17 @@ Se o sistema estiver ficando sem espaço em disco ou se você notar hash no disc
 
 * Se você tiver desativado a coleção de informações de depuração, ela poderá ser configurada em vários locais, incluindo os seguintes:
 
-   * [Manipulador de script JSP do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
-   * [Apache Sling JavaScript Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
-   * [Configuração de registro do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
-   * [Gerenciador de biblioteca HTML CQ](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
-   * [Filtro de depuração CQ WCM](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
-   * [Loggers](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
+  * [Manipulador de script JSP do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
+  * [Apache Sling JavaScript Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
+  * [Configuração de registro do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
+  * [Gerenciador de biblioteca HTML CQ](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
+  * [Filtro de depuração CQ WCM](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
+  * [Loggers](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
 * Se e como você configurou a [Limpeza de Versão](/help/sites-deploying/version-purging.md)
 * Base de conhecimento:
 
-   * [Muitos Arquivos Abertos]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=pt-BR
+  * [Muitos Arquivos Abertos]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html
 
 ### Degradação regular do desempenho {#regular-performance-degradation}
 
@@ -1143,7 +1152,7 @@ Se você observar o desempenho da sua instância se deteriorando após cada rein
 * [Memória insuficiente](#outofmemory)
 * Base de conhecimento:
 
-   * [Resolvedor de Recursos Não Fechados](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-23761)
+  * [Resolvedor de Recursos Não Fechados](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761)
 
 ### Ajuste de JVM {#jvm-tuning}
 

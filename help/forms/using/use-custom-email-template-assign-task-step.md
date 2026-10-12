@@ -7,13 +7,29 @@ exl-id: d4035c91-ee8d-4f12-bdac-e3912be732d7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 0%
-
+source-wordcount: '518'
+ht-degree: 1%
 ---
-
 # Usar modelos de email personalizados em uma etapa Atribuir tarefa{#use-custom-email-templates-in-an-assign-task-step}
 
 Você pode usar a etapa Atribuir tarefa para criar e atribuir tarefas a um usuário ou grupo. Quando uma tarefa é atribuída a um usuário ou grupo, uma notificação por email é enviada ao usuário definido ou a cada membro do grupo definido. Uma notificação de e-mail típica contém o link da tarefa atribuída e informações relacionadas à tarefa. A imagem a seguir exibe um exemplo de notificação por email:
@@ -22,7 +38,7 @@ Você pode usar a etapa Atribuir tarefa para criar e atribuir tarefas a um usuá
 
 Você pode personalizar a aparência e usar metadados personalizados em uma notificação por email. A AEM Forms fornece um modelo pronto para uso para notificações por email. É possível personalizar o modelo pronto para uso ou criar um modelo do zero.
 
-Os modelos de notificação por email são baseados no [HTML email](https://en.wikipedia.org/wiki/HTML_email). Esses emails se adaptam a diferentes clientes de email e tamanhos de tela. Além disso, o estilo do email é definido no template.
+Os modelos de notificação por email são baseados no [email do HTML](https://en.wikipedia.org/wiki/HTML_email). Esses emails se adaptam a diferentes clientes de email e tamanhos de tela. Além disso, o estilo do email é definido no template.
 
 A imagem a seguir exibe uma notificação por email personalizada:
 
@@ -40,7 +56,7 @@ Por padrão, o AEM Forms fornece um modelo para notificações por email. O mode
 
 1. Substitua o conteúdo do arquivo htmlEmailTemplate.txt pelo conteúdo personalizado.
 
-   Um modelo de notificação por email é um [HTML email](https://en.wikipedia.org/wiki/HTML_email). Você pode substituir o código html existente pelo seu código personalizado para alterar a aparência do modelo.
+   Um modelo de notificação por email é um [email do HTML](https://en.wikipedia.org/wiki/HTML_email). Você pode substituir o código html existente pelo seu código personalizado para alterar a aparência do modelo.
 
 1. Salve o arquivo. Agora, o modelo personalizado está pronto para uso.
 
@@ -54,9 +70,9 @@ Por padrão, o AEM Forms fornece um modelo para notificações por email. O mode
 
 1. Crie um arquivo .txt. Por exemplo, EmailOnTaskAssign.txt.
 
-1. Adicione o código de HTML personalizado ao arquivo.
+1. Adicione o código HTML personalizado ao arquivo.
 
-   Um modelo de notificação por email é um [HTML email](https://en.wikipedia.org/wiki/HTML_email). Você pode adicionar um código de HTML personalizado ao arquivo para criar um modelo.
+   Um modelo de notificação por email é um [email do HTML](https://en.wikipedia.org/wiki/HTML_email). Você pode adicionar um código HTML personalizado ao arquivo para criar um modelo.
 
 1. Salve o arquivo. O modelo está pronto para uso na etapa Atribuir tarefa.
 
@@ -68,7 +84,7 @@ Pronto para uso, a etapa Atribuir tarefa está configurada para usar o modelo pa
 
 1. Navegue até Designado > Modelo de e-mail do HTML.
 
-1. Selecione o modelo de e-mail de HTML recém-criado.
+1. Selecione o Modelo de email do HTML recém-criado.
 
 1. Clique em OK. O template foi alterado.
 

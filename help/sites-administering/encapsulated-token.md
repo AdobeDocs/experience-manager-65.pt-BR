@@ -1,6 +1,6 @@
 ---
 title: Suporte a token encapsulado
-description: Saiba mais sobre o suporte a token encapsulado no AEM.
+description: Saiba mais sobre o suporte ao token encapsulado no AEM.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -9,13 +9,25 @@ exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '794'
 ht-degree: 0%
-
 ---
-
 # Suporte a token encapsulado{#encapsulated-token-support}
 
 ## Introdução {#introduction}
@@ -38,7 +50,7 @@ Se uma instância de publicação se tornar indisponível, todos os usuários au
 
 A solução para escalabilidade horizontal é a autenticação sem estado com o uso do novo suporte a token encapsulado no AEM.
 
-O token encapsulado é uma parte da criptografia que permite ao AEM criar e validar com segurança as informações de autenticação off-line, sem acessar o repositório. Dessa forma, uma solicitação de autenticação pode ocorrer em todas as instâncias de publicação e sem a necessidade de conexões aderentes. Ela também tem a vantagem de melhorar o desempenho da autenticação, pois o repositório não precisa ser acessado para cada solicitação de autenticação.
+O token encapsulado é uma parte da criptografia que permite que o AEM crie e valide com segurança as informações de autenticação off-line, sem acessar o repositório. Dessa forma, uma solicitação de autenticação pode ocorrer em todas as instâncias de publicação e sem a necessidade de conexões aderentes. Ela também tem a vantagem de melhorar o desempenho da autenticação, pois o repositório não precisa ser acessado para cada solicitação de autenticação.
 
 Você pode ver como isso funciona em uma implantação distribuída geograficamente com autores MongoMK e instâncias de publicação TarMK abaixo:
 
@@ -58,7 +70,7 @@ Você pode ver como isso funciona em uma implantação distribuída geograficame
 >
 >* Sessões adesivas estão ativadas ou
 >
->* Os usuários já são criados no AEM quando a sincronização começa. Isso significa que os tokens encapsulados não terão suporte em situações em que os manipuladores **criam** usuários durante o processo de sincronização.
+>* Os usuários já estão criados no AEM quando a sincronização começa. Isso significa que os tokens encapsulados não terão suporte em situações em que os manipuladores **criam** usuários durante o processo de sincronização.
 
 Há algumas coisas que você precisa considerar ao configurar o token encapsulado:
 

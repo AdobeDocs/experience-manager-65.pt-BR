@@ -7,13 +7,27 @@ feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2029'
 ht-degree: 0%
-
 ---
-
 # Preparar e enviar a comunicação interativa usando a interface do usuário do agente {#prepare-and-send-interactive-communication-using-the-agent-ui}
 
 A interface do usuário do agente permite que os agentes preparem e enviem a comunicação interativa para o processo posterior. O agente faz as modificações necessárias conforme permitido e envia a comunicação interativa para um processo posterior, como email ou impressão.
@@ -47,7 +61,7 @@ Ao preparar a Comunicação interativa usando a interface do agente, o agente ge
 
 ### Inserir dados {#enter-data}
 
-1. Na guia Dados, insira os dados de variáveis, propriedades do modelo de dados de formulário e campos do modelo de impressão (XDP), conforme necessário. Preencha todos os campos obrigatórios marcados com um asterisco (&ast;) para habilitar o botão **Enviar**.
+1. Na guia Dados, insira os dados de variáveis, propriedades do modelo de dados de formulário e campos do modelo de impressão (XDP), conforme necessário. Preencha todos os campos obrigatórios marcados com um asterisco (&amp;ast;) para habilitar o botão **Enviar**.
 
    Selecione um valor de campo de dados na visualização de Comunicação interativa para realçar o campo de dados correspondente na guia Dados ou vice-versa.
 
@@ -71,8 +85,8 @@ Na guia Conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
 
    * [Opções de formatação](#formattingtext)
 
-      * [Copiar e colar texto formatado de outros aplicativos](#pasteformattedtext)
-      * [Realçar partes do texto](#highlightemphasize)
+     * [Copiar e colar texto formatado de outros aplicativos](#pasteformattedtext)
+     * [Realçar partes do texto](#highlightemphasize)
 
    * [Caracteres especiais](#specialcharacters)
    * [Atalhos de teclado](/help/forms/using/keyboard-shortcuts.md)
@@ -146,7 +160,7 @@ A interface do usuário do agente tem suporte integrado para 210 caracteres espe
 
 ### Fragmentos do documento {#document-fragments}
 
-![&#x200B; &#x200B;](do-not-localize/contentoptionsdocfragments.png)
+![ ](do-not-localize/contentoptionsdocfragments.png)
 
 * **Setas para cima/para baixo**: setas para mover fragmentos de documento para cima ou para baixo na Comunicação Interativa.
 * **Excluir**: se permitido, exclua o fragmento do documento da Comunicação Interativa.
@@ -180,7 +194,7 @@ A Adobe recomenda executar essas instruções em sequência para salvar com êxi
 
 Por padrão, o recurso Salvar como rascunho não está ativado. Execute as seguintes etapas para ativar o recurso:
 
-1. Implemente a SPI (Interface do Provedor de Serviços) [ccrDocumentInstance](https://helpx.adobe.com/br/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html).
+1. Implemente a SPI (Interface do Provedor de Serviços) [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html).
 
    A SPI permite salvar a versão de rascunho da Comunicação interativa no banco de dados com uma ID de rascunho como o identificador exclusivo. Essas instruções pressupõem que você tenha conhecimento prévio sobre como criar um pacote OSGi usando um projeto Maven.
 

@@ -10,13 +10,20 @@ role: Admin
 exl-id: aed2c3f2-1b5e-4065-8cec-433abb738ef5
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '551'
 ht-degree: 2%
-
 ---
-
 # Modelos de grupo {#group-templates}
 
 O console Modelos de Grupo é semelhante ao console [Modelos de Site](/help/communities/sites.md). Ambos são blueprints para um conjunto de páginas e recursos pré-conectados que formam um site da comunidade. A diferença é que um modelo de site é para a comunidade principal e um modelo de grupo é para um grupo da comunidade, uma subcomunidade aninhada na comunidade principal.
@@ -35,7 +42,7 @@ No momento em que uma ação é executada para criar um grupo da comunidade, o m
 
 Para acessar o console de modelos de grupo no ambiente de autor do AEM:
 
-* Selecionar **Ferramentas | Communities | Modelos de grupo,** da navegação global.
+* Selecionar **Ferramentas | Comunidades | Modelos de grupo,** da navegação global.
 
 Este console exibe os modelos a partir dos quais um [site da comunidade](/help/communities/sites-console.md) pode ser criado e permite que novos modelos de grupo sejam criados.
 
@@ -65,7 +72,7 @@ No painel Informações básicas, um nome, uma descrição e se o modelo está a
 
   Um switch que controla se o modelo é referenciável.
 
-#### Miniatura  {#thumbnail}
+#### Miniatura {#thumbnail}
 
 ![miniatura-site](assets/site-thumbnail.png)
 

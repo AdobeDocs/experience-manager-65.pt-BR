@@ -1,19 +1,26 @@
 ---
 title: Desenvolvimento e extensão de fluxos de trabalho
-
 description: O AEM fornece várias ferramentas e recursos para criar modelos de fluxo de trabalho, desenvolver etapas de fluxo de trabalho e interagir programaticamente com fluxos de trabalho
-
-
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-
 exl-id: 041b1767-8b6c-4887-a70d-abc96a116976
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1494'
 ht-degree: 4%
@@ -208,7 +215,7 @@ Por exemplo, para um fluxo de trabalho com seis etapas e quatro estágios:
 
 ### Workflows e Forms {#workflows-and-forms}
 
-Normalmente, os fluxos de trabalho são usados para processar envios de formulários no AEM. Pode ser com os [componentes principais de componentes de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=pt-BR) disponíveis em uma instância padrão do AEM ou com a [solução da AEM Forms](/help/forms/using/aem-forms-workflow.md).
+Normalmente, os fluxos de trabalho são usados para processar envios de formulários no AEM. Pode ser com os [componentes principais de componentes de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) disponíveis em uma instância padrão do AEM ou com a [solução da AEM Forms](/help/forms/using/aem-forms-workflow.md).
 
 Ao criar um formulário, o envio dele pode ser facilmente associado a um modelo de fluxo de trabalho. Por exemplo, para armazenar o conteúdo em um local específico do repositório ou notificar um usuário sobre o envio do formulário e seu conteúdo.
 

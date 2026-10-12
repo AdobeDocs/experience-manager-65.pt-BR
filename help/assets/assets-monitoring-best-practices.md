@@ -1,18 +1,29 @@
 ---
-title: 'Práticas recomendadas para monitorar a implantação [!DNL Assets] '
-description: Práticas recomendadas para monitorar o ambiente e o desempenho da sua implantação [!DNL Adobe Experience Manager] após sua implantação.
+title: Práticas recomendadas para monitorar a implantação do [!DNL Assets]
+description: Práticas recomendadas para monitorar o ambiente e o desempenho da implantação do [!DNL Adobe Experience Manager] após sua implantação.
 contentOwner: AG
 role: Admin, Developer
 feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1704'
 ht-degree: 0%
-
 ---
-
 # Práticas recomendadas para monitorar a implantação do [!DNL Adobe Experience Manager Assets] {#assets-monitoring-best-practices}
 
 Do ponto de vista do [!DNL Experience Manager Assets], o monitoramento deve incluir a observação e os relatórios dos seguintes processos e tecnologias:
@@ -194,7 +205,7 @@ Estas são algumas verificações de integridade prontas para uso que são útei
 No processo de monitoramento, se você encontrar problemas, veja a seguir algumas tarefas de solução de problemas que você pode executar para resolver problemas comuns com [!DNL Experience Manager] implantações:
 
 * Se estiver usando TarMK, execute a compactação Tar com frequência. Para obter mais detalhes, consulte [Manter o repositório](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
-* Verificar `OutOfMemoryError` logs. Para obter mais informações, consulte [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=pt-BR).
+* Verificar `OutOfMemoryError` logs. Para obter mais informações, consulte [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
 
 * Verifique nos logs se há referências a consultas não indexadas, percursos de árvore ou percursos de índice. Isso indica consultas não indexadas ou indexadas inadequadamente. Para obter as práticas recomendadas de otimização do desempenho de consulta e indexação, consulte [Práticas recomendadas para consultas e indexação](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Use o console de workflows para verificar se seus workflows funcionam conforme esperado. Se possível, condensar vários workflows em um único workflow.

@@ -11,13 +11,31 @@ exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e2cac356-c071-4141-ad6f-827893261a16
+    internal-label: Launches
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '529'
 ht-degree: 75%
-
 ---
-
 # Edição de inicializações{#editing-launches}
 
 ## Editar páginas de lançamento {#editing-launch-pages}
@@ -71,11 +89,11 @@ A qualquer momento, você pode adicionar ou remover páginas ao/do intervalo de 
 
    * o [console Lançamentos](/help/sites-authoring/launches.md#the-launches-console):
 
-      * Selecione **Editar**.
+     * Selecione **Editar**.
 
    * [Referências (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar as ações disponíveis:
 
-      * Selecione **Editar lançamento**.
+     * Selecione **Editar lançamento**.
 
    As páginas de origem são exibidas.
 
@@ -93,11 +111,11 @@ A qualquer momento, você pode editar as propriedades de um lançamento:
 
    * o [console Lançamentos](/help/sites-authoring/launches.md#the-launches-console):
 
-      * Selecione **Propriedades**.
+     * Selecione **Propriedades**.
 
    * [Referências (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar as ações disponíveis:
 
-      * Selecione **Editar propriedades**.
+     * Selecione **Editar propriedades**.
 
    Os detalhes são mostrados.
 

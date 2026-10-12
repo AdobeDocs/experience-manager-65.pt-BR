@@ -9,13 +9,17 @@ exl-id: c65a24e6-3041-4774-aeed-8e188ea19b78
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '666'
 ht-degree: 0%
-
 ---
-
 # Gerenciamento de banners{#managing-banners}
 
 {{ue-over-mobile}}
@@ -30,9 +34,9 @@ Os banners geralmente representam links promocionais gráficos.
 >
 >Consulte os seguintes recursos na Ajuda online para saber mais sobre os seguintes tópicos em aplicativos AEM Mobile:
 >
->* [Considerações sobre o design](https://helpx.adobe.com/br/digital-publishing-solution/help/design-app.html)
+>* [Considerações sobre o design](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
->* [Criando banners](https://helpx.adobe.com/br/digital-publishing-solution/help/creating-banners.html)
+>* [Criando banners](https://helpx.adobe.com/digital-publishing-solution/help/creating-banners.html)
 >
 
 ## Criação de um banner {#creating-a-banner}
@@ -69,7 +73,7 @@ O fluxo de trabalho para importar um novo artigo
 
 ## Edição de um banner {#editing-a-banner}
 
-Use o editor de arrastar e soltar AEM integrado para adicionar ou alterar um artigo. Componentes como texto e imagens podem ser adicionados/removidos. As imagens do Assets do DAM podem ser inseridas.
+Use o editor de arrastar e soltar integrado do AEM para adicionar ou alterar um artigo. Componentes como texto e imagens podem ser adicionados/removidos. As imagens do Assets do DAM podem ser inseridas.
 
 >[!CAUTION]
 >
@@ -78,7 +82,7 @@ Use o editor de arrastar e soltar AEM integrado para adicionar ou alterar um art
 O workflow para editar um artigo:
 
 1. Em Dispositivo móvel, escolha seu aplicativo móvel por demanda no catálogo.
-1. Selecione um banner de origem AEM no bloco **&#x200B; Gerenciar banners**.
+1. Selecione um banner originado na AEM no bloco ** Gerenciar banners**.
 1. Clique no banner destacado da exibição de lista para abri-lo no editor de conteúdo.
 1. Use o editor de conteúdo para arrastar o conteúdo do banner (manuscritos, imagens, texto etc.).
 
@@ -112,7 +116,7 @@ O fluxo de trabalho geral para carregar um banner:
 
 ## Excluir um banner {#deleting-a-banner}
 
-Essa operação exclui o banner selecionado do Mobile On-Demand e, opcionalmente, da instância do AEM local.
+Essa operação exclui o banner selecionado do Mobile On-Demand e, opcionalmente, da instância local do AEM.
 
 O fluxo de trabalho geral para excluir um banner:
 
@@ -120,7 +124,7 @@ O fluxo de trabalho geral para excluir um banner:
 1. Selecione o banner a ser excluído no bloco **Gerenciar banners**.
 1. Verifique se ele está selecionado na lista (selecione outros para excluir conforme necessário).
 1. Clique em **Excluir** da barra de ações.
-1. Marque se deseja excluir do AEM e do Mobile On-Demand.
+1. Verifique se você deseja excluir o AEM e o Mobile On-Demand.
 1. Clique em **Excluir**.
 1. Seu banner foi removido da lista.
 

@@ -9,13 +9,27 @@ feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: afe09f80-87de-4606-96de-7aecd50f1a65
+    internal-label: Image profiles
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3063'
+source-wordcount: '3098'
 ht-degree: 4%
-
 ---
-
 # Perfis de imagem de mídia dinâmica {#image-profiles}
 
 Ao fazer upload de imagens, você pode cortar automaticamente a imagem após o upload aplicando um Perfil de imagem à pasta.
@@ -41,7 +55,7 @@ As coordenadas de corte inteligente dependem da taxa de proporção. Para as vá
 
 Cada geração de Recorte inteligente criada requer processamento extra. Por exemplo, adicionar mais de cinco proporções de corte inteligente pode resultar em uma taxa de assimilação de ativos lenta. Também provoca um aumento de carga nos sistemas. Como você pode aplicar o Corte inteligente no nível da pasta, a Adobe recomenda usá-lo nas pastas *somente* onde for necessário.
 
-**Diretrizes para definir o Corte inteligente em um Perfil de Imagem**
+**Diretrizes para definir o Recorte Inteligente em um Perfil de Imagem**
 Para manter o uso do Corte inteligente sob controle e otimizar o tempo de processamento e o armazenamento de cultivos, a Adobe recomenda as seguintes diretrizes e dicas:
 
 * Os ativos de imagem que terão um recorte inteligente aplicado a eles devem ter no mínimo 50 x 50 pixels ou mais.
@@ -61,9 +75,9 @@ Você tem duas opções de corte de imagem para escolher: Corte de pixels ou Cor
 
 | Opção | Quando usar | Descrição |
 | --- | --- | --- |
-| Cortar pixel | Imagens de corte em massa somente com base em dimensões. | Para usar esta opção, selecione **[!UICONTROL Recorte de pixel]** na lista suspensa Opções de Recorte.<br><br>Para recortar das laterais de uma imagem, digite o número de pixels a serem recortados de qualquer lado ou de cada lado da imagem. O quanto da imagem é cortada depende da configuração ppi (pixels por polegada) no arquivo de imagem.<br><br>Um corte de pixel do Perfil de Imagem é renderizado da seguinte maneira:<br>· Os valores são Superior, Inferior, Esquerdo e Direito.<br>· O canto superior esquerdo é considerado `0,0` e o recorte de pixels é calculado a partir desse ponto.<br>· Ponto inicial do recorte: Esquerda é X e Superior é Y<br>· Cálculo horizontal: dimensão em pixels horizontal da imagem original menos Esquerda e menos Direita.<br>· Cálculo vertical: altura vertical do pixel menos Superior e menos Inferior.<br><br>Por exemplo, suponha que você tenha uma imagem de 4000 x 3000 pixels. Você usa valores: Top=250, Bottom=500, Left=300, Right=700.<br><br>Do Canto superior esquerdo (300.250), recorte usando o espaço de preenchimento de (4000-300-700, 3000-250-500 ou 3000.2250). |
-| Corte inteligente | Recorte de imagens em massa com base em seu ponto focal visual. | O Recorte inteligente usa o potencial da inteligência artificial na IA do Adobe para automatizar rapidamente o recorte de imagens em massa. O Corte inteligente detecta automaticamente e recorta até o ponto focal em qualquer imagem para capturar o ponto de interesse desejado, independentemente do tamanho da tela.</p> <p>Para usar o Recorte inteligente, selecione **[!UICONTROL Recorte inteligente]** na lista suspensa Opções de recorte, à direita de Recorte responsivo de imagem, habilite (ative) o recurso.</p> <p>Os tamanhos padrão de pontos de interrupção de Grande, Medium e Pequeno geralmente cobrem a gama completa de tamanhos que a maioria das imagens é usada em dispositivos móveis e tablets, desktops e banners. Se desejar, você pode editar os nomes padrão Grande, Medium e Pequeno.</p> <p>Para adicionar mais pontos de interrupção, selecione **[!UICONTROL Adicionar corte]** para excluir um corte, selecione o ícone Lixeira. |
-| Amostra de cor e imagem | O gera uma amostra de imagem em massa para cada imagem. | **Observação**: a amostra inteligente não é suportada no Dynamic Media Classic.<br><br>Localize e gere automaticamente amostras de alta qualidade a partir de imagens de produtos que mostram cor ou textura.<br><br>Para usar a Amostra de Cor e Imagem, selecione **[!UICONTROL Recorte Inteligente]** na lista suspensa Opções de Recorte e, à direita de Amostra de Cor e Imagem, habilite (ative) o recurso. Insira um valor de pixel nas caixas de texto Largura e Altura.<br><br>Embora todos os recortes de imagem estejam disponíveis no painel Representações, as amostras são usadas somente por meio do recurso Copiar URL. Use seu próprio componente de visualização para renderizar a amostra em seu site. (A exceção a essa regra são os banners do carrossel. O Dynamic Media fornece o componente de visualização para a amostra usada nos banners do carrossel.)<br><br>**Usando amostras de imagem**<br> A URL para amostras de imagem é simples. É:<br><br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>onde `:Swatch` é anexado à solicitação de ativo.<br><br>**Usando amostras de cores**<br> Para usar amostras de cores, você faz uma solicitação `req=userdata` com o seguinte:<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>Por exemplo, este é um ativo de amostra no Dynamic Media Classic:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>e aqui está a URL `req=userdata` correspondente do ativo de amostra:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br><br>A resposta do `req=userdata` é a seguinte:<br>`SmartCropDef=Swatch SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br><br>Você também pode solicitar uma resposta do `req=userdata` no formato XML ou JSON, como nos seguintes exemplos de URL:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**Observação:** Crie seu próprio componente WCM para solicitar uma amostra de cores e analisar o atributo `SmartSwatchColor`, representado por um Valor hexadecimal do RGB de 24 bits.<br><br>Consulte também [`userdata` no Guia de Referência de Visualizadores](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata). |
+| Cortar pixel | Imagens de corte em massa somente com base em dimensões. | Para usar esta opção, selecione **[!UICONTROL Recorte de pixel]** na lista suspensa Opções de Recorte.<br><br>Para recortar das laterais de uma imagem, digite o número de pixels a serem recortados de qualquer lado ou de cada lado da imagem. O quanto da imagem é cortada depende da configuração ppi (pixels por polegada) no arquivo de imagem.<br><br>O recorte de pixel do Perfil de Imagem é renderizado da seguinte maneira:<br>· Os valores são Superior, Inferior, Esquerdo e Direito.<br>· Superior esquerdo é considerado `0,0` e o recorte de pixel é calculado a partir desse ponto.<br>· Ponto inicial do recorte: Esquerdo é X e Superior é Y<br>· Cálculo horizontal: dimensão de pixel horizontal da imagem original menos Esquerdo e depois menos Direito.<br>· Cálculo vertical: Altura de pixel vertical menos Superior e depois menos Inferior.<br><br>Por exemplo, suponha que você tenha um 40000 x Imagem de 3000 pixels. Você usa valores: Superior=250, Inferior=500, Esquerda=300, Direita=700.<br><br>Do Canto superior esquerdo (300,250), use o espaço de preenchimento de (4000-300-700, 3000-250-500 ou 3000,2250). |
+| Corte inteligente | Recorte de imagens em massa com base em seu ponto focal visual. | O Recorte inteligente usa o poder da inteligência artificial no Adobe AI para automatizar rapidamente o recorte de imagens em massa. O Corte inteligente detecta automaticamente e recorta até o ponto focal em qualquer imagem para capturar o ponto de interesse desejado, independentemente do tamanho da tela.</p> <p>Para usar o Recorte inteligente, selecione **[!UICONTROL Recorte inteligente]** na lista suspensa Opções de recorte, à direita de Recorte responsivo de imagem, habilite (ative) o recurso.</p> <p>Os tamanhos padrão de pontos de interrupção de Grande, Medium e Pequeno geralmente cobrem a gama completa de tamanhos que a maioria das imagens é usada em dispositivos móveis e tablets, desktops e banners. Se desejar, você pode editar os nomes padrão Grande, Medium e Pequeno.</p> <p>Para adicionar mais pontos de interrupção, selecione **[!UICONTROL Adicionar corte]** para excluir um corte, selecione o ícone Lixeira. |
+| Amostra de cor e imagem | O gera uma amostra de imagem em massa para cada imagem. | **Observação**: não há suporte para a Amostra Inteligente no Dynamic Media Classic.<br><br>Localize e gere automaticamente amostras de alta qualidade a partir de imagens de produtos que mostram cor ou textura.<br><br>Para usar a Amostra de Cor e Imagem, selecione **[!UICONTROL Recorte Inteligente]** na lista suspensa Opções de Recorte e, à direita de Amostra de Cor e Imagem, habilite (ative) o recurso. Insira um valor de pixel nas caixas de texto Largura e Altura.<br><br>Embora todos os recortes de imagem estejam disponíveis no painel Representações, as amostras são usadas somente por meio do recurso Copiar URL. Use seu próprio componente de visualização para renderizar a amostra em seu site. (A exceção a essa regra são os banners do carrossel. O Dynamic Media fornece o componente de visualização para a amostra usada nos banners do carrossel.)<br><br>**Usando amostras de imagem**<br> A URL para amostras de imagem é simples. É:<br><br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>onde `:Swatch` é anexado à solicitação de ativo.<br><br>**Usando amostras de cores**<br> Para usar amostras de cores, você faz uma solicitação `req=userdata` com o seguinte:<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>Por exemplo, este é um ativo de amostra no Dynamic Media Classic:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>e aqui está a URL `req=userdata` correspondente do ativo de amostra:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br><br>A resposta do `req=userdata` é a seguinte:<br>`SmartCropDef=Swatch SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br><br>Você também pode solicitar uma resposta do `req=userdata` no formato XML ou JSON, como nos seguintes exemplos de URL:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**Observação:** Crie seu próprio componente WCM para solicitar uma amostra de cores e analisar o atributo `SmartSwatchColor`, representado por um Valor hexadecimal do RGB de 24 bits.<br><br>Consulte também [`userdata` no Guia de Referência de Visualizadores](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata). |
 
 ## Tirar nitidez da máscara {#unsharp-mask}
 
@@ -222,7 +236,7 @@ Execute novamente o corte inteligente para gerar os cortes adicionais novamente,
 **Para editar o recorte inteligente ou a amostra inteligente de várias imagens:**
 
 1. Selecione o logotipo do Experience Manager e navegue até o **[!UICONTROL Assets]** e, em seguida, acesse uma pasta que tenha um Perfil de Imagem de corte inteligente ou de amostra inteligente aplicado a ela.
-1. Na pasta, selecione o ícone **[!UICONTROL Mais Ações]** (...) e selecione **[!UICONTROL Recorte Inteligente]**.
+1. Na pasta, selecione as **[!UICONTROL Mais Ações]** (...) e selecione **[!UICONTROL Recorte inteligente]**.
 
 1. Na página **[!UICONTROL Editar cortes inteligentes]**, siga um destes procedimentos:
 
@@ -240,15 +254,15 @@ Execute novamente o corte inteligente para gerar os cortes adicionais novamente,
 
    * Redimensionar a caixa de corte inteligente. Siga um destes procedimentos:
 
-      * Se a imagem tiver apenas um recorte inteligente ou uma amostra inteligente, arraste a alça do canto da caixa de recorte para ajustar o tamanho da área visível do recorte.
-      * Se a imagem tiver um corte inteligente e uma amostra inteligente, arraste a alça do canto da caixa de corte para ajustar o tamanho da área visível do corte. Ou selecione a amostra inteligente abaixo da imagem (as amostras de cores são estáticas) e arraste a alça do canto da caixa de recorte para ajustar o tamanho da área visível da amostra.
+     * Se a imagem tiver apenas um recorte inteligente ou uma amostra inteligente, arraste a alça do canto da caixa de recorte para ajustar o tamanho da área visível do recorte.
+     * Se a imagem tiver um corte inteligente e uma amostra inteligente, arraste a alça do canto da caixa de corte para ajustar o tamanho da área visível do corte. Ou selecione a amostra inteligente abaixo da imagem (as amostras de cores são estáticas) e arraste a alça do canto da caixa de recorte para ajustar o tamanho da área visível da amostra.
 
      ![Redimensionar o recorte inteligente de uma imagem](assets/edit_smart_crops-resize.png)
 
    * Mova a caixa de corte inteligente. Siga um destes procedimentos:
 
-      * Se a imagem tiver apenas um recorte inteligente ou uma amostra inteligente, arraste a caixa de recorte para um novo local na imagem.
-      * Se a imagem tiver um recorte inteligente e uma amostra inteligente, arraste a caixa de recorte inteligente para um novo local na imagem. Ou selecione a amostra inteligente abaixo da imagem (as amostras de cores são estáticas) e arraste a caixa de recorte da amostra inteligente para um novo local.
+     * Se a imagem tiver apenas um recorte inteligente ou uma amostra inteligente, arraste a caixa de recorte para um novo local na imagem.
+     * Se a imagem tiver um recorte inteligente e uma amostra inteligente, arraste a caixa de recorte inteligente para um novo local na imagem. Ou selecione a amostra inteligente abaixo da imagem (as amostras de cores são estáticas) e arraste a caixa de recorte da amostra inteligente para um novo local.
 
      ![editar_cortes_inteligentes-mover](assets/edit_smart_crops-move.png)
 

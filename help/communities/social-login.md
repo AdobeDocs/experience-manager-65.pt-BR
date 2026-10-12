@@ -9,7 +9,16 @@ role: Admin
 exl-id: aed9247c-eb81-470c-9fa4-a98c3df2dcaa
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2827'
 ht-degree: 0%
@@ -114,12 +123,12 @@ A instância do [Provedor e Aplicativo OAuth do Adobe Granite](#adobe-granite-oa
    ![fbsocialloginconfigpng](assets/fbsocialloginconfigpng.png)
 
    * **[!UICONTROL Título]** (*Obrigatório*) Insira um título de exibição que identifique o aplicativo do Facebook. Use o mesmo nome inserido como *Nome para Exibição* para o aplicativo do Facebook.
-   * **[!UICONTROL Chave do Aplicativo/da API]** (*Obrigatório*) Digite a ***ID do Aplicativo*** para o Aplicativo do Facebook. Isso identifica a instância [Provedor e Aplicativo OAuth do Adobe Granite](https://helpx.adobe.com/br/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) criada a partir da caixa de diálogo.
+   * **[!UICONTROL Chave do Aplicativo/da API]** (*Obrigatório*) Digite a ***ID do Aplicativo*** para o Aplicativo do Facebook. Isso identifica a instância [Provedor e Aplicativo OAuth do Adobe Granite](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) criada a partir da caixa de diálogo.
    * **[!UICONTROL Segredo do aplicativo]** (*Obrigatório*) Insira o ***Segredo do aplicativo*** para o aplicativo do Facebook.
    * **[!UICONTROL Criar usuários]** Se marcado, fazer logon com uma conta do Facebook criará uma entrada de usuário do AEM e a adicionará como membro ao(s) grupo(s) de usuários selecionado(s).  O padrão está marcado (altamente recomendado).
    * **[!UICONTROL Mascarar IDs de Usuários]**: Deixe desmarcado.
    * **[!UICONTROL Email do Escopo]**: a ID de email do usuário deve ser buscada no Facebook.
-   * **[!UICONTROL Adicionar a Grupos de Usuários]** selecione Adicionar Grupo de Usuários para escolher um ou mais [grupos de membros](https://helpx.adobe.com/br/experience-manager/6-3/communities/using/users.html) para o site da comunidade ao qual os usuários serão adicionados.
+   * **[!UICONTROL Adicionar a Grupos de Usuários]** selecione Adicionar Grupo de Usuários para escolher um ou mais [grupos de membros](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) para o site da comunidade ao qual os usuários serão adicionados.
 
    >[!NOTE]
    >
@@ -128,11 +137,11 @@ A instância do [Provedor e Aplicativo OAuth do Adobe Granite](#adobe-granite-oa
    * Selecione **[!UICONTROL SALVAR]**.
    * **[!UICONTROL Publicar]**.
 
-O resultado é uma instância de [Provedor e Aplicativo OAuth do Adobe Granite](https://helpx.adobe.com/br/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) que não requer mais modificações, a menos que o escopo seja adicionado (permissões). O escopo padrão são as permissões padrão para logon no Facebook. Se desejar escopo adicional, é necessário editar a configuração OSGI diretamente. Se houver modificações feitas diretamente pelo sistema/console, evite editar as configurações do Cloud Service na interface para toque, evitando substituições.
+O resultado é uma instância de [Provedor e Aplicativo OAuth do Adobe Granite](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) que não requer mais modificações, a menos que o escopo seja adicionado (permissões). O escopo padrão são as permissões padrão para logon no Facebook. Se desejar escopo adicional, é necessário editar a configuração OSGI diretamente. Se houver modificações feitas diretamente pelo sistema/console, evite editar as configurações do Cloud Service na interface para toque, evitando substituições.
 
 ### Provedor OAuth do AEM Communities Facebook {#aem-communities-facebook-oauth-provider}
 
-O provedor AEM Communities estende a instância [Aplicativo e Provedor &#x200B;](#adobe-granite-oauth-application-and-provider) do Adobe Granite OAuth.
+O provedor AEM Communities estende a instância [Aplicativo e Provedor ](#adobe-granite-oauth-application-and-provider) do Adobe Granite OAuth.
 
 Esse provedor exigirá edição para:
 
@@ -268,7 +277,7 @@ A instância do [Provedor e Aplicativo OAuth do Adobe Granite](#adobe-granite-oa
 
    * **[!UICONTROL Chave do consumidor]**
 
-     (*Obrigatório*) Digite a **Chave do Consumidor (API)** para o aplicativo do Twitter. Isso identifica a instância [Provedor e Aplicativo OAuth do Adobe Granite](https://helpx.adobe.com/br/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) criada a partir da caixa de diálogo.
+     (*Obrigatório*) Digite a **Chave do Consumidor (API)** para o aplicativo do Twitter. Isso identifica a instância [Provedor e Aplicativo OAuth do Adobe Granite](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) criada a partir da caixa de diálogo.
 
    * **[!UICONTROL Segredo do consumidor]**
 
@@ -284,7 +293,7 @@ A instância do [Provedor e Aplicativo OAuth do Adobe Granite](#adobe-granite-oa
 
    * **[!UICONTROL Adicionar aos Grupos de Usuários]**
 
-     Selecione Adicionar grupo de usuários para escolher um ou mais [grupos de membros](https://helpx.adobe.com/br/experience-manager/6-3/communities/using/users.html) para o site da comunidade ao qual os usuários serão adicionados.
+     Selecione Adicionar grupo de usuários para escolher um ou mais [grupos de membros](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) para o site da comunidade ao qual os usuários serão adicionados.
 
    >[!NOTE]
    >
@@ -293,7 +302,7 @@ A instância do [Provedor e Aplicativo OAuth do Adobe Granite](#adobe-granite-oa
 
 1. Selecione **[!UICONTROL SALVAR]** e **[!UICONTROL Publicar]**.
 
-O resultado é uma instância de [Provedor e Aplicativo OAuth do Adobe Granite](https://helpx.adobe.com/br/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) que não requer mais modificações. O escopo padrão são as permissões padrão para logon no Twitter.
+O resultado é uma instância de [Provedor e Aplicativo OAuth do Adobe Granite](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) que não requer mais modificações. O escopo padrão são as permissões padrão para logon no Twitter.
 
 ### Provedor OAuth do AEM Communities Twitter {#aem-communities-twitter-oauth-provider}
 
@@ -344,7 +353,7 @@ As próximas etapas são as mesmas para o Facebook e o Twitter:
 
 ### Console de sites do AEM Communities {#aem-communities-sites-console}
 
-Depois que um serviço de nuvem é configurado, ele pode ser habilitado para a configuração relevante de Logon social de um site da comunidade usando o subpainel Configurações do [Gerenciamento de usuários](https://helpx.adobe.com/br/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) durante a [criação](https://helpx.adobe.com/br/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) ou o [gerenciamento](https://helpx.adobe.com/br/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties) do site da comunidade.
+Depois que um serviço de nuvem é configurado, ele pode ser habilitado para a configuração relevante de Logon social de um site da comunidade usando o subpainel Configurações do [Gerenciamento de usuários](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) durante a [criação](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) ou o [gerenciamento](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties) do site da comunidade.
 
 1. Escolha o contexto de configuração do site onde você salvou as configurações de logon social.
 

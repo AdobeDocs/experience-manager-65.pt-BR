@@ -8,13 +8,26 @@ exl-id: 51ca2844-91f0-453a-9b39-b876399ebecb
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '537'
 ht-degree: 0%
-
 ---
-
 # Configuração de serviços de armazenamento para rascunhos e envios {#configuring-storage-services-for-drafts-and-submissions}
 
 ## Visão geral {#overview}
@@ -33,7 +46,7 @@ Além da abordagem padrão mencionada acima, uma implementação alternativa tam
 
 >[!NOTE]
 >
->Ao usar a ação enviar do Portal do Forms ou ativar a opção Armazenar dados no portal de formulários no formulário adaptável, os dados do formulário são armazenados no repositório AEM. Em um ambiente de produção, é recomendável não armazenar dados de rascunho ou de formulário enviados no repositório do AEM. Em vez disso, você deve integrar o componente de rascunhos e envio a um armazenamento seguro, como o banco de dados corporativo, para armazenar rascunhos e dados de formulários enviados.
+>Ao usar a ação enviar do Portal do Forms ou habilitar a opção Armazenar dados no portal de formulários no formulário adaptável, os dados do formulário são armazenados no repositório do AEM. Em um ambiente de produção, é recomendável não armazenar dados de formulário de rascunho ou enviados no repositório do AEM. Em vez disso, você deve integrar o componente de rascunhos e envio a um armazenamento seguro, como o banco de dados corporativo, para armazenar rascunhos e dados de formulários enviados.
 >
 >Para obter mais informações, consulte [Amostra para integrar o componente de rascunhos e envios ao banco de dados](/help/forms/using/integrate-draft-submission-database.md).
 
@@ -103,7 +116,7 @@ Os dados são enviados diretamente para a instância remota configurada
 
 Além da configuração especificada acima, forneça informações sobre a instância de processamento remoto configurada.
 
-Na Configuração do Console Web AEM ( `https://[host]:'port'/system/console/configMgr`), clique para abrir o **AEM DS Settings Service** no modo de edição. Na caixa de diálogo Serviço de Configurações do AEM DS, forneça informações sobre o URL do servidor de processamento, nome de usuário do servidor de processamento e senha.
+Na Configuração do Console da Web do AEM ( `https://[host]:'port'/system/console/configMgr`), clique para abrir o **Serviço de Configurações do AEM DS** no modo de edição. Na caixa de diálogo Serviço de Configurações do AEM DS, forneça informações sobre o URL do servidor de processamento, o nome de usuário do servidor de processamento e a senha.
 
 >[!NOTE]
 >

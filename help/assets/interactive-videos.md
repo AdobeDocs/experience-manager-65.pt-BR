@@ -10,13 +10,24 @@ feature: Interactive Videos
 role: User, Admin
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2287199-aefe-59f7-9b29-14176a1a51d4
+    internal-label: Interactive Videos
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6186'
+source-wordcount: '6229'
 ht-degree: 2%
-
 ---
-
 # Vídeos interativos{#interactive-videos}
 
 Você pode criar vídeos interativos com facilidade (também conhecidos como vídeos que podem ser comprados), que impulsionam a conversão diretamente do vídeo. O envolvimento do cliente com o vídeo ocorre em um painel ao lado do reprodutor de vídeo, onde as miniaturas de serviços, informações ou produtos relacionados são roladas para a exibição com base no que é apresentado no vídeo. Os clientes podem selecionar a miniatura e ser vinculados diretamente ao serviço, adicionar o item a um carrinho de compras para compra imediata ou ser vinculados a uma página da Web para obter mais informações.
@@ -33,7 +44,7 @@ Para ver um vídeo interativo e que pode ser comprado, selecione [Demonstraçõe
 
 * Selecione a miniatura se desejar pausar o vídeo e abrir a exibição rápida do produto. Por exemplo, selecione a imagem em miniatura KitchenAid no vídeo para ver uma exibição de rotação de 360 graus do mixer ou amplie para ver os detalhes do mixer.
 
-<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html?lang=pt-BR. This now needs to call a new interactive video-->
+<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
 ![Um quadro de um vídeo interativo que pode ser comprado](assets/chlimage_1-126.png) *Uma captura de quadro de vídeo de um vídeo interativo que pode ser comprado.*
 
@@ -63,13 +74,13 @@ A descrição do fluxo de trabalho passo a passo a seguir foi projetada para aju
 
 Procure o cabeçalho **Exemplo** em algumas tarefas do Início rápido. Ele contém um breve tutorial baseado nesta página de demonstração inicial que *não* ainda tem interatividade adicionada:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=pt-BR](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=pt-BR)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Os **Exemplos** ajudam a ilustrar as etapas da integração de vídeos interativos em seu próprio site.
 
 Ao concluir o tutorial na última seção de Exemplo, a página da Web de demonstração final com o vídeo interativo totalmente integrado será semelhante ao seguinte:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=pt-BR](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=pt-BR)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 Etapas de vídeo interativo:
 
@@ -153,10 +164,10 @@ Considere os seguintes exemplos de URLs do Quickview e as variáveis de miniatur
     <td><p>SKU única, encontrada na cadeia de caracteres de consulta.</p> </td>
     <td><p>Os URLs de Quickview gravados incluem o seguinte:</p>
     <ul>
-      <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
     </ul> <p>A única parte variável na URL é o valor do parâmetro da cadeia de caracteres de consulta <code>productId=</code>, e é claramente um valor de SKU. Portanto, suas miniaturas só precisam de campos de SKU preenchidos com valores como <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
   </tr>
   <tr>
@@ -172,9 +183,9 @@ Considere os seguintes exemplos de URLs do Quickview e as variáveis de miniatur
     <td><p>SKU e ID de categoria na cadeia de caracteres de consulta.</p> </td>
     <td><p>Os URLs de Quickview gravados incluem o seguinte:</p>
     <ul>
-      <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
     </ul> <p>Nesse caso, há duas partes variáveis no URL. A SKU está armazenada no parâmetro <code>prodId</code> e a ID da categoria está armazenada no parâmetro <code>category=</code>.</p> <p>Dessa forma, as definições de miniatura são pares. Isto é, um valor de SKU e uma variável extra chamada <code>categoryId</code>. Os pares resultantes são os seguintes:</p>
     <ul>
       <li>A SKU é <code>305466</code> e <code>categoryId</code> é <code>1100004</code></li>
@@ -189,7 +200,7 @@ Considere os seguintes exemplos de URLs do Quickview e as variáveis de miniatur
 
 Quando a abordagem acima é aplicada ao site Exemplo, você tem uma página da Web com várias miniaturas de produtos, cada uma com um botão &quot;VEJA MAIS&quot;:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=pt-BR](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=pt-BR)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Depois de ativar todas as exibições rápidas de produtos disponíveis na página, você obtém a seguinte lista de solicitações do QuickView feitas no back-end:
 
@@ -258,7 +269,7 @@ Para fazer upload de um vídeo e de seus ativos em miniatura associados:
 1. Carregue o vídeo e os ativos em miniatura associados na pasta ou pastas desejadas.
 
    Consulte [Carregar ativos](/help/assets/manage-assets.md).
-Consulte [Fazer upload de ativos usando o agendamento de trabalhos FTP](/help/assets/manage-assets.md).
+   Consulte [Fazer upload de ativos usando o agendamento de trabalhos FTP](/help/assets/manage-assets.md).
 
    Agora, adicione interatividade ao vídeo.
 
@@ -368,9 +379,9 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Pré-visual
 
      Use os seguintes atalhos de navegação para verificar e ajustar rapidamente os segmentos de vídeo:
 
-      * Para buscar o vídeo diretamente no início desse segmento, selecione a oval azul à esquerda.
-      * Para buscar o vídeo diretamente no final desse segmento, selecione o oval azul à direita.
-      * Para retornar a reprodução de vídeo para o início desse segmento, selecione o segmento inteiro.
+     * Para buscar o vídeo diretamente no início desse segmento, selecione a oval azul à esquerda.
+     * Para buscar o vídeo diretamente no final desse segmento, selecione o oval azul à direita.
+     * Para retornar a reprodução de vídeo para o início desse segmento, selecione o segmento inteiro.
 
    ![chlimage_1-26](assets/chlimage_1-132.png)
 
@@ -543,7 +554,7 @@ O código incorporado copiado é definido para um ambiente responsivo, de modo q
 
 Usando o site de demonstração como exemplo:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=pt-BR](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=pt-BR)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Observe que o código incorporado é padrão:
 
@@ -574,7 +585,7 @@ Observe que o código incorporado é padrão:
 
 A integração é tão simples quanto remover o código de inserção do vídeo e substituí-lo pelo código de inserção interativo do vídeo do Experience Manager. Você pode ver os resultados no URL a seguir. Embora ele mostre um Vídeo interativo presente na página, ainda não está integrado à exibição rápida existente:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=pt-BR](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=pt-BR)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
 ## Integrar um vídeo interativo a uma visualização rápida existente {#integrating-an-interactive-video-with-an-existing-quickview}
 
@@ -663,27 +674,27 @@ O processo de construção do URL do Quickview é oposto ao processo de identifi
   <tbody>
   <tr>
     <td><p>SKU única, encontrada na sequência de consulta</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td>SKU única, encontrada no caminho do URL</td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/product/" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td><p>SKU e ID de categoria na cadeia de caracteres de consulta</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   </tbody>
 </table>
@@ -774,7 +785,7 @@ O código-fonte completo é o seguinte:
 
 O site final de demonstração com vídeo interativo totalmente integrado é semelhante ao seguinte:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=pt-BR](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=pt-BR)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 ## Criar pop-ups personalizados usando o Quickview {#using-quickviews-to-create-custom-pop-ups}
 

@@ -10,13 +10,27 @@ exl-id: 1603eef1-d7c8-47d3-8cfa-55ec3eaadd64
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 0%
-
 ---
-
 # Uso do salvamento automático no aplicativo AEM Forms{#using-autosave-in-aem-forms-app}
 
 >[!NOTE]
@@ -46,4 +60,4 @@ Execute as seguintes etapas para usar o recurso de salvamento automático no apl
 1. Ao reiniciar o aplicativo e fazer logon com o mesmo usuário, você será solicitado a restaurar a tarefa com a caixa de diálogo Recuperar tarefa não salva. Clique em **OK** na caixa de diálogo Recuperar tarefa não salva para continuar a trabalhar com a tarefa salva. Você pode clicar em **Cancelar** para excluir os dados salvos correspondentes ao último salvamento automático acionado e começar a trabalhar com uma nova tarefa.
 
    Ao clicar em **OK**, a tarefa é restaurada com os dados correspondentes ao salvamento automático mais recente acionados antes da falha do aplicativo. Inclui os dados de formulário e todos os anexos associados à tarefa.
-   [![Recuperando uma tarefa &#x200B;](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.** Um formulário de trabalho em andamento **B.** O aplicativo foi fechado à força **C.** O aplicativo foi reiniciado com a caixa de diálogo Recuperar Tarefa Não Salva **D.** Formulário restaurado com dados originais
+   [![Recuperando uma tarefa ](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.** Um formulário de trabalho em andamento **B.** O aplicativo foi fechado à força **C.** O aplicativo foi reiniciado com a caixa de diálogo Recuperar Tarefa Não Salva **D.** Formulário restaurado com dados originais

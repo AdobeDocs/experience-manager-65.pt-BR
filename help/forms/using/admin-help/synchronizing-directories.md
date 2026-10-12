@@ -9,13 +9,27 @@ exl-id: cb642289-4137-4ba7-8bde-0e458c8c94fe
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 0835dca60d8011ce8660f1e7fdefb2b14ccd6129
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1025'
 ht-degree: 0%
-
 ---
-
 
 # Sincronização de diretórios {#synchronizing-directories}
 
@@ -37,7 +51,7 @@ Você também pode especificar se deseja enviar informações de usuário e grup
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (Obsoleto) é um sistema de gerenciamento de conteúdo instalado com o LiveCycle. Ele permite que os usuários projetem, gerenciem, monitorem e otimizem processos centrados no ser humano. O suporte aos Content Services (obsoleto) termina em 31/12/2014. Consulte o [documento sobre o ciclo de vida do produto do Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>Adobe® LiveCycle® Content Services ES (Obsoleto) é um sistema de gerenciamento de conteúdo instalado com o LiveCycle. Ele permite que os usuários projetem, gerenciem, monitorem e otimizem processos centrados no ser humano. O suporte aos Content Services (obsoleto) termina em 31/12/2014. Consulte o [documento sobre o ciclo de vida do produto Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ## Habilitar a sincronização do diretório delta {#enable-delta-directory-synchronization}
 
@@ -73,7 +87,7 @@ Você pode configurar o Gerenciamento de Usuários para verificar periodicamente
 1. No console de administração, clique em Configurações > Gerenciamento de usuários > Configuração > Configurar atributos avançados do sistema.
 1. Em Sincronizar Expressão Cron do Terminador de Sincronização, insira uma expressão cron que represente o intervalo em que o Gerenciamento de Usuários tenta novamente sincronizações com falha. O uso da expressão cron é baseado no sistema de agendamento de tarefas de código aberto Quartz, versão 1.4.0.
 
-   O padrão é 0 0/13 &ast; ? &ast; , que significa que a verificação ocorre a cada 13 minutos.
+   O padrão é 0 0/13 &amp;ast; ? &amp;ast; , que significa que a verificação ocorre a cada 13 minutos.
 
 ## Sincronizar diretórios manualmente {#manually-synchronize-directories}
 

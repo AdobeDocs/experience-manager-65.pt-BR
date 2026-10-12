@@ -8,21 +8,41 @@ exl-id: 946f0f6d-86af-41c1-98ef-98c8f5566e95
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '675'
 ht-degree: 0%
-
 ---
-
 # Detalhes de documento para renderizador {#document-details-for-renderer}
 
 ## Introdução {#introduction}
 
 No espaço de trabalho do AEM Forms, vários tipos de formulário são totalmente compatíveis. Dentre elas:
 
-* PDF forms (XDP / Acroform / PDF plana)
-* Novos formulários de HTML
+* PDF forms (XDP / AcroForm / PDFs sem formatação)
+* Novos formulários do HTML
 * Imagens
 * Aplicativos de terceiros (por exemplo, Gerenciamento de correspondência)
 
@@ -30,9 +50,9 @@ Este documento explica o funcionamento desses renderizadores a partir da perspec
 
 ## PDF forms {#pdf-forms}
 
-Os PDF forms são renderizados por `PdfTaskForm View`.
+PDF forms são renderizados por `PdfTaskForm View`.
 
-Quando um formulário XDP é renderizado como PDF, um JavaScript™ `FormBridge` é adicionado pelo serviço FormsAugmenter. Este JavaScript™ (dentro do formulário PDF) ajuda a executar ações como enviar formulário, salvar formulário ou usar o formulário offline.
+Quando um formulário XDP é renderizado como PDF, um JavaScript™ `FormBridge` é adicionado pelo serviço FormsAugmenter. Este JavaScript™ (dentro do formulário PDF) ajuda a executar ações como enviar formulário, salvar formulário ou colocar o formulário offline.
 
 No espaço de trabalho do AEM Forms, a exibição PDFTaskForm se comunica com o `FormBridge`JavaScript, por meio de um HTML intermediário presente em `/lc/libs/ws/libs/ws/pdf.html`. O fluxo é:
 
@@ -40,7 +60,7 @@ No espaço de trabalho do AEM Forms, a exibição PDFTaskForm se comunica com o 
 
 Comunica-se usando o `window.postMessage` / `window.attachEvent('message')`
 
-Esse método é a maneira padrão de comunicação entre um quadro pai e um iframe. Os ouvintes de eventos existentes dos PDF forms abertos anteriormente são removidos antes de adicionar um novo. Essa limpeza também considera a alternância entre a guia de formulário e a guia de histórico na visualização de detalhes da tarefa.
+Esse método é a maneira padrão de comunicação entre um quadro pai e um iframe. Os ouvintes de eventos existentes no PDF forms aberto anteriormente são removidos antes de adicionar um novo. Essa limpeza também considera a alternância entre a guia de formulário e a guia de histórico na visualização de detalhes da tarefa.
 
 **pdf.html - `FormBridge`JavaScript dentro do PDF renderizado**
 
@@ -54,25 +74,25 @@ Esse método é a maneira padrão de comunicação com um PDFJavaScript de um HT
 
 ## Novo HTML Forms {#new-html-forms}
 
-Novos formulários de HTML são renderizados pela visualização NewHTMLTaskForm.
+Os novos formulários do HTML são renderizados pela exibição NewHTMLTaskForm.
 
-Quando um Formulário XDP é renderizado como HTML usando o pacote de formulários móveis implantado no CRX, ele também adiciona `FormBridge`JavaScript ao formulário, o que expõe diferentes métodos para salvar e enviar dados de formulário.
+Quando um Formulário XDP é renderizado como HTML usando o pacote de formulários para dispositivos móveis implantado no CRX, ele também adiciona mais `FormBridge`JavaScript ao formulário, o que expõe diferentes métodos para salvar e enviar dados de formulário.
 
-Esse JavaScript é diferente do mencionado nos PDF forms acima, mas tem um propósito semelhante.
+Esse JavaScript é diferente do mencionado no PDF forms acima, mas serve a um propósito semelhante.
 
 >[!NOTE]
 >
->O Adobe não recomenda editar o conteúdo da visualização NewHTMLTaskForm.
+>A Adobe não recomenda editar o conteúdo da visualização NewHTMLTaskForm.
 
 ## Flex Forms e Guias {#flex-forms-and-guides}
 
 O Flex Forms é renderizado pelo SwfTaskForm e os guias são renderizados pelas Exibições do HtmlTaskForm, respectivamente.
 
-No espaço de trabalho do AEM Forms, essas exibições se comunicam com o SWF real que compõe o Flex® form/guia usando um SWF intermediário presente em `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
+No espaço de trabalho do AEM Forms, essas exibições se comunicam com a SWF real que compõe o formulário/guia do Flex® usando uma SWF intermediária presente em `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
 
 A comunicação ocorre usando o `swfObject.postMessage` / `window.flexMessageHandler`.
 
-Este protocolo é definido pelo `WsNextAdapter.swf`. O `flexMessageHandlers`objeto da janela existente, de formulários de SWF abertos anteriormente, é removido antes da adição de um novo. A lógica também considera a alternância entre a guia de formulário e a guia de histórico na visualização de detalhes da tarefa. O `WsNextAdapter.swf` é usado para executar várias ações de formulário, como salvar ou enviar.
+Este protocolo é definido pelo `WsNextAdapter.swf`. O `flexMessageHandlers`objeto na janela existente, de formulários do SWF abertos anteriormente, é removido antes da adição de um novo. A lógica também considera a alternância entre a guia de formulário e a guia de histórico na visualização de detalhes da tarefa. O `WsNextAdapter.swf` é usado para executar várias ações de formulário, como salvar ou enviar.
 
 >[!NOTE]
 >

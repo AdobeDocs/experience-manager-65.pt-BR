@@ -9,13 +9,22 @@ feature: Administering
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '5878'
+source-wordcount: '5879'
 ht-degree: 0%
-
 ---
-
 # Limpeza de revisão{#revision-cleanup}
 
 ## Introdução {#introduction}
@@ -24,7 +33,7 @@ Cada atualização no repositório cria uma revisão de conteúdo. Como resultad
 
 Com o AEM 6.3 e superior, uma versão online dessa funcionalidade chamada Limpeza de revisão online foi introduzida. Comparada à Limpeza de revisão offline, em que a instância do AEM precisa ser desligada, a Limpeza de revisão online pode ser executada enquanto a instância do AEM está online. A Limpeza de revisão online está ativada por padrão e é a maneira recomendada de executar uma limpeza de revisão.
 
-**Observação**: [Consulte o Vídeo](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=pt-BR) para obter uma introdução e saber como usar a Limpeza de Revisão Online.
+**Observação**: [Consulte o Vídeo](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html) para obter uma introdução e saber como usar a Limpeza de Revisão Online.
 
 O processo de limpeza de revisão consiste em três fases: **estimativa**, **compactação** e **limpeza**. A estimativa determina se a próxima fase (compactação) será executada ou não com base na quantidade de lixo que pode ser coletada. Durante a fase de compactação, os segmentos e arquivos tar são regravados, eliminando qualquer conteúdo não utilizado. A fase de limpeza remove os segmentos antigos, incluindo qualquer lixo que eles possam conter. O modo offline geralmente pode recuperar mais espaço porque o modo online deve levar em conta o conjunto de trabalho do AEM que impede que segmentos adicionais sejam coletados.
 
@@ -72,34 +81,34 @@ O processo de limpeza de revisão recupera revisões antigas por gerações. Iss
 1. Após a primeira execução de limpeza de revisão online, o tamanho do repositório dobra. Isso acontece porque agora há duas gerações que são mantidas no disco.
 1. Durante as execuções subsequentes, o repositório crescerá temporariamente enquanto a nova geração é criada e, em seguida, se estabilizará de volta ao tamanho que tinha após a primeira execução, à medida que o processo de limpeza da revisão online recupera a geração anterior.
 
-Also, keep in mind that depending on the type and number of commits, each generation can vary in size compared to the previous one, so the final size can vary from one run to the other.
+Além disso, lembre-se de que, dependendo do tipo e do número de confirmações, cada geração pode variar de tamanho em comparação à anterior, de modo que o tamanho final pode variar de uma execução para a outra.
 
-Due to this fact, it is recommended to size the disk at least two or three times larger than the initially estimated repository size.
+Devido a esse fato, é recomendável dimensionar o disco pelo menos duas ou três vezes maior que o tamanho estimado do repositório inicialmente.
 
-## Full And Tail Compaction Modes  {#full-and-tail-compaction-modes}
+## Modos De Compactação Total E Final  {#full-and-tail-compaction-modes}
 
-**AEM 6.5** introduces **two new modes** for the **compaction** phase of the Online Revision Cleanup process:
+**O AEM 6.5** apresenta **dois novos modos** para a fase **compactação** do processo de Limpeza de Revisão Online:
 
-* The **full compaction** mode rewrites all the segments and tar files in the whole repository. The subsequent cleanup phase can thus remove the maximum amount of garbage across the repository. Because full compaction affects the whole repository, it requires a considerable amount of system resources and time to complete. Full compaction corresponds to the compaction phase in AEM 6.3.
-* The **tail compaction** mode rewrites only the most recent segments and tar files in the repository. The most recent segments and tar files are those that have been added since the last time either full or tail compaction ran. The subsequent cleanup phase can thus only remove the garbage contained in the recent part of the repository. Because tail compaction only affects a part of the repository, it requires considerably less system resources and time to complete than full compaction.
+* O modo **compactação completa** reescreve todos os segmentos e arquivos tar em todo o repositório. A fase de limpeza subsequente pode remover a quantidade máxima de lixo no repositório. Como a compactação total afeta todo o repositório, ela requer uma quantidade considerável de recursos do sistema e tempo para ser concluída. A compactação completa corresponde à fase de compactação no AEM 6.3.
+* O modo **tail compaction** substitui somente os segmentos e arquivos tar mais recentes no repositório. Os segmentos e arquivos tar mais recentes são aqueles que foram adicionados desde a última vez que a compactação completa ou traseira foi executada. A fase subsequente de limpeza só pode remover o lixo contido na parte recente do repositório. Como a compactação traseira afeta apenas uma parte do repositório, ela requer consideravelmente menos recursos do sistema e tempo para ser concluída do que a compactação completa.
 
-These compaction modes constitute a trade-off between efficiency and resource consumption: while tail compaction is less effective it also has less impact on normal system operation. In contrast, full compaction is more effective but has a bigger impact on normal system operation.
+Estes modos de compactação constituem um compromisso entre a eficiência e o consumo de recursos: embora a compactação traseira seja menos eficaz, ela também tem menos impacto no funcionamento normal do sistema. Por outro lado, a compactação total é mais eficaz, mas tem um impacto maior na operação normal do sistema.
 
-AEM 6.5 also introduces a more efficient content deduplication mechanism during compaction, which further reduces the on-disk footprint of the repository.
+O AEM 6.5 também apresenta um mecanismo mais eficiente de desduplicação de conteúdo durante a compactação, o que reduz ainda mais o espaço em disco do repositório.
 
-The two charts below, present results from internal laboratory testing that illustrate the reduction of average execution times and the average footprint on disk in AEM 6.5 compared to AEM 6.3:
+Os dois gráficos abaixo apresentam resultados de testes laboratoriais internos que ilustram a redução do tempo médio de execução e o espaço médio em disco no AEM 6.5 em comparação ao AEM 6.3:
 
 ![onrc-duration-6_4vs63](assets/onrc-duration-6_4vs63.png) ![segmentstore-6_4vs63](assets/segmentstore-6_4vs63.png)
 
-### How To Configure Full and Tail Compaction {#how-to-configure-full-and-tail-compaction}
+### Como configurar a compactação completa e traseira {#how-to-configure-full-and-tail-compaction}
 
-The default configuration runs tail compaction on weekdays and full compaction on Sundays. The default configuration can be changed by using the new configuration value `full.gc.days` of the `RevisionCleanupTask` [maintenance task](/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup).
+A configuração padrão executa a compactação traseira em dias da semana e a compactação completa aos domingos. A configuração padrão pode ser alterada usando o novo valor de configuração `full.gc.days` da `RevisionCleanupTask` [tarefa de manutenção](/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup).
 
-When you configure the `full.gc.days` value, full compaction runs during the days defined in the value and tail compaction runs during the days that are not defined in the value. For example, if you configure full compaction to run on Sunday then tail compaction runs Monday to Saturday. For example, if you configure full compaction to run every day of the week then tail compaction does not run at all.
+Ao configurar o valor `full.gc.days`, a compactação completa é executada durante os dias definidos no valor e a compactação final é executada durante os dias que não estão definidos no valor. Por exemplo, se você configurar a compactação total para ser executada no domingo, a compactação traseira será executada de segunda a sábado. Por exemplo, se você configurar a compactação completa para ser executada todos os dias da semana, a compactação traseira não será executada.
 
-Also, consider that:
+Além disso, considere que:
 
-* **Tail compaction** is less effective and it has less impact on normal system operations. Assim, ele deve ser executado durante dias úteis.
+* **A compactação traseira** é menos eficaz e tem menos impacto nas operações normais do sistema. Assim, ele deve ser executado durante dias úteis.
 * **A compactação completa** é mais eficaz, mas também tem um impacto maior nas operações normais do sistema. Por conseguinte, destina-se a ser utilizado fora dos dias úteis.
 * A compactação traseira e a compactação completa devem ser agendadas para serem executadas fora do horário de pico.
 
@@ -494,7 +503,7 @@ TarMK GC: no base state available, running full compaction instead
     <ol>
      <li>Um aplicativo que contorna os mecanismos de acesso recomendados (como Sling e a API JCR) e usa uma API/SPI de nível inferior para acessar o repositório e, em seguida, excede o tempo de retenção de um segmento. Ou seja, ela mantém uma referência a uma entidade por mais tempo do que o tempo de retenção permitido pela Limpeza de revisão online (24 horas por padrão). Esse caso é transitório e não resulta na corrupção dos dados. Para recuperar, a ferramenta oak-run deve ser usada para confirmar a natureza transitória da exceção (a verificação oak-run não deve relatar erros). Para fazer isso, a instância deve ser colocada offline e reiniciada posteriormente.</li>
      <li>Um evento externo causou a corrupção dos dados no disco. Isso pode ser uma falha de disco, falta de espaço em disco ou uma modificação acidental dos arquivos de dados necessários. Nesse caso, a instância deve ser colocada offline e reparada usando a verificação oak-run. Para obter mais detalhes sobre como executar a verificação oak-run, leia a seguinte <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">documentação do Apache</a>.</li>
-     <li>Resolva todas as outras ocorrências por meio do <a href="https://experienceleague.adobe.com/pt-br?support-solution=General&support-tab=home#support" target="_blank">Atendimento ao cliente da Adobe</a>.</li>
+     <li>Resolva todas as outras ocorrências por meio do <a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support" target="_blank">Atendimento ao cliente da Adobe</a>.</li>
     </ol> </td>
    <td> </td>
   </tr>
@@ -642,7 +651,7 @@ java -Dupdate.limit=10000 -Dcompaction-progress-log=150000 -Dlogback.configurati
 
 Além dos métodos apresentados acima, você também pode acionar o mecanismo de limpeza de revisão usando o console JMX da seguinte maneira:
 
-1. Abra o Console JMX em [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)
+1. Abra o Console JMX acessando [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)
 1. Clique no **RevisionGarbageCollection** MBean.
 1. Na próxima janela, clique em **startRevisionGC()** e em **Invoke** para iniciar o trabalho de Coleta de Lixo de Revisão.
 

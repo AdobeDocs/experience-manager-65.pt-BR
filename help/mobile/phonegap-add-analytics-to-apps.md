@@ -9,22 +9,26 @@ exl-id: 8d965e94-c368-481d-b000-6e22456c34db
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '919'
 ht-degree: 0%
-
 ---
-
 # Adicionar o Adobe Analytics ao seu aplicativo para dispositivos móveis{#add-adobe-analytics-to-your-mobile-application}
 
 {{ue-over-mobile}}
 
-Deseja criar experiências envolventes e relevantes para os usuários de aplicativos móveis? Se você não estiver usando o Adobe Mobile Services SDK para monitorar e medir o ciclo de vida e o uso do aplicativo, em que você baseia suas decisões? Onde estão seus clientes mais fiéis? Como você pode garantir que continua relevante e otimiza conversões?
+Deseja criar experiências envolventes e relevantes para os usuários de aplicativos móveis? Se você não estiver usando o Adobe Mobile Services SDK para monitorar e medir o ciclo de vida e o uso do aplicativo, em que você está baseando suas decisões? Onde estão seus clientes mais fiéis? Como você pode garantir que continua relevante e otimiza conversões?
 
 Seus usuários estão acessando todo o conteúdo? Eles estão abandonando o aplicativo e, em caso afirmativo, onde? Com que frequência eles ficam no aplicativo e com que frequência voltam para usar o aplicativo? Que alterações você pode introduzir e, então, medir que aumentam a retenção? E as taxas de falha? Seu aplicativo está falhando para seus usuários?
 
-Aproveite as vantagens do [Mobile App Analytics](https://business.adobe.com/br/products/analytics/mobile-marketing.html) nos seus aplicativos Adobe Experience Manager (AEM) ao integrar com o [Adobe Mobile Services](https://business.adobe.com/br/products/campaign/mobile-marketing.html).
+Aproveite as vantagens do [Mobile App Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html) nos seus aplicativos da Adobe Experience Manager (AEM) ao integrar com o [Adobe Mobile Services](https://business.adobe.com/products/campaign/mobile-marketing.html).
 
 Instrumente seus aplicativos AEM para rastrear, relatar e entender como seus usuários se envolvem com seu aplicativo móvel e conteúdo e para medir as principais métricas de ciclo de vida, como inicializações, tempo no aplicativo e taxa de falha.
 
@@ -35,10 +39,10 @@ Esta seção descreve como os *desenvolvedores* do AEM podem:
 
 ## Pré-requisitos {#prerequisties}
 
-O AEM Mobile exige uma conta da Adobe Analytics para coletar e relatar dados de rastreamento no seu aplicativo. Como parte da configuração, o AEM *Administrador* deve primeiro:
+O AEM Mobile exige uma conta da Adobe Analytics para coletar e relatar dados de rastreamento no seu aplicativo. Como parte da configuração, o *Administrador* do AEM deve primeiro:
 
 * Configure uma conta do Adobe Analytics e crie um conjunto de relatórios para seu aplicativo no Mobile Services.
-* Configurar um Cloud Service AMS no Adobe Experience Manager (AEM).
+* Configurar um AMS Cloud Service no Adobe Experience Manager (AEM).
 
 ## Para desenvolvedores - Integre o Mobile Analytics ao seu aplicativo {#for-developers-integrate-mobile-analytics-into-your-app}
 
@@ -46,9 +50,9 @@ O AEM Mobile exige uma conta da Adobe Analytics para coletar e relatar dados de 
 
 Depois que a conta do Analytics for configurada, crie uma configuração de Sincronização de conteúdo para transferir o conteúdo para o aplicativo móvel.
 
-Para obter detalhes adicionais, consulte Configuração do conteúdo da sincronização de conteúdo. A configuração deve instruir a Sincronização de conteúdo a colocar o ADBMobileConfig no diretório /www. Por exemplo, no aplicativo Geometrixx Outdoors, a configuração de sincronização de conteúdo está em: */content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-config/ams-ADBMobileConfig*. Também há uma configuração para desenvolvimento. No entanto, é idêntica à configuração que não é de desenvolvimento, se houver Geometrixx Outdoors.
+Para obter detalhes adicionais, consulte Configuração do conteúdo da sincronização de conteúdo. A configuração deve instruir a Sincronização de conteúdo a colocar o ADBMobileConfig no diretório /www. Por exemplo, no aplicativo Geometrixx Outdoors, a configuração de sincronização de conteúdo está em: */content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-config/ams-ADBMobileConfig*. Também há uma configuração para desenvolvimento. No entanto, é idêntica à configuração que não é de desenvolvimento se houver Geometrixx Outdoors.
 
-Para obter mais detalhes sobre como baixar o ADBMobileConfig no painel de aplicativos do AEM para aplicativos móveis, consulte Analytics - Mobile Services - Adobe Mobile Services Arquivo de configuração do SDK.
+Para obter mais detalhes sobre como baixar o ADBMobileConfig no painel Aplicativos AEM para aplicativos móveis, consulte Analytics - Mobile Services - Arquivo de configuração SDK do Adobe Mobile Services.
 
 ```xml
 <jcr:root xmlns:jcr="https://www.jcp.org/jcr/1.0" xmlns:nt="https://www.jcp.org/jcr/nt/1.0"

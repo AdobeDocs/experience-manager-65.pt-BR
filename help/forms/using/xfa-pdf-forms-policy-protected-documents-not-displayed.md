@@ -9,7 +9,21 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: c9beefac-14e9-466c-b5bd-44ffab1fb820
-source-git-commit: 913e249ba52f1ee262ed78167ce3b2a857e86213
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
@@ -20,7 +34,7 @@ Verifique os seguintes motivos se não conseguir abrir um formulário do PDF bas
 
 * Os documentos PDF forms baseados em XFA e protegidos por política exigem o Adobe® Acrobat® ou Adobe® Reader®, versão 8 e posterior. Consulte [Downloads da Adobe](https://www.adobe.com/downloads.html) para baixar a Reader ou o Acrobat mais recente.
 * Navegadores como o Mozilla Firefox e o Google Chrome oferecem um visualizador do PDF integrado que não é compatível com o PDF forms baseado em XFA. Para exibir PDF forms baseados em XFA nesses navegadores, você deve configurar o para abrir PDFs usando Acrobat ou Reader. Para obter mais informações, consulte PDF forms baseado em XFA no Mozilla Firefox e no Google Chrome.
-* O Acrobat e o Reader, no Microsoft® Windows®, permitem configurar o para abrir PDFs no modo de Exibição protegida, o que impede que documentos do PDF forms baseados em XFA e documentos protegidos por política sejam abertos. Certifique-se de que o modo de Exibição protegida na Acrobat ou Reader esteja desativado. Para obter mais informações, consulte [Modo de Exibição Protegido (somente Windows)](https://helpx.adobe.com/br/acrobat/kb/end-of-support-acrobat-x-reader-x.html).
+* O Acrobat e o Reader, no Microsoft® Windows®, permitem configurar o para abrir PDFs no modo de Exibição protegida, o que impede que documentos do PDF forms baseados em XFA e documentos protegidos por política sejam abertos. Certifique-se de que o modo de Exibição protegida na Acrobat ou Reader esteja desativado. Para obter mais informações, consulte [Modo de Exibição Protegido (somente Windows)](https://helpx.adobe.com/acrobat/kb/end-of-support-acrobat-x-reader-x.html).
 * Se você estiver tentando acessar documentos do PDF forms baseados em XFA ou documentos protegidos por política em seu dispositivo móvel, considere o seguinte:
 
   * Para abrir documentos protegidos por política em dispositivos móveis, é necessário o Adobe Reader para dispositivos móveis. Para obter mais informações, consulte [aplicativo móvel do Adobe Reader](https://www.adobe.com/in/acrobat/mobile/acrobat-reader.html).
@@ -30,6 +44,6 @@ Verifique os seguintes motivos se não conseguir abrir um formulário do PDF bas
 >[!NOTE]
 >
 >O LiveCycle ES4 oferece suporte à renderização de formulários baseados em XFA no HTML5, de modo que os formulários possam ser abertos em navegadores com suporte ao HTML5, incluindo aqueles executados em dispositivos móveis como o iPad. A representação HTML5 dos formulários mantém o layout do design do formulário e é compatível com a maioria das lógicas de formulário (como JavaScript, cálculo de formulário e validações de formulário) incorporadas ao modelo de formulário XFA. Dessa forma, seus investimentos em tecnologia em formulários XFA são facilmente transferidos para os dispositivos em que a execução do plug-in Adobe Reader não é viável.
->Para obter mais informações, consulte Atualizando para a [documentação do produto LiveCycle](https://business.adobe.com/br/products/experience-manager/forms/aem-forms.html).
+>Para obter mais informações, consulte Atualizando para a [documentação do produto LiveCycle](https://business.adobe.com/products/experience-manager/forms/aem-forms.html).
 
 [Avisos legais](https://chl-author-preview.corp.adobe.com/content/help/en/legal/legal-notices.html)    | [Política de Privacidade Online](https://www.adobe.com/br/privacy.html)

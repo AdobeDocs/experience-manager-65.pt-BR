@@ -9,13 +9,17 @@ exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2617'
+source-wordcount: '2668'
 ht-degree: 0%
-
 ---
-
 # Criação e edição de aplicativos usando o console Aplicativos{#creating-and-editing-apps-using-the-apps-console}
 
 {{ue-over-mobile}}
@@ -77,7 +81,7 @@ Você também pode fornecer um arquivo de imagem para usar como miniatura do apl
 Existem guias adicionais (e opcionais) para o serviço de nuvem de build e para integrar o plug-in SDK do Adobe Mobile Services ao seu aplicativo.
 
 * Build: clique em gerenciar configurações e configure o serviço de build build.phonegap.com aqui. Em seguida, no menu suspenso, é possível selecionar o serviço de nuvem do PhoneGap Build recém-criado.
-* Analytics: clique em gerenciar configurações e configure o serviço de nuvem [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=pt-BR). Em seguida, no menu suspenso, é possível selecionar o Mobile Service recém-criado para integrar ao aplicativo móvel.
+* Analytics: clique em gerenciar configurações e configure o serviço de nuvem [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html). Em seguida, no menu suspenso, é possível selecionar o Mobile Service recém-criado para integrar ao aplicativo móvel.
 
 >[!NOTE]
 >

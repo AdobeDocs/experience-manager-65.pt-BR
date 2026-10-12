@@ -9,13 +9,20 @@ exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '600'
 ht-degree: 2%
-
 ---
-
 # Desenvolver aplicativo de sandbox  {#develop-sandbox-application}
 
 Nesta seção, agora que o modelo está configurado na seção [aplicativo inicial](initial-app.md) e nas páginas iniciais estabelecidas na seção [conteúdo inicial](initial-content.md), você pode desenvolver o aplicativo. Você faz isso usando scripts de base que incluem a capacidade de ativar a criação com componentes de Comunidades. No final desta seção, você tem um site que é totalmente funcional.
@@ -46,7 +53,7 @@ Utilização do CRXDE Lite:
 
 ### Scripts de cabeçalho e corpo {#head-and-body-scripts}
 
-1. No painel do explorador **CRXDE Lite**, navegue até `/apps/an-scf-sandbox/components/playpage` e clique duas vezes no arquivo `playpage.jsp` para abri-lo no painel de edição.
+1. No painel do explorador do **CRXDE Lite**, navegue até `/apps/an-scf-sandbox/components/playpage` e clique duas vezes no arquivo `playpage.jsp` para abri-lo no painel de edição.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -65,7 +72,7 @@ Utilização do CRXDE Lite:
    %>
    ```
 
-1. Estando ciente das tags de script abrir/fechar, substitua &quot; // TODO ...&quot; por `includes` de scripts para as partes de cabeçalho e corpo de &lt;html>.
+1. Estando ciente das tags de script de abertura/fechamento, substitua &quot; // TODO ...&quot; com `includes` de scripts para as partes de cabeçalho e corpo de &lt;html>.
 
    Com um supertipo de `foundation/components/page`, qualquer script não definido nessa mesma pasta é resolvido para um script na pasta `/apps/foundation/components/page` (se existir) ou para um script na pasta `/libs/foundation/components/page`.
 
@@ -175,11 +182,11 @@ Alterar a URL do navegador para a página raiz: `http://localhost:4502/editor.ht
 * Selecionar **[!UICONTROL Abrir Propriedades]**
 * Na guia AVANÇADO
 
-   * Para a entrada de Redirecionamento, navegue até **[!UICONTROL Sites]** > **[!UICONTROL Site de Sandbox SCF]** > **[!UICONTROL Sandbox SCF]**
-   * Clique em **[!UICONTROL OK]**
+  * Para a entrada de Redirecionamento, navegue até **[!UICONTROL Sites]** > **[!UICONTROL Site de Sandbox SCF]** > **[!UICONTROL Sandbox SCF]**
+  * Clique em **[!UICONTROL OK]**
 
 * Clique em **[!UICONTROL OK]**
 
 Depois que o site é publicado, navegar até a página raiz em uma instância de publicação redireciona para a página em inglês.
 
-A última etapa antes de jogar com os componentes do SCF de comunidades é adicionar uma Pasta de biblioteca do cliente (clientlibs) .... [Adicionar Clientlibs](add-clientlibs.md)
+A última etapa antes de jogar com os componentes SCF das Comunidades é adicionar uma Pasta de Biblioteca de Cliente (clientlibs) .... [Adicionar Clientlibs](add-clientlibs.md)

@@ -7,7 +7,27 @@ role: Admin, User, Developer
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
 solution: Experience Manager, Experience Manager Forms
 feature: Workbench,Adaptive Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 36ac8e9c-5c7a-56d8-af5e-39399fd7b101
+    internal-label: Workbench
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2298'
 ht-degree: 1%
@@ -35,11 +55,11 @@ Os recursos nesta tabela podem ajudar você a saber mais sobre o e começar a us
   </tr>
   <tr>
    <td><p>Informações gerais sobre o AEM Forms e como ele se integra a outros produtos da Adobe</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=pt-BR">Visão geral do AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">Visão geral do AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Toda a documentação disponível para o AEM Forms</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=pt-BR">Documentação do AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">Documentação do AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Atualizações de patches, notas técnicas e informações adicionais sobre esta versão do produto</p> </td>
@@ -98,7 +118,7 @@ Espaço em disco para instalação:
 
 ### Plataformas compatíveis {#supported-platforms}
 
-Consulte a lista completa de plataformas com suporte para o Workbench em [Plataformas com Suporte da AEM Forms](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65_br).
+Consulte a lista completa de plataformas com suporte para o Workbench em [Plataformas com Suporte da AEM Forms](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65).
 
 ## Considerações sobre a instalação do Designer {#designer-installation-considerations}
 
@@ -189,7 +209,7 @@ Para usar o Workbench, você deve ter uma instância do AEM Forms em execução,
 
 ### Definição das configurações de tempo limite {#configuring-timeout-settings}
 
-Por padrão, o Workbench expira após duas horas, independentemente da atividade ou inatividade. Para editar a configuração de tempo limite, consulte &quot;Configurando Gerenciamento de Usuário > Configurar atributos avançados do sistema&quot; na <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html?lang=pt-BR">Ajuda do console de administração</a>.
+Por padrão, o Workbench expira após duas horas, independentemente da atividade ou inatividade. Para editar a configuração de tempo limite, consulte &quot;Configurando Gerenciamento de Usuário > Configurar atributos avançados do sistema&quot; na <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">Ajuda do console de administração</a>.
 
 ### Configuração do Workbench para se conectar via HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 

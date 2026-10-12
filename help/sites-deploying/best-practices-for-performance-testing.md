@@ -1,17 +1,26 @@
 ---
 title: Práticas recomendadas para testes de desempenho
 description: Saiba mais sobre as estratégias e metodologias gerais usadas para testes de desempenho e algumas das ferramentas disponíveis para ajudar no processo.
-
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1827'
 ht-degree: 1%
@@ -73,7 +82,7 @@ A documentação de [Monitoramento de Desempenho](/help/sites-deploying/monitori
 
 **Modo de Desenvolvedor na Interface para Toque**
 
-Um dos novos recursos na interface para toque do AEM 6 é o Modo de desenvolvedor. Da mesma forma que os autores podem alternar entre os modos de edição e pré-visualização, os desenvolvedores podem alternar para o modo de desenvolvedor na interface do autor. Isso permite que você veja o tempo de renderização de cada um dos componentes na página e veja os rastreamentos de pilha de quaisquer erros. Para obter mais informações sobre o modo de desenvolvedor, consulte esta [apresentação do CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=pt-BR).
+Um dos novos recursos na interface para toque do AEM 6 é o Modo de desenvolvedor. Da mesma forma que os autores podem alternar entre os modos de edição e pré-visualização, os desenvolvedores podem alternar para o modo de desenvolvedor na interface do autor. Isso permite que você veja o tempo de renderização de cada um dos componentes na página e veja os rastreamentos de pilha de quaisquer erros. Para obter mais informações sobre o modo de desenvolvedor, consulte esta [apresentação do CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
 
 **Usando o rlog.jar para ler os logs de solicitação**
 

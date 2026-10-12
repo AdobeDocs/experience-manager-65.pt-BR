@@ -5,13 +5,25 @@ exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 solution: Experience Manager, Experience Manager Sites
 feature: Language Copy
 role: Admin
-source-git-commit: f6e1e28d6fbfc240a46c2c69f02c9c5fda1d0d0d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '3546'
 ht-degree: 40%
-
 ---
-
 # Gerenciamento de projetos de tradução{#managing-translation-projects}
 
 Depois de preparar o conteúdo para tradução, é necessário concluir a estrutura de idioma criando cópias de idioma ausentes e criar projetos de tradução.
@@ -43,8 +55,8 @@ O AEM detecta se um projeto de tradução está sendo criado para a tradução i
 * **A cópia no idioma de destino não inclui a página:** o AEM trata essa situação como a tradução inicial. A página é copiada imediatamente para a cópia no idioma de destino e incluída no projeto. Quando a página traduzida é importada para o AEM, ele a copia diretamente para a cópia no idioma de destino.
 * **A cópia no idioma de destino já inclui a página:** o AEM trata essa situação como uma tradução atualizada. Uma inicialização é criada, uma cópia da página é adicionada a ela e incluída no projeto. Inicializações permitem revisar as traduções atualizadas antes de confirmá-las na cópia no idioma de destino:
 
-   * Quando a página traduzida é importada para o AEM, ela substitui a página na inicialização.
-   * A página traduzida substitui a cópia no idioma de destino somente quando a inicialização é promovida.
+  * Quando a página traduzida é importada para o AEM, ela substitui a página na inicialização.
+  * A página traduzida substitui a cópia no idioma de destino somente quando a inicialização é promovida.
 
 Por exemplo, a raiz de idioma /content/geometrixx/fr é criada para a tradução em francês do idioma principal /content/geometrixx/en. Não há outras páginas na cópia em francês.
 

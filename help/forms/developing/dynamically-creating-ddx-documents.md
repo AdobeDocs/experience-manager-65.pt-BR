@@ -10,13 +10,29 @@ role: Developer
 exl-id: b3c19c82-e26f-4dc8-b846-6aec705cee08
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2111'
+source-wordcount: '2183'
 ht-degree: 0%
-
 ---
-
 # Criação dinâmica de documentos DDX {#dynamically-creating-ddx-documents}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
@@ -128,7 +144,7 @@ Crie dinamicamente um documento DDX e desmonte um documento PDF usando a API de 
    * Crie um objeto Java `DocumentBuilderFactory` chamando o método `newInstance` da classe `DocumentBuilderFactory`.
    * Crie um objeto Java `DocumentBuilder` chamando o método `newDocumentBuilder` do objeto `DocumentBuilderFactory`.
    * Chame o método `newDocument` do objeto `DocumentBuilder` para instanciar um objeto `org.w3c.dom.Document`.
-   * Crie o elemento raiz do documento DDX invocando o método `createElement` do objeto `org.w3c.dom.Document`. Este método cria um objeto `Element` que representa o elemento raiz. Passe um valor de cadeia de caracteres que represente o nome do elemento para o método `createElement`. Converter o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu método `setAttribute`. Finalmente, anexe o elemento ao elemento de cabeçalho chamando o método `appendChild` do elemento de cabeçalho e passe o objeto de elemento filho como argumento. As linhas de código a seguir mostram essa lógica de aplicação:
+   * Crie o elemento raiz do documento DDX invocando o método `createElement` do objeto `org.w3c.dom.Document`. Este método cria um objeto `Element` que representa o elemento raiz. Passe um valor de cadeia de caracteres que representa o nome do elemento para o método `createElement`. Converter o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu método `setAttribute`. Finalmente, anexe o elemento ao elemento de cabeçalho chamando o método `appendChild` do elemento de cabeçalho e passe o objeto de elemento filho como argumento. As linhas de código a seguir mostram essa lógica de aplicação:
      ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
 
    * Crie o elemento `PDFsFromBookmarks` chamando o método `createElement` do objeto `Document`. Passe um valor de cadeia de caracteres que representa o nome do elemento para o método `createElement`. Converter o valor de retorno em `Element`. Defina um valor para o elemento `PDFsFromBookmarks` chamando seu método `setAttribute`. Anexe o elemento `PDFsFromBookmarks` ao elemento `DDX`, chamando o método `appendChild` do elemento DDX. Passe o objeto de elemento `PDFsFromBookmarks` como argumento. As linhas de código a seguir mostram essa lógica de aplicação:

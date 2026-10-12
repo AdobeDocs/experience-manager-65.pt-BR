@@ -4,13 +4,23 @@ description: O AEM Forms é compatível com funções personalizadas que permite
 feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
 exl-id: 14a52bc1-c1b4-4a12-b8e1-54523e5f30bd
-source-git-commit: a0ef9925d1bcb84ea5bf733221875d0322cc6df1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1104'
 ht-degree: 0%
-
 ---
-
 # Funções personalizadas no Adaptive Forms
 
 ## Introdução
@@ -65,7 +75,7 @@ Uma função privada não está incluída como uma função personalizada.
 
 * **Nome**
 Sintaxe: `@name funcName <Function Name>`
-Alternativamente, o `,` é possível usar o `@function funcName <Function Name>` **ou o** `@func` `funcName <Function Name>`.
+Alternativamente `,` você pode usar: `@function funcName <Function Name>` **ou** `@func` `funcName <Function Name>`.
   `funcName` é o nome da função (nenhum espaço é permitido).
   `<Function Name>` é o nome para exibição da função.
 
@@ -79,10 +89,10 @@ Como alternativa, você pode usar: `@argument` `{type} name <Parameter Descripti
 Mostra os parâmetros usados pela função. Uma função pode ter várias tags de parâmetro, uma tag para cada parâmetro na ordem de ocorrência.
   `{type}` representa o tipo de parâmetro. Os tipos de parâmetros permitidos são:
 
-   1. string
-   2. número
-   3. booleano
-   4. escopo
+  1. string
+  2. número
+  3. booleano
+  4. escopo
 
   O escopo é usado para campos de referência de um Formulário adaptável. Quando um formulário usa carregamento lento, você pode usar `scope` para acessar seus campos. Você pode acessar campos quando eles forem carregados ou se estiverem marcados como globais.
 
@@ -94,9 +104,9 @@ Como alternativa, você pode usar `@returns {type}`.
 Adiciona informações sobre a função, como seu objetivo.
   {type} representa o tipo de retorno da função. Os tipos de retorno permitidos são:
 
-   1. string
-   1. número
-   1. booleano
+  1. string
+  1. número
+  1. booleano
 
   Todos os outros tipos de retorno são categorizados em um dos itens acima. Nenhum não é compatível. Selecione um dos tipos acima. Os tipos de retorno não diferenciam maiúsculas de minúsculas.
 

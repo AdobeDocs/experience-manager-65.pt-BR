@@ -9,13 +9,22 @@ exl-id: caa43d80-1f38-46fc-a8b9-9485c235c0ca
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1824'
 ht-degree: 13%
-
 ---
-
 
 # Integração do AEM 6.5 com o Adobe Campaign Standard {#integrating-with-adobe-campaign-standard}
 
@@ -45,7 +54,7 @@ Este documento aborda detalhadamente cada uma dessas etapas.
 ## Pré-requisitos {#prerequisites}
 
 * Acesso de administrador ao Adobe Campaign Standard
-  * Se você precisar de detalhes adicionais sobre como instalar e configurar o Adobe Campaign Standard, consulte a [documentação do Adobe Campaign Standard.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=pt-BR)
+  * Se você precisar de detalhes adicionais sobre como instalar e configurar o Adobe Campaign Standard, consulte a [documentação do Adobe Campaign Standard.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html)
 * Acesso de administrador ao AEM
 
 ## Configurar o usuário aemserver no Campaign {#aemserver-user}
@@ -66,7 +75,7 @@ Por padrão, o Adobe Campaign Standard vem com um usuário `aemserver` que o AEM
 
 O usuário `aemserver` agora tem os direitos necessários para que o AEM possa usá-lo para se comunicar com o Adobe Campaign.
 
-No entanto, para que o AEM possa usar o usuário `aemserver`, sua senha deve ser definida. Isso não pode ser feito por meio do Adobe Campaign. Ela deve ser executada por um engenheiro de suporte da Adobe. [Envie um tíquete ao Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/pt-br?support-tab=home&lang=pt-BR#support) para solicitar a redefinição da senha `aemserver`. Depois de obter a senha do Atendimento ao cliente da Adobe, mantenha-a em um local seguro.
+No entanto, para que o AEM possa usar o usuário `aemserver`, sua senha deve ser definida. Isso não pode ser feito por meio do Adobe Campaign. Ela deve ser executada por um engenheiro de suporte da Adobe. [Envie um tíquete ao Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-tab=home&lang=pt-BR#support) para solicitar a redefinição da senha `aemserver`. Depois de obter a senha do Atendimento ao cliente da Adobe, mantenha-a em um local seguro.
 
 ## Verificar o AEMResourceTypeFilter no Campaign {#resource-type-filter}
 
@@ -233,7 +242,7 @@ Ao [criar um modelo de entrega de email específico do AEM](#aem-email-delivery-
 1. Na seção **Conexão**, defina os seguintes campos:
 
    1. Servidor: este é o URL do seu servidor de criação do AEM. Isso não deve terminar com uma barra.
-   1. Conta: Este é o `campaign-remote` usuário que você [&#x200B; configurou anteriormente no AEM.](#campaign-remote-user)
+   1. Conta: Este é o `campaign-remote` usuário que você [ configurou anteriormente no AEM.](#campaign-remote-user)
    1. Senha: esta é a senha do `campaign-remote`usuário que você [configurou anteriormente no AEM.](#campaign-remote-user)
 
    ![Editando o usuário aemInstance](assets/acs-external-acount-editor.png)

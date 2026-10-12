@@ -9,13 +9,20 @@ exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '687'
 ht-degree: 11%
-
 ---
-
 # Configuração do Dispatcher para comunidades {#configuring-dispatcher-for-communities}
 
 ## AEM Communities {#aem-communities}
@@ -24,7 +31,7 @@ Para o AEM Communities, é necessário configurar o Dispatcher para garantir o f
 
 Para saber o que é necessário para sua implantação específica e design do site
 
-* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=General&support-tab=home#support)
+* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)
 
 Consulte também a [documentação do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) principal.
 
@@ -42,11 +49,11 @@ Quando configurado para ser compatível com o armazenamento em cache do Dispatch
 
 ### Requisitos {#requirements}
 
-* Dispatcher versão 4.1.2 ou posterior (consulte [Instalando o Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=pt-BR) para obter a versão mais recente)
+* Dispatcher versão 4.1.2 ou posterior (consulte [Instalando o Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) para obter a versão mais recente)
 * [Pacote ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
-   * Versão 3.3.2 ou posterior
-   * Configuração OSGi `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
+  * Versão 3.3.2 ou posterior
+  * Configuração OSGi `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 
 ### Configuração {#configuration}
 
@@ -54,7 +61,7 @@ A configuração OSGi **ACS AEM Commons - Cabeçalho de Controle de Cache do Dis
 
 * No [Console da Web](../../help/sites-deploying/configuring-osgi.md).
 
-   * Por exemplo, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+  * Por exemplo, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * Localizar `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 * Selecione o ícone &quot;+&quot; para criar uma configuração de conexão.
@@ -69,7 +76,7 @@ A configuração OSGi **ACS AEM Commons - Cabeçalho de Controle de Cache do Dis
 
 ## Filtros do Dispatcher {#dispatcher-filters}
 
-A seção /filter do arquivo `dispatcher.any` está documentada em [Configurando o Acesso ao Conteúdo - /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR).
+A seção /filter do arquivo `dispatcher.any` está documentada em [Configurando o Acesso ao Conteúdo - /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html).
 
 Esta seção descreve entradas que provavelmente são necessárias para o funcionamento adequado dos recursos das Comunidades.
 
@@ -79,7 +86,7 @@ Os exemplos a seguir usam nomes de propriedades que provavelmente devem ser modi
 
 Consulte também:
 
-* [Lista de verificação de segurança do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=pt-BR)
+* [Lista de verificação de segurança do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)
 
 >[!NOTE]
 >
@@ -89,7 +96,7 @@ Consulte também:
 
 >[!CAUTION]
 >
->Consulte a [Lista de verificação de segurança do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=pt-BR) para considerações adicionais ao restringir o acesso usando o Dispatcher. Além disso, leia a [Lista de verificação de segurança do AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) para obter detalhes de segurança adicionais relacionados à instalação do AEM.
+>Consulte a [Lista de verificação de segurança do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html) para considerações adicionais ao restringir o acesso usando o Dispatcher. Além disso, leia a [Lista de verificação de segurança do AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) para obter detalhes de segurança adicionais relacionados à instalação do AEM.
 >
 
 As entradas a seguir devem ser adicionadas ao final da seção /filter, especialmente depois de todas as entradas negadas.

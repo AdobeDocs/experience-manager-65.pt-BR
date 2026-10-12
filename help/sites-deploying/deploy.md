@@ -10,33 +10,45 @@ exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 36cb540cda7faeca5949028c9c14ab2ecf860402
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1779'
-ht-degree: 3%
-
+source-wordcount: '1853'
+ht-degree: 5%
 ---
-
 # Implantação e manutenção{#deploying-and-maintaining}
 
 Nesta página, você encontrará:
 
 * [Conceitos básicos](#basic-concepts)
 
-   * [O que é o AEM?](#what-is-aem)
-   * [Implantações típicas](#typical-deployment-scenarios)
+  * [O que é o AEM?](#what-is-aem)
+  * [Implantações típicas](#typical-deployment-scenarios)
 
-      * [No local](#on-premise)
-      * [Managed Services usando o Cloud Manager](#managed-services-using-cloud-manager)
+    * [No local](#on-premise)
+    * [Managed Services usando o Cloud Manager](#managed-services-using-cloud-manager)
 
 * [Introdução](#getting-started)
 
-   * [Pré-requisitos](#prerequisites)
-   * [Obtendo o software](#getting-the-software)
-   * [Instalação local padrão](#default-local-install)
-   * [Instalações do Author e Publish](#author-and-publish-installs)
-   * [Diretório de Instalação Desempacotado](#unpacked-install-directory)
-   * [Iniciando e Interrompendo](#starting-and-stopping)
+  * [Pré-requisitos](#prerequisites)
+  * [Obtendo o software](#getting-the-software)
+  * [Instalação local padrão](#default-local-install)
+  * [Instalações do Author e Publish](#author-and-publish-installs)
+  * [Diretório de Instalação Desempacotado](#unpacked-install-directory)
+  * [Iniciando e Interrompendo](#starting-and-stopping)
 
 Depois de se familiarizar com essas noções básicas, você pode encontrar informações mais avançadas e detalhadas nas seguintes subpáginas:
 
@@ -140,7 +152,7 @@ Enquanto as instâncias de produção são executadas em máquinas dedicadas que
 
 Para fins de familiarização e para desenvolver no AEM, é comum usar uma instância instalada em seu computador local que executa o Apple OS X ou versões de desktop do Microsoft® Windows ou Linux®.
 
-No lado do cliente, o AEM funciona com todos os navegadores modernos (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome &#x200B;** 51+**&#x200B; **, **Firefox &#x200B;** 47+, **Safari** 8+) nos sistemas operacionais desktop e tablet. Consulte [Plataformas de Clientes com Suporte](/help/sites-deploying/technical-requirements.md#supported-client-platforms) para obter detalhes.
+No lado do cliente, o AEM funciona com todos os navegadores modernos (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome** 51+****, **Firefox **47+, **Safari** 8+) nos sistemas operacionais desktop e tablet. Consulte [Plataformas de Clientes com Suporte](/help/sites-deploying/technical-requirements.md#supported-client-platforms) para obter detalhes.
 
 ### Obtendo o software {#getting-the-software}
 

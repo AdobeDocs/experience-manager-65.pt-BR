@@ -1,6 +1,6 @@
 ---
-title: Configuração do conector para o IBM&reg; Gerenciador de conteúdo
-description: Configure o Conector do Gerenciador de conteúdo do IBM&reg; para permitir a comunicação entre os formulários AEM e o Gerenciador de conteúdo do IBM&reg;.
+title: Configuração do conector para o Gerenciador de conteúdo do IBM&reg;
+description: Configure o Conector para o Gerenciador de conteúdo do IBM&reg; para permitir a comunicação entre os formulários do AEM e o Gerenciador de conteúdo do IBM&reg;.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
@@ -9,20 +9,34 @@ exl-id: 50f0c963-8007-4e2a-aa73-d99b97d9a1aa
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '288'
 ht-degree: 0%
-
 ---
-
 # Configuração do conector para o Gerenciador de conteúdo IBM®{#configuring-connector-for-ibm-content-manager}
 
 >[!NOTE]
 > 
 > Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
-O conector para o IBM® Content Manager permite a comunicação entre os formulários AEM e o IBM® Content Manager. Para obter informações adicionais em segundo plano, consulte &quot;Conectores para ECM&quot; na [Referência de Serviços](https://www.adobe.com/go/learn_aemforms_services_63).
+O conector para o IBM® Content Manager permite a comunicação entre o AEM Forms e o IBM® Content Manager. Para obter informações adicionais em segundo plano, consulte &quot;Conectores para ECM&quot; na [Referência de Serviços](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Configurar a conexão do Gerenciador de conteúdo IBM® {#configure-the-ibm-content-manager-connection}
 

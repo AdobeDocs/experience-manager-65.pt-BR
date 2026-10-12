@@ -1,24 +1,32 @@
 ---
-title: Migração para o complemento do AEM Commerce integration framework (CIF)
-description: Como migrar de uma versão antiga para o complemento AEM Commerce integration framework (CIF).
+title: Migração para o complemento da Estrutura de integração do AEM Commerce (CIF)
+description: Como migrar de uma versão antiga para o complemento Estrutura de integração do AEM Commerce (CIF).
 exl-id: c6c0c2fc-6cfa-4c64-b3d8-7e428b2a4b2e
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: b4056a4c1483dc8dcedc3c0f8f6b42f8dead0847
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 4%
-
+source-wordcount: '322'
+ht-degree: 5%
 ---
-
 # Guia de migração para o complemento do Experience Manager {#cif-migration}
 
 Este guia ajuda a identificar as áreas que você precisa atualizar para a migração de complementos do Experience Manager.
 
 ## Complemento do CIF
 
-O complemento CIF está disponível para o AEM 6.5 por meio do [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=commerce*&amp;2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;2_group.propertyvalues.operation=equals&amp;2_group.propertyvalues.0_values=target-version%3Aaem%2F6-5&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=16). Ele é compatível e fornece os mesmos recursos que o complemento CIF para o Experience Manager as a Cloud Service.
+O complemento CIF está disponível para o AEM 6.5 por meio do [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=commerce*&2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&2_group.propertyvalues.operation=equals&2_group.propertyvalues.0_values=target-version%3Aaem%2F6-5&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=16). Ele é compatível e fornece os mesmos recursos que o complemento CIF para o Experience Manager as a Cloud Service.
 
 Consulte [Introdução ao AEM Content and Commerce](getting-started.md).
 
@@ -30,7 +38,7 @@ A importação de dados do catálogo de produtos não é suportada pelo compleme
 
 >[!TIP]
 >
->Se nenhuma API em tempo real estiver disponível, um cache de produto externo com APIs deverá ser usado para a integração. Exemplo [código aberto do Magento](https://business.adobe.com/br/products/magento/open-source.html).
+>Se nenhuma API em tempo real estiver disponível, um cache de produto externo com APIs deverá ser usado para a integração. Exemplo [Magento open-source](https://business.adobe.com/products/magento/open-source.html).
 
 ## Experiências do catálogo de produtos com renderização do AEM
 

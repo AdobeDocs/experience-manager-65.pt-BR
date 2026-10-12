@@ -1,6 +1,6 @@
 ---
-title: Pesquisar ativos e imagens digitais no  [!DNL Adobe Experience Manager]
-description: Saiba como localizar os ativos necessários no  [!DNL Adobe Experience Manager]  usando o painel Filtros e como usar os ativos que aparecem na pesquisa.
+title: Pesquisar ativos e imagens digitais no [!DNL Adobe Experience Manager]
+description: Saiba como localizar os ativos necessários no [!DNL Adobe Experience Manager] usando o painel Filtros e como usar os ativos que aparecem na pesquisa.
 contentOwner: AG
 mini-toc-levels: 1
 feature: Search, Metadata
@@ -8,13 +8,27 @@ role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: ed6971a3-2c12-4fd2-81f4-ff329c416250
+    internal-label: Metadata
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '5853'
+source-wordcount: '5854'
 ht-degree: 5%
-
 ---
-
 # Pesquisar ativos digitais no [!DNL Adobe Experience Manager] {#search-assets-in-aem}
 
 | Versão | Link do artigo |
@@ -124,9 +138,9 @@ Você pode melhorar a relevância de palavras-chave para ativos específicos par
 1. Na caixa **[!UICONTROL Promover Pesquisa]**, especifique uma palavra-chave para a qual deseja impulsionar a pesquisa da imagem e clique em **[!UICONTROL Adicionar]**. Você pode especificar várias palavras-chave da mesma maneira.
 1. Clique em **[!UICONTROL Salvar e fechar]**. O ativo que você promoveu para essa palavra-chave aparece entre os principais resultados da pesquisa.
 
-Você pode usar isso a seu favor aumentando a classificação de alguns ativos nos resultados da pesquisa para a palavra-chave direcionada. Veja o vídeo de exemplo abaixo. Para obter informações detalhadas, consulte [pesquisar em [!DNL Experience Manager]](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/search-and-discovery/search-boost).
+Você pode usar isso a seu favor aumentando a classificação de alguns ativos nos resultados da pesquisa para a palavra-chave direcionada. Veja o vídeo de exemplo abaixo. Para obter informações detalhadas, consulte [pesquisar em [!DNL Experience Manager]](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/search-and-discovery/search-boost).
 
->[!VIDEO](https://video.tv.adobe.com/v/3418848/?captions=por_br&quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Vídeo: Entenda como os resultados da pesquisa são classificados e como a classificação pode ser influenciada.*
 
@@ -214,11 +228,11 @@ Com o Adobe Asset Link, os profissionais de criação agora podem acessar o cont
 
 ### Pesquisar ativos digitais no aplicativo de desktop [!DNL Experience Manager] {#desktop-app}
 
-Os profissionais da Creative usam o aplicativo de desktop para tornar o [!DNL Experience Manager Assets] facilmente pesquisável e disponível em seu desktop local (Win ou Mac). A criação pode revelar facilmente os ativos desejados no Mac Finder ou no Windows Explorer, abertos em aplicativos de desktop e alterados localmente. As alterações são salvas novamente no [!DNL Experience Manager] com uma nova versão criada no repositório. O aplicativo oferece suporte a pesquisas básicas usando uma ou mais palavras-chave, curingas `*` e `?` e o operador `AND`. Consulte [procurar, pesquisar e visualizar ativos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-desktop-app/using/using#browse-search-preview-assets) no aplicativo de desktop.
+Os profissionais da Creative usam o aplicativo de desktop para tornar o [!DNL Experience Manager Assets] facilmente pesquisável e disponível em seu desktop local (Win ou Mac). A criação pode revelar facilmente os ativos desejados no Mac Finder ou no Windows Explorer, abertos em aplicativos de desktop e alterados localmente. As alterações são salvas novamente no [!DNL Experience Manager] com uma nova versão criada no repositório. O aplicativo oferece suporte a pesquisas básicas usando uma ou mais palavras-chave, curingas `*` e `?` e o operador `AND`. Consulte [procurar, pesquisar e visualizar ativos](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using#browse-search-preview-assets) no aplicativo de desktop.
 
 ### Pesquisar ativos digitais no [!DNL Brand Portal] {#brand-portal}
 
-Os usuários e profissionais de marketing de linha de negócios usam o Brand Portal para compartilhar com eficiência e segurança os ativos digitais aprovados com suas equipes internas estendidas, parceiros e revendedores. Consulte [pesquisar ativos no Brand Portal](https://experienceleague.adobe.com/pt-br/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching).
+Os usuários e profissionais de marketing de linha de negócios usam o Brand Portal para compartilhar com eficiência e segurança os ativos digitais aprovados com suas equipes internas estendidas, parceiros e revendedores. Consulte [pesquisar ativos no Brand Portal](https://experienceleague.adobe.com/en/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching).
 
 ### Pesquisar [!DNL Adobe Stock] imagens {#adobe-stock1}
 
@@ -366,11 +380,11 @@ A pesquisa visual usa tags inteligentes. Depois de configurar a funcionalidade d
    Salve as alterações.
 
 1. Acesse `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` e adicione a propriedade `similarityTags` do tipo `Boolean` com o valor de `true`.
-1. Aplique tags inteligentes aos ativos no repositório [!DNL Experience Manager]. Consulte [como configurar tags inteligentes](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/configuring/tagging#configuring).
+1. Aplique tags inteligentes aos ativos no repositório [!DNL Experience Manager]. Consulte [como configurar tags inteligentes](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/configuring/tagging#configuring).
 1. No CRXDE, no nó `/oak-index/damAssetLucene`, defina a propriedade `reindex` como `true`. Salve as alterações.
 1. (Opcional) Se você tiver personalizado o formulário de pesquisa, copie o nó `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` para `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Salve as alterações.
 
-Para obter informações relacionadas, consulte [entender as tags inteligentes na Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/metadata/image-smart-tags) e [como gerenciar tags inteligentes](/help/assets/enhanced-smart-tags.md).
+Para obter informações relacionadas, consulte [entender as tags inteligentes na Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/metadata/image-smart-tags) e [como gerenciar tags inteligentes](/help/assets/enhanced-smart-tags.md).
 
 >[!CAUTION]
 >
@@ -493,6 +507,6 @@ Relacione e não relacione ativos exibidos nos resultados da pesquisa. Selecione
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] guia de implementação de pesquisa](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/sites/developing/search-tutorial-develop)
->* [Configuração avançada para impulsionar os resultados da pesquisa](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/search-and-discovery/search-boost)
+>* [[!DNL Experience Manager] guia de implementação de pesquisa](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/developing/search-tutorial-develop)
+>* [Configuração avançada para impulsionar os resultados da pesquisa](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/search-and-discovery/search-boost)
 

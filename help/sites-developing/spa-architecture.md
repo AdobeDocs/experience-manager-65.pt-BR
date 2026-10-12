@@ -11,13 +11,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2074'
 ht-degree: 6%
-
 ---
-
 
 # Desenvolvimento de SPAs para o AEM{#developing-spas-for-aem}
 
@@ -66,7 +80,7 @@ Qualquer roteamento estático funciona contra o [princípio de portabilidade](/h
 
 ## Arquétipo de projeto do AEM {#aem-project-archetype}
 
-Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que aceita projetos SPA que usam o React ou o Angular e utiliza o SDK de SPA.
+Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), que aceita projetos SPA que usam o React ou o Angular e utiliza o SDK de SPA.
 
 ## Modelos de design de SPA {#spa-design-models}
 
@@ -192,8 +206,8 @@ A arquitetura geral do AEM, incluindo ambientes de desenvolvimento, criação e 
 
   É aqui que a origem da origem do aplicativo SPA e a origem do componente são verificadas.
 
-   * O gerador de clientlib do NPM cria uma biblioteca do cliente a partir do projeto SPA.
-   * Essa biblioteca é retirada pelo Maven e implantada pelo plug-in Maven Build junto com o componente no autor do AEM.
+  * O gerador de clientlib do NPM cria uma biblioteca do cliente a partir do projeto SPA.
+  * Essa biblioteca é retirada pelo Maven e implantada pelo plug-in Maven Build junto com o componente no autor do AEM.
 
 * **Autor do AEM**
 
@@ -201,11 +215,11 @@ A arquitetura geral do AEM, incluindo ambientes de desenvolvimento, criação e 
 
   Quando um SPA é editado usando o Editor de SPA no ambiente de criação:
 
-   1. O SPA solicita o HTML externo.
-   1. O CSS é carregado.
-   1. O JavaScript do aplicativo SPA é carregado.
-   1. Quando o aplicativo SPA é executado, o JSON é solicitado, permitindo que o aplicativo crie o DOM da página, incluindo os atributos `cq-data`.
-   1. Esses atributos `cq-data` permitem que o editor carregue informações de página adicionais para que saiba quais configurações de edição estão disponíveis para os componentes.
+  1. O SPA solicita o HTML externo.
+  1. O CSS é carregado.
+  1. O JavaScript do aplicativo SPA é carregado.
+  1. Quando o aplicativo SPA é executado, o JSON é solicitado, permitindo que o aplicativo crie o DOM da página, incluindo os atributos `cq-data`.
+  1. Esses atributos `cq-data` permitem que o editor carregue informações de página adicionais para que saiba quais configurações de edição estão disponíveis para os componentes.
 
 * **Publicação AEM**
 
@@ -215,8 +229,8 @@ A arquitetura geral do AEM, incluindo ambientes de desenvolvimento, criação e 
 
   O Dispatcher serve como a camada de cache do AEM para os visitantes do site.
 
-   * As solicitações são processadas de forma semelhante à do Autor do AEM. No entanto, não há solicitação de informações da página, pois elas são necessárias somente para o editor.
-   * JavaScript, CSS, JSON e HTML são armazenados em cache, otimizando a página para entrega rápida.
+  * As solicitações são processadas de forma semelhante à do Autor do AEM. No entanto, não há solicitação de informações da página, pois elas são necessárias somente para o editor.
+  * JavaScript, CSS, JSON e HTML são armazenados em cache, otimizando a página para entrega rápida.
 
 >[!NOTE]
 >

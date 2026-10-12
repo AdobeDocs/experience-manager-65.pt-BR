@@ -1,21 +1,31 @@
 ---
 title: Permitir que o AEM pesquise documentos PDF protegidos por segurança de documentos
-
 description: Saiba como habilitar a pesquisa nativa do AEM para executar a pesquisa de texto completo em documentos do PDF protegidos por DRM.
-
-
 contentOwner: khsingh
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 geptopics: SG_AEMFORMS/categories/working_with_document_security
-
 docset: aem65
-
 feature: Document Security
 exl-id: 7cf17fb6-021a-473e-bc3b-27c317953002
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 0%
@@ -31,7 +41,7 @@ A pesquisa do AEM é capaz de pesquisar e localizar ativos do AEM e executar pes
 
 * Se estiver usando o AEM Forms no OSGi:
 
-  * Instale o [pacote do AEM Forms Document Security Indexer](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) no servidor do AEM Forms.
+  * Instale o [pacote do AEM Forms Document Security Indexer](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) no servidor do AEM Forms.
 
   * Verifique se um AEM Forms no servidor JEE está em execução e se a segurança de documentos está instalada no AEM Forms correspondente no servidor JEE. O AEM Form no servidor JEE é necessário para indexar o documento protegido.
 

@@ -9,13 +9,29 @@ exl-id: 16851d65-df55-471a-8848-c73c28db8ac0
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Admin,Developer,Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '320'
 ht-degree: 0%
-
 ---
-
 # A Lista de Verificação{#the-checklist}
 
 As Listas de verificação do projeto são um conjunto de práticas recomendadas para a entrega do projeto. Elas orientam você em todas as fases do ciclo de vida do projeto e fornecem monitoramento de alto nível do status atual.
@@ -33,13 +49,13 @@ Lista de verificação de práticas recomendadas do projeto do AEM v2
 A planilha fornece as seguintes planilhas:
 
 * **Instruções**
-   * Fornece instruções sobre como usar a planilha, juntamente com explicações sobre os mecanismos usados.
+  * Fornece instruções sobre como usar a planilha, juntamente com explicações sobre os mecanismos usados.
 * **[Pulsação do projeto](/help/managing/best-practices.md#project-heartbeat-dashboard)**
 * **[Status por Função](/help/managing/best-practices.md#status-by-role)**
 * Uma série de listas de verificação, de acordo com [Persona](/help/managing/best-practices.md#persona), [Fase e Marco](/help/managing/best-practices.md#phases-and-milestones)
 * **Glossário**
-   * O Glossário lista detalhes de todos os documentos do Material de entrega da Lista de verificação do projeto.
-   * O [Glossário](/help/managing/best-practices-glossary.md) também está disponível como parte da documentação.
+  * O Glossário lista detalhes de todos os documentos do Material de entrega da Lista de verificação do projeto.
+  * O [Glossário](/help/managing/best-practices-glossary.md) também está disponível como parte da documentação.
 * **[Definições de persona](/help/managing/best-practices.md#persona)**
 
 ## Utilização das Listas de verificação {#using-the-checklists}
@@ -51,6 +67,6 @@ Para entregar com êxito um projeto de alta qualidade, você precisa concluir to
 
    >[!NOTE]
    >
-   >Não há uma relação 1:1 direta entre os documentos necessários individuais e os materiais para entrega.
+   >Não há uma relação direta 1:1 entre os documentos necessários individuais e os materiais de entrega.
 
 1. Com base nos status dos **[Documentos Necessários](/help/managing/best-practices.md#required-documents)** e **[Resultados Finais](/help/managing/best-practices.md#deliverables)**, as planilhas **[Pulsação do Projeto](/help/managing/best-practices.md#project-heartbeat-dashboard)** e **[Status por Função](/help/managing/best-practices.md#status-by-role)** são atualizadas automaticamente para fornecer uma indicação atualizada do progresso e da integridade do seu projeto.

@@ -1,5 +1,5 @@
 ---
-title: Baixar um modelo de formulário XFA ou PDF
+title: Baixar um XFA ou um modelo de formulário do PDF
 description: É possível exportar formulários do repositório para o sistema local e migrar os formulários baixados para um novo repositório.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,14 +8,28 @@ role: Admin,User
 exl-id: 5b7b9816-38c1-4780-b1fc-8184971f3772
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 0%
-
 ---
-
-# Baixar um modelo de formulário XFA ou PDF {#download-an-xfa-or-a-pdf-form-template}
+# Baixar um XFA ou um modelo de formulário do PDF {#download-an-xfa-or-a-pdf-form-template}
 
 A operação de download, como o nome indica, permite exportar formulários do repositório para o sistema local. Em combinação com a operação de upload, essa operação ajuda a migrar seus formulários de um repositório para outro.
 
@@ -23,7 +37,7 @@ No AEM Forms, a operação de download é compatível com os seguintes tipos de 
 
 * Modelos de formulário (XFA Forms)
 * PDF forms
-* Documentos (arquivos de PDF simples)
+* Documentos (arquivos simples do PDF)
 
 O AEM Forms permite o download desses tipos de formulário individualmente ou em uma pasta que contenha um ou mais formulários compatíveis.
 

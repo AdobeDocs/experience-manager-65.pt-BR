@@ -9,13 +9,20 @@ exl-id: 5ca58bc3-8505-4d91-9cd1-6b2e2671f1be
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1512'
 ht-degree: 0%
-
 ---
-
 # Estrutura do componente social {#social-component-framework}
 
 A estrutura do componente social (SCF) simplifica o processo de configuração, personalização e extensão dos componentes do Communities no lado do servidor e no lado do cliente.
@@ -23,7 +30,7 @@ A estrutura do componente social (SCF) simplifica o processo de configuração, 
 Os benefícios do quadro:
 
 * **Funcional**: facilidade de integração imediata com pouca ou nenhuma personalização para 80% dos casos de uso.
-* **Skinnable**: uso consistente de atributos de HTML para estilo CSS.
+* **Skinnable**: uso consistente de atributos HTML para estilo CSS.
 * **Extensível**: a implementação de componentes é orientada a objetos e tem uma lógica de negócios clara - é fácil adicionar um logon comercial incremental no servidor.
 * **Flexível**: modelos simples de JavaScript sem lógica que são facilmente sobrepostos e personalizados.
 * **Acessível**: a API HTTP oferece suporte a postagens de qualquer cliente, incluindo aplicativos móveis.
@@ -50,19 +57,19 @@ A API do SocialComponent pode ser estendida para fornecer dados exigidos por um 
 Para personalizar ou estender os componentes, grave somente as sobreposições e extensões no diretório /apps, o que simplifica o processo de atualização para versões futuras.
 
 * Para esfola:
-   * Somente o [CSS precisa ser editado](client-customize.md#skinning-css).
+  * Somente o [CSS precisa ser editado](client-customize.md#skinning-css).
 * Para Aparência:
-   * Altere o modelo JS e o CSS.
+  * Altere o modelo JS e o CSS.
 * Para Look, Feel e UX:
-   * Altere o Modelo JS, CSS e [estender/substituir JavaScript](client-customize.md#extending-javascript).
-* Para modificar as informações disponíveis para o modelo JS ou para o endpoint do GET:
-   * Estenda o [SocialComponent](server-customize.md#socialcomponent-interface).
+  * Altere o Modelo JS, CSS e [estender/substituir JavaScript](client-customize.md#extending-javascript).
+* Para modificar as informações disponíveis para o Modelo JS ou para o endpoint GET:
+  * Estenda o [SocialComponent](server-customize.md#socialcomponent-interface).
 * Para adicionar processamento personalizado durante operações:
-   * Gravar uma [OperationExtension](server-customize.md#operationextension-class).
+  * Gravar uma [OperationExtension](server-customize.md#operationextension-class).
 * Para adicionar uma operação personalizada:
-   * Crie uma [Operação do Sling Post](server-customize.md#postoperation-class).
-   * Use os [OperationServices](server-customize.md#operationservice-class) existentes, conforme necessário.
-   * Adicione o código JavaScript para chamar sua operação do lado do cliente, conforme necessário.
+  * Criar uma [Operação de postagem do Sling](server-customize.md#postoperation-class).
+  * Use os [OperationServices](server-customize.md#operationservice-class) existentes, conforme necessário.
+  * Adicione o código JavaScript para chamar sua operação do lado do cliente, conforme necessário.
 
 ## Estrutura do lado do servidor {#server-side-framework}
 
@@ -94,13 +101,13 @@ Para cada SocialComponent, a estrutura fornece um terminal de API baseado em HTT
 
 **`GET Request`**
 
-Um servlet padrão do GET escuta solicitações .social.json às quais o SocialComponent responde com um JSON personalizável.
+Um servlet GET padrão escuta solicitações .social.json às quais o SocialComponent responde com um JSON personalizável.
 
 ![estrutura-scf](assets/scf-framework.png)
 
 ### API HTTP - Solicitações POST {#http-api-post-requests}
 
-Além das operações de GET (Leitura), a estrutura define um padrão de ponto de extremidade para permitir outras operações em um componente, incluindo Criar, Atualizar e Excluir. Esses endpoints são APIs HTTP que aceitam entrada e respondem com um código de status HTTP ou com um objeto de resposta JSON.
+Além das operações GET (Leitura), a estrutura define um padrão de endpoint para permitir outras operações em um componente, incluindo Criar, Atualizar e Excluir. Esses endpoints são APIs HTTP que aceitam entrada e respondem com um código de status HTTP ou com um objeto de resposta JSON.
 
 Esse padrão de endpoint da estrutura torna as operações de CUD extensíveis, reutilizáveis e testáveis.
 
@@ -130,7 +137,7 @@ Os scripts HBS são simples, sem lógica, compilados no servidor e no cliente, s
 
 A estrutura fornece vários [Handlebars helpers](handlebars-helpers.md) que são úteis no desenvolvimento de SocialComponents.
 
-No servidor, quando o Sling resolve uma solicitação do GET, ele identifica o script usado para responder à solicitação. Se o script for um modelo HBS (.hbs), o Sling delegará a solicitação ao mecanismo Handlebars. O mecanismo Handlebars obtém o SocialComponent do SocialComponentFactory apropriado, cria um contexto e renderiza o HTML.
+No servidor, quando o Sling resolve uma solicitação GET, ele identifica o script usado para responder à solicitação. Se o script for um modelo HBS (.hbs), o Sling delegará a solicitação ao mecanismo Handlebars. O mecanismo Handlebars obterá o SocialComponent do SocialComponentFactory apropriado, criará um contexto e renderizará a HTML.
 
 ### Sem restrição de acesso {#no-access-restriction}
 
@@ -207,8 +214,8 @@ As convenções recomendadas a seguir para definir e usar classes CSS:
 Para personalizar a aparência e o comportamento de um componente Communities no lado do cliente, consulte [Personalizações do lado do cliente](client-customize.md), que inclui informações sobre:
 
 * [Sobreposições](client-customize.md#overlays)
-* [Extensões &#x200B;](client-customize.md#extensions)
-* [Marcação HTML](client-customize.md#htmlmarkup)
+* [Extensões](client-customize.md#extensions)
+* [HTML Markup](client-customize.md#htmlmarkup)
 * [Aplicação de capa a CSS](client-customize.md#skinning-css)
 * [Extensão do JavaScript](client-customize.md#extending-javascript)
 * [Clientlibs para SCF](client-customize.md#clientlibs-for-scf)

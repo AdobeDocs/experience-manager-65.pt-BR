@@ -10,7 +10,23 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: c12bda38-aa1a-4647-b62e-42cd4537dac6
+    internal-label: Dynamic Media Classic
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2909'
 ht-degree: 0%
@@ -177,13 +193,13 @@ O componente **[!UICONTROL Imagem]** do Dynamic Media Classic permite adicionar 
 
 **[!UICONTROL Nitidez]** - Selecione como deseja nitidez da imagem. A nitidez é explicada detalhadamente nas [Práticas recomendadas de predefinição de imagem](/help/assets/managing-image-presets.md#image-preset-options) e [Práticas recomendadas de nitidez](/help/assets/assets/sharpening_images.pdf).
 
-**[!UICONTROL Modificadores de URL]** - Você pode alterar efeitos de imagem fornecendo comandos de imagem Dynamic Media Classic adicionais. Estes comandos estão descritos em [Predefinições de imagem](/help/assets/managing-image-presets.md) e na [Referência de comando](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=pt-BR).
+**[!UICONTROL Modificadores de URL]** - Você pode alterar efeitos de imagem fornecendo comandos de imagem Dynamic Media Classic adicionais. Estes comandos estão descritos em [Predefinições de imagem](/help/assets/managing-image-presets.md) e na [Referência de comando](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
 **[!UICONTROL Pontos de interrupção]** - Se o site for responsivo, ajuste os pontos de interrupção. Os pontos de interrupção devem ser separados por vírgulas ( , ).
 
 ### Modelo da imagem {#image-template}
 
-[Modelos de imagem do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html?lang=pt-BR) são conteúdos em camadas do Photoshop que foram importados para o Dynamic Media Classic, onde o conteúdo e as propriedades foram parametrizados para fins de variabilidade. O componente **[!UICONTROL Modelo de imagem]** permite importar imagens e alterar o texto dinamicamente no Experience Manager. Além disso, você pode configurar o componente **[!UICONTROL Modelo de imagem]** para usar valores do contexto do cliente, para que cada usuário experimente a imagem de forma personalizada.
+[Modelos de imagem do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html) são conteúdos em camadas do Photoshop que foram importados para o Dynamic Media Classic, onde o conteúdo e as propriedades foram parametrizados para fins de variabilidade. O componente **[!UICONTROL Modelo de imagem]** permite importar imagens e alterar o texto dinamicamente no Experience Manager. Além disso, você pode configurar o componente **[!UICONTROL Modelo de imagem]** para usar valores do contexto do cliente, para que cada usuário experimente a imagem de forma personalizada.
 
 Selecione **[!UICONTROL Editar]** se desejar configurar o componente. Você pode definir [configurações comuns a todos os componentes do Dynamic Media Classic](#settings-common-to-all-scene-components) e outras configurações descritas nesta seção.
 
@@ -329,7 +345,7 @@ Por padrão, o Experience Manager pesquisa a pasta selecionada e todas as subpas
 >
 >* Na interface clássica, você também pode pesquisar por **Flash** e **FXG**. A filtragem desses tipos na interface otimizada para toque não é compatível.
 >
->* Ao pesquisar vídeos, você pesquisa uma única representação. Os resultados retornam a representação original (somente &ast;.mp4) e a representação codificada.
+>* Ao pesquisar vídeos, você pesquisa uma única representação. Os resultados retornam a representação original (somente &amp;ast;.mp4) e a representação codificada.
 >* Ao pesquisar um conjunto de vídeos adaptáveis, você pesquisa a pasta e todas as subpastas, mas somente se tiver adicionado uma palavra-chave à pesquisa. Se você não tiver adicionado uma palavra-chave, o Experience Manager não pesquisará nas subpastas.
 >
 

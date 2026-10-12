@@ -9,13 +9,17 @@ exl-id: 0b4aa1a4-449a-4882-8f7c-3ceea6ac7f83
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '803'
 ht-degree: 0%
-
 ---
-
 # Gerenciar coleções{#managing-collections}
 
 {{ue-over-mobile}}
@@ -30,9 +34,9 @@ As coleções representam um *balde* bem definido e repleto de conteúdo, como a
 >
 >Consulte os seguintes recursos na Ajuda online para saber mais sobre os seguintes tópicos em aplicativos AEM Mobile:
 >
->* [Considerações sobre o design](https://helpx.adobe.com/br/digital-publishing-solution/help/design-app.html)
+>* [Considerações sobre o design](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
->* [Gerenciando Coleções](https://helpx.adobe.com/br/digital-publishing-solution/help/creating-collections.html)
+>* [Gerenciando Coleções](https://helpx.adobe.com/digital-publishing-solution/help/creating-collections.html)
 >
 
 ## Criação de uma coleção {#creating-a-collection}
@@ -69,7 +73,7 @@ O fluxo de trabalho para importar uma nova coleção
 
 ## Editar uma coleção {#editing-a-collection}
 
-Use o editor de arrastar e soltar AEM integrado para adicionar ou alterar um artigo. Componentes como texto e imagens podem ser adicionados/removidos. As imagens do Assets do DAM podem ser inseridas.
+Use o editor de arrastar e soltar integrado do AEM para adicionar ou alterar um artigo. Componentes como texto e imagens podem ser adicionados/removidos. As imagens do Assets do DAM podem ser inseridas.
 
 O fluxo de trabalho para editar uma coleção:
 
@@ -106,7 +110,7 @@ O fluxo de trabalho geral para fazer upload de uma coleção:
 
 ## Excluindo uma coleção {#deleting-a-collection}
 
-Essa operação exclui a coleção selecionada do Mobile On-Demand e, opcionalmente, da instância do AEM local.
+Essa operação exclui a coleção selecionada do Mobile On-Demand e, opcionalmente, da instância local do AEM.
 
 O fluxo de trabalho geral para excluir uma coleção:
 
@@ -114,7 +118,7 @@ O fluxo de trabalho geral para excluir uma coleção:
 1. Selecione o artigo a ser excluído no bloco **Gerenciar Coleções**.
 1. Verifique se está selecionado na lista; selecione outras para excluir, conforme necessário.
 1. Clique em **Excluir** da barra de ações.
-1. Marque se deseja excluir do AEM e do Mobile On-Demand.
+1. Verifique se você deseja excluir o AEM e o Mobile On-Demand.
 1. Clique em **Excluir**.
 1. Sua coleção foi removida da lista.
 

@@ -10,18 +10,25 @@ role: Admin
 exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2028'
+source-wordcount: '2073'
 ht-degree: 2%
-
 ---
-
 # Console de moderação {#moderation-console}
 
-No AEM Communities, a [moderação de conteúdo da comunidade](/help/communities/moderate-ugc.md) em massa é possível nos ambientes do Autor e do Publish, por administradores e moderadores da comunidade (membros confiáveis da comunidade atribuídos como moderadores).
+No AEM Communities, a [moderação de conteúdo da comunidade](/help/communities/moderate-ugc.md) em massa é possível nos ambientes Autor e Publicar por administradores e moderadores da comunidade (membros confiáveis da comunidade atribuídos como moderadores).
 
-Os administradores e os moderadores da comunidade também podem executar a [moderação no contexto](/help/communities/in-context.md) no ambiente do Publish.
+Os administradores e os moderadores da comunidade também podem executar a [moderação no contexto](/help/communities/in-context.md) no ambiente de publicação.
 
 Um recurso de todos os [sites de comunidade](/help/communities/sites-console.md) é um item de menu `Administration` disponível para usuários que entram com privilégios administrativos. O link `Administration` fornece acesso ao console Moderação.
 
@@ -38,7 +45,7 @@ O console Moderação é compatível com:
 
 Somente quando conectado como administrador ou como membro com ` [moderator permissions](/help/communities/in-context.md#identifyingtrustedmembers)` é possível executar tarefas de moderação.
 
-## Acesso ao ambiente do Publish {#publish-environment-access}
+## Acesso ao ambiente de publicação {#publish-environment-access}
 
 O acesso ao console Moderação a partir de um site da comunidade publicado é feito por meio de um link Administração que aparece quando um moderador da comunidade está conectado.
 
@@ -58,13 +65,13 @@ Somente quando conectado como administrador ou como membro com [permissões de m
 
 >[!NOTE]
 >
->O UGC do ambiente do Publish só estará visível no Autor se o SRP escolhido implementar um armazenamento comum. Por exemplo, por padrão, o armazenamento é JSRP, que não é um armazenamento comum para Autor e Publish. Consulte [Armazenamento do conteúdo da comunidade](/help/communities/working-with-srp.md).
+>O UGC do ambiente de publicação só estará visível no Autor se o SRP escolhido implementar um armazenamento comum. Por exemplo, por padrão, o armazenamento é JSRP, que não é um armazenamento comum para Autor e Publicação. Consulte [Armazenamento do conteúdo da comunidade](/help/communities/working-with-srp.md).
 
 ![moderationconsoleauthor](assets/moderationconsoleauthor.png)
 
 ## Interface do console da moderação {#moderation-console-ui}
 
-Separando o painel de navegação esquerdo (que aparece no autor, mas não no Publish), a interface do usuário de moderação tem as seguintes áreas principais:
+Deixando de lado o painel de navegação esquerdo (que aparece no autor, mas não em Publicar), a interface do usuário de moderação tem as seguintes áreas principais:
 
 * **[Barra de navegação superior](#top-navigation-bar)**
 * **[Barra de ferramentas](#toolbar)**
@@ -78,14 +85,14 @@ A barra de navegação superior é constante para todos os consoles. Para obter 
 
 A barra de ferramentas, localizada abaixo da barra de navegação superior, fornece a seguinte opção de alternância no lado esquerdo:
 
-* [Trilho do filtro](/help/communities/moderation.md#filterrail)
+* [Trilho de filtro](/help/communities/moderation.md#filterrail)
 abre um painel que permite a escolha de propriedades nas quais filtrar o conteúdo.
 
 A barra de ferramentas, localizada abaixo da barra de navegação superior, fornece a seguinte opção de alternância no lado esquerdo:
 
 ![alternaralternaçãoalternância](assets/toggleswitch.png)
 
-[Trilho do filtro](/help/communities/moderation.md#filterrail)
+[Trilho de filtro](/help/communities/moderation.md#filterrail)
 abre um painel ao selecionar Pesquisar, o que permite uma escolha de propriedades nas quais filtrar o conteúdo.
 
 ![filterrail](assets/filterrail.png)
@@ -148,9 +155,9 @@ O site limita o UGC referenciado exibido para publicações nos sites da comunid
 
 >[!NOTE]
 >
->Quando o console de moderação em massa é acessado por um administrador, todas as referências ao UGC são mostradas, incluindo sites não criados com o [assistente de criação de sites](/help/communities/sites-console.md), como as Geometrixx.
+>Quando o console de moderação em massa é acessado por um administrador, todas as referências ao UGC são mostradas, incluindo sites não criados com o [assistente de criação de sites](/help/communities/sites-console.md), como as amostras do Geometrixx.
 >
->Quando o console de moderação em massa é acessado no Publish por um membro confiável da comunidade, somente as referências ao UGC criado para sites da comunidade que o membro está autorizado a moderar são mostradas. Além disso, pode ser filtrado com o filtro Site.
+>Quando o console de moderação em massa é acessado em Publicar por um membro confiável da comunidade, somente as referências ao UGC criado para sites da comunidade que o membro está autorizado a moderar são mostradas. Além disso, pode ser filtrado com o filtro Site.
 
 #### Tipo de conteúdo {#content-type}
 
@@ -182,9 +189,9 @@ Para adicionar recursos adicionais aos quais filtrar:
 * Selecione a configuração para poder abrir no modo de edição.
 * Insira o ResourceType de um componente no qual filtrar:
 
-   * Por exemplo, para filtrar os componentes de Votação incluídos, informe:
+  * Por exemplo, para filtrar os componentes de Votação incluídos, informe:
 
-     `Voting=social/tally/components/hbs/voting`
+    `Voting=social/tally/components/hbs/voting`
 
   ![tipo de conteúdo adicional](assets/additional-contenttype.png)
 
@@ -241,9 +248,9 @@ O [projeto de amostra](https://github.com/Adobe-Marketing-Cloud/aem-communities-
 
 Para instalar a amostra do filtro Tags:
 
-1. Abra o Gerenciador de Pacotes na instância do Autor AEM (`https://[aem-author]:4502/crx/packmgr/index.jsp`) e na instância do AEM Publish (`https://[aem-publish]:4503/crx/packmgr/index.jsp`).
+1. Abra o Gerenciador de Pacotes na instância do Autor do AEM (`https://[aem-author]:4502/crx/packmgr/index.jsp`) e na instância de Publicação do AEM (`https://[aem-publish]:4503/crx/packmgr/index.jsp`).
 1. Compile o pacote `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` do código GitHub, instale e habilite o mesmo.
-1. Abra o console de pacotes na instância de Autor do AEM ( `https://[aem-author]:4502/system/console/bundles`) e na instância de AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`).
+1. Abra o console de pacotes na instância do Autor do AEM ( `https://[aem-author]:4502/system/console/bundles`) e na instância de Publicação do AEM ( `https://[aem-publish]:4503/system/console/bundles`).
 1. Compile o pacote (`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`) do GitHub, instale e habilite o mesmo.
 1. Vá para o nó **/apps/social/moderation/facets** na instância do Autor do AEM (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) e do AEM Publish (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`).
 1. Adicione um usuário técnico **communities-utility-reader** com `jcr:read` permissões.
@@ -280,7 +287,7 @@ Para sair do modo de seleção em massa, selecione o ícone Cancelar (x) na barr
 
 As ações de moderação que podem ser executadas em várias publicações são:
 
-* Negar 
+* Negar
 * Excluir
 * Fechar/reabrir as postagens
 
@@ -296,7 +303,7 @@ No modo de seleção única, é possível:
 * Visualize a publicação no contexto, selecionando o link para a publicação.
 * [Responder](#reply)
 * [Permitir](#allow)
-* [Negar &#x200B;](#deny)
+* [Negar](#deny)
 * [Excluir](#delete)
 * [Fechar](#close)
 * Exibir [Histórico de moderação](#moderation-history)
@@ -323,7 +330,7 @@ Ao trabalhar com uma única publicação, um ícone Responder será exibido se o
 
 Ao trabalhar com uma única publicação, o ícone Permitir é exibido quando a publicação é sinalizada ou negada. Se sinalizado, selecionar Permitir apaga todos os sinalizadores.
 
-#### Negar  {#deny}
+#### Negar {#deny}
 
 ![negar](assets/deny.png)
 

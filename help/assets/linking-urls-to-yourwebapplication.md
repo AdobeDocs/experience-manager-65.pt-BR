@@ -9,13 +9,24 @@ role: User, Admin
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
 feature: Configuration
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1300'
 ht-degree: 6%
-
 ---
-
 # Vincular URLs ao seu aplicativo web {#linking-urls-to-your-web-application}
 
 Seus sites e aplicativos acessam os serviços do Dynamic Media por meio de chamadas de URL. Depois de publicar um ativo, o Dynamic Media ativa uma cadeia de caracteres de URL que faz referência ao ativo. Você pode colar esses URLs em um navegador da Web para testes.

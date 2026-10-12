@@ -11,13 +11,29 @@ mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: ee69dd13-2aba-4eb0-912b-399e82368d73
+    internal-label: Scene7 mode
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6675'
+source-wordcount: '6668'
 ht-degree: 3%
-
 ---
-
 # Configurar o Dynamic Media - Modo Scene7{#configuring-dynamic-media-scene-mode}
 
 Se você usar o Adobe Experience Manager configurado para ambientes diferentes, como desenvolvimento, preparo e produção, configure os Serviços de nuvem do Dynamic Media para cada um desses ambientes.
@@ -48,7 +64,7 @@ Com a nova arquitetura, a Experience Manager é responsável pelos ativos de ori
 
 ## Ativar o Dynamic Media no modo Scene7 {#enabling-dynamic-media-in-scene-mode}
 
-A [Dynamic Media](https://business.adobe.com/br/products/experience-manager/assets/dynamic-media.html) está desabilitada por padrão. Para aproveitar os recursos do Dynamic Media, é necessário ativá-lo.
+A [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) está desabilitada por padrão. Para aproveitar os recursos do Dynamic Media, é necessário ativá-lo.
 
 >[!WARNING]
 >
@@ -80,14 +96,14 @@ Para migrar qualquer predefinição e configuração personalizada do visualizad
 
 A instalação do pacote de recursos 18912 é *opcional*.
 
-O Feature Pack 18912 permite assimilar ativos em massa por meio do FTP ou migrar ativos do Dynamic Media - modo híbrido ou do Dynamic Media Classic para o modo Dynamic Media - Scene7 no Experience Manager. Ele está disponível em [Adobe Professional Services](https://business.adobe.com/br/customers/consulting-services/main.html).
+O Feature Pack 18912 permite assimilar ativos em massa por meio do FTP ou migrar ativos do Dynamic Media - modo híbrido ou do Dynamic Media Classic para o modo Dynamic Media - Scene7 no Experience Manager. Ele está disponível em [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
 
 Consulte [Instalar o pacote de recursos 18912 para migração de ativos em massa](/help/assets/bulk-ingest-migrate.md) para obter mais informações.
 
 ## Criar uma configuração de mídia dinâmica no Cloud Services {#configuring-dynamic-media-cloud-services}
 
 <!--
-**Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=pt-BR#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
+**Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
@@ -133,25 +149,25 @@ Consulte [Instalar o pacote de recursos 18912 para migração de ativos em massa
    * **[!UICONTROL Caminho da Pasta Raiz da Empresa]**
 
    * **[!UICONTROL Publicando Assets]** - Você pode escolher entre as três opções a seguir:
-      * **[!UICONTROL Imediatamente]** significa que quando os ativos são carregados, o sistema assimila os ativos e fornece a URL/Incorporar instantaneamente. Não há necessidade de intervenção do usuário para publicar ativos.
-      * **[!UICONTROL Na ativação]** significa que você deve publicar explicitamente o ativo primeiro, antes que um link de URL/Incorporação seja fornecido.<br><!-- CQDOC-17478, Added March 9, 2021-->A partir do Experience Manager 6.5.8, a instância de Publicação do Experience Manager reflete valores precisos de metadados do Dynamic Media, como `dam:scene7Domain` e `dam:scene7FileStatus` em **[!UICONTROL Somente no modo de publicação por Ativação]**. Para ativar essa funcionalidade, instale o Service Pack 8 e reinicie o Experience Manager. Acesse o Sling Config Manager. Localize a configuração de `Scene7ActivationJobConsumer Component` ou crie uma nova). Marque a caixa de seleção **[!UICONTROL Replicar metadados após a publicação do Dynamic Media]** e selecione **[!UICONTROL Salvar]**.
+     * **[!UICONTROL Imediatamente]** significa que quando os ativos são carregados, o sistema assimila os ativos e fornece a URL/Incorporar instantaneamente. Não há necessidade de intervenção do usuário para publicar ativos.
+     * **[!UICONTROL Na ativação]** significa que você deve publicar explicitamente o ativo primeiro, antes que um link de URL/Incorporação seja fornecido.<br><!-- CQDOC-17478, Added March 9, 2021-->A partir do Experience Manager 6.5.8, a instância de Publicação do Experience Manager reflete valores precisos de metadados do Dynamic Media, como `dam:scene7Domain` e `dam:scene7FileStatus` em **[!UICONTROL Somente no modo de publicação por Ativação]**. Para ativar essa funcionalidade, instale o Service Pack 8 e reinicie o Experience Manager. Acesse o Sling Config Manager. Localize a configuração de `Scene7ActivationJobConsumer Component` ou crie uma nova). Marque a caixa de seleção **[!UICONTROL Replicar metadados após a publicação do Dynamic Media]** e selecione **[!UICONTROL Salvar]**.
 
-        ![Replicar metadados após a caixa de seleção de publicação do Dynamic Media](assets-dm/replicate-metadata-setting.png)
+       ![Replicar metadados após a caixa de seleção de publicação do Dynamic Media](assets-dm/replicate-metadata-setting.png)
 
-      * **[!UICONTROL Publicação seletiva]** Essa opção permite controlar quais pastas são publicadas no Dynamic Media. Ele permite usar recursos como Recorte inteligente ou representações dinâmicas, ou determinar quais pastas são publicadas exclusivamente no Experience Manager para visualização. Esses mesmos ativos *não* foram publicados no Dynamic Media para entrega no domínio público.<br>Você pode definir esta opção aqui na **[!UICONTROL Configuração da Nuvem do Dynamic Media]** ou, se preferir, pode optar por definir esta opção no nível da pasta, nas **[!UICONTROL Propriedades]** de uma pasta.<br>Consulte [Trabalhar com Publicação Seletiva no Dynamic Media](/help/assets/selective-publishing.md).<br>Se você alterar esta configuração posteriormente ou alterá-la posteriormente no nível da pasta, essas alterações afetarão somente os novos ativos carregados a partir desse ponto. O estado de publicação dos ativos existentes na pasta permanece como está até que você os altere manualmente da caixa de diálogo **[!UICONTROL Publicação rápida]** ou **[!UICONTROL Gerenciar publicação]**.
+     * **[!UICONTROL Publicação seletiva]** Essa opção permite controlar quais pastas são publicadas no Dynamic Media. Ele permite usar recursos como Recorte inteligente ou representações dinâmicas, ou determinar quais pastas são publicadas exclusivamente no Experience Manager para visualização. Esses mesmos ativos *não* foram publicados no Dynamic Media para entrega no domínio público.<br>Você pode definir esta opção aqui na **[!UICONTROL Configuração da Nuvem do Dynamic Media]** ou, se preferir, pode optar por definir esta opção no nível da pasta, nas **[!UICONTROL Propriedades]** de uma pasta.<br>Consulte [Trabalhar com Publicação Seletiva no Dynamic Media](/help/assets/selective-publishing.md).<br>Se você alterar esta configuração posteriormente ou alterá-la posteriormente no nível da pasta, essas alterações afetarão somente os novos ativos carregados a partir desse ponto. O estado de publicação dos ativos existentes na pasta permanece como está até que você os altere manualmente da caixa de diálogo **[!UICONTROL Publicação rápida]** ou **[!UICONTROL Gerenciar publicação]**.
 
    * **[!UICONTROL Servidor de Visualização Seguro]** - permite que você especifique o caminho da URL para seu servidor de visualização de representações seguras. Ou seja, depois que as representações são geradas, o Experience Manager pode acessar e pré-visualizar com segurança as representações remotas do Dynamic Media (nenhum binário é enviado de volta para a instância do Experience Manager).
-A menos que você tenha uma organização especial para usar o servidor de sua própria empresa ou um servidor especial, a Adobe recomenda que você deixe essa configuração conforme especificado.
+     A menos que você tenha uma organização especial para usar o servidor de sua própria empresa ou um servidor especial, a Adobe recomenda que você deixe essa configuração conforme especificado.
 
    * **[!UICONTROL Sincronizar todo o conteúdo]** - <!-- NEW OPTION, CQDOC-15371, Added March 4, 2020-->Selecionado por padrão. Desmarque essa opção se desejar incluir ou excluir seletivamente ativos da sincronização com o Dynamic Media. Desmarcar essa opção permite escolher entre os dois modos de sincronização do Dynamic Media a seguir:
 
    * **[!UICONTROL Modo de sincronização do Dynamic Media]**
-      * **[!UICONTROL Habilitado por padrão]** - A configuração é aplicada a todas as pastas por padrão, a menos que você marque uma pasta especificamente para exclusão. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
-      * **[!UICONTROL Desabilitado por padrão]** - A configuração não é aplicada a nenhuma pasta até que você marque explicitamente uma pasta selecionada para sincronização com o Dynamic Media.
-Para marcar uma pasta selecionada para sincronização com o Dynamic Media, selecione uma pasta de ativos e, na barra de ferramentas, selecione **[!UICONTROL Propriedades]**. Na guia **[!UICONTROL Detalhes]**, na lista suspensa **[!UICONTROL Modo de sincronização do Dynamic Media]**, escolha uma das três opções a seguir. Quando terminar, selecione **[!UICONTROL Salvar]**. *Lembre-se: estas três opções não estarão disponíveis se você tiver selecionado **[!UICONTROL Sincronizar todo o conteúdo]**&#x200B;anteriormente.* Consulte também [Trabalhar com publicação seletiva no nível da pasta no Dynamic Media](/help/assets/selective-publishing.md).
-         * **[!UICONTROL Herdado]** - Nenhum valor de sincronização explícito na pasta; em vez disso, a pasta herda o valor de sincronização de uma de suas pastas ancestrais ou o modo padrão na configuração de nuvem. O status detalhado de herdado é exibido por meio de uma dica de ferramenta.
-         * **[!UICONTROL Habilitar para subpastas]** - Incluir tudo nesta subárvore para sincronização com o Dynamic Media. As configurações específicas da pasta substituem o modo padrão na configuração da nuvem.
-         * **[!UICONTROL Desabilitado para subpastas]** - Exclua tudo nesta subárvore da sincronização com o Dynamic Media.
+     * **[!UICONTROL Habilitado por padrão]** - A configuração é aplicada a todas as pastas por padrão, a menos que você marque uma pasta especificamente para exclusão. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+     * **[!UICONTROL Desabilitado por padrão]** - A configuração não é aplicada a nenhuma pasta até que você marque explicitamente uma pasta selecionada para sincronização com o Dynamic Media.
+       Para marcar uma pasta selecionada para sincronização com o Dynamic Media, selecione uma pasta de ativos e, na barra de ferramentas, selecione **[!UICONTROL Propriedades]**. Na guia **[!UICONTROL Detalhes]**, na lista suspensa **[!UICONTROL Modo de sincronização do Dynamic Media]**, escolha uma das três opções a seguir. Quando terminar, selecione **[!UICONTROL Salvar]**. *Lembre-se: estas três opções não estarão disponíveis se você tiver selecionado **[!UICONTROL Sincronizar todo o conteúdo]**anteriormente.* Consulte também [Trabalhar com publicação seletiva no nível da pasta no Dynamic Media](/help/assets/selective-publishing.md).
+       * **[!UICONTROL Herdado]** - Nenhum valor de sincronização explícito na pasta; em vez disso, a pasta herda o valor de sincronização de uma de suas pastas ancestrais ou o modo padrão na configuração de nuvem. O status detalhado de herdado é exibido por meio de uma dica de ferramenta.
+       * **[!UICONTROL Habilitar para subpastas]** - Incluir tudo nesta subárvore para sincronização com o Dynamic Media. As configurações específicas da pasta substituem o modo padrão na configuração da nuvem.
+       * **[!UICONTROL Desabilitado para subpastas]** - Exclua tudo nesta subárvore da sincronização com o Dynamic Media.
 
    >[!NOTE]
    >
@@ -255,7 +271,7 @@ No modo Dynamic Media - Scene7, o tamanho padrão do arquivo de upload de ativos
 Se você pretende usar esse recurso, esteja ciente dos seguintes pré-requisitos e pontos:
 
 * Você deve executar o Experience Manager 6.5 com Service Pack 6.5.4.0 ou posterior no modo Dynamic Media - Scene7.
-* Este grande recurso de carregamento só tem suporte para clientes do [*Managed Services*](https://business.adobe.com/br/products/experience-manager/managed-services.html).
+* Este grande recurso de carregamento só tem suporte para clientes do [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html).
 * Verifique se a sua instância do Experience Manager está configurada com o armazenamento Amazon S3 ou Microsoft® Azure Blob.
 
   >[!NOTE]
@@ -474,7 +490,7 @@ Dois elementos estão disponíveis para definição: Correspondência e Nome de 
 
 **Para configurar a nomeação padrão:**
 
-1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=pt-BR#getting-started) e entre na sua conta.
+1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e entre na sua conta.
 
    Suas credenciais e detalhes de logon foram fornecidos pela Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte ao cliente da Adobe.
 
@@ -508,7 +524,7 @@ Você pode usar o método de campo de formulário para definir uma predefiniçã
 
 **Para criar uma Predefinição de conjunto de lotes:**
 
-1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=pt-BR#getting-started) e entre na sua conta.
+1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e entre na sua conta.
 
    Suas credenciais e detalhes de logon foram fornecidos pela Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte ao cliente da Adobe.
 
@@ -564,7 +580,7 @@ Quando o Conjunto de rotação é carregado e publicado, você ativaria o nome d
 
 **Para criar uma predefinição de conjunto de lotes para a geração automática de um conjunto de rotação 2D:**
 
-1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=pt-BR#getting-started) e entre na sua conta.
+1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e entre na sua conta.
 
    Suas credenciais e detalhes de logon foram fornecidos pela Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte ao cliente da Adobe.
 
@@ -659,7 +675,7 @@ A fila de Fluxo de trabalho de Trânsito do Granite é usada para o fluxo de tra
 
 **Para atualizar a fila de fluxos de trabalho transitórios do Granite:**
 
-1. Navegue até [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) e procure **Fila: Fila de Fluxo de Trabalho Transitório do Granite**.
+1. Navegue até [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) e procure por **Fila: Fila de Fluxo de Trabalho Transitório do Granite**.
 
    >[!NOTE]
    >

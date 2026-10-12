@@ -1,19 +1,26 @@
 ---
 title: Extraindo strings para tradução
-
 description: Usar xgettext-maven-plugin para extrair strings do código-fonte que precisam ser traduzidas
-
-
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
-
 exl-id: 4acc5f7f-0bcb-4b5a-8531-52e146cffeae
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
@@ -68,10 +75,10 @@ A parte padrão de uma regra é usada para corresponder aos nomes dos arquivos a
 | Prefixo | Efeito |
 |---|---|
 | / | Indica um caminho JCR. Portanto, este prefixo corresponde a arquivos abaixo do diretório jcr_root. |
-| &ast; | Indica um arquivo regular no sistema de arquivos. |
+| &amp;ast; | Indica um arquivo regular no sistema de arquivos. |
 | nenhum | Nenhum prefixo ou padrão que comece com uma pasta ou nome de arquivo indica um arquivo regular no sistema de arquivos. |
 
-Quando usado dentro de um padrão, o caractere / indica um subdiretório e o caractere &ast; corresponde a todos. A tabela a seguir lista várias regras de exemplo.
+Quando usado dentro de um padrão, o caractere / indica um subdiretório e o caractere &amp;ast; corresponde a todos. A tabela a seguir lista várias regras de exemplo.
 
 <table>
  <tbody>

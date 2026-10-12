@@ -9,13 +9,24 @@ exl-id: 00473769-c447-4966-a71e-117c669e0151
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 5bd621b14e3bcd21431c1df5629fe4669b14052c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1296'
 ht-degree: 2%
-
 ---
-
 
 # Ferramentas de desenvolvedor do AEM para Eclipse {#aem-developer-tools-for-eclipse}
 
@@ -38,7 +49,7 @@ Ele oferece vários recursos que facilitam o desenvolvimento do AEM:
 Antes de usar as Ferramentas do desenvolvedor do AEM, é necessário:
 
 * Baixe e instale o [Eclipse IDE para desenvolvedores Enterprise Java e Web.](https://www.eclipse.org/downloads/packages/)
-   * A versão 1.4.0 das Ferramentas de desenvolvedor do AEM para Eclipse é compatível com Eclipse 2022-12 (4.26) ou mais recente e requer Java 17 ou mais recente para ser executada.
+  * A versão 1.4.0 das Ferramentas de desenvolvedor do AEM para Eclipse é compatível com Eclipse 2022-12 (4.26) ou mais recente e requer Java 17 ou mais recente para ser executada.
 * Configure a instalação do Eclipse para garantir que você tenha pelo menos 1 GB de memória heap, editando o arquivo de configuração `eclipse.ini` conforme descrito nas [Perguntas frequentes sobre o Eclipse.](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)
 
 >[!NOTE]
@@ -126,7 +137,7 @@ Siga estas etapas para criar o projeto de amostra:
 
    >[!TIP]
    >
-   >Para obter mais detalhes sobre como depurar seu projeto em execução em um AEM SDK local, consulte o documento [Depuração remota do AEM SDK.](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
+   >Para obter mais detalhes sobre como depurar seu projeto em execução em um AEM SDK local, consulte o documento [Depuração remota do AEM SDK.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
 
 1. Clique em **Concluir**.
 
@@ -238,11 +249,11 @@ O Eclipse baixa as dependências necessárias. Isso pode demorar um pouco.
 A ferramenta oficial do Apache Sling IDE para o site do Eclipse fornece informações adicionais úteis:
 
 * O [**Guia do Usuário do Apache Sling IDE para Eclipse**](https://sling.apache.org/documentation/development/ide-tooling.html) orienta você pelos conceitos gerais, pela integração do servidor e pelos recursos de implantação compatíveis com as Ferramentas de Desenvolvimento do AEM.
-* [Solução de problemas da ferramenta Apache Sling IDE](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting)
+* [Solução de problemas das ferramentas do Apache Sling IDE](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting)
 * [Lista de problemas conhecidos](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues)
 
 A documentação oficial [Eclipse](https://www.eclipse.org/) a seguir pode ajudar a configurar seu ambiente:
 
 * [Introdução ao Eclipse](https://eclipseide.org/getting-started/)
-* [Sistema de Ajuda do Eclipse Luna](https://help.eclipse.org/latest/index.jsp)
+* [Sistema de ajuda Eclipse Luna](https://help.eclipse.org/latest/index.jsp)
 * [Integração do Maven (m2eclipse)](https://www.eclipse.org/m2e/)

@@ -1,24 +1,40 @@
 ---
 title: Relatórios sobre o uso e o compartilhamento de ativos
-description: Relatórios sobre seus ativos no [!DNL Adobe Experience Manager Assets]  que ajudam você a entender o uso, a atividade e o compartilhamento de seus ativos digitais.
+description: Relatórios sobre os ativos no [!DNL Adobe Experience Manager Assets] que ajudam você a entender o uso, a atividade e o compartilhamento dos ativos digitais.
 contentOwner: AG
 role: User, Admin
 feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 555cb326a4a554d98904cf1a2b27b609ba67c806
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: c29e3a96-cd2b-4e21-b382-a8279aa04553
+    internal-label: Asset reports
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1174'
 ht-degree: 8%
-
 ---
-
 # Relatórios de ativos {#asset-reports}
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
 Os relatórios de ativos permitem avaliar a utilidade da implantação do [!DNL Adobe Experience Manager Assets]. Com o [!DNL Assets], você pode gerar vários relatórios para seus ativos digitais. Os relatórios fornecem informações úteis sobre o uso do sistema, como os usuários interagem com ativos e quais ativos são baixados e compartilhados.
@@ -164,7 +180,7 @@ Para remover relatórios desnecessários, configure o serviço de Limpeza de rel
 
 ## Informações sobre solução de problemas, dicas e limitações {#best-practices-and-limitations}
 
-* Se alguns relatórios ou números nos relatórios não estiverem disponíveis ou como esperado, verifique se o serviço [!UICONTROL Gravador de Eventos DAM do CQ de &#x200B;] está habilitado.
+* Se alguns relatórios ou números nos relatórios não estiverem disponíveis ou como esperado, verifique se o serviço [!UICONTROL Gravador de Eventos DAM do CQ de ] está habilitado.
 
 * Remova os relatórios que não são mais necessários. Use as opções de configuração no serviço de Limpeza de relatório do DAM para configurar os critérios para limpar relatórios.
 

@@ -10,13 +10,20 @@ role: Admin
 exl-id: cadb62c9-210d-4204-8abc-d0cf70960392
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '610'
 ht-degree: 0%
-
 ---
-
 # Notificações das comunidades {#communities-notifications}
 
 ## Visão geral {#overview}
@@ -34,13 +41,13 @@ O que distingue as notificações das atividades e assinaturas é:
 
 * Um link para a seção de notificações está sempre presente no cabeçalho de um site da comunidade:
 
-   * As atividades exigem que a [função de fluxo de atividades](/help/communities/functions.md#activity-stream-function) seja incluída na estrutura do site da comunidade.
-   * As assinaturas exigem [configuração de email](/help/communities/email.md).
+  * As atividades exigem que a [função de fluxo de atividades](/help/communities/functions.md#activity-stream-function) seja incluída na estrutura do site da comunidade.
+  * As assinaturas exigem [configuração de email](/help/communities/email.md).
 
 * A implementação de notificações é feita por meio de canais dimensionáveis e conectáveis:
 
-   * As atividades só estão disponíveis na Web.
-   * As assinaturas só estão disponíveis por email.
+  * As atividades só estão disponíveis na Web.
+  * As assinaturas só estão disponíveis por email.
 
 A partir das Comunidades [FP1](/help/communities/deploy-communities.md#latestfeaturepack), os canais de notificação disponíveis são:
 
@@ -80,11 +87,11 @@ O botão **[!UICONTROL Seguir]** será exibido:
 * Ao exibir o perfil de outro membro.
 * Em uma página principal de recursos, como fóruns, QnA e blogs:
 
-   * Segue todas as atividades desse recurso geral.
+  * Segue todas as atividades desse recurso geral.
 
 * Para uma entrada específica, como um tópico do fórum, pergunta QnA ou artigo de blog:
 
-   * Segue todas as atividades dessa entrada específica.
+  * Segue todas as atividades dessa entrada específica.
 
 ## Gerenciar configurações de notificação {#managing-notification-settings}
 

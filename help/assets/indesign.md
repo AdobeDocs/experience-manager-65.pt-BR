@@ -6,7 +6,21 @@ role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1584'
 ht-degree: 1%
@@ -23,7 +37,7 @@ Para carregar arquivos totalmente para [!DNL Experience Manager Assets] que voc�
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] é oferecido como duas ofertas separadas. Aplicativo de desktop [Adobe InDesign](https://www.adobe.com/br/products/indesign.html) usado para criar layouts de página para distribuição digital e impressa. O [Adobe InDesign Server](https://www.adobe.com/br/products/indesignserver.html) permite criar documentos automatizados de forma programática com base no que você criou com o [!DNL InDesign]. Ela opera como um serviço que oferece uma interface para o mecanismo ExtendScript. Os scripts são gravados em [!DNL ExtendScript], que é semelhante a [!DNL JavaScript].
+>[!DNL Adobe InDesign] é oferecido como duas ofertas separadas. Aplicativo de desktop [Adobe InDesign](https://www.adobe.com/products/indesign.html) usado para criar layouts de página para distribuição digital e impressa. O [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) permite criar documentos automatizados de forma programática com base no que você criou com o [!DNL InDesign]. Ela opera como um serviço que oferece uma interface para o mecanismo ExtendScript. Os scripts são gravados em [!DNL ExtendScript], que é semelhante a [!DNL JavaScript].
 
 ## Como a extração funciona {#how-the-extraction-works}
 
@@ -239,4 +253,4 @@ Você pode alterar as credenciais de administrador padrão (nome de usuário e s
 
 >[!MORELIKETHIS]
 >
->* [Sobre o Adobe InDesign Server](https://www.adobe.com/br/products/indesignserver/faq.html)
+>* [Sobre o Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)

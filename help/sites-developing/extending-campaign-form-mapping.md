@@ -9,13 +9,22 @@ exl-id: bce6c586-9962-4217-82cb-c837e479abc0
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '538'
 ht-degree: 0%
-
 ---
-
 # Criação de mapeamentos de formulário personalizados{#creating-custom-form-mappings}
 
 Ao criar uma tabela personalizada no Adobe Campaign, talvez você queira criar um formulário no AEM que mapeie para essa tabela personalizada.
@@ -39,7 +48,7 @@ Para criar mapeamentos de formulário personalizados, você precisa seguir essas
 1. Estender a tabela **seed**.
 1. Crie um mapeamento personalizado.
 1. Crie um delivery com base no mapeamento personalizado.
-1. Criar o formulário no AEM, que usará o delivery criado.
+1. Crie o formulário no AEM, que usará o delivery criado.
 1. Envie o formulário para testá-lo.
 
 ### Criação da tabela personalizada no Adobe Campaign {#creating-the-custom-table-in-adobe-campaign}
@@ -90,13 +99,13 @@ Em **Administração/Gerenciamento de Campanha** t, vá para **Target Mappings**
 
 Nesta etapa, você está adicionando um modelo de entrega que usa o **Target mapping** criado.
 
-Em **Recursos/Modelos**, navegue até o Modelo de Entrega e duplique a entrega AEM existente. Ao clicar em **Para**, selecione o evento de criação **Target mapping**.
+Em **Recursos/Modelos**, navegue até o Modelo de Entrega e duplique a entrega existente do AEM. Ao clicar em **Para**, selecione o evento de criação **Target mapping**.
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
 ### Criação do formulário no AEM {#building-the-form-in-aem}
 
-No AEM, verifique se você configurou um Cloud Service em **Propriedades da página**.
+No AEM, verifique se você configurou uma Cloud Service em **Propriedades da página**.
 
 Em seguida, na guia **Adobe Campaign**, selecione a entrega criada em [Criação de um Modelo de Entrega Personalizado](#creating-a-custom-delivery-template).
 

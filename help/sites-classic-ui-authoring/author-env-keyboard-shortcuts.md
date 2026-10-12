@@ -9,16 +9,25 @@ exl-id: 8cc9200e-981d-468f-b2bd-cd44e9a02bb5
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 34%
-
+source-wordcount: '115'
+ht-degree: 24%
 ---
+# Atalhos de teclado para Consoles{#keyboard-shortcuts-for-consoles}
 
-# Atalhos de teclado para Consoles  {#keyboard-shortcuts-for-consoles}
-
-Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns aplicam-se ao uso dos consoles, outros à [edição de página](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns se aplicam ao uso dos consoles, outros para [edição de página](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 
 >[!NOTE]
 >

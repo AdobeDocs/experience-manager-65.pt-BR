@@ -1,17 +1,29 @@
 ---
 title: Configuração do LDAP com AEM 6
 description: Saiba como usar e configurar serviços LDAP com o AEM.
-
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-
 exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1657'
 ht-degree: 0%
@@ -41,7 +53,7 @@ Para que o LDAP funcione com o AEM, você deve criar três configurações OSGi:
 
 >[!NOTE]
 >
->Assista ao [Módulo de Logon Externo do Oak - Autenticação com LDAP e posterior](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html?lang=pt-BR) para aprofundar Módulos de Logon Externos.
+>Assista ao [Módulo de Logon Externo do Oak - Autenticação com LDAP e posterior](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html) para aprofundar Módulos de Logon Externos.
 >
 >Para ler um exemplo de configuração do Experience Manager com o Apache DS, consulte [Configurando o Adobe Experience Manager 6.5 para usar o Apache Diretory Service.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805)
 
@@ -280,12 +292,12 @@ Para ativar o log de depuração, faça o seguinte:
 
 * Nível de registro: depuração
 * Arquivo de log logs/ldap.log
-* Padrão de Mensagem: &lbrace;0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &ast;{4}&ast; {2} {3} {5}
+* Padrão de Mensagem: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Agente de log: org.apache.jackrabbit.oak.security.authentication.ldap
 
 * Nível de registro: depuração
 * Arquivo de log: logs/external.log
-* Padrão de Mensagem: &lbrace;0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &ast;{4}&ast; {2} {3} {5}
+* Padrão de Mensagem: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Agente de log: org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## Uma Palavra sobre Afiliação de Grupos {#a-word-on-group-affiliation}

@@ -9,13 +9,22 @@ feature: Upgrading
 exl-id: 797bbdf9-917a-4537-a5f9-bf2682db968b
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1796'
 ht-degree: 2%
-
 ---
-
 # Atualização do Forms de pesquisa personalizada{#upgrading-custom-search-forms}
 
 No AEM 6.2, o local onde as Forms de pesquisa personalizada são armazenadas no repositório foi alterado. Ao atualizar, eles são movidos de seu local no 6.1 em:
@@ -38,7 +47,7 @@ Salvo indicação em contrário, a maioria dos ajustes que precisam ser feitos a
 
 Você pode alterar a propriedade fazendo o seguinte:
 
-1. Abrir CRXDE Lite indo para `https://server:port/crx/de/index.jsp`
+1. Abrir o CRXDE Lite acessando `https://server:port/crx/de/index.jsp`
 1. Navegue até o local do nó que precisa ser ajustado, conforme especificado na Lista de [Forms de Pesquisa Personalizada](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms) abaixo.
 1. Clique no nó. No painel de propriedades direito, clique em e modifique a propriedade **sling:resourceType**.
 1. Finalmente, salve as alterações pressionando o botão **Salvar tudo**.
@@ -61,7 +70,7 @@ Abaixo você encontrará uma lista de todas as Forms de pesquisa personalizadas 
   </tr>
   <tr>
    <td>Tipo de recurso no 6.2</td>
-   <td>n/a</td>
+   <td>n/d</td>
   </tr>
  </tbody>
 </table>
@@ -76,7 +85,7 @@ No AEM 6.1, o predicado padrão de texto completo fazia parte do formulário de 
  <tbody>
   <tr>
    <td>Nó(s) na pesquisa padrão de no 6.1</td>
-   <td>n/a</td>
+   <td>n/d</td>
   </tr>
   <tr>
    <td><p>Tipo de recurso no 6.1</p> </td>
@@ -147,7 +156,7 @@ No AEM 6.1, o predicado padrão de texto completo fazia parte do formulário de 
   </tr>
   <tr>
    <td>Tipo de recurso no 6.2</td>
-   <td>n/a</td>
+   <td>n/d</td>
   </tr>
  </tbody>
 </table>
@@ -159,13 +168,13 @@ O Status da página foi substituído por dois Predicados de propriedade de opç�
 * Remover o nó `pagestatuspredicate`
 * Copiar nó
 
-   * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
-   * para `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
+  * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
+  * para `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
 
 * Copiar nó
 
-   * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
-   * para `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
+  * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
+  * para `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
 
 * Defina a propriedade `listOrder` do nó `analyticspredicate` como &quot;**8**&quot;. Isso é necessário para evitar conflitos.
 
@@ -371,7 +380,7 @@ Os nós abaixo se referem aos nomes em `/conf/global/settings/dam/search/facets/
 | Nós no formulário de pesquisa padrão no 6.1 | texto completo |
 |---|---|
 | Tipo de recurso no 6.1 | dam/gui/components/admin/customsearch/searchpredicates/fulltextpredicate |
-| Tipo de recurso no 6.2 | n/a |
+| Tipo de recurso no 6.2 | n/d |
 
 No 6.1, o predicado de texto completo padrão fazia parte do formulário de pesquisa. Na versão 6.2, o campo de texto completo foi substituído por OmniSearch. Este predicado é ignorado programaticamente e pode ser removido.
 
@@ -413,7 +422,7 @@ No 6.1, o predicado de texto completo padrão fazia parte do formulário de pesq
 
 Ação: ajuste a propriedade resourceType (adicione &quot;/coral&quot; como no local 6.2 indicado acima).
 
-### Predicado do Publish {#publish-predicate}
+### Publicar predicado {#publish-predicate}
 
 | Nós no formulário de pesquisa padrão no 6.1 | publicação |
 |---|---|

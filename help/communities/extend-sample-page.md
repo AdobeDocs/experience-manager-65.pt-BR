@@ -10,13 +10,20 @@ exl-id: d4295a77-b931-4bc8-b3b4-eec42fdcfc56
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '400'
 ht-degree: 0%
-
 ---
-
 # Adicionar comentário à página de exemplo  {#add-comment-to-sample-page}
 
 Agora que os componentes do sistema de comentários personalizados estão no diretório do aplicativo (/apps), é possível usar o componente estendido. A instância do sistema de comentários em um site a ser afetado deve definir seu resourceType como o sistema de comentários personalizado e incluir todas as bibliotecas de clientes necessárias.
@@ -55,11 +62,11 @@ Você pode verificar o resourceType no CRXDE visualizando as propriedades do nó
 
 ![verificar-comentário-crxde](assets/verify-comment-crxde.png)
 
-#### Página de exemplo do Publish {#publish-sample-page}
+#### Publicar página de exemplo {#publish-sample-page}
 
 Depois que o componente personalizado for adicionado à página, também será necessário (re) [publicar a página](/help/communities/sites-console.md#publishing-the-site).
 
-#### Publish: Comentário alternativo na página de exemplo {#publish-alt-comment-on-sample-page}
+#### Publicar: Comentário alternativo na página de exemplo {#publish-alt-comment-on-sample-page}
 
 Depois de publicar o aplicativo personalizado e a página de exemplo, é possível inserir um comentário. Quando você entrar, com um [usuário de demonstração](/help/communities/tutorials.md#demo-users) ou administrador, é possível postar um comentário.
 

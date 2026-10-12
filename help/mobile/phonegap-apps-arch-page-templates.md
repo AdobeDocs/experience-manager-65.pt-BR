@@ -9,7 +9,13 @@ exl-id: 7f00d426-4d28-41ee-8c54-636349e48669
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2649'
 ht-degree: 0%
@@ -190,7 +196,7 @@ Observe o GUID &#39;24BA22ED-7D06-4330-B7EB-F6FC73251CA3&#39; no caminho.
 
 Como desenvolvedor do PhoneGap, o conteúdo com o qual você está preocupado está localizado abaixo do diretório www. Para acessar os ativos do aplicativo, use caminhos relativos.
 
-Para compor o problema, seu aplicativo PhoneGap usa o padrão de aplicativo de página única (SPA) para que o URI base (excluindo o hash) nunca seja alterado. Portanto, cada ativo, modelo ou script que você referencia **deve ser relativo à página de nível superior. &#x200B;** A página de nível superior inicializa o roteamento e os controladores do Angular em virtude de `<name>.angular-app-module.js` e `<name>.angular-app-controllers.js`. Esta página deve ser a mais próxima da raiz do repositório que *não *estende um sling:redirect.
+Para compor o problema, seu aplicativo PhoneGap usa o padrão de aplicativo de página única (SPA) para que o URI base (excluindo o hash) nunca seja alterado. Portanto, cada ativo, modelo ou script que você referencia **deve ser relativo à página de nível superior. **A página de nível superior inicializa o roteamento e os controladores do Angular em virtude de `<name>.angular-app-module.js` e `<name>.angular-app-controllers.js`. Esta página deve ser a mais próxima da raiz do repositório que *não *estende um sling:redirect.
 
 Vários métodos auxiliares estão disponíveis para lidar com caminhos relativos:
 

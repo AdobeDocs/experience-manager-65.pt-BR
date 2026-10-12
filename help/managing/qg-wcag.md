@@ -5,13 +5,29 @@ exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer, Leader, User
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1744'
-ht-degree: 90%
-
+source-wordcount: '1880'
+ht-degree: 81%
 ---
-
 # Um guia rápido para a WCAG 2.1{#quick-guide-to-wcag}
 
 O Adobe Experience Manager (AEM) foi desenvolvido para maximizar a conformidade com as Web Content Accessibility Guidelines.
@@ -41,10 +57,10 @@ Portanto, entender os objetivos da WCAG 2.1 e como as diretrizes são estruturad
 A intenção da WCAG 2.1 é fornecer diretrizes que:
 
 * São **independentes de tecnologia:**
-em outras palavras, diretrizes que podem ser aplicadas a diversos formatos de conteúdo na Web, não apenas HTML. Assim, a WCAG 2.1 pode abranger o conteúdo gerado ou fornecido em PDF, Flash, JavaScript e outras tecnologias atuais e futuras na Web.
+Em outras palavras, diretrizes que podem ser aplicadas a diversos formatos de conteúdo na Web, não apenas ao HTML. Assim, a WCAG 2.1 pode abranger o conteúdo gerado ou fornecido em PDF, Flash, JavaScript e outras tecnologias atuais e futuras na Web.
 
 * São **testáveis:**
-cada diretriz é redigida de forma que possa ser objetivamente testada, a fim de garantir que um grupo de especialistas em acessibilidade concordasse, de um modo geral, que a diretriz foi cumprida. Um dos desafios das diretrizes de acessibilidade é que, embora algumas possam ser testadas tecnicamente, outras exigem uma avaliação humana para determinar se a diretriz foi ou não cumprida com êxito.
+Cada orientação é redigida de forma a poder ser objetivamente testada, a fim de garantir que um grupo de peritos em acessibilidade concordasse, de um modo geral, que a orientação foi cumprida. Um dos desafios das diretrizes de acessibilidade é que, embora algumas possam ser testadas tecnicamente, outras exigem uma avaliação humana para determinar se a diretriz foi ou não cumprida com êxito.
 
 * Suporte para **implementação priorizada e contextual:**
 As orientações da WCAG 2.1 recebem prioridade, relacionadas com o impacto provável de não seguir uma orientação para um grupo específico de utilizadores com deficiência. Isso permite que os autores tomem uma decisão bem informada sobre as orientações mais importantes para suas situações específicas. Além disso, é introduzido o conceito &quot;*com suporte para acessibilidade*&quot;. Isso permite que os autores tomem decisões sobre como usar tecnologias da Web que podem não ter suporte total para acessibilidade ou exigir que os usuários tenham tecnologias de assistência e/ou navegadores específicos para se beneficiarem dos recursos de acessibilidade.
@@ -69,7 +85,7 @@ A WCAG 2.1 consiste em quatro princípios-chave para o design acessível, às ve
 Para elaborar:
 * Cada **princípio** consiste em uma ou mais **diretrizes**.
 
-* As diretrizes são redigidas como instruções, que são positivas (faça isso...) ou negativas (não faça isso...).
+* As diretrizes são redigidas como instruções, que são positivas (faça isso...) ou negativo (Não faça isso...).
 * As diretrizes são numeradas de 1.1 a 4.1 e o primeiro número corresponde ao princípio principal.
 * Cada diretriz consiste em um ou mais **critérios de sucesso**.
 * Os critérios de sucesso são redigidos como declarações, que são `True` ou `False` para qualquer página da Web.
@@ -86,7 +102,7 @@ Embora a WCAG 2.1 seja em si um documento estável e não mude, a maioria desses
 ### Recursos da WCAG 2.1 {#wcag-resources}
 
 Esta lista não está completa. Ela apresenta os recursos disponíveis:
-* [Um definição de todos os documentos relacionados à WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
+* [Um esboço de todos os documentos relacionados à WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
 * [Um resumo dos diferentes documentos](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
 * [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)
 * [Novidades da WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/)

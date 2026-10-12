@@ -1,6 +1,6 @@
 ---
 title: Componentes
-description: O AEM vem com vários componentes prontos para uso que fornecem funcionalidade abrangente para os autores de sites.
+description: O AEM é disponibilizado com vários componentes prontos para uso que fornecem funcionalidade abrangente para os autores de sites.
 page-status-flag: de-activated
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,13 +10,22 @@ exl-id: 9e0a01da-7940-47aa-8604-788d74e5daa0
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 20%
-
+source-wordcount: '227'
+ht-degree: 29%
 ---
-
 # Componentes{#components}
 
 O Adobe Experience Manager (AEM) vem com vários componentes prontos para uso que fornecem funcionalidade abrangente para os autores de sites. Eles estão disponíveis ao [editar uma página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) e são agrupados por área funcional principal (ou seja, grupo de componentes) para ajudar na filtragem.
@@ -37,7 +46,7 @@ As páginas a seguir fornecem links rápidos para algumas das principais áreas 
 
 * [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
 
-  A funcionalidade de comércio eletrônico dentro do AEM também inclui vários componentes, contidos no grupo **Commerce**. O uso real pode depender do mecanismo de comércio sendo usado.
+  A funcionalidade de comércio eletrônico no AEM também inclui uma variedade de componentes, contidos no grupo **Commerce**. O uso real pode depender do mecanismo de comércio sendo usado.
 
 ## Utilização do modo de design para configurar componentes {#using-design-mode-to-configure-components}
 

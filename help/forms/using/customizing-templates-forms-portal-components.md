@@ -9,7 +9,20 @@ feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1257'
 ht-degree: 0%
@@ -86,11 +99,11 @@ O Forms Portal fornece uma sintaxe para que os marcadores de posição exibam me
 
 Para incluir uma entrada repetível, configure o valor do atributo **data-Repeatable** para **true**.
 
-*No exemplo discutido, dois elementos Div estão presentes na parte superior do modelo personalizado. O primeiro, com a classe CSS &quot;__FP_boxes-container&quot;, funciona como um elemento de contêiner para os formulários listados. O segundo, com a classe CSS &quot;__FP_boxes&quot;, é um modelo para as entidades básicas, neste caso um Formulário. O atributo **data-Repeable**&#x200B;presente no elemento Div tem o valor **true**.*
+*No exemplo discutido, dois elementos Div estão presentes na parte superior do modelo personalizado. O primeiro, com a classe CSS &quot;__FP_boxes-container&quot;, funciona como um elemento de contêiner para os formulários listados. O segundo, com a classe CSS &quot;__FP_boxes&quot;, é um modelo para as entidades básicas, neste caso um Formulário. O atributo **data-Repeable**presente no elemento Div tem o valor **true**.*
 
 Cada espaço reservado tem um conjunto exclusivo de metadados prontos para uso. Para exibir metadados personalizados em um local específico do formulário, adicione a propriedade **${metadata_prop}** no local.
 
-*No exemplo, a propriedade de metadados é usada em várias instâncias. Por exemplo, ele é usado na **descrição**,**nome**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**&#x200B;e **caminho**&#x200B;da maneira prescrita.*
+*No exemplo, a propriedade de metadados é usada em várias instâncias. Por exemplo, ele é usado na **descrição**,**nome**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**e **caminho**da maneira prescrita.*
 
 ## Metadados prontos para uso {#out-of-the-box-metadata}
 

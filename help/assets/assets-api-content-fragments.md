@@ -6,13 +6,29 @@ role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+  - id: c7140a77-10cf-4213-a7e9-f0d69c9fb56c
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+  - id: e5184d7e-fd36-480c-b5e5-d8161f2210ca
+    internal-label: Assets HTTP API
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2016'
 ht-degree: 23%
-
 ---
-
 # Suporte a fragmentos de conteúdo na API HTTP do AEM Assets {#content-fragments-support-in-aem-assets-http-api}
 
 | Versão | Link do artigo |
@@ -67,9 +83,9 @@ A API REST do Assets oferece acesso com estilo [REST](https://en.wikipedia.org/w
 Ele usa o ponto de extremidade `/api/assets` e requer o caminho do ativo para acessá-lo (sem o `/content/dam` principal).
 
 * Isso significa que para acessar o ativo em:
-   * `/content/dam/path/to/asset`
+  * `/content/dam/path/to/asset`
 * Você precisa solicitar:
-   * `/api/assets/path/to/asset`
+  * `/api/assets/path/to/asset`
 
 Por exemplo, para acessar `/content/dam/wknd/en/adventures/cycling-tuscany`, solicite `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
@@ -153,8 +169,8 @@ Se a API REST do Assets for usada em um ambiente sem requisitos de autenticaçã
 >
 >Para obter mais informações, consulte:
 >
->* [Explicação sobre o CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=pt-BR)
->* [Vídeo - Desenvolvimento do CORS com o AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=pt-BR)
+>* [Explicação sobre o CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [Vídeo - Desenvolvimento do CORS com o AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
 
 Em ambientes com requisitos de autenticação específicos, o OAuth é recomendado.
@@ -170,7 +186,7 @@ Para obter mais informações sobre os recursos disponíveis por meio da API, co
 
 ### Paginação {#paging}
 
-A API REST do Assets oferece suporte à paginação (para solicitações do GET) por meio dos parâmetros de URL:
+A API REST do Assets oferece suporte à paginação (para solicitações GET) por meio dos parâmetros de URL:
 
 * `offset` - o número da primeira entidade (filha) a ser recuperada
 * `limit` - o número máximo de entidades retornadas
@@ -248,12 +264,12 @@ O conteúdo associado não está exposto no momento.
 
 O uso pode ser diferente dependendo se você está usando um ambiente de autor ou de publicação no AEM, juntamente com seu caso de uso específico.
 
-* É altamente recomendável que a criação esteja associada a uma instância de autor ([&#x200B; e, no momento, não há meios de replicar um fragmento para publicar usando esta API](/help/assets/assets-api-content-fragments.md#limitations)).
+* É altamente recomendável que a criação esteja associada a uma instância de autor ([ e, no momento, não há meios de replicar um fragmento para publicar usando esta API](/help/assets/assets-api-content-fragments.md#limitations)).
 * A entrega é possível de ambos os ambientes, pois o AEM apresenta o conteúdo solicitado somente no formato JSON.
 
-   * Armazenar e entregar a partir de uma instância de criação do AEM deve ser o suficiente para aplicativos de biblioteca de mídia por trás do firewall.
+  * Armazenar e entregar a partir de uma instância de criação do AEM deve ser o suficiente para aplicativos de biblioteca de mídia por trás do firewall.
 
-   * Para entrega em tempo real na web, recomenda-se uma instância de publicação do AEM.
+  * Para entrega em tempo real na web, recomenda-se uma instância de publicação do AEM.
 
 >[!CAUTION]
 >
@@ -319,18 +335,18 @@ Os seguintes códigos de status podem ser vistos nas circunstâncias relevantes:
 * **200** (OK)
 Retornado quando:
 
-   * solicitando um fragmento de conteúdo via `GET`
-   * atualização bem-sucedida de um fragmento de conteúdo via `PUT`
+  * solicitando um fragmento de conteúdo via `GET`
+  * atualização bem-sucedida de um fragmento de conteúdo via `PUT`
 
 * **201** (Criado)
 Retornado quando:
 
-   * criando um fragmento de conteúdo via `POST` com êxito
+  * criando um fragmento de conteúdo via `POST` com êxito
 
 * **404** (Não encontrado)
 Retornado quando:
 
-   * o fragmento de conteúdo solicitado não existe
+  * o fragmento de conteúdo solicitado não existe
 
 * **500** (Erro interno do servidor)
 
@@ -343,28 +359,28 @@ Retornado quando:
 
   A seguir, há uma lista de cenários comuns em que esse status de erro é retornado, juntamente com a mensagem de erro (monospace) gerada:
 
-   * A pasta pai não existe (ao criar um fragmento de conteúdo via `POST`)
-   * Nenhum modelo de fragmento de conteúdo foi fornecido (cq:model está ausente), não pode ser lido (devido a um caminho inválido ou um problema de permissão) ou não há um modelo de fragmento válido:
+  * A pasta pai não existe (ao criar um fragmento de conteúdo via `POST`)
+  * Nenhum modelo de fragmento de conteúdo foi fornecido (cq:model está ausente), não pode ser lido (devido a um caminho inválido ou um problema de permissão) ou não há um modelo de fragmento válido:
 
-      * `No content fragment model specified`
-      * `Cannot create a resource of given model '/foo/bar/qux'`
+    * `No content fragment model specified`
+    * `Cannot create a resource of given model '/foo/bar/qux'`
 
-   * Não foi possível criar o fragmento de conteúdo (possivelmente um problema de permissão):
+  * Não foi possível criar o fragmento de conteúdo (possivelmente um problema de permissão):
 
-      * `Could not create content fragment`
+    * `Could not create content fragment`
 
-   * Não foi possível atualizar o título e/ou a descrição:
+  * Não foi possível atualizar o título e/ou a descrição:
 
-      * `Could not set value on content fragment`
+    * `Could not set value on content fragment`
 
-   * Não foi possível definir os metadados:
+  * Não foi possível definir os metadados:
 
-      * `Could not set metadata on content fragment`
+    * `Could not set metadata on content fragment`
 
-   * O elemento de conteúdo não pôde ser encontrado ou atualizado
+  * O elemento de conteúdo não pôde ser encontrado ou atualizado
 
-      * `Could not update content element`
-      * `Could not update fragment data of element`
+    * `Could not update content element`
+    * `Could not update fragment data of element`
 
   As mensagens de erro detalhadas geralmente são retornadas da seguinte maneira:
 
@@ -388,11 +404,11 @@ Consulte esta página para obter referências detalhadas de API:
 * [API do Adobe Experience Manager Assets - Fragmentos de conteúdo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 * [API HTTP de ativos](/help/assets/mac-api-assets.md)
 
-   * [Recursos disponíveis](/help/assets/mac-api-assets.md#assets)
+  * [Recursos disponíveis](/help/assets/mac-api-assets.md#assets)
 
 ## Recursos adicionais {#additional-resources}
 
 Para obter mais informações, consulte:
 
 * [Documentação da API HTTP do Assets](/help/assets/mac-api-assets.md)
-* [Sessão do AEM Gem: OAuth](https://helpx.adobe.com/br/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [Sessão do AEM Gem: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)

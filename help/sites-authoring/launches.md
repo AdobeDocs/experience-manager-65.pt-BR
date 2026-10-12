@@ -10,13 +10,31 @@ exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e2cac356-c071-4141-ad6f-827893261a16
+    internal-label: Launches
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 69%
-
+source-wordcount: '908'
+ht-degree: 68%
 ---
-
 # Lançamentos{#launches}
 
 Os lançamentos permitem desenvolver conteúdo com eficiência para uma versão futura.
@@ -51,45 +69,45 @@ Os lançamentos permitem:
 
 * Crie uma cópia das páginas de origem:
 
-   * A cópia é sua inicialização.
-   * As páginas de origem de nível superior são conhecidas como **Produção**.
+  * A cópia é sua inicialização.
+  * As páginas de origem de nível superior são conhecidas como **Produção**.
 
-      * As páginas de origem podem ser obtidas de várias ramificações (separadas).
+    * As páginas de origem podem ser obtidas de várias ramificações (separadas).
 
   ![Visão geral das ações de inicialização](assets/chlimage_1-111.png)
 
 * Edite a configuração do lançamento:
 
-   * Adicionar ou remover páginas e/ou ramificações do/ao lançamento.
-   * Edite as propriedades do lançamento; como **Título**, **Data de Lançameto**, sinalizador **Pronto para produção**.
+  * Adicionar ou remover páginas e/ou ramificações do/ao lançamento.
+  * Edite as propriedades do lançamento; como **Título**, **Data de Lançameto**, sinalizador **Pronto para produção**.
 
 * É possível promover e publicar o conteúdo manual ou automaticamente:
 
-   * Manualmente:
+  * Manualmente:
 
-      * Promover o conteúdo do seu lançamento de volta para o **Destino** (páginas de origem) quando estiver pronto para ser publicado.
-      * Publicar o conteúdo das páginas de origem (após promover de volta).
-      * Promover todas as páginas ou somente as páginas modificadas.
+    * Promover o conteúdo do seu lançamento de volta para o **Destino** (páginas de origem) quando estiver pronto para ser publicado.
+    * Publicar o conteúdo das páginas de origem (após promover de volta).
+    * Promover todas as páginas ou somente as páginas modificadas.
 
-   * Automaticamente - isso envolve o seguinte:
+  * Automaticamente - isso envolve o seguinte:
 
-      * O campo **Data de lançamento** (**Data de ativação**):**&#x200B;** pode ser definida ao criar ou editar um lançamento.
+    * O campo **Data de lançamento** (**Data de ativação**):**** pode ser definida ao criar ou editar um lançamento.
 
-      * O sinalizador **Pronto para produção** : só pode ser definido ao editar um lançamento.
-      * Se o sinalizador **Pronto para Produção** estiver definido, a inicialização será promovida automaticamente para as páginas de produção na **Inicialização**(**Ao Vivo**) **data** especificada. Após a promoção, as páginas de produção são publicadas automaticamente.\
-        Se nenhuma data tiver sido definida, o sinalizador não terá efeito.
+    * O sinalizador **Pronto para produção** : só pode ser definido ao editar um lançamento.
+    * Se o sinalizador **Pronto para Produção** estiver definido, a inicialização será promovida automaticamente para as páginas de produção na **Inicialização**(**Ao Vivo**) **data** especificada. Após a promoção, as páginas de produção são publicadas automaticamente.\
+      Se nenhuma data tiver sido definida, o sinalizador não terá efeito.
 
 * Atualize suas páginas de origem e de lançamento em paralelo:
 
-   * As alterações nas páginas de origem são implementadas automaticamente na cópia do lançamento (se configurada como herança, ou seja, como uma live copy).
-   * As alterações na sua cópia de lançamento podem ser feitas sem interromper essas atualizações automáticas ou as páginas de origem.
+  * As alterações nas páginas de origem são implementadas automaticamente na cópia do lançamento (se configurada como herança, ou seja, como uma live copy).
+  * As alterações na sua cópia de lançamento podem ser feitas sem interromper essas atualizações automáticas ou as páginas de origem.
 
   ![Visão geral das atualizações](assets/chlimage_1-112.png)
 
 * [Criar uma inicialização aninhada](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) - um lançamento dentro de outro:
 
-   * A origem é um lançamento já existente.
-   * É possível [promover um lançamento aninhado](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) para qualquer destino. Pode ser um lançamento principal ou as páginas de origem de nível superior (Produção).
+  * A origem é um lançamento já existente.
+  * É possível [promover um lançamento aninhado](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) para qualquer destino. Pode ser um lançamento principal ou as páginas de origem de nível superior (Produção).
 
   ![Visão geral da inicialização aninhada](assets/chlimage_1-113.png)
 

@@ -1,19 +1,21 @@
 ---
 title: Manipuladores de aplicativos prontos para uso
-
 description: Siga esta página para saber mais sobre os manipuladores prontos para uso do Adobe PhoneGap Enterprise com AEM.
-
-
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1419'
 ht-degree: 0%
@@ -65,8 +67,8 @@ Esse manipulador deve ser adicionado a qualquer configuração do ContentSync de
 
 * ***tipo - Cadeia de caracteres - mobilecontentlisting***
 * ***caminho*** - Cadeia de caracteres - manter vazio, deve estar presente para ser visto como um manipulador válido, mas o caminho é inferido como o cache ContentSync atual. Esse valor é ignorado.
-* ***targetRootDirectory* -**&#x200B;Cadeia de caracteres - o prefixo a ser adicionado a caminhos como uma raiz de destino para atualização de conteúdo para este manipulador.
-* ***pedir - Longo* -**&#x200B;Ordenar que o ContentSync execute este manipulador. Esse número deve ser definido como maior do que todos os outros manipuladores, como 100. Ela deve ser executada após os manipuladores de conteúdo tradicionais.
+* ***targetRootDirectory* -**Cadeia de caracteres - o prefixo a ser adicionado a caminhos como uma raiz de destino para atualização de conteúdo para este manipulador.
+* ***pedir - Longo* -**Ordenar que o ContentSync execute este manipulador. Esse número deve ser definido como maior do que todos os outros manipuladores, como 100. Ela deve ser executada após os manipuladores de conteúdo tradicionais.
 
 ```xml
 {
@@ -91,9 +93,9 @@ Esse manipulador deve ser adicionado a qualquer configuração do ContentSync de
 O manipulador deve ser usado na configuração ContentSync do shell do aplicativo do AEM (nó com pge-type=app-instance)
 
 * ***tipo - Cadeia de caracteres - mobilecontentpackageslisting***
-* ***caminho &#x200B;**-**Cadeia de caracteres*** - Caminho para um shell de aplicativo (nó com pge-type=app-instance).
+* ***caminho **-**Cadeia de caracteres*** - Caminho para um shell de aplicativo (nó com pge-type=app-instance).
 * ***targetRootDirectory - String*** - o prefixo a ser adicionado aos caminhos como uma raiz de destino para atualização de conteúdo para este manipulador.
-* ***pedir - Longo* -**&#x200B;Ordenar que o ContentSync execute este manipulador. Esse número deve ser definido como maior do que todos os outros manipuladores, como 100. Ela deve ser executada após os manipuladores de conteúdo tradicionais.
+* ***pedir - Longo* -**Ordenar que o ContentSync execute este manipulador. Esse número deve ser definido como maior do que todos os outros manipuladores, como 100. Ela deve ser executada após os manipuladores de conteúdo tradicionais.
 
 >[!NOTE]
 >
@@ -125,8 +127,8 @@ O manipulador deve ser usado na configuração ContentSync do shell do aplicativ
 
 Este manipulador deve ser usado em uma configuração ContentSync do Shell do aplicativo do AEM (nó com pge-type=[app-instance]).
 
-* ***tipo - Cadeia de caracteres* - &#x200B;** widgetconfig
-* ***caminho &#x200B;**-**Cadeia de caracteres*** - Caminho para qualquer nó filho do shell do aplicativo (nó com pge-type=[app-instance]).
+* ***tipo - Cadeia de caracteres* - **widgetconfig
+* ***caminho **-**Cadeia de caracteres*** - Caminho para qualquer nó filho do shell do aplicativo (nó com pge-type=[app-instance]).
 * ***targetRootDirectory - String*** - o prefixo a ser adicionado aos caminhos como uma raiz de destino para atualização de conteúdo para este manipulador.
 * ***targetIconDirectory - Cadeia de caracteres*** - o diretório no qual colocar os ícones do aplicativo
 
@@ -167,7 +169,7 @@ As propriedades do AEM são aquelas com espaçamento de nome &quot;cq&quot;, &qu
 
 * ***tipo - Cadeia de caracteres*** - app-assets
 
-* ***caminho &#x200B;**-**Cadeia de caracteres*** - caminho para um local em uma instância do aplicativo onde os ativos do aplicativo são armazenados
+* ***caminho **-**Cadeia de caracteres*** - caminho para um local em uma instância do aplicativo onde os ativos do aplicativo são armazenados
 
 **mobileapproffers** Um novo manipulador de sincronização de conteúdo foi introduzido para o caso de uso do Personalization para renderizar o conteúdo direcionado. O manipulador &quot;mobileapproffers&quot; sabe como renderizar as ofertas de público-alvo associadas que foram criadas pelo autor de conteúdo. O manipulador mobileapproffers estende o manipulador de atualização de páginas abstratas, portanto, muitas das propriedades são semelhantes. Os detalhes do manipulador mobileapproffers têm as seguintes propriedades.
 
@@ -180,7 +182,7 @@ O manipulador mobileappsoffers estende o manipulador mobileappspages e adiciona 
 
 **mobileappconfig** O manipulador de sincronização de conteúdo mobileappconfig fornece uma maneira de injetar dados JSON no MobileAppsConfig.json. Para registrar uma classe de provedor, os desenvolvedores adicionarão sua classe MobileAppsInfoProvider à lista de provedores. O manipulador iterará sobre a lista de MobileAppsInfoProviders e permitirá que o provedor insira dados no arquivo json resultante. As listas de propriedades que este manipulador aceita são:
 
-* ***caminho &#x200B;**-**Cadeia de caracteres*** - o caminho para um nó de instância de aplicativo com pge-type=app-instance ou um RT que estende /libs/mobileapps/core/components/instance
+* ***caminho **-**Cadeia de caracteres*** - o caminho para um nó de instância de aplicativo com pge-type=app-instance ou um RT que estende /libs/mobileapps/core/components/instance
 * ***provedores - Cadeia de caracteres*** `[]` - a lista de MobileAppsInfoProviders totalmente qualificados
 * ***targetRootDirectory - Cadeia de caracteres*** - o diretório no qual gravar o arquivo MobileAppsConfig.json.
 * **fileName - String** - nome opcional do arquivo no qual gravar o JSON; o padrão é MobileAppsConfig.json

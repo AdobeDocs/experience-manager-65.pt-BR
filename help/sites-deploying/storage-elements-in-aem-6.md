@@ -1,6 +1,6 @@
 ---
 title: Elementos de armazenamento no AEM 6.5
-description: Saiba mais sobre as implementações de armazenamento de nós disponíveis no AEM 6.5 e como fazer a manutenção do repositório.
+description: Saiba mais sobre as implementações de armazenamento de nó disponíveis no AEM 6.5 e como fazer a manutenção do repositório.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -10,13 +10,25 @@ exl-id: 52437eb5-f9fb-4945-9950-5a1562fe878d
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '743'
 ht-degree: 0%
-
 ---
-
 # Elementos de armazenamento no AEM 6.5{#storage-elements-in-aem}
 
 Este artigo abrange o seguinte:
@@ -26,17 +38,17 @@ Este artigo abrange o seguinte:
 
 ## Visão geral do armazenamento no AEM 6 {#overview-of-storage-in-aem}
 
-Uma das mudanças mais importantes no AEM 6 são as inovações no nível dos repositórios.
+Uma das alterações mais importantes no AEM 6 são as inovações no nível do repositório.
 
-Atualmente, existem duas implementações de armazenamento de nó disponíveis no AEM6: armazenamento Tar e armazenamento MongoDB.
+Atualmente, há duas implementações de armazenamento de nó disponíveis no AEM6: armazenamento Tar e armazenamento MongoDB.
 
 ### Armazenamento Tar {#tar-storage}
 
-#### Executando uma instância do AEM recém-instalada com Armazenamento Tar {#running-a-freshly-installed-aem-instance-with-tar-storage}
+#### Executando uma instância do AEM recém-instalada com armazenamento Tar {#running-a-freshly-installed-aem-instance-with-tar-storage}
 
 >[!CAUTION]
 >
->O PID do armazenamento de nós do segmento foi alterado de org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService em versões anteriores do AEM 6 para org.apache.jackrabbit.oak.segment.SegmentNodeStoreService no AEM 6.3. Verifique se os ajustes de configuração necessários foram feitos para que as alterações sejam refletidas.
+>O PID do armazenamento de nós do segmento mudou de org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService nas versões anteriores do AEM 6 para org.apache.jackrabbit.oak.segment.SegmentNodeStoreService no AEM 6.3. Verifique se os ajustes de configuração necessários foram feitos para que as alterações sejam refletidas.
 
 Por padrão, o AEM 6 usa o armazenamento Tar para armazenar nós e binários, usando as opções de configuração padrão. Você pode definir manualmente suas configurações de armazenamento fazendo o seguinte:
 
@@ -49,7 +61,7 @@ Por padrão, o AEM 6 usa o armazenamento Tar para armazenar nós e binários, us
 
 1. Crie um arquivo chamado `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg` na pasta recém-criada.
 
-1. Edite o arquivo e defina as opções de configuração. As seguintes opções estão disponíveis para o Armazenamento de nós do segmento, que é a base da implementação do armazenamento Tar do AEM:
+1. Edite o arquivo e defina as opções de configuração. As seguintes opções estão disponíveis para o Segment Node Store, que é a base da implementação de armazenamento Tar da AEM:
 
    * `repository.home`: Caminho para a página inicial do repositório sob a qual vários dados relacionados ao repositório são armazenados. Por padrão, os arquivos de segmento seriam armazenados no diretório crx-quickstart/segmentstore.
    * `tarmk.size`: Tamanho máximo de um segmento em MB. O padrão é 256 MB.
@@ -71,7 +83,7 @@ O AEM 6 pode ser configurado para ser executado com o armazenamento MongoDB segu
 1. Crie uma pasta chamada `crx-quickstart\install` no diretório de instalação.
 1. Configure o armazenamento de nós criando um arquivo de configuração com o nome da configuração que você deseja usar no diretório `crx-quickstart\install`.
 
-   O Document Node Store (que é a base para a implementação de armazenamento MongoDB do AEM) usa um arquivo chamado `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
+   O Document Node Store (que é a base para a implementação de armazenamento MongoDB da AEM) usa um arquivo chamado `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
 
 1. Edite o arquivo e defina suas opções de configuração. As opções disponíveis são as seguintes:
 

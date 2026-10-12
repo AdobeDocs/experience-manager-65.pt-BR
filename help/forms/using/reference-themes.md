@@ -1,6 +1,6 @@
 ---
-title: Reference Themes
-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
+title: Temas de referência
+description: O AEM Forms fornece temas de formulários adaptáveis que você pode obter da Distribuição de software e usar para criar um estilo de formulário.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 docset: aem65
@@ -8,37 +8,55 @@ exl-id: f6c24894-c322-4c44-b001-8978954d6e53
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
-
 ---
+# Temas de referência{#reference-themes}
 
-# Reference Themes{#reference-themes}
+[Os temas](../../forms/using/themes.md) permitem estilizar os formulários sem um conhecimento profundo de CSS. Além do tema padrão, você pode obter os seguintes temas instalando o [pacote complementar do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en):
 
-[Themes](../../forms/using/themes.md) let you style your forms without deep knowledge of CSS. In addition to the default theme, you can get the following themes by installing the [AEM Forms add-on package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR):
-
-* Beryl
+* Berilo
 * Exec
 * Exec-Light
 * Liberty
-* Ultramarine
-* Urbane
-* U.S. Web Design Standards
-* Tranquil
+* Ultramarina
+* Urbana
+* Padrões de design da Web nos EUA
+* Tranquilo
 
-Each theme contains a unique and elegant style that you can use to create delightful adaptive forms for your users. It contains unique styling for selectors such as panel, text box, numeric box, radio button, table, and switch. Stylings in these themes are based on requirement. For example, in a particular scenario you require a minimalist theme with clean fonts. Liberty theme lets you achieve that look.
+Cada tema contém um estilo único e elegante que você pode usar para criar formulários adaptáveis deliciosos para seus usuários. Ele contém um estilo exclusivo para seletores, como painel, caixa de texto, caixa numérica, botão de opção, tabela e switch. Os estilos nesses temas são baseados na exigência. Por exemplo, em um cenário específico, você precisa de um tema minimalista com fontes limpas. O tema da liberdade permite que você realize esse olhar.
 
-![Reference Themes](assets/ref-themes.png)
+![Temas de Referência](assets/ref-themes.png)
 
-Themes included in this package are responsive, and styling in these themes are defined for mobile and desktop displays. Most modern browsers on a variety of devices can render forms applied with one of these themes without any hassle.
+Os temas incluídos neste pacote são responsivos e o estilo nesses temas são definidos para exibições móveis e em desktop. A maioria dos navegadores modernos em uma variedade de dispositivos pode renderizar formulários aplicados com um desses temas sem qualquer problema.
 
-For more information on installing the package, see [How to Work With Packages](/help/sites-administering/package-manager.md).
+Para obter mais informações sobre como instalar o pacote, consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md).
 
-## Beryl {#beryl}
+## Berilo {#beryl}
 
-Beryl theme is used by We.Gov adaptive form, and emphasizes use of background image, transparency, and large, flat icons. Na captura de tela abaixo, você pode ver como o tema Beryl aparece e como ele pode melhorar o estilo do seu formulário.
+O tema Beryl é usado pela forma adaptativa We.Gov e enfatiza o uso da imagem de fundo, transparência e ícones grandes e planos. Na captura de tela abaixo, você pode ver como o tema Beryl aparece e como ele pode melhorar o estilo do seu formulário.
 
 ![Tema berilo](assets/beryl.png)
 

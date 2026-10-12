@@ -10,13 +10,20 @@ exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1212'
 ht-degree: 0%
-
 ---
-
 # Experimente o site publicado {#experience-the-published-site}
 
 ## Navegar até o novo site em Publicar {#browse-to-new-site-on-publish}
@@ -24,7 +31,7 @@ ht-degree: 0%
 Agora que o site de comunidades recém-criado foi publicado, navegue até o URL exibido ao criar o site, mas no servidor de publicação, por exemplo:
 
 * URL do autor = https://localhost:4502/content/sites/engage/en.html
-* Publicar URL = https://localhost:4503/content/sites/engage/en.html
+* URL de publicação = https://localhost:4503/content/sites/engage/en.html
 
 Para minimizar a confusão sobre qual membro está conectado no autor e na publicação, é recomendável usar navegadores diferentes para cada instância.
 
@@ -76,7 +83,7 @@ Para proteger o conteúdo do site da comunidade do acesso de usuários anônimos
 
 ## Membro de comunidade confiável {#trusted-community-member}
 
-Esta experiência supõe que Aaron McDonald[&#128279;](/help/communities/tutorials.md#demo-users) recebeu as funções de [gerente e moderador da comunidade](/help/communities/create-site.md#roles). Caso contrário, retorne ao ambiente de criação para [modificar as configurações do site](/help/communities/sites-console.md#modifying-site-properties) e selecione Aaron McDonald como gerente e moderador da comunidade.
+Esta experiência supõe que Aaron McDonald](/help/communities/tutorials.md#demo-users) recebeu as funções de [gerente e moderador da comunidade](/help/communities/create-site.md#roles). [Caso contrário, retorne ao ambiente de criação para [modificar as configurações do site](/help/communities/sites-console.md#modifying-site-properties) e selecione Aaron McDonald como gerente e moderador da comunidade.
 
 No canto superior direito, selecione `Log in` e faça logon com nome de usuário (aaron.mcdonald@mailinator.com) e senha (senha). Observe a capacidade de fazer logon com credenciais do Twitter ou do Facebook.
 
@@ -87,8 +94,8 @@ Depois de fazer logon como membro registrado da comunidade, observe os seguintes
 * A opção **Perfil** permite exibir e editar seu perfil.
 * A opção [Mensagens](/help/communities/configure-messaging.md) direciona você para a seção de mensagens diretas, onde você pode fazer o seguinte:
 
-   1. Exibir as mensagens diretas recebidas (Caixa de entrada), enviadas (Itens enviados) e excluídas (Lixeira).
-   1. Redija novas mensagens diretas para enviar a indivíduos e grupos.
+  1. Exibir as mensagens diretas recebidas (Caixa de entrada), enviadas (Itens enviados) e excluídas (Lixeira).
+  1. Redija novas mensagens diretas para enviar a indivíduos e grupos.
 
 * A opção [Notificações](/help/communities/notifications.md) direciona você para a seção de notificações, onde é possível exibir seus eventos de interesse e editar as configurações de notificação.
 * A [Administração](/help/communities/published-site.md#moderationlink) direciona você para a Página de moderação do AEM Communities, caso tenha privilégios de moderação.
@@ -154,13 +161,13 @@ Como exemplo, adicione dois `new groups`.
 
 * Um chamado `Baseball`
 
-   * Deixe-o definido como `Open Group` (associação necessária).
-   * Na guia Modelos, selecione `Conversational Group`.
+  * Deixe-o definido como `Open Group` (associação necessária).
+  * Na guia Modelos, selecione `Conversational Group`.
 
 * Um chamado `Gymnastics`
 
-   * Altere sua configuração para `Member Only Group` (associação restrita).
-   * Na guia Modelos, selecione `Conversational Group`.
+  * Altere sua configuração para `Member Only Group` (associação restrita).
+  * Na guia Modelos, selecione `Conversational Group`.
 
 **Aviso**:
 

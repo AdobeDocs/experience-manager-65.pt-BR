@@ -9,13 +9,22 @@ feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2116'
 ht-degree: 0%
-
 ---
-
 # Conceitos básicos de configuração{#basic-configuration-concepts}
 
 O Adobe Experience Manager (AEM) é instalado com configurações padrão para todos os parâmetros que permitem sua execução imediata. No entanto, você pode configurar o AEM para seus próprios requisitos específicos.
@@ -180,7 +189,7 @@ Para obter o gerenciamento de usuários no AEM (incluindo a atribuição de dire
 
 O Dispatcher é a ferramenta de armazenamento em cache, balanceamento de carga ou ambos da Adobe Experience Manager. Ele pode ser usado com um servidor Web de classe empresarial.
 
-Consulte [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) para obter os detalhes completos, em particular [Configurando o Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR) para obter mais detalhes sobre a configuração.
+Consulte [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) para obter os detalhes completos, em particular [Configurando o Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html) para obter mais detalhes sobre a configuração.
 
 ### Configuração do AEM LiveCycle Connector {#configuring-aem-livecycle-connector}
 
@@ -303,12 +312,12 @@ As impressões de página são exibidas na coluna **Impressões** do console sit
 
 * Na instância de publicação:
 
-   * [Day CQ WCM Page Statistics](/help/sites-deploying/osgi-configuration-settings.md)
+  * [Estatísticas de página WCM CQ do dia](/help/sites-deploying/osgi-configuration-settings.md)
 
-* On the author instance:
+* Na instância do autor:
 
-   * [Adobe Page Impressions Tracker](/help/sites-deploying/osgi-configuration-settings.md)
+  * [Rastreador de impressões de página do Adobe](/help/sites-deploying/osgi-configuration-settings.md)
 
 >[!CAUTION]
 >
->The configuration of Adobe Page Impressions Tracker on the author environment allows anonymous requests to the tracking service.
+>A configuração do Rastreador de impressões de página do Adobe no ambiente de criação permite solicitações anônimas ao serviço de rastreamento.

@@ -10,7 +10,24 @@ role: Admin, User, Developer
 feature: Forms Designer,Designer
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 8f14518117b3aff1cdb2e033fbfe40d0a903d53f
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 1af3c3d4-88d7-5e0f-813c-eb70824bfcdd
+    internal-label: Forms Designer
+  - id: 794033c1-20ea-55a4-a8a6-b1107e12deb0
+    internal-label: Designer
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '969'
 ht-degree: 5%
@@ -38,7 +55,7 @@ ht-degree: 5%
 >[!NOTE]
 >
 >* A versão de 64 bits do designer foi introduzida com o AEM 6.5 Forms Service Pack 19 (6.5.19.0).
->* A versão de 32 bits do designer está obsoleta desde o lançamento do [AEM Forms Service Pack 21 (6.5.21.0)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
+>* A versão de 32 bits do designer está obsoleta desde o lançamento do [AEM Forms Service Pack 21 (6.5.21.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
 > * As plataformas compatíveis com o Forms Designer estão alinhadas às plataformas compatíveis com o AEM Forms. Para saber mais sobre as plataformas compatíveis com o Forms Designer, [clique aqui](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
 Para obter mais informações sobre a instalação do Forms Designer, visite [Perguntas frequentes](#fandq).
@@ -94,15 +111,15 @@ Há dois casos ao atualizar a versão mais recente do AEM Forms Designer 6.5.16.
 Se você estiver usando um instalador independente do AEM Forms Designer, execute as seguintes etapas:
 
 1. Antes de instalar o **AEM Forms Designer6.5.16.0**, os usuários devem desinstalar todas as versões anteriores.
-1. Baixe e instale o [AEM Forms Designer 6.5.15.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR) da Página de Versões do AEM Form.
-1. Após a instalação bem-sucedida do **AEM Forms Designer6.5.15.0**, baixe e instale o [AEM Forms Designer 6.5.16.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR) clicando duas vezes no arquivo do instalador baixado.
+1. Baixe e instale o [AEM Forms Designer 6.5.15.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) da Página de Versões do AEM Form.
+1. Após a instalação bem-sucedida do **AEM Forms Designer6.5.15.0**, baixe e instale o [AEM Forms Designer 6.5.16.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) clicando duas vezes no arquivo do instalador baixado.
 
 +++
 
 +++**Quando o usuário tem 6.5.15.0 AEM Forms Designer versão**
 
 Se você estiver usando um instalador independente do AEM Forms Designer, execute as seguintes etapas:
-1. Baixe a versão mais recente do AEM Forms Designer no [Portal de distribuição de software](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR).
+1. Baixe a versão mais recente do AEM Forms Designer no [Portal de distribuição de software](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 1. Instale a versão mais recente do AEM Forms Designer clicando duas vezes no arquivo do instalador baixado.
 
 +++

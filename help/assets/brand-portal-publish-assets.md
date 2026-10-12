@@ -11,13 +11,25 @@ role: User
 exl-id: 76652a16-cad6-4e95-9e66-41efec452b03
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: e00c7c12-7035-41fe-ad76-1ec82c8c3f01
+    internal-label: Brand Portal
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 43%
-
 ---
-
 # Publicar ativos no Brand Portal {#publish-assets-to-brand-portal}
 
 | Versão | Link do artigo |
@@ -51,9 +63,9 @@ Para publicar os ativos selecionados no Brand Portal, siga um dos procedimentos 
 
 * Na barra de ferramentas, selecione **[!UICONTROL Gerenciar publicação]**.
 
-   1. Em seguida, em **[!UICONTROL Ação]**, selecione **[!UICONTROL Publicar no Brand Portal]** e, em **[!UICONTROL Agendamento]**, selecione **[!UICONTROL Agora]**. Clique em **[!UICONTROL Avançar]**.
+  1. Em seguida, em **[!UICONTROL Ação]**, selecione **[!UICONTROL Publicar no Brand Portal]** e, em **[!UICONTROL Agendamento]**, selecione **[!UICONTROL Agora]**. Clique em **[!UICONTROL Avançar]**.
 
-   2. No **[!UICONTROL Escopo]**, confirme sua seleção e clique em **[!UICONTROL Publicar no Brand Portal]**.
+  2. No **[!UICONTROL Escopo]**, confirme sua seleção e clique em **[!UICONTROL Publicar no Brand Portal]**.
 
 Será exibida uma mensagem informando que os ativos foram enfileirados para publicação no Brand Portal. Faça logon na interface do Brand Portal para ver os ativos publicados.
 
@@ -87,6 +99,6 @@ Agora, faça logon no Brand Portal para ver se os ativos publicados estão dispo
 
 1. Alterne para o Modo de exibição de lista ![Modo de exibição de lista](assets/list-view.svg) para ver o status de publicação atual do ativo.
 
-<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
 ![status do relatório gerado](assets/report-status.JPG)

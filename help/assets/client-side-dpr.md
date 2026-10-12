@@ -1,17 +1,31 @@
 ---
 title: Usar Imagem inteligente com proporção de pixels do dispositivo no lado do cliente
-description: Saiba como usar a proporção de pixels do dispositivo no lado do cliente com a Imagem inteligente no Adobe Experience Manager as a Cloud Service com o Dynamic Media.
+description: Saiba como usar a proporção de pixels do dispositivo no lado do cliente com a Imagem inteligente no Adobe Experience Manager as a Cloud Service com Dynamic Media.
 role: Admin,User
 exl-id: e38f522a-242a-4ea9-a866-d8d129950831
 solution: Experience Manager, Experience Manager Assets
 feature: Smart Imaging
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: b39a6d56-d787-413f-8024-351803c28d44
+    internal-label: Smart Imaging
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '328'
 ht-degree: 0%
-
 ---
-
 # Sobre a imagem inteligente com a proporção de pixels do dispositivo (DPR) do lado do cliente {#client-side-dpr}
 
 A solução Smart Imaging atual usa strings de agente do usuário para determinar o tipo de dispositivo (desktop, tablet, celular e assim por diante) que está sendo usado.
@@ -24,7 +38,7 @@ A DPR do lado do cliente fornece valores 100% precisos e funciona para qualquer 
 
 **Aplicativos renderizados do lado do servidor**
 
-1. Carregue a inicialização do service worker (`srvinit.js`) incluindo o seguinte script na seção de cabeçalho da página de HTML:
+1. Carregue a inicialização do service worker (`srvinit.js`) incluindo o seguinte script na seção de cabeçalho da página do HTML:
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
@@ -43,11 +57,11 @@ A DPR do lado do cliente fornece valores 100% precisos e funciona para qualquer 
        aem_dm_dpr_5x.jpg 5x">
    ```
 
-   É obrigatório incluir este código de marca de imagem DPR _antes_ em todas as imagens estáticas da sua página de HTML.
+   É obrigatório incluir este código de marca de imagem DPR _antes_ em todas as imagens estáticas da sua página do HTML.
 
 **Aplicativos renderizados do lado do cliente**
 
-1. Inclua os seguintes scripts DPR na seção de cabeçalho da página HTML:
+1. Inclua os seguintes scripts DPR na seção de cabeçalho da página do HTML:
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
@@ -56,12 +70,12 @@ A DPR do lado do cliente fornece valores 100% precisos e funciona para qualquer 
 
    Você pode combinar ambos os scripts DPR em um para evitar várias solicitações de rede.
 
-   A Adobe recomenda que você carregue esses scripts _antes_ de qualquer outro script na página HTML.
-O Adobe também recomenda que você Bootstrap seu aplicativo com a tag HTML diff em vez de um elemento body. O motivo é porque o `dprImageInjection.js` injeta dinamicamente a marca de imagem na parte superior da seção do corpo na página HTML.
+   A Adobe recomenda que você carregue esses scripts _antes_ de qualquer outro script na página do HTML.
+   A Adobe também recomenda que você Bootstrap seu aplicativo em tag HTML de comparação em vez de um elemento body. O motivo é que o `dprImageInjection.js` injeta dinamicamente a marca de imagem na parte superior da seção do corpo na página do HTML.
 
 ## Download de arquivos do JavaScript {#client-side-dpr-script}
 
-Os seguintes arquivos JavaScript no download são fornecidos a você somente como referência de exemplo. Se você pretende usar esses arquivos em páginas de HTML, edite o código de cada arquivo para atender aos seus próprios requisitos.
+Os seguintes arquivos JavaScript no download são fornecidos a você somente como referência de exemplo. Se você pretende usar esses arquivos nas páginas do HTML, edite o código de cada arquivo para atender aos seus próprios requisitos.
 
 * `dprImageInjection.js`
 * `srvinit.js`

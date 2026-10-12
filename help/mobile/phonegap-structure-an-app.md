@@ -9,7 +9,13 @@ exl-id: f37f239f-065b-44f8-acb1-93485b713b49
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 0%
@@ -32,7 +38,7 @@ Por convenção do AEM, a primeira página do aplicativo deve ser um redireciona
 
 O modelo e o código do componente do seu aplicativo devem estar em /apps/&lt;brand name>/&lt;app name>. De acordo com a convenção, você deve colocar seu modelo e código do componente em /apps/&lt;brand name>/&lt;app name>. Esse padrão deve ser familiar aos desenvolvedores que já trabalharam com o Site no AEM. Normalmente, é seguido como /apps/ e bloqueado para acesso anônimo por padrão em instâncias de publicação. Assim, seu código JSP bruto está oculto de possíveis invasores.
 
-Os modelos específicos do aplicativo podem ser configurados para serem apresentados somente usando o nó de propriedade `allowedPaths` no próprio modelo e definindo seu valor como &#39;/content/mobileapps(/.&ast;)?&#39; - ou até mesmo algo mais específico se o modelo só puder ser usado por um único aplicativo. As propriedades `allowedParents` e `allowedChildren` também podem ser usadas para controle refinado de quais modelos estão disponíveis para um autor com base no local em que a nova página está sendo criada.
+Os modelos específicos do aplicativo podem ser configurados para serem apresentados somente usando o nó de propriedade `allowedPaths` no próprio modelo e definindo seu valor como &#39;/content/mobileapps(/.&amp;ast;)?&#39; - ou até mesmo algo mais específico se o modelo só puder ser usado por um único aplicativo. As propriedades `allowedParents` e `allowedChildren` também podem ser usadas para controle refinado de quais modelos estão disponíveis para um autor com base no local em que a nova página está sendo criada.
 
 Ao criar um componente da página de aplicativo do zero, é recomendável definir sua propriedade `sling:resourceSuperType` como &quot;mobileapps/components/angular/ng-page&quot;. Isso configura a página para criação e renderização como um aplicativo de página única e permite que você sobreponha quaisquer arquivos .jsp que o componente possa precisar alterar. Como a ng-página não inclui nenhuma estrutura de interface do usuário, um desenvolvedor geralmente acaba sobrepondo (pelo menos) &#39;template.jsp&#39; (sobreposto de /libs/mobileapps/components/angular/ng-page/template.jsp).
 

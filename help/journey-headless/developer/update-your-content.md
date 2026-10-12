@@ -5,13 +5,39 @@ exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 85%
-
+source-wordcount: '1108'
+ht-degree: 83%
 ---
-
 # Como atualizar seu conteúdo por meio das APIs do AEM Assets {#update-your-content}
 
 Nesta parte da [jornada do desenvolvedor headless do AEM,](overview.md) saiba como usar a API REST para acessar e atualizar o conteúdo dos seus fragmentos de conteúdo.
@@ -30,9 +56,9 @@ Este artigo se baseia nesses fundamentos para que você entenda como atualizar o
 
 * **Público-alvo**: avançado
 * **Objetivo**: aprender a usar a API REST para acessar e atualizar o conteúdo dos seus fragmentos de conteúdo:
-   * Introdução à API HTTP do AEM Assets.
-   * Apresentação e discussão sobre o suporte de fragmento de conteúdo da API.
-   * Ilustração de detalhes da API.
+  * Introdução à API HTTP do AEM Assets.
+  * Apresentação e discussão sobre o suporte de fragmento de conteúdo da API.
+  * Ilustração de detalhes da API.
 
 <!--
   * Look at sample code to see how things work in practice.
@@ -57,7 +83,7 @@ A API HTTP de ativos abrange:
 
 A implementação atual da API HTTP de ativos é baseada no estilo de arquitetura **REST** e permite que você acesse o conteúdo (armazenado no AEM) por meio de operações **CRUD** (criar, ler, atualizar, excluir).
 
-Com essas operações, a API permite operar o Adobe Experience Manager como um CMS (Content Management System, Sistema de gerenciamento de conteúdo) headless, fornecendo Serviços de conteúdo a um aplicativo front-end do JavaScript. Ou qualquer outro aplicativo que possa executar solicitações HTTP e manipular respostas JSON. Por exemplo, aplicativos de página única (SPA) baseados em estrutura ou personalizados exigem conteúdo fornecido por meio de uma API, geralmente no formato JSON.
+Com essas operações, a API permite operar o Adobe Experience Manager como um CMS (Content Management System) headless, fornecendo Serviços de conteúdo a um aplicativo front-end do JavaScript. Ou qualquer outro aplicativo que possa executar solicitações HTTP e manipular respostas JSON. Por exemplo, aplicativos de página única (SPA) baseados em estrutura ou personalizados exigem conteúdo fornecido por meio de uma API, geralmente no formato JSON.
 
 <!--
 >[!NOTE]
@@ -215,9 +241,9 @@ Associated content is currently not exposed.
 A API REST de ativos usa o ponto de acesso `/api/assets` e necessita do caminho do ativo para acessá-lo (sem o `/content/dam` inicial).
 
 * Isso significa que para acessar o ativo em:
-   * `/content/dam/path/to/asset`
+  * `/content/dam/path/to/asset`
 * Você precisa solicitar:
-   * `/api/assets/path/to/asset`
+  * `/api/assets/path/to/asset`
 
 Por exemplo, para acessar `/content/dam/wknd/en/adventures/cycling-tuscany`, solicite `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
@@ -244,16 +270,16 @@ O formato exato das solicitações compatíveis é definido na documentação de
 
 O uso pode ser diferente dependendo se você está usando um ambiente de autor ou de publicação no AEM, juntamente com seu caso de uso específico.
 
-* É altamente recomendável que a criação seja vinculada a uma instância de autor (e atualmente não há meios de replicar um fragmento para publicação usando essa API).
+* É altamente recomendável que a criação seja vinculada a uma instância de criação (e atualmente não há meios de replicar um fragmento para publicação usando essa API).
 * A entrega é possível de ambos os ambientes, pois o AEM apresenta o conteúdo solicitado somente no formato JSON.
 
-   * Armazenar e entregar a partir de uma instância de autor do AEM deve ser o suficiente para aplicativos de biblioteca de mídia por trás do firewall.
+  * Armazenar e entregar a partir de uma instância de criação do AEM deve ser o suficiente para aplicativos de biblioteca de mídia por trás do firewall.
 
-   * Para entrega em tempo real na web, recomenda-se uma instância de publicação do AEM.
+  * Para entrega em tempo real na web, recomenda-se uma instância de publicação do AEM.
 
 >[!CAUTION]
 >
->A configuração do dispatcher em instâncias AEM pode bloquear o acesso a `/api`.
+>A configuração do dispatcher em instâncias do AEM pode bloquear o acesso a `/api`.
 
 >[!NOTE]
 >
@@ -320,18 +346,18 @@ Agora que concluiu esta parte da jornada de desenvolvedores headless do AEM, voc
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-Você deve continuar sua jornada sem periféricos de AEM revisando a seguir o documento [Como entrar em operação com seu aplicativo sem periféricos](go-live.md) onde você de fato coloca seu projeto com AEM sem periféricos em funcionamento!
+Você deve continuar sua jornada do AEM Headless revisando a seguir o documento [Como entrar em operação com seu aplicativo headless](go-live.md), onde você de fato coloca seu projeto do AEM Headless em funcionamento!
 
 ## Recursos adicionais {#additional-resources}
 
 * [API HTTP de ativos](/help/assets/mac-api-assets.md)
 * [API REST de fragmentos de conteúdo](/help/assets/assets-api-content-fragments.md)
-   * [Referência da API &#x200B;](/help/assets/assets-api-content-fragments.md#api-reference)
+  * [Referência da API](/help/assets/assets-api-content-fragments.md#api-reference)
 * [API do Adobe Experience Manager Assets - Fragmentos de conteúdo](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [Trabalho com fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
 * [Componentes principais do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
-* [Explicação sobre o CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html?lang=pt-BR)
-* [Vídeo - Desenvolvimento do CORS com o AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html?lang=pt-BR)
+* [Explicação do CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html?lang=pt-BR)
+* [Vídeo - Desenvolvimento do CORS com AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html?lang=pt-BR)
 * Uma [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
 * O [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
-* [Tutorials para Headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
+* [Tutoriais de sem cabeçalho no AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview)

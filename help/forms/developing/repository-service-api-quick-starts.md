@@ -1,20 +1,33 @@
 ---
 title: Início Rápido da API de Serviço de Repositório
-
 description: Use o serviço Repositório do AEM Forms para criar uma pasta, gravar um recurso, listar recursos, ler um recurso, atualizar um recurso, pesquisar recursos, criar relacionamentos entre recursos, bloquear um recurso, gerenciar listas de controle de acesso e excluir um recurso.
-
-
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-
 role: Developer
 exl-id: 703b6798-d40f-4769-96fc-e440090ca983
 solution: Experience Manager, Experience Manager Forms
-
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: 94663796-0ee7-58b9-84f4-b425ebb69e83
+    internal-label: AEM Forms on JEE
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 0%
@@ -63,7 +76,7 @@ O caminho para um recurso no repositório do AEM Forms é:
 
 >[!NOTE]
 >
->Applications/FormsApplication não existe por padrão. Para seguir as inicializações rápidas, crie este aplicativo usando o Workbench. Para obter informações sobre como criar um aplicativo usando o Workbench, consulte [Introdução ao design de processo](https://www.adobe.com/go/learn_aemforms_workbench_65_br).
+>Applications/FormsApplication não existe por padrão. Para seguir as inicializações rápidas, crie este aplicativo usando o Workbench. Para obter informações sobre como criar um aplicativo usando o Workbench, consulte [Introdução ao design de processo](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ## Início rápido (modo SOAP): criação de uma pasta usando a API Java {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 

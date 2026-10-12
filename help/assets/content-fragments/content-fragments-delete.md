@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 exl-id: 6212457e-a171-4c33-8d19-54c26516e981
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a77b577341050316ce60ae809a4912bbbbce974c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '519'
 ht-degree: 72%
-
 ---
-
 # Fragmentos de conteúdo - Considerações sobre a exclusão {#content-fragments-delete-considerations}
 
 Analise essas considerações importantes antes de definir as políticas de exclusão de fragmentos de conteúdo no AEM. Os fragmentos de conteúdo são uma ferramenta eficiente para fornecer conteúdo headless, e as implicações de excluí-los devem ser cuidadosamente consideradas.
@@ -72,15 +84,15 @@ Os pré-requisitos de permissões para permitir que um usuário e/ou grupo espec
 
 * Para os nós ou pastas do fragmento de conteúdo:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties`
+  * `jcr:addChildNodes`, `jcr:modifyProperties`
 
 * Para o nó `jcr:content` de todos os fragmentos de conteúdo:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` e `jcr:removeChildNodes`
+  * `jcr:addChildNodes`, `jcr:modifyProperties` e `jcr:removeChildNodes`
 
 * Para todos os nós abaixo de `jcr:content` de todos os fragmentos de conteúdo:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` e `jcr:removeChildNodes`, `jcr:removeNode`
+  * `jcr:addChildNodes`, `jcr:modifyProperties` e `jcr:removeChildNodes`, `jcr:removeNode`
 
 Esses privilégios `remove` devem ser [administrados usando Listas de Controle de Acesso, no CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 

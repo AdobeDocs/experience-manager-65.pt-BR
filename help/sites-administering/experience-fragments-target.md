@@ -10,7 +10,18 @@ exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: dcb55b3b185fe5dccf52377a12556e33d818e410
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 40%
@@ -46,7 +57,7 @@ Os fragmentos de experiência do AEM podem ser exportados para o espaço de trab
 >Para obter mais informações, consulte também:
 >
 >* [Desenvolvimento do Adobe Target](https://developers.adobetarget.com/)
->* [Componentes principais - Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=pt-BR)
+>* [Componentes principais - Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html)
 >
 
 ## Pré-requisitos {#prerequisites}
@@ -98,7 +109,7 @@ As opções necessárias podem ser selecionadas nas **Propriedades de página** 
    >
    >Consulte o componente principal:
    >
-   >[Componentes principais - Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=pt-BR)
+   >[Componentes principais - Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html)
 
    Em **Adobe Target**, selecione:
 
@@ -168,7 +179,7 @@ Para exportar um fragmento de experiência do AEM para o Target (depois de espec
 
 ## Usar os fragmentos de experiência no Adobe Target {#using-your-experience-fragments-in-adobe-target}
 
-Depois de executar as tarefas anteriores, o Fragmento de experiência é exibido na página Ofertas do Adobe Target. Consulte a [documentação específica do Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=pt-BR) para saber mais sobre o que você pode realizar lá.
+Depois de executar as tarefas anteriores, o Fragmento de experiência é exibido na página Ofertas do Adobe Target. Consulte a [documentação específica do Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html) para saber mais sobre o que você pode realizar lá.
 
 >[!NOTE]
 >

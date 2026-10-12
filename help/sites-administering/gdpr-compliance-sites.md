@@ -9,13 +9,31 @@ exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
 role: Admin, Developer, Leader, User
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 54%
-
+source-wordcount: '902'
+ht-degree: 53%
 ---
-
 # AEM Sites - Disponibilidade do GDPR{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
@@ -50,7 +68,7 @@ A AEM tem um [serviço de cookie de recusa](/help/sites-developing/cookie-optout
 
 O AEM Sites inclui uma integração opcional com o Enhanced Insights by Analytics que usa a funcionalidade no Adobe Analytics On-demand Service.
 
-Para obter mais informações sobre como gerenciar solicitações de titulares de dados do GDPR relacionadas ao Adobe Analytics, consulte [Adobe Analytics e GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html?lang=pt-BR).
+Para obter mais informações sobre como gerenciar solicitações de titulares de dados do GDPR relacionadas ao Adobe Analytics, consulte [Adobe Analytics e GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html).
 
 ## Personalization aprimorado por Target {#enhanced-personalization-by-target}
 
@@ -79,9 +97,9 @@ Essas diretrizes implementam a opção de aceitação como padrão. Assim, um vi
 * O componente de opt out (recusar) deve ser incluído sempre que o componente ContextHub for incluído.
 * Os termos e condições relacionados ao GDPR do site devem ser exibidos para o visitante do site, para que eles possam:
 
-   * Aceitar
-   * Rejeitar
-   * alterar a opção anterior
+  * Aceitar
+  * Rejeitar
+  * alterar a opção anterior
 
 * Se um visitante aceitar os termos e condições do site, o cookie de opção de recusa do ContextHub deverá ser removido:
 
@@ -108,49 +126,49 @@ Para visualizar a persistência usada pelo ContextHub, um usuário pode:
 
 * Use o console do navegador; por exemplo:
 
-   * Chrome:
+  * Chrome:
 
-      * Abra Ferramentas do desenvolvedor > Aplicativo > Armazenamento:
+    * Abra Ferramentas do desenvolvedor > Aplicativo > Armazenamento:
 
-         * Armazenamento local > (site) > ContextHubPersistence
-         * Armazenamento de sessão > (site) > ContextHubPersistence
-         * Cookies > (site) > SessionPersistence
+      * Armazenamento local > (site) > ContextHubPersistence
+      * Armazenamento de sessão > (site) > ContextHubPersistence
+      * Cookies > (site) > SessionPersistence
 
-   * Firefox:
+  * Firefox:
 
-      * Abra Ferramentas do desenvolvedor > Armazenamento:
+    * Abra Ferramentas do desenvolvedor > Armazenamento:
 
-         * Armazenamento local > (site) > ContextHubPersistence
-         * Armazenamento de sessão > (site) > ContextHubPersistence
-         * Cookies > (site) > SessionPersistence
+      * Armazenamento local > (site) > ContextHubPersistence
+      * Armazenamento de sessão > (site) > ContextHubPersistence
+      * Cookies > (site) > SessionPersistence
 
-   * Safari:
+  * Safari:
 
-      * Abra Preferências > Avançado > Mostrar menu Desenvolvedor na barra de menus
-      * Abra Desenvolver > Mostrar console do JavaScript
+    * Abra Preferências > Avançado > Mostrar menu Desenvolvedor na barra de menus
+    * Abra Desenvolver > Mostrar console do JavaScript
 
-         * Console > Armazenamento > Armazenamento local > (site) > ContextHubPersistence
-         * Console > Armazenamento > Armazenamento de sessão > (site) > ContextHubPersistence
-         * Console > Armazenamento > Cookies > (site) > ContextHubPersistence
+      * Console > Armazenamento > Armazenamento local > (site) > ContextHubPersistence
+      * Console > Armazenamento > Armazenamento de sessão > (site) > ContextHubPersistence
+      * Console > Armazenamento > Cookies > (site) > ContextHubPersistence
 
-   * Internet Explorer:
+  * Internet Explorer:
 
-      * Abra Ferramentas do desenvolvedor > Console
+    * Abra Ferramentas do desenvolvedor > Console
 
-         * localStorage.getItem(&#39;ContextHubPersistence&#39;)
-         * sessionStorage.getItem(&#39;ContextHubPersistence&#39;)
-         * document.cookie
+      * localStorage.getItem(&#39;ContextHubPersistence&#39;)
+      * sessionStorage.getItem(&#39;ContextHubPersistence&#39;)
+      * document.cookie
 
 * Use a API do ContextHub no console do navegador:
 
-   * O ContextHub fornece as seguintes camadas de persistência de dados:
+  * O ContextHub fornece as seguintes camadas de persistência de dados:
 
-      * ContextHub.Utils.Persistence.Modes.LOCAL (padrão)
-      * ContextHub.Utils.Persistence.Modes.SESSION
-      * ContextHub.Utils.Persistence.Modes.COOKIE
-      * ContextHub.Utils.Persistence.Modes.WINDOW
+    * ContextHub.Utils.Persistence.Modes.LOCAL (padrão)
+    * ContextHub.Utils.Persistence.Modes.SESSION
+    * ContextHub.Utils.Persistence.Modes.COOKIE
+    * ContextHub.Utils.Persistence.Modes.WINDOW
 
-     O armazenamento do ContextHub define qual camada de persistência será usada, portanto, para exibir o estado atual da persistência, todas as camadas devem ser verificadas.
+    O armazenamento do ContextHub define qual camada de persistência será usada, portanto, para exibir o estado atual da persistência, todas as camadas devem ser verificadas.
 
 Por exemplo, para exibir dados armazenados em localStorage:
 
@@ -158,28 +176,28 @@ Para visualizar a persistência usada pelo ContextHub, um usuário pode:
 
 * Use o console do navegador:
 
-   * Chrome - abra Ferramentas do desenvolvedor > Aplicativo > Armazenamento:
+  * Chrome - abra Ferramentas do desenvolvedor > Aplicativo > Armazenamento:
 
-      * Armazenamento local > (site) > ContextHubPersistence
-      * Armazenamento de sessão > (site) > ContextHubPersistence
-      * Cookies > (site) > SessionPersistence
+    * Armazenamento local > (site) > ContextHubPersistence
+    * Armazenamento de sessão > (site) > ContextHubPersistence
+    * Cookies > (site) > SessionPersistence
 
-   * Firefox - abra Ferramentas do desenvolvedor > Armazenamento:
+  * Firefox - abra Ferramentas do desenvolvedor > Armazenamento:
 
-      * Armazenamento local > (site) > ContextHubPersistence
-      * Armazenamento de sessão > (site) > ContextHubPersistence
-      * Cookies > (site) > SessionPersistence
+    * Armazenamento local > (site) > ContextHubPersistence
+    * Armazenamento de sessão > (site) > ContextHubPersistence
+    * Cookies > (site) > SessionPersistence
 
 * Use a API do ContextHub no console do navegador:
 
-   * O ContextHub fornece as seguintes camadas de persistência de dados:
+  * O ContextHub fornece as seguintes camadas de persistência de dados:
 
-      * ContextHub.Utils.Persistence.Modes.LOCAL (padrão)
-      * ContextHub.Utils.Persistence.Modes.SESSION
-      * ContextHub.Utils.Persistence.Modes.COOKIE
-      * ContextHub.Utils.Persistence.Modes.WINDOW
+    * ContextHub.Utils.Persistence.Modes.LOCAL (padrão)
+    * ContextHub.Utils.Persistence.Modes.SESSION
+    * ContextHub.Utils.Persistence.Modes.COOKIE
+    * ContextHub.Utils.Persistence.Modes.WINDOW
 
-     O armazenamento do ContextHub define qual camada de persistência será usada, portanto, para exibir o estado atual da persistência, todas as camadas devem ser verificadas.
+    O armazenamento do ContextHub define qual camada de persistência será usada, portanto, para exibir o estado atual da persistência, todas as camadas devem ser verificadas.
 
 Por exemplo, para exibir dados armazenados em localStorage:
 
@@ -218,7 +236,7 @@ Para limpar a persistência do ContextHub:
 
 * Para eliminar todas as camadas de persistência do ContextHub, o código apropriado deve ser chamado para todas as camadas:
 
-   * ContextHub.Utils.Persistence.Modes.LOCAL (padrão)
-   * ContextHub.Utils.Persistence.Modes.SESSION
-   * ContextHub.Utils.Persistence.Modes.COOKIE
-   * ContextHub.Utils.Persistence.Modes.WINDOW
+  * ContextHub.Utils.Persistence.Modes.LOCAL (padrão)
+  * ContextHub.Utils.Persistence.Modes.SESSION
+  * ContextHub.Utils.Persistence.Modes.COOKIE
+  * ContextHub.Utils.Persistence.Modes.WINDOW

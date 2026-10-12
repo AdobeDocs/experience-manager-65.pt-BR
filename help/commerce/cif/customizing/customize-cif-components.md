@@ -5,7 +5,17 @@ exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
 feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2667'
 ht-degree: 14%
@@ -182,7 +192,7 @@ Em seguida, estenda a lógica de negócios do Teaser do produto implementando um
 
 Os Modelos do Sling são implementados como Java™ e podem ser encontrados no módulo **core** do projeto gerado.
 
-Use [o IDE de sua escolha](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=pt-BR#set-up-the-development-ide) para importar o projeto Venia. As capturas de tela usadas são do [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=pt-BR&#microsoft-visual-studio-code).
+Use [o IDE de sua escolha](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) para importar o projeto Venia. As capturas de tela usadas são do [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?#microsoft-visual-studio-code).
 
 1. No IDE, navegue no módulo **core** para: `core/src/main/java/com/venia/core/models/commerce/MyProductTeaser.java`.
 
@@ -324,7 +334,7 @@ Este é um novo método para encapsular a lógica para indicar se o produto tem 
 
 Uma extensão comum de componentes do AEM é modificar a marcação gerada pelo componente. Essa modificação é feita substituindo o [script HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR) que o componente usa para renderizar sua marcação. A Linguagem de modelo do HTML (HTL) é uma linguagem de modelo leve que os componentes do AEM usam para renderizar dinamicamente a marcação com base no conteúdo criado, permitindo que os componentes sejam reutilizados. O Teaser do produto, por exemplo, pode ser reutilizado várias vezes para exibir produtos diferentes.
 
-Nesse caso, renderize um banner sobre o teaser para indicar que o produto é &quot;Eco Friendly&quot; com base em um atributo personalizado. O padrão de design para [personalizar a marcação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=pt-BR#customizing-the-markup) de um componente é padrão para todos os Componentes do AEM, não apenas para os Componentes Principais do AEM CIF.
+Nesse caso, renderize um banner sobre o teaser para indicar que o produto é &quot;Eco Friendly&quot; com base em um atributo personalizado. O padrão de design para [personalizar a marcação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) de um componente é padrão para todos os Componentes do AEM, não apenas para os Componentes Principais do AEM CIF.
 
 >[!NOTE]
 >
@@ -344,7 +354,7 @@ Nesse caso, renderize um banner sobre o teaser para indicar que o produto é &qu
        componentGroup="Venia - Commerce"/>
    ```
 
-   A definição de componente para o Teaser do produto neste projeto está acima. Observe a propriedade `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. Este é um exemplo de criação de um [componente Proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=pt-BR#create-proxy-components). Em vez de copiar e colar todos os scripts HTL do Teaser do produto dos Componentes principais do AEM CIF, você pode usar o `sling:resourceSuperType` para herdar toda a funcionalidade.
+   A definição de componente para o Teaser do produto neste projeto está acima. Observe a propriedade `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. Este é um exemplo de criação de um [componente Proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). Em vez de copiar e colar todos os scripts HTL do Teaser do produto dos Componentes principais do AEM CIF, você pode usar o `sling:resourceSuperType` para herdar toda a funcionalidade.
 
 1. Abra o arquivo `productteaser.html`. Esta é uma cópia do arquivo `productteaser.html` do [Teaser do produto CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)
 
@@ -384,7 +394,7 @@ Nesse caso, renderize um banner sobre o teaser para indicar que o produto é &qu
 
    Ao chamar um método Modelo do Sling no HTL, a parte `get` e `is` do método é descartada e a primeira letra é em minúsculas. Então `isShowBadge()` torna-se `.showBadge` e `isEcoFriendly` torna-se `.ecoFriendly`. Com base no valor booleano retornado de `.isEcoFriendly()`, determina se `<span>Eco Friendly</span>` é exibido.
 
-   Para obter mais informações sobre `data-sly-test` e outras instruções em bloco HTL, consulte [A Especificação do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=pt-BR).
+   Para obter mais informações sobre `data-sly-test` e outras instruções em bloco HTL, consulte [A Especificação do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html).
 
 1. Salve as alterações e implante as atualizações no AEM usando suas habilidades em Maven em um terminal de linha de comando:
 
@@ -488,9 +498,9 @@ Revise a funcionalidade do selo **Novo** que já foi implementado no Teaser do p
 
 ## Recursos adicionais {#additional-resources}
 
-- [Arquétipo do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR)
+- [Arquétipo do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 - [Componentes principais do AEM CIF](https://github.com/adobe/aem-core-cif-components)
 - [Personalização dos Componentes principais do AEM CIF](https://github.com/adobe/aem-core-cif-components)
 - [Personalizar os Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=pt-BR)
-- [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)
+- [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 - [Uso do seletor de produto e categoria do CIF](use-cif-pickers.md)

@@ -9,13 +9,17 @@ exl-id: 4e37e814-ceb6-4dfa-a4d3-754f15ca4edf
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '265'
 ht-degree: 0%
-
 ---
-
 # Gerenciamento de conteúdo{#managing-content}
 
 {{ue-over-mobile}}
@@ -34,7 +38,7 @@ Se você pensar em uma revista on-line, o conteúdo principal inclui artigos, an
 
 >[!NOTE]
 >
->Para saber mais sobre as considerações de design para aplicativos do AEM Mobile, consulte [Considerações de design para aplicativos do AEM Mobile](https://helpx.adobe.com/br/digital-publishing-solution/help/design-app.html) na Ajuda Online.
+>Para saber mais sobre as considerações de design para aplicativos do AEM Mobile, consulte [Considerações de design para aplicativos do AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) na Ajuda Online.
 
 ## Criação e gerenciamento de conteúdo {#creating-and-managing-content}
 
@@ -44,7 +48,7 @@ Os tópicos a seguir descrevem a criação e o gerenciamento de conteúdo, a sab
 * [Gerenciamento de banners](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Gerenciar coleções](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Upload de recursos compartilhados](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Publish - Cancelar publicação de conteúdo](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Publicar e desfazer publicação de conteúdo](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 >[!NOTE]
 >
@@ -54,5 +58,5 @@ Os tópicos a seguir descrevem a criação e o gerenciamento de conteúdo, a sab
 
 Para saber mais sobre as funções e responsabilidades de um Administrador e Desenvolvedor, consulte os recursos abaixo:
 
-* [Desenvolvimento de conteúdo AEM para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Desenvolvimento de conteúdo do AEM para o AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
 * [Administração de conteúdo para usar o AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)

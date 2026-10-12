@@ -1,20 +1,27 @@
 ---
 title: Uso e extensão de widgets (interface de usuário clássica)
-
 description: A interface baseada na Web do Adobe Experience Manager usa o AJAX e outras tecnologias modernas de navegador para permitir a edição e a formatação de conteúdo pelo WYSIWYG diretamente na página da Web
-
-
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-
 docset: aem65
 exl-id: 56a9591c-cd78-42e8-a5d7-6b48581d6af6
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '5049'
 ht-degree: 0%
@@ -645,7 +652,7 @@ Quando você instala o pacote, a `content.jsp` do componente **Visão Geral da G
 * É baseado em dados recuperados do repositório ao chamar um servlet.
 * As células da última coluna podem ser editadas. O valor é mantido em uma propriedade `test` abaixo do nó definido pelo caminho exibido na primeira coluna.
 
-Como explicado na seção anterior, o objeto da janela obtém seu objeto ` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` chamando o método `getGridPanel()` definido no arquivo `defaultgrid.js` em `/apps/extjstraining/components/gridoverview/defaultgrid.js`. O componente **Visão geral da grade &#x200B;** fornece uma implementação diferente para o método `getGridPanel()`, definido no arquivo `referencesearch.js` em `/apps/extjstraining/components/gridoverview/referencesearch.js`. Ao alternar o arquivo .js referenciado no componente jsp, a grade é baseada nos dados recuperados do repositório.
+Como explicado na seção anterior, o objeto da janela obtém seu objeto ` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` chamando o método `getGridPanel()` definido no arquivo `defaultgrid.js` em `/apps/extjstraining/components/gridoverview/defaultgrid.js`. O componente **Visão geral da grade **fornece uma implementação diferente para o método `getGridPanel()`, definido no arquivo `referencesearch.js` em `/apps/extjstraining/components/gridoverview/referencesearch.js`. Ao alternar o arquivo .js referenciado no componente jsp, a grade é baseada nos dados recuperados do repositório.
 
 Troque o arquivo .js referenciado no componente jsp:
 

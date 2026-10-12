@@ -10,13 +10,20 @@ exl-id: 1157366f-2cc5-46e4-8ec6-e66fe5d0a0f6
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '342'
 ht-degree: 0%
-
 ---
-
 # Acesso ao UGC com SRP {#accessing-ugc-with-srp}
 
 ## Sobre o SRP {#about-srp}
@@ -25,13 +32,13 @@ Todos os componentes e recursos do AEM Communities são criados na [estrutura de
 
 Antes de criar um site da comunidade, o [provedor de recursos de armazenamento (SRP)](/help/communities/working-with-srp.md) deve ser configurado para selecionar uma implementação consistente com a [topologia](/help/communities/topologies.md) subjacente. As implementações do SRP são baseadas em três opções de armazenamento:
 
-1. [ASRP](/help/communities/asrp.md) - armazenamento Adobe sob demanda
+1. [ASRP](/help/communities/asrp.md) - armazenamento sob demanda do Adobe
 1. [MSRP](/help/communities/msrp.md) - MongoDB
 1. [JSRP](/help/communities/jsrp.md) - JCR
 
 ## Sobre o armazenamento de UGC {#about-ugc-storage}
 
-O que é importante saber sobre o armazenamento de UGC é que, quando um site é configurado para usar ASRP ou MSRP, o UGC real não será armazenado no [armazenamento de nós](/help/sites-deploying/data-store-config.md) (JCR) do AEM.
+O que é importante saber sobre o armazenamento de UGC é que, quando um site é configurado para usar ASRP ou MSRP, o UGC real não será armazenado no [armazenamento de nós](/help/sites-deploying/data-store-config.md) (JCR) da AEM.
 
 Embora possa haver nós no JCR que fazem sombra do UGC para fornecer metadados úteis, esses nós não devem ser confundidos com o UGC real.
 
@@ -49,11 +56,11 @@ Métodos a utilizar :
 
 * API Sling (recurso Sling)
 
-   * não suponha que haja nós JCR
+  * não suponha que haja nós JCR
 
 * Eventos OSGi
 
-   * não suponha que haja eventos JCR
+  * não suponha que haja eventos JCR
 
 * [SocialResourceUtilities](/help/communities/socialutils.md#socialresourceutilities-package)
 * [Utilitários SCFU](/help/communities/socialutils.md#scfutilities-package)

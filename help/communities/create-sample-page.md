@@ -9,13 +9,20 @@ exl-id: d66fc1ff-a669-4a2c-b45a-093060facd97
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '451'
 ht-degree: 0%
-
 ---
-
 # Criar uma página de exemplo {#create-a-sample-page}
 
 A partir do AEM 6.1 Communities, a maneira mais fácil de criar uma página de exemplo é criar um site de comunidade simples, que consiste simplesmente em uma função Página.
@@ -41,19 +48,19 @@ Na navegação global em uma instância de autor, selecione **[!UICONTROL Ferram
 * Selecionar `Create button`
 * INFORMAÇÕES BÁSICAS
 
-   * `Name`: modelo de página única
-   * `Description`: um modelo que consiste em uma única função Page.
-   * Selecionar `Enabled`
+  * `Name`: modelo de página única
+  * `Description`: um modelo que consiste em uma única função Page.
+  * Selecionar `Enabled`
 
 ![editor-modelo-site](assets/site-template-editor.png)
 
 * ESTRUTURA
 
-   * Arraste uma função `Page` para o Construtor de modelos
-   * Para Detalhes da Função de Configuração, informe
+  * Arraste uma função `Page` para o Construtor de modelos
+  * Para Detalhes da Função de Configuração, informe
 
-      * `Title`: Página Simples
-      * `URL`: página
+    * `Title`: Página Simples
+    * `URL`: página
 
 ![estrutura-editor-modelo-site](assets/site-template-editor1.png)
 
@@ -72,22 +79,22 @@ Após criar o modelo de site, na navegação global, selecione **[!UICONTROL Com
 
 * Etapa `1 - Site Template`
 
-   * `Title`: Site Simples da Comunidade
-   * `Description`: um site da comunidade que consiste em uma única página para experimentação.
-   * `Community Site Root: (leave blank)`
-   * `Community Site Base Language: English`
-   * `Name`: exemplo
+  * `Title`: Site Simples da Comunidade
+  * `Description`: um site da comunidade que consiste em uma única página para experimentação.
+  * `Community Site Root: (leave blank)`
+  * `Community Site Base Language: English`
+  * `Name`: exemplo
 
-      * url = http://localhost:4502/content/sites/sample
+    * url = http://localhost:4502/content/sites/sample
 
-      * `Template`: escolher `Single Page Template`
+    * `Template`: escolher `Single Page Template`
 
-     ![criar-modelo-site-comunidade](assets/create-community-site-template.png)
+    ![criar-modelo-site-comunidade](assets/create-community-site-template.png)
 
 * Selecionar `Next`
 * Etapa `2 - Design`
 
-   * Selecionar qualquer design
+  * Selecionar qualquer design
 
 * Selecionar `Next`
 * Selecionar `Next`
@@ -98,7 +105,7 @@ Após criar o modelo de site, na navegação global, selecione **[!UICONTROL Com
 
   ![criar-site-comunidade](assets/create-community-site.png)
 
-## Publish do site {#publish-the-site}
+## Publicar o site {#publish-the-site}
 
 ![publicar-site](assets/publish-site.png)
 
@@ -116,6 +123,6 @@ A URL é [http://localhost:4502/editor.html/content/sites/sample/en.html](http:/
 
 Na página inicial simples, é possível ver o que é pré-conectado por meio das funções e modelos da comunidade, além de brincar com a adição e configuração de componentes da comunidade.
 
-## Exibir site no Publish {#view-site-on-publish}
+## Exibir Site na Publicação {#view-site-on-publish}
 
 Após a publicação da página, abra a página na [instância de publicação](http://localhost:4503/content/sites/sample/en.html) para experimentar os recursos como um visitante anônimo do site, membro conectado ou administrador. O link Administração visível no ambiente de autor não aparece no ambiente de publicação, a menos que um administrador faça logon.

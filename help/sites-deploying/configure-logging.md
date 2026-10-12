@@ -9,13 +9,22 @@ feature: Configuring
 exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '640'
 ht-degree: 0%
-
 ---
-
 # Logs{#logging}
 
 O AEM oferece a possibilidade de configurar:
@@ -85,19 +94,19 @@ O primeiro é um caso especial, pois controla os arquivos `request.log` e `acces
 
 * O logger:
 
-   * Agente de dados de solicitação personalizável do Apache Sling
+  * Agente de dados de solicitação personalizável do Apache Sling
 
-     (org.apache.sling.engine.impl.log.RequestLoggerService)
+    (org.apache.sling.engine.impl.log.RequestLoggerService)
 
-   * Gravar mensagens sobre o conteúdo da solicitação em `request.log`.
+  * Gravar mensagens sobre o conteúdo da solicitação em `request.log`.
 
 * Links para:
 
-   * Logger de solicitação do Apache Sling
+  * Logger de solicitação do Apache Sling
 
-     (org.apache.sling.engine.impl.log.RequestLogger)
+    (org.apache.sling.engine.impl.log.RequestLogger)
 
-   * Grava as mensagens em `request.log` ou `access.log`.
+  * Grava as mensagens em `request.log` ou `access.log`.
 
 Eles podem ser personalizados, se necessário, embora a configuração padrão seja adequada para a maioria das instalações.
 
@@ -105,24 +114,24 @@ Os outros pares seguem a configuração padrão:
 
 * O logger:
 
-   * Configuração do logger de log do Apache Sling
+  * Configuração do logger de log do Apache Sling
 
-     (org.apache.sling.commons.log.LogManager.fatory.config)
+    (org.apache.sling.commons.log.LogManager.fatory.config)
 
-   * Grava `Information` mensagens em `logs/error.log`.
+  * Grava `Information` mensagens em `logs/error.log`.
 
 * Links para o autor:
 
-   * Configuração do Apache Sling Logging Writer
+  * Configuração do Apache Sling Logging Writer
 
-     (org.apache.sling.commons.log.LogManager.fatory.writer)
+    (org.apache.sling.commons.log.LogManager.fatory.writer)
 
 * O logger:
 
-   * Configuração do logger de log do Apache Sling
-(org.apache.sling.commons.log.LogManager.fatory.config.649d51b7-6425-45c9-81e6-2697a03d6be7)
+  * Configuração do logger de log do Apache Sling
+    (org.apache.sling.commons.log.LogManager.fatory.config.649d51b7-6425-45c9-81e6-2697a03d6be7)
 
-   * Grava `Warning` mensagens em `../logs/error.log` para o serviço `org.apache.pdfbox`.
+  * Grava `Warning` mensagens em `../logs/error.log` para o serviço `org.apache.pdfbox`.
 
 * Não vincula a um Gravador específico, portanto, criará e usará um Gravador implícito com configuração padrão (rotação diária de log).
 

@@ -10,7 +10,18 @@ exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '4964'
 ht-degree: 1%
@@ -47,7 +58,7 @@ Antes de qualquer discussão séria começar sobre o desenvolvimento de componen
 
 * **Interface do usuário habilitada para toque**
   [A interface de usuário padrão](/help/sites-developing/touch-ui-concepts.md) é baseada na experiência de usuário unificada da Adobe Experience Cloud, usando as tecnologias subjacentes da [Interface de usuário do Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui) e da [Interface de usuário do Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
-* Interface clássica do **&#x200B;**
+* Interface clássica do ****
 Interface do usuário baseada na tecnologia ExtJS, que foi descontinuada com o AEM 6.4.
 
 Consulte [Recomendações da interface do usuário para clientes](/help/sites-deploying/ui-recommendations.md) para obter mais detalhes.
@@ -597,7 +608,7 @@ Há muitas configurações existentes no repositório. Você pode pesquisar faci
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* Para procurar um nó filho de `cq:editConfig`, por exemplo, você pode procurar por `cq:dropTargets`, que é do tipo `cq:DropTargetConfig`; você pode usar a ferramenta Consulta no **&#x200B; CRXDE Lite** e pesquisar com a seguinte sequência de consulta XPath:
+* Para procurar um nó filho de `cq:editConfig`, por exemplo, você pode procurar por `cq:dropTargets`, que é do tipo `cq:DropTargetConfig`; você pode usar a ferramenta Consulta no** CRXDE Lite** e pesquisar com a seguinte sequência de consulta XPath:
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 

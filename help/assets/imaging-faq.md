@@ -9,13 +9,29 @@ feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3480'
 ht-degree: 1%
-
 ---
-
 # Imagem inteligente {#smart-imaging}
 
 A Smart Imaging aplica as características de visualização exclusivas de cada usuário para fornecer as imagens certas otimizadas automaticamente para sua experiência, resultando em melhor desempenho e envolvimento.
@@ -40,7 +56,7 @@ E agora, obtenha uma melhor pontuação do Google Core Web Vital para LCP (Large
 >* Largura de banda de rede
 >* DPR (Relação de pixels do dispositivo)
 >
->Para saber como é fácil usar o Instantâneo, reproduza o [Vídeo de treinamento do Instantâneo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minutos e 17 segundos).
+>Para saber como é fácil usar o Instantâneo, reproduza o [Vídeo de treinamento do Instantâneo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minutos e 17 segundos).
 
 A Smart Imaging se beneficia do aumento de desempenho de estar totalmente integrado ao melhor serviço premium de CDN (Content Delivery Network) da Adobe. Este serviço encontra a rota de Internet ideal entre servidores, redes e pontos de correspondência. Ele encontra uma rota que tem a menor latência e a menor taxa de perda de pacotes em vez de usar a rota padrão na Internet.
 
@@ -90,7 +106,7 @@ Ativar a Conversão de Formato de Navegador anexando `bfc=on` à URL da imagem c
 
 Você pode desativar o Smart Imaging anexando `bfc=off` ao URL da imagem.
 
-Consulte também [bfc](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) na API de disponibilização e renderização de imagens do Dynamic Media.
+Consulte também [bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) na API de disponibilização e renderização de imagens do Dynamic Media.
 
 ### Sobre a otimização da Relação de pixels do dispositivo (dpr) {#dpr}
 
@@ -244,29 +260,29 @@ Ao criar o caso de suporte, especifique quais recursos de Imagem inteligente voc
 
    * **Detalhes do contato primário:**
 
-      * Forneça seu nome, email e número de telefone.
+     * Forneça seu nome, email e número de telefone.
 
    * **Recursos de Imagem Inteligente a serem habilitados:**
 
-      * Liste os recursos que deseja para sua conta:
+     * Liste os recursos que deseja para sua conta:
 
-         * Conversão do formato do navegador: WebP ou AVIF
-         * Otimização da largura de banda da rede
-         * DPR: O DPR requer ajustes do lado do cliente para determinar o `dprValue` correto. Portanto, a Adobe recomenda habilitar o DPR por meio de URLs, anexando `dpr=on,dprValue`.
+       * Conversão do formato do navegador: WebP ou AVIF
+       * Otimização da largura de banda da rede
+       * DPR: O DPR requer ajustes do lado do cliente para determinar o `dprValue` correto. Portanto, a Adobe recomenda habilitar o DPR por meio de URLs, anexando `dpr=on,dprValue`.
 
    * **Domínio para Smart Imaging:**
 
-      * Listar todos os domínios relevantes, como *`company.com`* ou *`mycompany.scene7.com`*
-      * A Imagem inteligente é compatível com domínios genéricos e personalizados.
-      * Para identificar seus domínios, abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) e entre na conta da sua empresa.
+     * Listar todos os domínios relevantes, como *`company.com`* ou *`mycompany.scene7.com`*
+     * A Imagem inteligente é compatível com domínios genéricos e personalizados.
+     * Para identificar seus domínios, abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) e entre na conta da sua empresa.
 
-         1. Navegue até **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do Aplicativo]** > **[!UICONTROL Configurações Gerais]**.
-         1. Procure o campo **[!UICONTROL Nome do Servidor Publicado]** para confirmar seu domínio.
-         1. Verifique se você está usando o CDN da Adobe em vez de um gerenciado por outro provedor.
+       1. Navegue até **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do Aplicativo]** > **[!UICONTROL Configurações Gerais]**.
+       1. Procure o campo **[!UICONTROL Nome do Servidor Publicado]** para confirmar seu domínio.
+       1. Verifique se você está usando o CDN da Adobe em vez de um gerenciado por outro provedor.
 
    * **Indicar suporte HTTP/2:**
 
-      * Especifique se você precisa que o Smart Imaging funcione em HTTP/2.
+     * Especifique se você precisa que o Smart Imaging funcione em HTTP/2.
 
 1. O Suporte ao cliente da Adobe ativa os recursos de Imagem inteligente solicitados por padrão, eliminando a necessidade de anexar parâmetros manualmente aos URLs.
 1. A Adobe recomenda definir o TTL (Time To Live) para pelo menos 24 horas, a fim de maximizar o desempenho por meio do armazenamento em cache.
@@ -340,7 +356,8 @@ Esse cabeçalho informa o seguinte:
 >
 >Se o valor de `X-Adobe-Smart-Imaging` for -1 e o WebP ainda estiver sendo entregue, o Smart Imaging estará ativo. No entanto, os benefícios de tamanho não foram calculados devido ao cache desatualizado. Você pode usar `cache=update` (apenas uma vez) na URL da imagem para corrigir esse problema.
 >Um exemplo de uso do modificador:
->`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`>Para invalidar todo o cache, você deve criar um caso de suporte.
+>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
+>Para invalidar todo o cache, você deve criar um caso de suporte.
 
 +++
 

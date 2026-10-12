@@ -9,13 +9,27 @@ exl-id: 0d36160a-29fa-4cc4-a0ff-fc681d3e040e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1082'
 ht-degree: 0%
-
 ---
-
 # Estratégias de backup para pastas monitoradas {#backup-strategies-for-watched-folders}
 
 Esse conteúdo descreve como as pastas monitoradas são afetadas por diferentes cenários de backup e recuperação, as limitações e os resultados desses cenários e como minimizar a perda de dados.
@@ -159,11 +173,11 @@ As estratégias a seguir podem minimizar a perda de dados da pasta de saída e d
 * Se o backup de pasta monitorada disponível for mais antigo do que o tempo necessário para processar o trabalho, você deverá permitir que o sistema crie uma pasta monitorada e coloque automaticamente os arquivos na pasta de entrada.
 * Se o último backup disponível não for suficientemente recente, o tempo de backup for menor que o tempo necessário para processar os arquivos e a pasta monitorada for restaurada, o arquivo será manipulado em um dos seguintes estágios diferentes:
 
-   * **Estágio 1:** na pasta de entrada
-   * **Estágio 2:** Copiado para a pasta de preparo, mas o processo ainda não foi chamado
-   * **Estágio 3:** Copiado para a pasta de preparo e o processo é chamado
-   * **Estágio 4:** Manipulação em andamento
-   * **Estágio 5:** Resultados retornados
+  * **Estágio 1:** na pasta de entrada
+  * **Estágio 2:** Copiado para a pasta de preparo, mas o processo ainda não foi chamado
+  * **Estágio 3:** Copiado para a pasta de preparo e o processo é chamado
+  * **Estágio 4:** Manipulação em andamento
+  * **Estágio 5:** Resultados retornados
 
   Se os arquivos estiverem no Estágio 1, eles serão manipulados. Se os arquivos estiverem no Estágio 2 ou 3, coloque-os na pasta de entrada para que a manipulação ocorra novamente.
 

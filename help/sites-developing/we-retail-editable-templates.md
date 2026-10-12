@@ -9,13 +9,22 @@ exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '495'
 ht-degree: 2%
-
 ---
-
 # Experimentar modelos editáveis no We.Retail{#trying-out-editable-templates-in-we-retail}
 
 Com os modelos editáveis, criar e manter modelos não é mais uma tarefa somente para desenvolvedores. Um tipo de usuário avançado, chamado de autor de modelo, agora pode criar modelos. Os desenvolvedores ainda são necessários para configurar o ambiente, criar bibliotecas de clientes e criar os componentes a serem usados, mas quando essas noções básicas estiverem em vigor, o autor do modelo terá a flexibilidade de criar e configurar modelos sem um projeto de desenvolvimento.
@@ -57,10 +66,10 @@ Todas as páginas no We.Retail são baseadas em modelos editáveis, permitindo q
    * Selecionar uma política existente ou criar uma política para o container
    * Defina os recursos disponíveis para o autor da página ao usar esse componente, como
 
-      * Fontes de colagem permitidas
-      * Opções de formatação
-      * Estilos de parágrafo permitidos
-      * Caracteres especiais permitidos
+     * Fontes de colagem permitidas
+     * Opções de formatação
+     * Estilos de parágrafo permitidos
+     * Caracteres especiais permitidos
 
    Muitos componentes baseados nos componentes principais permitem a configuração de opções no nível do componente por meio dos modelos editáveis, eliminando a necessidade de personalização pelos desenvolvedores.
 
@@ -74,4 +83,4 @@ Todas as páginas no We.Retail são baseadas em modelos editáveis, permitindo q
 
 Para obter mais informações, consulte o documento de criação [Criação de modelos de página](/help/sites-authoring/templates.md) ou o documento do desenvolvedor Página [Modelos - Editáveis](/help/sites-developing/page-templates-editable.md) para obter detalhes técnicos completos sobre modelos editáveis.
 
-Você também pode investigar [componentes principais](/help/sites-developing/we-retail-core-components.md). Consulte o documento de criação [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) para obter uma visão geral dos recursos dos componentes principais e o documento do desenvolvedor [Desenvolvendo componentes principais](https://helpx.adobe.com/br/experience-manager/core-components/using/developing.html) para obter uma visão geral técnica.
+Você também pode investigar [componentes principais](/help/sites-developing/we-retail-core-components.md). Consulte o documento de criação [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) para obter uma visão geral dos recursos dos componentes principais e o documento do desenvolvedor [Desenvolvendo componentes principais](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) para obter uma visão geral técnica.

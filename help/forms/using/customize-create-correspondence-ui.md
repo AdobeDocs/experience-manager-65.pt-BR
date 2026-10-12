@@ -9,13 +9,26 @@ feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1098'
 ht-degree: 0%
-
 ---
-
 # Personalizar criar interface de correspondência{#customize-create-correspondence-ui}
 
 ## Visão geral {#overview}
@@ -48,7 +61,7 @@ A ramificação `/apps` (estrutura de pastas):
 
 * Garante a segurança dos arquivos se houver uma atualização do sistema. Se houver uma atualização, um pacote de recursos ou um hot fix, a ramificação `/libs` será atualizada e, se você hospedar suas alterações na ramificação `/libs`, elas serão substituídas.
 * Ajuda a não perturbar o sistema/ramificação atual, o que você pode desfazer por engano se usar os locais padrão para armazenar os arquivos personalizados.
-* Ajuda os seus recursos a obter uma prioridade mais alta quando o AEM procura recursos. O AEM está configurado para pesquisar primeiro a ramificação `/apps` e depois a ramificação `/libs` para encontrar um recurso. Esse mecanismo significa que o sistema usa sua sobreposição (e as personalizações definidas lá).
+* Ajuda os recursos a terem uma prioridade mais alta quando o AEM procura recursos. O AEM está configurado para pesquisar primeiro a ramificação `/apps` e depois a ramificação `/libs` para encontrar um recurso. Esse mecanismo significa que o sistema usa sua sobreposição (e as personalizações definidas lá).
 
 Use as etapas a seguir para criar a estrutura de pasta necessária na ramificação `/apps`:
 
@@ -106,7 +119,7 @@ Use as etapas a seguir para criar a estrutura de pasta necessária na ramificaç
 
 ## Carregar o novo logotipo no CRX {#uploadlogo}
 
-Faça upload do seu arquivo de logotipo personalizado para o CRX. As regras de HTML padrão regem a renderização do logotipo. Os formatos de arquivo de imagem compatíveis são de acordo com o navegador usado para acessar o AEM Forms. Todos os navegadores suportam JPEG, GIF e PNG. Para obter mais informações, consulte a documentação específica do navegador sobre os formatos de imagem compatíveis.
+Faça upload do seu arquivo de logotipo personalizado para o CRX. As regras padrão do HTML regem a renderização do logotipo. Os formatos de arquivo de imagem compatíveis são de acordo com o navegador usado para acessar o AEM Forms. Todos os navegadores são compatíveis com JPEG, GIF e PNG. Para obter mais informações, consulte a documentação específica do navegador sobre os formatos de imagem compatíveis.
 
 * As dimensões padrão da imagem do logotipo são 48 px &#42; 48 px. Verifique se a imagem é semelhante a este tamanho ou maior que 48 px &#42; 48 px.
 * Se a altura da imagem do logotipo for superior a 50 px, a interface de usuário Criar correspondência dimensionará a imagem para uma altura máxima de 50 px, pois essa é a altura do cabeçalho. Ao reduzir a imagem, a interface do usuário Criar correspondência mantém a proporção da imagem.
@@ -114,7 +127,7 @@ Faça upload do seu arquivo de logotipo personalizado para o CRX. As regras de H
 
 Use as seguintes etapas para fazer upload do arquivo de logotipo personalizado para o CRX:
 
-1. Ir para `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessário, efetue login como Administrador.
+1. Acesse `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessário, efetue login como Administrador.
 1. No CRXDE, clique com o botão direito do mouse na pasta **imgs** no seguinte caminho e selecione **Criar > Criar arquivo**:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
@@ -131,7 +144,7 @@ Use as seguintes etapas para fazer upload do arquivo de logotipo personalizado p
 
 1. Clique em jcr:content na estrutura de pastas.
 
-   jcr:propriedades do conteúdo são exibidas.
+   as propriedades do jcr:content são exibidas.
 
    ![jcrcontentproperties](assets/jcrcontentproperties.png)
 
@@ -139,11 +152,11 @@ Use as seguintes etapas para fazer upload do arquivo de logotipo personalizado p
 
    A caixa de diálogo Editar jcr:data é exibida.
 
-   Agora clique na pasta newlogo.png, clique duas vezes em jcr:content (opção dim) e defina o tipo nt:resource. Se não estiver presente, crie uma propriedade com o nome jcr:content.
+   Clique na pasta newlogo.png, clique duas vezes em jcr:content (opção dim) e defina o tipo nt:resource. Se não estiver presente, crie uma propriedade com o nome jcr:content.
 
 1. Na caixa de diálogo Editar jcr:data, clique em **Procurar** e selecione o arquivo de imagem que deseja usar como logotipo (aqui CustomLogo.png).
 
-   Os formatos de arquivo de imagem compatíveis são de acordo com o navegador usado para acessar o AEM Forms. Todos os navegadores suportam JPEG, GIF e PNG. Para obter mais informações, consulte a documentação específica do navegador sobre os formatos de imagem compatíveis.
+   Os formatos de arquivo de imagem compatíveis são de acordo com o navegador usado para acessar o AEM Forms. Todos os navegadores são compatíveis com JPEG, GIF e PNG. Para obter mais informações, consulte a documentação específica do navegador sobre os formatos de imagem compatíveis.
 
    ![Arquivo de logotipo personalizado de exemplo](assets/geometrixx-outdoors.png)
 
@@ -157,7 +170,7 @@ A imagem de logotipo personalizada requer que uma folha de estilos adicional sej
 
 Use as etapas a seguir para criar a folha de estilos para renderizar o logotipo com a interface do usuário:
 
-1. Ir para `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessário, efetue login como Administrador.
+1. Acesse `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessário, efetue login como Administrador.
 1. Crie um arquivo chamado customcss.css (você não pode usar um nome de arquivo diferente) no seguinte local:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css/`
@@ -166,7 +179,7 @@ Use as etapas a seguir para criar a folha de estilos para renderizar o logotipo 
 
    1. Clique com o botão direito na pasta **css** e selecione **Criar > Criar arquivo**.
    1. Na caixa de diálogo Novo Arquivo, especifique o nome do CSS como `customcss.css` (você não pode usar um nome de arquivo diferente) e clique em **OK**.
-   1. Adicione o seguinte código ao arquivo css recém-criado. Em content:url no código, especifique o nome da imagem carregada na pasta imgs no CRXDE.
+   1. Adicione o seguinte código ao arquivo css recém-criado. No conteúdo :url no código, especifique o nome da imagem que você carregou para a pasta imgs no CRXDE.
 
       ```css
       .logo, .logo:after {

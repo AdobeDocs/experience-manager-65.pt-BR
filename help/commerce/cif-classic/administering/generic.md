@@ -9,7 +9,17 @@ exl-id: c29f6213-1df6-45af-91c8-14b255276d82
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2961'
 ht-degree: 2%
@@ -166,7 +176,7 @@ Antes de criar produtos, defina um [scaffold](/help/sites-authoring/scaffolding.
 >
 >`/etc/commerce/products/...`
 >
->Isso significa que, por padrão, eles estão bloqueados pelo [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR), portanto, configure conforme necessário.
+>Isso significa que, por padrão, eles estão bloqueados pelo [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html), portanto, configure conforme necessário.
 
 #### Edição de informações do produto - Interface otimizada para toque {#editing-product-information-touch-optimized-ui}
 

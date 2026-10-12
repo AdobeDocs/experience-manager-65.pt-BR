@@ -10,13 +10,20 @@ role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3185'
+source-wordcount: '3201'
 ht-degree: 0%
-
 ---
-
 # Console de sites das comunidades {#communities-sites-console}
 
 O console Sites de comunidades fornece acesso a:
@@ -103,12 +110,12 @@ No painel Modelo de site, o Título, a Descrição, a Raiz do site, o Idioma bas
 
   O nome da página raiz do site que aparece no URL.
 
-   * Verifique novamente o nome, pois ele não pode ser facilmente alterado após a criação do site.
-   * A URL base ( `https://server:port/site root/site name)`) é exibida abaixo de `Community Site Name`.
+  * Verifique novamente o nome, pois ele não pode ser facilmente alterado após a criação do site.
+  * A URL base ( `https://server:port/site root/site name)`) é exibida abaixo de `Community Site Name`.
 
-   * Para um URL válido, anexe um código de idioma base + &quot;.html&quot;
+  * Para um URL válido, anexe um código de idioma base + &quot;.html&quot;
 
-     *Por exemplo*, `https://localhost:4502/content/sites/mysight/en.html`
+    *Por exemplo*, `https://localhost:4502/content/sites/mysight/en.html`
 
 * Menu **Modelo de site da comunidade**
 
@@ -144,8 +151,8 @@ Ao criar ou selecionar uma imagem, lembre-se:
 * A imagem é fixada na borda esquerda da janela do navegador.
 * Não há redimensionamento da imagem, de modo que, quando a largura da imagem for...
 
-   * Menor que a largura do navegador, a imagem se repete horizontalmente.
-   * Maior que a largura do navegador, a imagem parece estar cortada.
+  * Menor que a largura do navegador, a imagem se repete horizontalmente.
+  * Maior que a largura do navegador, a imagem parece estar cortada.
 
 * Selecione **Próximo**.
 
@@ -178,23 +185,33 @@ O painel Configurações contém vários subpainéis que apresentam recursos a s
 
 * **Permitir Registro de Usuário**
 
-  Se marcado, os visitantes do site podem se tornar membros da comunidade por meio do autorregistro.Se desmarcado, o site da comunidade é *restrito* e os visitantes do site devem ser atribuídos ao grupo de membros do site da comunidade, fazer uma solicitação ou receber um convite por email. Se desmarcado, o acesso anônimo não deverá ser permitido.Desmarque para um site de comunidade *privado*. O padrão está marcado.
+  Se marcado, os visitantes do site podem se tornar membros da comunidade por meio do autorregistro.
+  Se desmarcado, o site da comunidade é *restrito* e os visitantes do site devem ser atribuídos ao grupo de membros do site da comunidade, fazer uma solicitação ou receber um convite por email. Se desmarcado, o acesso anônimo não deverá ser permitido.
+  Desmarque para um site de comunidade *privado*. O padrão está marcado.
 
 * **Permitir acesso anônimo**
 
-  Se marcado, o site da comunidade será *aberto* e qualquer visitante do site poderá acessá-lo.Se a opção estiver desmarcada, somente os membros conectados poderão acessar o site.Desmarque para um site de comunidade *privado*. O padrão está marcado.
+  Se marcado, o site da comunidade será *aberto* e qualquer visitante do site poderá acessá-lo.
+  Se a opção estiver desmarcada, somente os membros conectados poderão acessar o site.
+  Desmarque para um site de comunidade *privado*. O padrão está marcado.
 
 * **Permitir mensagens**
 
-  Se marcados, os membros poderão enviar mensagens entre si e para o grupo no site da comunidade.Se desmarcada, as mensagens não estão configuradas para a comunidade.O padrão está desmarcado.
+  Se marcados, os membros poderão enviar mensagens entre si e para o grupo no site da comunidade.
+  Se desmarcada, as mensagens não estão configuradas para a comunidade.
+  O padrão está desmarcado.
 
 * **Permitir logons sociais: Facebook**
 
-  Se marcado, permitirá que os visitantes do site façam logon com suas credenciais de conta do Facebook. A [configuração de nuvem do Facebook](/help/communities/social-login.md#create-a-facebook-connect-cloud-service) selecionada deve ser configurada para adicionar usuários ao grupo de membros do site da comunidade depois que o site da comunidade for criado.Se desmarcada, nenhum logon do Facebook será apresentado.Deixe desmarcado para um site da comunidade *privado*. O padrão está desmarcado.
+  Se marcado, permitirá que os visitantes do site façam logon com suas credenciais de conta do Facebook. A [configuração de nuvem do Facebook](/help/communities/social-login.md#create-a-facebook-connect-cloud-service) selecionada deve ser configurada para adicionar usuários ao grupo de membros do site da comunidade depois que o site da comunidade for criado.
+  Se desmarcada, nenhum logon do Facebook será apresentado.
+  Deixe desmarcado para um site da comunidade *privado*. O padrão está desmarcado.
 
 * **Permitir logons sociais: Twitter**
 
-  Se marcado, permitirá que os visitantes do site façam logon com suas credenciais de conta do Twitter. A [configuração de nuvem do Twitter](/help/communities/social-login.md#create-a-twitter-connect-cloud-service) selecionada deve ser configurada para adicionar usuários ao grupo de membros do site da comunidade depois que o site da comunidade for criado.Se desmarcada, nenhum login do Twitter será apresentado.Deixe desmarcado para um site da comunidade *privado*. O padrão está desmarcado.
+  Se marcado, permitirá que os visitantes do site façam logon com suas credenciais de conta do Twitter. A [configuração de nuvem do Twitter](/help/communities/social-login.md#create-a-twitter-connect-cloud-service) selecionada deve ser configurada para adicionar usuários ao grupo de membros do site da comunidade depois que o site da comunidade for criado.
+  Se desmarcada, nenhum login do Twitter será apresentado.
+  Deixe desmarcado para um site da comunidade *privado*. O padrão está desmarcado.
 
 >[!NOTE]
 >
@@ -256,7 +273,8 @@ A configuração global para moderar conteúdo gerado pelo usuário (UGC) é con
 
 * **Habilitar Analytics**
 
-  Disponível somente quando o Adobe Analytics foi [configurado](/help/communities/analytics.md) para os recursos das Comunidades.O padrão está desmarcado. Quando marcado, um menu de seleção adicional é exibido:
+  Disponível somente quando o Adobe Analytics foi [configurado](/help/communities/analytics.md) para os recursos das Comunidades.
+  O padrão está desmarcado. Quando marcado, um menu de seleção adicional é exibido:
 
 ![site-analytics-enable](assets/site-analytics-enable.png)
 
@@ -293,38 +311,39 @@ A configuração global para moderar conteúdo gerado pelo usuário (UGC) é con
 
 * **Selecione as opções de tradução para seu site da comunidade**
 
-   * **Traduzir página inteira**
+  * **Traduzir página inteira**
 
-     Se selecionado, todo o UGC em uma página será traduzido para o idioma base da página.
+    Se selecionado, todo o UGC em uma página será traduzido para o idioma base da página.
 
-     O padrão é *não selecionado*.
+    O padrão é *não selecionado*.
 
-   * **Traduzir somente a seleção**
+  * **Traduzir somente a seleção**
 
-     Se selecionada, uma opção de tradução é exibida ao lado de cada postagem, permitindo que postagens individuais sejam traduzidas para o idioma base da página.O padrão é *seleted*.
+    Se selecionada, uma opção de tradução é exibida ao lado de cada postagem, permitindo que postagens individuais sejam traduzidas para o idioma base da página.
+    O padrão é *seleted*.
 
 * **Selecionar Opções de Persistência**
 
-   * **Traduzir as contribuições a pedido do usuário e continuar posteriormente**
-Se selecionado, o conteúdo não é traduzido até que uma solicitação seja feita. Depois de traduzida, a tradução é armazenada no repositório.
+  * **Traduzir as contribuições a pedido do usuário e continuar posteriormente**
+    Se selecionado, o conteúdo não é traduzido até que uma solicitação seja feita. Depois de traduzida, a tradução é armazenada no repositório.
 
-     O padrão é *não selecionado*.
+    O padrão é *não selecionado*.
 
-   * **Não continuar com as traduções**
+  * **Não continuar com as traduções**
 
-     Se selecionada, as traduções não são armazenadas no repositório.
+    Se selecionada, as traduções não são armazenadas no repositório.
 
-     Se não for selecionada, as traduções serão mantidas.
+    Se não for selecionada, as traduções serão mantidas.
 
-     O padrão é *não selecionado*.
+    O padrão é *não selecionado*.
 
 * **Renderização inteligente**
 
   Selecione um de:
 
-   * `Always show contributions in the original language` (default)
-   * `Always show contributions in user preferred language`
-   * `Show contributions in user preferred language for only logged-in users`
+  * `Always show contributions in the original language` (default)
+  * `Always show contributions in user preferred language`
+  * `Show contributions in user preferred language for only logged-in users`
 
 ### Etapa 4: Criar site das comunidades {#step-create-communities-site}
 
@@ -397,17 +416,17 @@ O painel ESTRUTURA permite a modificação da estrutura criada inicialmente a pa
 * Arraste e solte [funções adicionais da comunidade](/help/communities/functions.md) na estrutura do site.
 * Em uma instância de uma função da comunidade na estrutura do site:
 
-   * **`gear icon`**
+  * **`gear icon`**
 
-     Edite as configurações, incluindo o título de exibição e o nome da URL, e [grupos de membros privilegiados](/help/communities/users.md#privilegedmembersgroups).
+    Edite as configurações, incluindo o título de exibição e o nome da URL, e [grupos de membros privilegiados](/help/communities/users.md#privilegedmembersgroups).
 
-   * **`trashcan icon`**
+  * **`trashcan icon`**
 
-     Remover (excluir) funções da estrutura do site.
+    Remover (excluir) funções da estrutura do site.
 
-   * **`grid icon`**
+  * **`grid icon`**
 
-     Modifique a ordem das funções conforme exibidas na barra de navegação de nível superior do site.
+    Modifique a ordem das funções conforme exibidas na barra de navegação de nível superior do site.
 
 >[!NOTE]
 >
@@ -436,7 +455,7 @@ O painel DESIGN permite que um novo tema seja aplicado:
 * [Tema do site da comunidade](#community-site-theme)
 * [Marca do site da comunidade](#community-site-branding)
 
-   * Role até a parte inferior do painel para que você possa alterar a imagem da marca.
+  * Role até a parte inferior do painel para que você possa alterar a imagem da marca.
 
 ### Modificar configurações {#modify-settings}
 
@@ -498,7 +517,8 @@ Para obter detalhes, consulte [Gerenciamento de usuários e grupos de usuários]
 
 >[!NOTE]
 >
->Se [Permitir logon social: Facebook](#user-management) estiver habilitado, depois que o grupo de usuários for criado, o [serviço de nuvem do Facebook](/help/communities/social-login.md#createafacebookcloudservice) aplicado deverá ser configurado para adicionar usuários a esse grupo.
+>Se [Permitir logon social: Facebook](#user-management) estiver habilitado, depois que o grupo de usuários `community-<site-name>-<uid>-members`
+>for criado, o [serviço de nuvem do Facebook](/help/communities/social-login.md#createafacebookcloudservice) aplicado deverá ser configurado para adicionar usuários a esse grupo.
 
 ## Configurar para erro de autenticação {#configure-for-authentication-error}
 
@@ -510,7 +530,7 @@ Para redirecionar corretamente, depois que um site for configurado e enviado par
 * Faça logon com privilégios de administrador.
 * Acesse o [Console da Web](/help/sites-deploying/configuring-osgi.md).
 
-   * Por exemplo, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
+  * Por exemplo, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
 
 * Localizar `Adobe Granite Login Selector Authentication Handler`.
 * Selecione o ícone `pencil` para poder abrir a configuração para edição.
@@ -531,7 +551,7 @@ Na mesma instância de publicação do AEM configurada com um mapeamento de pág
 
 * Navegue até a página inicial do site da comunidade.
 
-   * Por exemplo, [https://localhost:4503/content/sites/engage/en.html](https://localhost:4503/content/sites/engage/en.html)
+  * Por exemplo, [https://localhost:4503/content/sites/engage/en.html](https://localhost:4503/content/sites/engage/en.html)
 
 * Selecione Fazer logoff.
 * Selecione Fazer logon.

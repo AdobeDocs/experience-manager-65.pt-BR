@@ -14,19 +14,34 @@ autotag-review: '2026-05-18T18:45:05.823Z'
 TQID: 'https://experienceleague.adobe.com/a5ifneRAYCIMHKCGJHGQu9aoQt3EWZu1hiGYItlPZOE'
 product_v2:
   - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
+    internal-label: Intermediate
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: 324
+source-wordcount: '324'
 ht-degree: 9%
-
 ---
-
 # Entregar ativos do Dynamic Media{#delivering-dynamic-media-assets}
 
 A maneira de fornecer os ativos do Dynamic Media, como vídeo e imagens, depende de como seu site é implementado.
@@ -36,9 +51,9 @@ Com o Dynamic Media, você tem várias opções:
 * Se o site estiver hospedado no Adobe Experience Manager, será necessário adicionar os ativos do Dynamic Media diretamente à página.
 * Se o seu site não estiver no Experience Manager, você terá a opção de:
 
-   * Incorporar o vídeo ou a imagem no site.
-   * Vincule URLs ao aplicativo da Web. Use a vinculação quando quiser fornecer um reprodutor de vídeo como uma janela pop-up ou modal.
-   * Se o seu site é responsivo, você pode [fornecer imagens otimizadas](/help/assets/responsive-site.md).
+  * Incorporar o vídeo ou a imagem no site.
+  * Vincule URLs ao aplicativo da Web. Use a vinculação quando quiser fornecer um reprodutor de vídeo como uma janela pop-up ou modal.
+  * Se o seu site é responsivo, você pode [fornecer imagens otimizadas](/help/assets/responsive-site.md).
 
 >[!NOTE]
 >

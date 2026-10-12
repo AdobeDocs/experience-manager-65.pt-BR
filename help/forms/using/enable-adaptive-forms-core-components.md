@@ -9,13 +9,27 @@ role: Admin, Developer
 feature: Adaptive Forms,Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 0487a5669fbaab35974eb85eb099b82e0847a4f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 3%
-
+source-wordcount: '1079'
+ht-degree: 7%
 ---
-
 # Ativar os componentes principais adaptáveis do Forms no AEM 6.5 Forms {#enable-adaptive-forms-core-components}
 
 | Versão | Link do artigo |
@@ -27,7 +41,7 @@ ht-degree: 3%
 
 Habilitar os Componentes Principais do Forms Adaptive permite começar a criar, publicar e entregar o [Forms Adaptive baseado nos Componentes Principais](create-an-adaptive-form-core-components.md) e o [Forms Adaptive Headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=pt-BR) do seu ambiente do AEM 6.5 Forms.
 
-Para habilitar os Componentes principais do Adaptive Forms no ambiente do AEM 6.5 Forms, configure e implante um projeto baseado no [Arquétipo AEM 41 ou posterior](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) (com as opções de formulários habilitadas) em todas as suas instâncias de Autor e Publicação.
+Para habilitar os Componentes principais do Adaptive Forms no ambiente do AEM 6.5 Forms, configure e implante um projeto baseado no [Arquétipo AEM 41 ou posterior](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) (com as opções de formulários habilitadas) em todas as suas instâncias de Autor e Publicação.
 
 Este artigo fornece instruções detalhadas para configurar e implantar o projeto baseado no AEM Archetype 41 ou posterior no ambiente do AEM 6.5 Forms para ativar os Componentes principais adaptáveis do Forms. Consulte a lista abaixo para ver as versões compatíveis do **AEM 6.5** para habilitar os Componentes Principais do Forms:
 
@@ -35,7 +49,7 @@ Este artigo fornece instruções detalhadas para configurar e implantar o projet
 
 Antes de ativar os Componentes principais do Adaptive Forms em um ambiente Forms do AEM 6.5:
 
-* [Atualize para o AEM 6.5 Forms Service Pack 16 (6.5.16.0) ou posterior](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=pt-BR).
+* [Atualize para o AEM 6.5 Forms Service Pack 16 (6.5.16.0) ou posterior](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html).
 
 * Instale a última versão do [Apache Maven](https://maven.apache.org/download.cgi).
 
@@ -104,15 +118,15 @@ Para criar um projeto baseado no Arquétipo AEM 41 ou [mais tarde](https://githu
 1. Atualize o projeto para incluir a versão mais recente dos Componentes principais do Forms:
 
    1. Abra a [Pasta de Projeto do Arquétipo do AEM]/pom.xml para edição.
-   1. Defina as versões de `core.forms.components.version` e `core.forms.components.af.version` com a versão [mais recente dos Componentes Principais do Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html?lang=pt-BR#aem-as-form-version-history) e verifique se ambas têm a mesma versão que os **Componentes Principais do Forms** mencionados na tabela, e defina a versão de `core.wcm.components.version` conforme fornecido nos [Componentes Principais do WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/versions.html?lang=pt-BR).
+   1. Defina as versões de `core.forms.components.version` e `core.forms.components.af.version` com a versão [mais recente dos Componentes Principais do Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history) e verifique se ambas têm a mesma versão que os **Componentes Principais do Forms** mencionados na tabela, e defina a versão de `core.wcm.components.version` conforme fornecido nos [Componentes Principais do WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/versions.html).
 
       >[!WARNING]
       >
-      >* Ao criar um projeto do Arquétipo com versão 45, o `[AEM Archetype Project Folder]/pom.xml` define inicialmente a versão dos componentes principais de formulários como 1.1.28. Antes de criar ou implantar o projeto Arquétipo, atualize a versão dos componentes principais de formulários para 1.1.26. Você pode encontrar a última versão no [histórico de versões do AEM 6.5 Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html?lang=pt-BR#aem-as-form-version-history).
+      >* Ao criar um projeto do Arquétipo com versão 45, o `[AEM Archetype Project Folder]/pom.xml` define inicialmente a versão dos componentes principais de formulários como 1.1.28. Antes de criar ou implantar o projeto Arquétipo, atualize a versão dos componentes principais de formulários para 1.1.26. Você pode encontrar a última versão no [histórico de versões do AEM 6.5 Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history).
 
       >[!NOTE]
       >
-      >* Incluir na lista de permissões Se você configurar qualquer outra topologia, certifique-se de que o envio, o preenchimento prévio e outros URLs necessários, juntamente com os seletores necessários (por exemplo, `/content/forms/*model.json`), sejam adicionados à pesquisa na camada do Dispatcher.
+      >* Se você configurar qualquer outra topologia, verifique se o envio, o preenchimento prévio e outras URLs necessárias, juntamente com os seletores necessários (por exemplo, `/content/forms/*model.json`), foram adicionados ao incluo na lista de permissões na camada do Dispatcher.
 
    1. Salvar e fechar o arquivo.
 
@@ -132,7 +146,7 @@ Para criar um projeto baseado no Arquétipo AEM 41 ou [mais tarde](https://githu
 
    Depois que o Arquétipo do AEM for criado com êxito, um pacote do AEM será gerado. Você pode encontrar o pacote em [Pasta de Projeto do AEM Archetype]\all\target\[appid].all-[version].zip
 
-1. Use o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) para implantar o [pacote de Pasta de Projeto do Arquétipo do AEM]\all\target\[appid].all-[version].zip em todas as instâncias de Autor e Publicação.
+1. Use o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en) para implantar o [pacote de Pasta de Projeto do Arquétipo do AEM]\all\target\[appid].all-[version].zip em todas as instâncias de Autor e Publicação.
 
 >[!NOTE]
 >

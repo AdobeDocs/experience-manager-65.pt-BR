@@ -1,6 +1,6 @@
 ---
 title: Rastreamento de emails devolvidos
-description: Quando você envia um informativo para muitos usuários, geralmente há alguns endereços de email inválidos na lista. O envio de informativos para esses endereços será rejeitado. O AEM pode gerenciar essas rejeições e pode interromper o envio de informativos para esses endereços depois que o contador de rejeições configurado é excedido.
+description: Quando você envia um informativo para muitos usuários, geralmente há alguns endereços de email inválidos na lista. O envio de informativos para esses endereços será rejeitado. O AEM pode gerenciar essas rejeições e pode interromper o envio de informativos para esses endereços depois que o contador de rejeições configurado for excedido.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -9,22 +9,33 @@ exl-id: 6cda0a68-0df9-44e7-ae4f-9951411af6dd
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '714'
 ht-degree: 0%
-
 ---
-
 # Rastreamento de emails devolvidos{#tracking-bounced-emails}
 
 >[!NOTE]
 >
->O Adobe não planeja aprimorar ainda mais o rastreamento de emails abertos/rejeitados enviados pelo serviço AEM SMTP.
+>A Adobe não planeja aprimorar ainda mais o rastreamento de emails abertos/rejeitados enviados pelo serviço SMTP do AEM.
 >
 >A recomendação é [usar o Adobe Campaign e sua integração com o AEM](/help/sites-administering/campaign.md).
 
-Quando você envia um informativo para muitos usuários, geralmente há alguns endereços de email inválidos na lista. O envio de informativos para esses endereços será rejeitado. O AEM pode gerenciar essas rejeições e pode interromper o envio de informativos para esses endereços depois que o contador de rejeições configurado é excedido. Por padrão, a taxa de rejeição é definida como 3, mas é configurável.
+Quando você envia um informativo para muitos usuários, geralmente há alguns endereços de email inválidos na lista. O envio de informativos para esses endereços será rejeitado. O AEM pode gerenciar essas rejeições e pode interromper o envio de informativos para esses endereços depois que o contador de rejeições configurado for excedido. Por padrão, a taxa de rejeição é definida como 3, mas é configurável.
 
 Para configurar o AEM para rastrear emails devolvidos, configure o AEM para pesquisar uma caixa de correio existente onde os emails devolvidos são recebidos. Normalmente, esse local é o endereço de email &quot;de&quot; que você especifica para onde enviar o informativo. O AEM pesquisa essa caixa de entrada e importa todos os emails abaixo do caminho especificado na configuração de pesquisa. Um fluxo de trabalho é acionado para procurar os endereços de email rejeitados nos usuários e atualiza o valor da propriedade bounceCounter do usuário de acordo. Depois que o máximo de rejeições configurado for excedido, o usuário será removido da lista de boletins informativos.
 
@@ -64,7 +75,7 @@ Para configurar o importador de feed para rastrear emails devolvidos, faça o se
 
    Permite que você defina os sinalizadores a serem pesquisados.
 
-   `imap.flag.SEEN`:Definir falso para mensagem nova/não vista, verdadeiro para mensagens já lidas
+   `imap.flag.SEEN`:Set falso para mensagem nova/não vista, verdadeiro para mensagens já lidas
 
    Consulte [https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html](https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html) para obter a lista completa de sinalizadores.
 

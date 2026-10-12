@@ -9,13 +9,22 @@ exl-id: c81c5910-b6c9-41bd-8840-a6782792701f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 0%
-
+source-wordcount: '359'
+ht-degree: 1%
 ---
-
 # Designs e o Designer{#designs-and-the-designer}
 
 >[!CAUTION]
@@ -44,7 +53,7 @@ Os designs são armazenados em `/apps/<your-project>`. O caminho para o design a
 >
 >Todas as alterações feitas em uma página no modo de design são persistentes abaixo do nó de design do site e são aplicadas automaticamente a todas as páginas que têm o mesmo design.
 
-## Do que você precisará {#what-you-will-need}
+## O que você vai precisar {#what-you-will-need}
 
 Para realizar seu design, você precisará:
 

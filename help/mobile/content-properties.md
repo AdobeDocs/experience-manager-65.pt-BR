@@ -9,13 +9,17 @@ exl-id: 05c8c846-69cc-4075-9149-33890b3d1e08
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 20%
-
+source-wordcount: '354'
+ht-degree: 19%
 ---
-
 # Nós e propriedades de conteúdo {#content-properties-and-nodes}
 
 {{ue-over-mobile}}
@@ -31,7 +35,7 @@ As tabelas a seguir descrevem as propriedades de conteúdo e os nós.
 | **Nome da Propriedade** | **Tipo** | **Valores Padrões ou Esperados** | **Descrição** |
 |---|---|---|---|
 | dps-id | String |  | atribuído pelo AEM Mobile e armazenado pelo AEM depois de carregado no AEM Mobile ou importado do AEM Mobile |
-| dps-resourceType | String | dps:Article | `dps:Banner` `dps:Collection` \| `entity type property` |
+| dps-resourceType | String | dps:Article | `dps:Banner` \| `dps:Collection` \| `entity type property` |
 | dps-version | String |  | versão da entidade AEM Mobile (também contida na aemm-id completa) |
 | dps-lastSynced | Data |  | data da última sincronização/importação do AEM Mobile para o AEM |
 | dps-lastUploaded | Data |  | data do último upload do AEM para o AEM Mobile |

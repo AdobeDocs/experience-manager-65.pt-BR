@@ -9,13 +9,27 @@ exl-id: 5cb906b6-6a3c-498c-94f5-27a9071ea934
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '459'
 ht-degree: 3%
-
 ---
-
 # Criar uma tela de logon{#creating-a-new-login-screen}
 
 Você pode modificar a tela de logon de todos os módulos do AEM Forms que usam a tela de logon do AEM Forms. Por exemplo, as modificações afetam a tela de logon do Forms Manager e da área de trabalho do AEM Forms.
@@ -293,7 +307,7 @@ Por exemplo:
 1. Adicionar novas imagens em `/apps/livecycle/core/content/login`. Para adicionar uma imagem:
 
    1. Instale o cliente WebDAV.
-   1. Navegue até a pasta `/apps/livecycle/core/content/login`, usando o cliente webDAV. Para obter mais informações, consulte [Acesso ao WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=pt-BR).
+   1. Navegue até a pasta `/apps/livecycle/core/content/login`, usando o cliente webDAV. Para obter mais informações, consulte [Acesso ao WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
 
    1. Adicione novas imagens.
 

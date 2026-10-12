@@ -5,29 +5,42 @@ exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1155'
-ht-degree: 39%
-
+source-wordcount: '1173'
+ht-degree: 38%
 ---
-
 # Sua caixa de entrada{#your-inbox}
 
 Você pode receber notificações de várias áreas do AEM, incluindo fluxos de trabalho e projetos; por exemplo, sobre:
 
 * Tarefas:
 
-   * eles também podem ser criados em vários pontos da interface do usuário do AEM, por exemplo, em **Projetos**,
-   * estes podem ser o produto de uma etapa de fluxo de trabalho **Criar tarefa** ou **Criar tarefa do projeto**.
+  * eles também podem ser criados em vários pontos da interface do usuário do AEM, por exemplo, em **Projetos**,
+  * estes podem ser o produto de uma etapa de fluxo de trabalho **Criar tarefa** ou **Criar tarefa do projeto**.
 
 * Fluxos de trabalhos:
 
-   * itens de trabalho que representam as ações que devem ser executadas no conteúdo da página;
+  * itens de trabalho que representam as ações que devem ser executadas no conteúdo da página;
 
-      * estes são o produto de etapas do fluxo de trabalho **Participante**
+    * estes são o produto de etapas do fluxo de trabalho **Participante**
 
-   * itens de falha, para permitir que os administradores tentem novamente a etapa que falhou.
+  * itens de falha, para permitir que os administradores tentem novamente a etapa que falhou.
 
 Você recebe essas notificações em sua própria caixa de entrada, onde pode visualizá-las e executar ações.
 
@@ -64,7 +77,7 @@ O AEM pronto para uso vem pré-carregado com quatro tarefas atribuídas ao grupo
 * Habilitar coleta de dados estatísticos de uso agregados
 * [Configurar HTTPS](/help/sites-administering/ssl-by-default.md)
 
-## Abrir a Caixa de entrada   {#opening-the-inbox}
+## Abrir a Caixa de entrada {#opening-the-inbox}
 
 Para abrir a caixa de entrada de notificação do AEM:
 
@@ -112,9 +125,9 @@ Para ambas as visualizações (Lista e Calendário), é possível definir certas
 
   Para a **visualização de Calendário**, você pode configurar:
 
-   * **Agrupar por**
-   * **Agendamento** ou **Nenhum**
-   * **Tamanho do cartão**
+  * **Agrupar por**
+  * **Agendamento** ou **Nenhum**
+  * **Tamanho do cartão**
 
   ![wf-92](assets/wf-92.png)
 
@@ -122,8 +135,8 @@ Para ambas as visualizações (Lista e Calendário), é possível definir certas
 
   Para a **visualização de Lista**, você pode configurar o mecanismo de classificação:
 
-   * **Classificar Campo**
-   * **Ordem de classificação**
+  * **Classificar Campo**
+  * **Ordem de classificação**
 
   ![wf-83](assets/inbox-settings.png)
 
@@ -140,21 +153,21 @@ A opção Admin Control permite que os administradores:
 A opção Admin Control está visível somente para os membros do grupo `administrators` ou `workflow-administrators`.
 
 * **Personalização de coluna**: personalize uma Caixa de Entrada do AEM para alterar o título padrão de uma coluna, reordenar a posição de uma coluna e exibir colunas adicionais com base nos dados de um fluxo de trabalho.
-   * **Adicionar Coluna**: selecione uma coluna para adicionar à Caixa de Entrada do AEM.
-   * **Editar Coluna**: passe o mouse sobre o título da coluna e selecione o ícone ![editar](assets/edit.svg) para inserir um nome de exibição de coluna.
-   * **Excluir Coluna**: selecione o ícone ![excluir](assets/delete_updated.svg) para excluir a coluna da Caixa de Entrada do AEM.
-   * **Mover Coluna**: arraste o ícone ![mover](assets/move_updated.svg) para mover uma coluna para uma nova posição na Caixa de Entrada do AEM.
+  * **Adicionar Coluna**: selecione uma coluna para adicionar à Caixa de Entrada do AEM.
+  * **Editar Coluna**: passe o mouse sobre o título da coluna e selecione o ícone ![editar](assets/edit.svg) para inserir um nome de exibição de coluna.
+  * **Excluir Coluna**: selecione o ícone ![excluir](assets/delete_updated.svg) para excluir a coluna da Caixa de Entrada do AEM.
+  * **Mover Coluna**: arraste o ícone ![mover](assets/move_updated.svg) para mover uma coluna para uma nova posição na Caixa de Entrada do AEM.
 
   ![admin-control](assets/admin-control-column-customize.png)
 
 * **Personalização de marca**
 
-   * **Personalizar texto de cabeçalho:** Especifique o texto a ser exibido no cabeçalho para substituir o texto padrão **Adobe Experience Manager**.
+  * **Personalizar texto de cabeçalho:** Especifique o texto a ser exibido no cabeçalho para substituir o texto padrão **Adobe Experience Manager**.
 
-   * **Personalizar Logotipo:** Especifique a imagem a ser exibida no cabeçalho como logotipo. Carregue uma imagem no Gerenciamento de ativos digitais (DAM) e consulte essa imagem no campo.
+  * **Personalizar Logotipo:** Especifique a imagem a ser exibida no cabeçalho como logotipo. Carregue uma imagem no Gerenciamento de ativos digitais (DAM) e consulte essa imagem no campo.
 
 * **Navegação do usuário**
-   * **Ocultar opções de navegação:** selecione esta opção para ocultar as opções de navegação disponíveis no cabeçalho. As opções de navegação incluem links para outras soluções, o link Ajuda e as opções de criação disponíveis ao tocar no logotipo ou texto do Adobe Experience Manager.
+  * **Ocultar opções de navegação:** selecione esta opção para ocultar as opções de navegação disponíveis no cabeçalho. As opções de navegação incluem links para outras soluções, o link Ajuda e as opções de criação disponíveis ao tocar no logotipo ou texto do Adobe Experience Manager.
 * **Salvar:** Clique nesta opção para salvar as configurações.
 
 ## Realizar ação em um item {#taking-action-on-an-item}
@@ -174,9 +187,9 @@ A opção Admin Control está visível somente para os membros do grupo `adminis
    * **Reatribuir**/**Delegar** um item.
    * **Abrir** um item; dependendo do tipo de item, essa ação pode:
 
-      * mostrar as propriedades do item
-      * abrir um painel ou assistente apropriado para executar outras ações
-      * abrir documentação relacionada
+     * mostrar as propriedades do item
+     * abrir um painel ou assistente apropriado para executar outras ações
+     * abrir documentação relacionada
 
    * **Recuar** para uma etapa anterior.
    * Visualizar a carga de um fluxo de trabalho.
@@ -213,26 +226,26 @@ Na caixa de entrada, é possível criar tarefas:
 
    * **Básico**:
 
-      * **Título**
-      * **Projeto**
-      * **Destinatário**
-      * **Conteúdo**; semelhante à Carga, esta é uma referência da tarefa a um local no repositório
-      * **Descrição**
-      * **Prioridade da tarefa**
-      * **Data inicial**
-      * **Data de vencimento**
+     * **Título**
+     * **Projeto**
+     * **Destinatário**
+     * **Conteúdo**; semelhante à Carga, esta é uma referência da tarefa a um local no repositório
+     * **Descrição**
+     * **Prioridade da tarefa**
+     * **Data inicial**
+     * **Data de vencimento**
 
    ![wf-86](assets/wf-86.png)
 
    * **Avançado**
 
-      * **Nome**: é usado para formar a URL; se estiver vazio, será baseado no **Título**.
+     * **Nome**: é usado para formar a URL; se estiver vazio, será baseado no **Título**.
 
    ![wf-87](assets/wf-87.png)
 
 1. Selecione **Enviar**.
 
-## Criação de um projeto   {#creating-a-project}
+## Criação de um projeto {#creating-a-project}
 
 Para determinadas tarefas, você pode criar um [Projeto](/help/sites-authoring/projects.md) com base nessa tarefa:
 
@@ -250,15 +263,15 @@ Para determinadas tarefas, você pode criar um [Projeto](/help/sites-authoring/p
 
    * **Básico**
 
-      * **Título**
-      * **Descrição**
-      * **Data inicial**
-      * **Data de vencimento**
-      * **Usuário** e função
+     * **Título**
+     * **Descrição**
+     * **Data inicial**
+     * **Data de vencimento**
+     * **Usuário** e função
 
    * **Avançado**
 
-      * **Nome**
+     * **Nome**
 
    >[!NOTE]
    >

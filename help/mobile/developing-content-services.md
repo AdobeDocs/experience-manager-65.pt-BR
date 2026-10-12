@@ -1,5 +1,5 @@
 ---
-title: Content Services
+title: Serviços de conteúdo
 description: Saiba como usar o AEM Mobile Content Services para solicitar conteúdo gerenciado pelo AEM.
 contentOwner: User
 content-type: reference
@@ -8,14 +8,18 @@ exl-id: 955ffb1c-4fa9-43bb-8e5b-2df7f2d17951
 solution: Experience Manager
 feature: Mobile
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '295'
 ht-degree: 1%
-
 ---
-
-# Content Services{#content-services}
+# Serviços de conteúdo{#content-services}
 
 {{ue-over-mobile}}
 
@@ -25,13 +29,13 @@ ht-degree: 1%
 >
 >Ela está sujeita a alterações com o lançamento do 6.3 Service Pack 1.
 
-O AEM Mobile Content Services é um recurso leve para solicitar conteúdo gerenciado pelo AEM. Isso fornece a todos os desenvolvedores de aplicativos uma maneira de alto desempenho para recuperar conteúdo sem precisar ter profundo conhecimento do repositório de conteúdo AEM (JCR) e da estrutura da Web (Sling). Ele permite que os aplicativos solicitantes sejam dissociados do repositório de conteúdo.
+O AEM Mobile Content Services é um recurso leve para solicitar conteúdo gerenciado pelo AEM. Isso fornece a todos os desenvolvedores de aplicativos uma maneira de alto desempenho para recuperar conteúdo sem precisar ter um conhecimento profundo do repositório de conteúdo (JCR) e da estrutura da Web (Sling) da AEM. Ele permite que os aplicativos solicitantes sejam dissociados do repositório de conteúdo.
 
-Os Content Services apresentam várias novas construções de AEM que permitem que um desenvolvedor acesse conteúdo gerenciado por AEM sem conhecer a estrutura do repositório desse conteúdo.
+Os Content Services apresentam várias novas construções do AEM que permitem que um desenvolvedor acesse conteúdo gerenciado pela AEM sem conhecer a estrutura do repositório desse conteúdo.
 
-Essas construções são necessárias para manter a flexibilidade e permitir a expansão futura, fornecendo uma camada de abstração entre o conteúdo gerenciado pelo AEM e os aplicativos móveis que consomem o conteúdo. Isso permite que o AEM Content Services funcione como uma camada de abstração entre os requisitos de conteúdo do aplicativo nativo e o repositório de conteúdo AEM.
+Essas construções são necessárias para manter a flexibilidade e permitir a expansão futura, fornecendo uma camada de abstração entre o conteúdo gerenciado pela AEM e os aplicativos móveis que consomem o conteúdo. Isso permite que o AEM Content Services funcione como uma camada de abstração entre os requisitos de conteúdo do aplicativo nativo e o repositório de conteúdo do AEM.
 
-Os Serviços de conteúdo podem fornecer o conteúdo como ativos, HTML empacotado (HTML/CSS/JS) ou como conteúdo independente de canal.
+Os Serviços de conteúdo podem fornecer o conteúdo como ativos, pacotes de HTML (HTML/CSS/JS) ou como conteúdo independente de canal.
 
 >[!CAUTION]
 >

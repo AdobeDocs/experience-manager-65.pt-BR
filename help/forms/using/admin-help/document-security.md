@@ -1,21 +1,29 @@
 ---
 title: O que é segurança de documentos?
-
 description: Saiba como criar, armazenar e aplicar configurações de confidencialidade predefinidas e distribuir suas informações com segurança usando a segurança de documentos.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 docset: aem65
-
 feature: Document Security
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3302'
 ht-degree: 0%
@@ -27,7 +35,7 @@ A segurança de documentos garante que somente usuários autorizados possam usar
 * Arquivos do Adobe PDF
 * Arquivos do Microsoft® Word, Excel e PowerPoint
 
-Para obter mais informações sobre como as políticas protegem os tipos de arquivos aceitos, consulte [mais informações de segurança de documentos](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-security/document-security-offerings.html?lang=pt-BR).
+Para obter mais informações sobre como as políticas protegem os tipos de arquivos aceitos, consulte [mais informações de segurança de documentos](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-security/document-security-offerings.html?lang=en).
 
 Usando a segurança de documentos, você pode criar, armazenar e aplicar facilmente configurações de confidencialidade predefinidas a seus documentos. Para evitar que as informações se espalhem além do seu alcance, você também pode monitorar e controlar como os recipients usam seus documentos depois de distribuí-los.
 
@@ -254,7 +262,7 @@ Adicione grupos de usuários a políticas em vez de usuários individuais. Isso 
 
   Usar conjuntos de políticas facilita a atribuição e o gerenciamento de políticas relacionadas a usuários específicos em uma organização ou departamento. Por exemplo, conjuntos de políticas separados para o departamento de finanças e recursos humanos podem ajudar a gerenciar e aplicar políticas relacionadas facilmente a documentos designados para departamentos correspondentes.
 
-* **Use um autorizador externo para aplicar permissões dinamicamente:** Você pode usar o [autorizador externo](https://help.adobe.com/pt_BR/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) para avaliar e aplicar dinamicamente permissões com base na condição externa. Quando as permissões são avaliadas dinamicamente, com base na condição externa, você pode:
+* **Use um autorizador externo para aplicar permissões dinamicamente:** Você pode usar o [autorizador externo](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) para avaliar e aplicar dinamicamente permissões com base na condição externa. Quando as permissões são avaliadas dinamicamente, com base na condição externa, você pode:
 
   * Forneça controle de acesso centralizado para documentos em sua organização.
 
@@ -262,7 +270,7 @@ Adicione grupos de usuários a políticas em vez de usuários individuais. Isso 
 
   * Use um mecanismo de controle de acesso que seu sistema de gerenciamento de conteúdo usa, além do processo padrão de avaliação de políticas. Por exemplo, quando o serviço determina se um usuário pode imprimir um documento protegido por política, ele pode usar o processo padrão de avaliação de política. E também pode usar o mecanismo de controle de acesso que seu sistema de gerenciamento de conteúdo usa.
 
-  Embora seja possível substituir completamente o processo de avaliação de política de Segurança de documentos por um manipulador de autorização externo, é recomendável usar um manipulador de autorização externo com o processo de avaliação de política. Como resultado, o acesso aos documentos pode ser controlado pelo mesmo mecanismo de controle que seu sistema de gerenciamento de conteúdo usa. Por exemplo, quando o serviço de Segurança de documentos determina se um usuário pode imprimir um documento protegido por política, ele usa o processo padrão de avaliação de política. Ele também usa o mecanismo de controle de acesso que seu sistema de gerenciamento de conteúdo usa. Para obter mais informações, consulte [Criando Manipuladores de Autorização Externa](https://help.adobe.com/pt_BR/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
+  Embora seja possível substituir completamente o processo de avaliação de política de Segurança de documentos por um manipulador de autorização externo, é recomendável usar um manipulador de autorização externo com o processo de avaliação de política. Como resultado, o acesso aos documentos pode ser controlado pelo mesmo mecanismo de controle que seu sistema de gerenciamento de conteúdo usa. Por exemplo, quando o serviço de Segurança de documentos determina se um usuário pode imprimir um documento protegido por política, ele usa o processo padrão de avaliação de política. Ele também usa o mecanismo de controle de acesso que seu sistema de gerenciamento de conteúdo usa. Para obter mais informações, consulte [Criando Manipuladores de Autorização Externa](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
 
 * **Mantenha os conjuntos de políticas em um número limitado:** Vários fatores levam ao crescimento constante de políticas e conjuntos de políticas. Alguns fatores comuns são:
 

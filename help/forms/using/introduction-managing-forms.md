@@ -9,13 +9,27 @@ exl-id: 3e063456-7f96-483d-86a3-6a414746db8a
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User
-source-git-commit: c6dd35fbedba6ace60975a7c31e987edd69a8c69
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 1%
-
 ---
-
 # Introdução ao gerenciamento de formulários {#introduction-to-managing-forms}
 
 O AEM [!DNL Forms] fornece uma interface simplificada, mas poderosa, para criar e gerenciar formulários, documentos, temas, cartas, fragmentos de documentos, dicionários de dados e ativos relacionados. Ele ajuda a gerenciar o ciclo de vida completo de formulários, documentos e ativos relacionados, desde o desktop de um desenvolvedor até a oferta
@@ -56,8 +70,8 @@ O botão Criar é o ponto inicial do processo de criação ou carregamento do at
 
 * **Pasta:** A interface de usuário do AEM [!DNL Forms] usa pastas para organizar ativos. Ela é compatível com dois tipos de pastas:
 
-   * **Pasta Geral:** Estas pastas são usadas para ativos criados na interface do usuário do AEM [!DNL Forms]. Essas pastas não têm uma estrutura de pastas rígida. Você pode renomear, criar subpastas e armazenar formulários adaptáveis, Comunicações interativas, fragmentos de formulários adaptáveis, Modelos de formulário (XDPs), PDF forms, Documentos e ativos relacionados nessas pastas.
-   * **Pasta do Forms Workflow:** as pastas de fluxo de trabalho do Forms são criadas quando os processos do Workbench (arquivos LiveCycle) são migrados e sincronizados com a interface do usuário do AEM [!DNL Forms]. Não é permitido renomear, criar uma subpasta, criar uma Comunicação interativa, um fragmento de formulário adaptável ou uma Comunicação interativa. Também não é permitido excluir uma pasta de versão ou criar e carregar um formulário adaptável, um fragmento de formulário adaptável ou uma Comunicação interativa em paralelo à pasta de versão.
+  * **Pasta Geral:** Estas pastas são usadas para ativos criados na interface do usuário do AEM [!DNL Forms]. Essas pastas não têm uma estrutura de pastas rígida. Você pode renomear, criar subpastas e armazenar formulários adaptáveis, Comunicações interativas, fragmentos de formulários adaptáveis, Modelos de formulário (XDPs), PDF forms, Documentos e ativos relacionados nessas pastas.
+  * **Pasta do Forms Workflow:** as pastas de fluxo de trabalho do Forms são criadas quando os processos do Workbench (arquivos LiveCycle) são migrados e sincronizados com a interface do usuário do AEM [!DNL Forms]. Não é permitido renomear, criar uma subpasta, criar uma Comunicação interativa, um fragmento de formulário adaptável ou uma Comunicação interativa. Também não é permitido excluir uma pasta de versão ou criar e carregar um formulário adaptável, um fragmento de formulário adaptável ou uma Comunicação interativa em paralelo à pasta de versão.
 
   ![pastas](assets/folders.png)
 
@@ -106,8 +120,8 @@ O painel Ferramentas do AEM contém ferramentas para vários componentes. Para n
 
 * **Painel esquerdo:** Você pode clicar no ícone do painel esquerdo ![railleftpng](assets/railleftpng.png) para revelar os recursos de Linha do Tempo e Referências do AEM [!DNL Forms].
 
-   * **Linha do tempo:** Você pode adicionar e exibir comentários em um ativo que esteja disponível para revisão na linha do tempo. Para obter instruções detalhadas, consulte [Criação e gerenciamento de revisões para ativos em formulários](../../forms/using/create-reviews-forms.md).
-   * **Referências:** um ativo AEM [!DNL Forms] pode ser usado em vários ativos AEM [!DNL Forms]. Por exemplo, um fragmento de documento pode ser usado em várias letras. Referências é uma lista de ativos (outros formulários ou recursos) em que o ativo selecionado é usado e também a lista de outros ativos que o ativo selecionado está usando.
+  * **Linha do tempo:** Você pode adicionar e exibir comentários em um ativo que esteja disponível para revisão na linha do tempo. Para obter instruções detalhadas, consulte [Criação e gerenciamento de revisões para ativos em formulários](../../forms/using/create-reviews-forms.md).
+  * **Referências:** um ativo AEM [!DNL Forms] pode ser usado em vários ativos AEM [!DNL Forms]. Por exemplo, um fragmento de documento pode ser usado em várias letras. Referências é uma lista de ativos (outros formulários ou recursos) em que o ativo selecionado é usado e também a lista de outros ativos que o ativo selecionado está usando.
 
 * **Navegação estrutural:** uma navegação estrutural representa o título do console ou pasta atual. Você pode clicar na opção Navegação estrutural para navegar entre o nível de pastas que estão mais altos na hierarquia.
 * **Alternador de Exibição:** Você pode clicar no ícone Alternador de Exibição ![viewlist](assets/viewlist.png) ou ![viewcard](assets/viewcard.png) para alternar rapidamente entre o modo de exibição de lista e cartão. Para obter mais informações sobre componentes comuns da interface do usuário, consulte [Criação](/help/sites-authoring/author.md).

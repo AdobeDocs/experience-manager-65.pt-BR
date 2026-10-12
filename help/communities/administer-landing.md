@@ -1,6 +1,6 @@
 ---
 title: Sites de comunidades
-description: Saiba mais sobre os fundamentos das comunidades Adobe Experience Manager (AEM) para administradores que já estão familiarizados com seus recursos básicos.
+description: Saiba mais sobre os fundamentos das comunidades do Adobe Experience Manager (AEM) para administradores que já estão familiarizados com seus recursos básicos.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -9,13 +9,20 @@ role: Admin
 exl-id: e3ffc73e-2bc5-492d-b64b-750cc7d8ab9b
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '453'
 ht-degree: 4%
-
 ---
-
 # Sites de comunidades {#communities-sites}
 
 Esta seção é para quem administra o AEM Communities e presume familiaridade com os recursos do AEM Communities.
@@ -33,22 +40,22 @@ Para obter uma visão geral e tutoriais de introdução, visite:
 
 * Comunidades [consoles](consoles.md)
 
-   * [Sites](sites-console.md)
+  * [Sites](sites-console.md)
 
-      * [Grupos (subcomunidades)](groups.md)
+    * [Grupos (subcomunidades)](groups.md)
 
-   * [Moderação](moderation.md)
-   * [Gerenciamento de Membros e Grupos](members.md)
-   * [Relatórios](reports.md)
+  * [Moderação](moderation.md)
+  * [Gerenciamento de Membros e Grupos](members.md)
+  * [Relatórios](reports.md)
 
 * Comunidades [*ferramentas*](tools.md):
 
-   * [Modelos de site](sites.md)
-   * [Modelos de grupo](tools-groups.md)
-   * [Funções da comunidade](functions.md)
-   * [Configuração de armazenamento](srp-config.md)
-   * [Guia do componente](components-guide.md)
-   * [Selos](badges.md)
+  * [Modelos de site](sites.md)
+  * [Modelos de grupo](tools-groups.md)
+  * [Funções da comunidade](functions.md)
+  * [Configuração de armazenamento](srp-config.md)
+  * [Guia do componente](components-guide.md)
+  * [Selos](badges.md)
 
 
 ### Conteúdo gerado pelo usuário {#user-generated-content}
@@ -68,7 +75,7 @@ Um recurso importante do AEM Communities é a geração de conteúdo gerado pelo
 * [Serviço de Túnel](deploy-communities.md#tunnel-service-on-author): permite que membros do lado da publicação e grupos de membros sejam acessados do ambiente de criação.
 * [Consoles de membros e grupos](members.md): permite que membros do lado da publicação e grupos de membros sejam criados e gerenciados no ambiente de criação.
 * [Sincronização de Usuário](sync.md): para sincronizar membros e grupos de membros em várias instâncias de publicação.
-* [Logon no Social com o Facebook e o Twitter](social-login.md): capacidade de os visitantes do site se tornarem membros da comunidade usando suas credenciais do Facebook ou do Twitter.
+* [Logon social com o Facebook e o Twitter](social-login.md): capacidade de os visitantes do site se tornarem membros da comunidade usando suas credenciais do Facebook ou do Twitter.
 * [Pontuação e medalhas](implementing-scoring.md): capacidade de atribuir medalhas para identificar funções de um membro e para que os membros ganhem medalhas por meio de sua participação na comunidade.
 * [Notificações](notifications.md): capacidade de os membros serem notificados sobre as atividades que seguem.
 * [Assinaturas](subscriptions.md): capacidade de os membros interagirem com a comunidade usando email externo.

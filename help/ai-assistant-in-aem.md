@@ -15,9 +15,16 @@ product_v2:
 feature_v2:
   - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
     internal-label: AI Tools
+subfeature_v2:
+  - id: bf7fca06-df97-4229-884f-76afcfade5ad
+    internal-label: AI Assistant
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
@@ -34,7 +41,7 @@ topic_v2:
     internal-label: Insights
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a6f7741fe575a194732abee7dfc9c531d1c58cc2
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1327'
 ht-degree: 78%
@@ -62,7 +69,7 @@ Ele é incorporado diretamente no AEM e acessível a partir do AEM Experience Hu
 
 O vídeo a seguir de 3 minutos e 25 segundos oferece uma apresentação passo-a-passo do Assistente de IA no AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475363/?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
 
 ## Obter acesso ao Assistente de IA no AEM{#get-access}
 
@@ -77,7 +84,7 @@ Para obter acesso ao Assistente de IA no AEM, os clientes devem ter o seguinte:
 
 **Para obter acesso ao Assistente de IA no AEM:**
 
-1. Os clientes devem ter um contrato adicional em vigor para acessar a maioria dos recursos agênticos e viabilizados por IA no Adobe Experience Manager. Entre em contato com o representante da Adobe para obter mais detalhes. Para saber como funciona a ativação de IA gerativa, consulte [IA gerativa em aplicativos do CX Enterprise](https://experienceleague.adobe.com/pt-br/docs/cx-enterprise-ai/experience-cloud-ai/overview/generative-ai).
+1. Os clientes devem ter um contrato adicional em vigor para acessar a maioria dos recursos agênticos e viabilizados por IA no Adobe Experience Manager. Entre em contato com o representante da Adobe para obter mais detalhes. Para saber como funciona a ativação de IA gerativa, consulte [IA gerativa em aplicativos do CX Enterprise](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/generative-ai).
 
 1. Assim que sua organização tiver esse contrato, todos os usuários poderão usar o AI Assistant para Conhecimento do Produto por padrão. Não é necessária nenhuma permissão adicional por usuário ou por grupo.
 
@@ -113,7 +120,7 @@ O conhecimento sobre produtos abrange conceitos e tópicos derivados da document
 | Aprendizado direcionado | <ul><li>O que é o editor universal?</li><li>Como criar um programa no Cloud Manager?</li></ul> |
 | Abrir descoberta | <ul><li>Como usar o editor universal?</li><li>Existe uma maneira de copiar o conteúdo de um ambiente para outro?</li></ul> |
 | Resolução de problemas | <ul><li>Por que não posso acessar o editor universal?</li><li>Por que meu pipeline está falhando?</li></ul> |
-| **Criação de tíquetes de suporte** | **Disponível somente para Admins de suporte &#x200B;**<br>**Exemplos** |
+| **Criação de tíquetes de suporte** | **Disponível somente para Admins de suporte **<br>**Exemplos** |
 | Criação automatizada de tíquetes de suporte, capturando o histórico e o contexto do chat do Assistente de IA | <ul><li>Crie um tíquete de suporte para mim.</li></ul> |
 | Obtenha o status do tíquete de suporte | <ul><li>Mostre-me todos os tíquetes de suporte que abri.</li><li>Mostre-me o status do tíquete &quot;E-----------&quot;</li></ul> |
 

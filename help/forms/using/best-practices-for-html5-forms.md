@@ -10,13 +10,28 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 62ff6306-9989-43b0-abaf-b0a811f0a6a4
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1468'
 ht-degree: 0%
-
 ---
-
 # Práticas recomendadas para formulários HTML5{#best-practices-for-html-forms}
 
 ## Visão geral {#overview}
@@ -44,13 +59,13 @@ Assim, reduzir o tamanho dos recursos externos e usar apenas recursos absolutame
 
 * Usar [imagens compactadas](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md). Reduz a atividade de rede e a quantidade de memória necessária para renderizar um formulário. Portanto, o tempo de carregamento do formulário diminui substancialmente.
 * Use a opção de minificação no AEM Configuration Manager (Gerenciador de biblioteca HTML Day CQ) para compactar arquivos JavaScript e CSS. Para obter detalhes, consulte [Configurações de OSGi](/help/sites-deploying/osgi-configuration-settings.md).
-* Habilitar compactação da Web. Reduz o tamanho das solicitações e respostas originadas de um formulário. Para obter detalhes, consulte [Ajuste de desempenho do AEM Forms Server](https://helpx.adobe.com/br/aem-forms/6-3/performance-tuning-aem-forms.html).
+* Habilitar compactação da Web. Reduz o tamanho das solicitações e respostas originadas de um formulário. Para obter detalhes, consulte [Ajuste de desempenho do AEM Forms Server](https://helpx.adobe.com/aem-forms/6-3/performance-tuning-aem-forms.html).
 
 ## Manter o interesse ativo, mostrar apenas campos obrigatórios  {#keep-the-interest-alive-show-only-required-fields}
 
 Um formulário HTML5 pode ser executado em centenas de páginas. É lento carregar um formulário com um grande número de campos no navegador. Você pode executar as seguintes otimizações em um formulário XFA para otimizar os formulários com um grande número de campos e páginas:
 
-* Avaliar a divisão de formulários grandes em vários formulários. Também é possível usar um conjunto de formulários para agrupar todos os formulários menores e apresentá-los como uma única unidade. Um conjunto de formulários carrega somente formulários necessários. Além disso, em um conjunto de formulários, é possível configurar campos comuns em diferentes formulários para compartilhar associações de dados. As vinculações de dados ajudam os usuários a preencher informações comuns apenas uma vez; as informações são preenchidas automaticamente em formulários subsequentes, resultando em melhorias substanciais de desempenho. Para obter mais detalhes sobre conjuntos de formulários, consulte [Conjunto de formulários nos formulários do AEM](https://helpx.adobe.com/br/aem-forms/6-3/formset-in-aem-forms.html).
+* Avaliar a divisão de formulários grandes em vários formulários. Também é possível usar um conjunto de formulários para agrupar todos os formulários menores e apresentá-los como uma única unidade. Um conjunto de formulários carrega somente formulários necessários. Além disso, em um conjunto de formulários, é possível configurar campos comuns em diferentes formulários para compartilhar associações de dados. As vinculações de dados ajudam os usuários a preencher informações comuns apenas uma vez; as informações são preenchidas automaticamente em formulários subsequentes, resultando em melhorias substanciais de desempenho. Para obter mais detalhes sobre conjuntos de formulários, consulte [Conjunto de formulários nos formulários do AEM](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html).
 * Considere dividir seções e mover cada seção para uma página diferente. Os formulários HTML5 carregam dinamicamente cada página na solicitação de rolagem de página. Somente as páginas roladas (a página que está sendo exibida e as páginas que a precedem) são armazenadas na memória; o restante das páginas é carregado sob demanda. Assim, dividir e mover uma seção em uma página própria reduz o tempo necessário para carregar um formulário. Você também pode usar a primeira página do formulário como página inicial. É semelhante ao índice de um livro. Uma landing page do formulário contém apenas links para as outras seções do formulário. Ele melhora significativamente o tempo de carregamento da primeira página do formulário e resulta em uma experiência do usuário aprimorada.
 * Mantenha as seções condicionais ocultas, por padrão. Torne essas seções visíveis somente quando uma determinada condição for atendida. Ajuda a manter o tamanho do DOM no mínimo. Também é possível usar a navegação com guias para exibir apenas uma seção por vez.
 
@@ -61,7 +76,7 @@ Os formulários HTML5 podem conter campos orientados por dados (tabelas e subfor
 * Use scripts XFA para obter uma navegação paginada e exibir campos orientados por dados (tabelas e subformulários). Na navegação paginada, somente dados específicos são exibidos em uma página. Limita a operação de pintura do navegador aos campos que estão sendo exibidos de cada vez e facilita a navegação em um formulário. Além disso, os usuários dos dispositivos móveis estão interessados apenas em um subconjunto de dados. Ele ajuda a fornecer uma excelente experiência ao usuário e reduz o tempo necessário para carregar os dados necessários. Você tem duas soluções pelo preço de uma.  Observe também que a navegação paginada não está disponível imediatamente. Você pode usar scripts XFA para desenvolver a navegação paginada.
 
 * Avaliar a mesclagem de várias colunas somente leitura em uma única coluna. Ele reduz a memória necessária para exibir a forma. Além disso, evite exibir as colunas que não exigem entradas dos usuários.
-* Avalie a divisão do formulário orientado por dados em um [conjunto de formulários](https://helpx.adobe.com/br/aem-forms/6-3/formset-in-aem-forms.html), se as sugestões acima não resultarem em muitas melhorias. Por exemplo, se uma tabela tiver mais de 1000 linhas, mova cada 100 linhas para um formulário diferente. Isso ajudaria a melhorar o tempo de carregamento e o desempenho dos formulários.  Observe também que um conjunto de formulários produz um XML de envio consolidado para todos os formulários. Para diferenciar os dados de cada formulário, use raízes de dados diferentes. Para obter mais informações, consulte [Conjunto de formulários no AEM Forms](https://helpx.adobe.com/br/aem-forms/6-3/formset-in-aem-forms.html).
+* Avalie a divisão do formulário orientado por dados em um [conjunto de formulários](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html), se as sugestões acima não resultarem em muitas melhorias. Por exemplo, se uma tabela tiver mais de 1000 linhas, mova cada 100 linhas para um formulário diferente. Isso ajudaria a melhorar o tempo de carregamento e o desempenho dos formulários.  Observe também que um conjunto de formulários produz um XML de envio consolidado para todos os formulários. Para diferenciar os dados de cada formulário, use raízes de dados diferentes. Para obter mais informações, consulte [Conjunto de formulários no AEM Forms](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html).
 
 ## Poder de dois para documento de registro (DOR) {#power-of-two-for-document-of-record-dor}
 

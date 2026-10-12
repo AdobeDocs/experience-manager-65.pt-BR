@@ -14,21 +14,34 @@ autotag-review: '2026-05-18T18:45:43.326Z'
 TQID: 'https://experienceleague.adobe.com/MXCLWQOBsCl3DPKVPn-WjnPeu-NGnQtUn6EYueH7OfE'
 product_v2:
   - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
 feature_v2:
   - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: afe09f80-87de-4606-96de-7aecd50f1a65
+    internal-label: Image profiles
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
-source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
+    internal-label: Experienced
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: 2537
+source-wordcount: '2537'
 ht-degree: 0%
-
 ---
-
 # Definir configurações gerais do Dynamic Media
 
 A definição de **[!UICONTROL Configurações Gerais do Dynamic Media]** só estará disponível se:
@@ -64,7 +77,7 @@ Consulte também [Opcional - Configuração do Dynamic Media - Configurações d
    * Guia [Illustrator](#illustrator-tab)
 
    ![Página de configurações gerais do Dynamic Media](/help/assets/assets-dm/dm-general-settings.png)
-   *Página Configurações Gerais do Dynamic Media, com a guia **[!UICONTROL Edição de Imagem]**&#x200B;selecionada.*<br><br>
+   *Página Configurações Gerais do Dynamic Media, com a guia **[!UICONTROL Edição de Imagem]**selecionada.*<br><br>
 
 1. Quando terminar, próximo ao canto superior direito da página, selecione **[!UICONTROL Salvar]**.
 
@@ -98,7 +111,7 @@ Na criação da conta, o Adobe Dynamic Media fornece automaticamente os servidor
 
   Controla a preservação de qualquer definição de corte manual existente.
 
-  Consulte também `preserveCrop` em [UploadPostJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html?lang=pt-BR) e [ReprocessAssetsJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html?lang=pt-BR), ambos no Guia de Referência de Visualizadores do Dynamic Media.
+  Consulte também `preserveCrop` em [UploadPostJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html) e [ReprocessAssetsJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html), ambos no Guia de Referência de Visualizadores do Dynamic Media.
 
 ## Opções de upload padrão {#default-upload-options}
 

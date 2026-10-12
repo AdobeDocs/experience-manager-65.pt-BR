@@ -13,20 +13,32 @@ autotag-review: '2026-05-18T18:43:11.851Z'
 TQID: 'https://experienceleague.adobe.com/Qejzp9vTp-wLn92GsZdPdKEdA-84PnmYIROxdVrB4MU'
 product_v2:
   - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: fa7b95c2-9969-5924-a7c7-8cde1e7a2e26
+    internal-label: 3D Assets
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
+    internal-label: Metadata
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: 2419
+source-wordcount: '2419'
 ht-degree: 2%
-
 ---
-
 # Trabalhar com ativos 3D no Dynamic Media {#working-with-three-d-assets-dm}
 
 O Dynamic Media permite carregar, gerenciar, visualizar e fornecer ativos 3D como experiências imersivas.
@@ -52,7 +64,7 @@ Consulte também [formatos 3D compatíveis](/help/assets/assets-formats.md).
 | GLB | Transmissão GL Binária | model/gltf-binary | Inclui os materiais e texturas como um único ativo. |
 | OBJ | Arquivo de objeto 3D do WaveFront | application/x-tgif |  |
 | STL | Estereolitografia | application/vnd.ms-pki.stl |  |
-| USDZ | Arquivo Zip de Descrição de Cena Universal | model/vnd.usdz+zip | *Suporte somente para assimilação; não há visualização ou interação disponíveis.* O USDZ é um formato 3D proprietário que pode ser visualizado nativamente por dispositivos Safari e iOS. |
+| USDZ | Arquivo Zip do Universal Scene Description | model/vnd.usdz+zip | *Suporte somente para assimilação; não há visualização ou interação disponíveis.* O USDZ é um formato 3D proprietário que pode ser visualizado nativamente por dispositivos Safari e iOS. |
 
 >[!NOTE]
 >
@@ -79,19 +91,19 @@ Consulte [Configurar os serviços em nuvem do Dynamic Media](/help/assets/config
 
    * Organizar e pesquisar ativos 3D
 
-      * [Organize ativos digitais](/help/assets/organize-assets.md#organize-digital-assets).
-      * [Pesquisar ativos 3D](/help/assets/search-assets.md).
-      * [Use predicados personalizados para filtrar os resultados da pesquisa](/help/assets/search-assets.md#custompredicates).
+     * [Organize ativos digitais](/help/assets/organize-assets.md#organize-digital-assets).
+     * [Pesquisar ativos 3D](/help/assets/search-assets.md).
+     * [Use predicados personalizados para filtrar os resultados da pesquisa](/help/assets/search-assets.md#custompredicates).
 
    * Exibir ativos 3D
 
-      * [Exibir e interagir com ativos 3D](#viewing-three-d-assets).
-      * [Gerenciar a predefinição do visualizador Dimensional](/help/assets/managing-viewer-presets.md).
+     * [Exibir e interagir com ativos 3D](#viewing-three-d-assets).
+     * [Gerenciar a predefinição do visualizador Dimensional](/help/assets/managing-viewer-presets.md).
 
    * Trabalhar com metadados de ativos 3D
 
-      * [Gerenciar metadados para ativos digitais](/help/assets/metadata.md).
-      * [Esquemas de metadados](/help/assets/metadata-schemas.md).
+     * [Gerenciar metadados para ativos digitais](/help/assets/metadata.md).
+     * [Esquemas de metadados](/help/assets/metadata-schemas.md).
 
 1. **Publicar ativos 3D**
 
@@ -163,7 +175,7 @@ Consulte também [Visualizar ativos usando a interface de software](/help/assets
    * Exclua `/editor.html` da URL da página no navegador.
 
    ![Ativo 3D exibido dentro do componente de Mídia 3D](/help/assets/assets-dm/3d-asset-in-3d-media.png)
-Um ativo 3D totalmente interativo conforme exibido no modo **[!UICONTROL Visualização]**.
+   Um ativo 3D totalmente interativo conforme exibido no modo **[!UICONTROL Visualização]**.
 
 1. No modo **[!UICONTROL Visualizar]**, siga um destes procedimentos:
 
@@ -182,7 +194,7 @@ O Dynamic Media inclui um componente de Mídia 3D do Dynamic Media que pode ser 
 
 * [Adicionar o componente de Mídia 3D ao modelo de página](#adding-three-d-media-component-to-page-template)
 * [Adicionar o componente de Mídia 3D a uma página da Web](#adding-the-three-d-media-component-to-a-web-page)
-   * [Opcional - Configurar o componente de Mídia 3D](#configuring-the-three-d-component)
+  * [Opcional - Configurar o componente de Mídia 3D](#configuring-the-three-d-component)
 * [Atribuir um ativo 3D ao componente de Mídia 3D](#assigning-a-three-d-asset-to-the-component)
 
 ## Adicionar o componente de Mídia 3D ao modelo de página {#adding-three-d-media-component-to-page-template}

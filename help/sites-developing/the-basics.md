@@ -9,7 +9,18 @@ exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '3377'
 ht-degree: 0%
@@ -42,7 +53,7 @@ O padrão Java™ Content Repository (JCR), [JSR 283](https://experienceleague.a
 
 O lead da especificação é da Adobe Research (Switzerland) AG.
 
-O pacote [JCR API 2.0](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&ast; é usado para o acesso direto e manipulação de conteúdo do repositório.
+O pacote [JCR API 2.0](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&amp;ast; é usado para o acesso direto e manipulação de conteúdo do repositório.
 
 ## Experience Server (CRX) e Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -283,7 +294,7 @@ Se você chamar a representação (o script) diretamente, ocultará o recurso de
 
 ### API Sling {#sling-api}
 
-Usa o pacote da API do Sling, org.apache.sling.&ast;, e as bibliotecas de tags.
+Usa o pacote da API do Sling, org.apache.sling.&amp;ast;, e as bibliotecas de tags.
 
 ### Referenciando elementos existentes usando sling:include {#referencing-existing-elements-using-sling-include}
 

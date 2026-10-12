@@ -9,7 +9,13 @@ exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '993'
 ht-degree: 0%
@@ -102,7 +108,7 @@ Como alternativa, baixe a origem do dispositivo para criar localmente por meio d
 >
 >Consulte [Configurar o Adobe Mobile Services Cloud Service](/help/mobile/configure-adobe-mobile-cloud-service.md) para obter detalhes.
 
-A AEM Mobile integra-se ao Adobe Analytics por meio do [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=pt-BR) (AMS).
+A AEM Mobile integra-se ao Adobe Analytics por meio do [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html) (AMS).
 
 O **Bloco de métricas** do Centro de controle exibe análises de resumo extraídas do AMS para o seu aplicativo. Você pode detalhar o painel do Analytics clicando em &quot;...&quot; na parte inferior direita.
 

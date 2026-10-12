@@ -8,28 +8,46 @@ feature: Document Services,APIs & Integrations
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: f2e4f509-cca2-44a3-9231-e1954b0fefe3
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '6595'
 ht-degree: 1%
-
 ---
-
 # Uso dos serviços de documento da AEM de forma programática  {#using-aem-document-services-programmatically}
 
 Amostras e exemplos neste documento ajudam você a entender e usar os Serviços de documento da AEM em uma AEM Forms em um ambiente OSGi. Para obter amostras e exemplos para AEM Forms no ambiente JEE, consulte
 
-* [Início rápido da API Java do serviço de assinatura](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?lang=pt-BR&#programming-aem-forms-jee)
+* [Início rápido da API Java do serviço de assinatura](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?#programming-aem-forms-jee)
 
-* [Início Rápido da API Java do Serviço de Criptografia](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?lang=pt-BR&#developer-reference)
+* [Início Rápido da API Java do Serviço de Criptografia](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?#developer-reference)
 
-* [Início rápido da API Java de serviço de extensões do Acrobat Reader](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=pt-BR&#developer-reference)
+* [Início rápido da API Java de serviço de extensões do Acrobat Reader](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?#developer-reference)
 
 ## Pré-requisitos {#prerequisite}
 
 * Antes de usar as APIs de serviço DocAssurance, [configure o serviço DocAssurance](/help/forms/using/install-configure-document-services.md).
 
-* Baixe e configure o [AEM Forms Client SDK](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) com seu projeto maven do AEM. As classes de cliente necessárias para compilar Projetos Maven usando os Serviços de documento da AEM estão disponíveis no [AEM Forms Client SDK](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html)
+* Baixe e configure o [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) com seu projeto maven do AEM. As classes de cliente necessárias para compilar Projetos Maven usando os Serviços de documento da AEM estão disponíveis no [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
 
 * Saiba [como criar seu projeto do AEM usando o Maven](/help/sites-developing/ht-projects-maven.md)
 
@@ -71,7 +89,7 @@ Você pode executar as seguintes operações usando o serviço DocAssurance:
 
 >[!NOTE]
 >
->Todos esses serviços usam o objeto Documento como parâmetro de entrada para o qual o Javadoc pode ser encontrado na URL [https://helpx.adobe.com/br/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/br/experience-manager/6-3/forms/javadocs/index.html)
+>Todos esses serviços usam o objeto Documento como parâmetro de entrada para o qual o Javadoc pode ser encontrado na URL [https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html)
 
 ### Adicionar um campo de assinatura invisível {#adding-an-invisible-signature-field}
 
@@ -4466,7 +4484,7 @@ O serviço PDF Generator fornece APIs para converter formatos de arquivo nativos
 O GeneratePDFService fornece APIs para converter vários formatos de arquivo, como .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, .swf (obsoleto), .jpg, .bmp, .tif, .png, .html e muitos outros formatos de arquivo para o PDF. Ela também fornece APIs para exportar o PDF para vários formatos de arquivo e otimizar PDFs. O serviço oferece suporte às seguintes APIs:
 
 * **createPDF**: converte um tipo de arquivo suportado para um documento PDF. É compatível com formatos de arquivo como Microsoft Word, Microsoft PowerPoint, Microsoft Excel e Microsoft Project. Além desses aplicativos, qualquer tipo de aplicativo genérico de terceiros que gere o PDF também pode ser conectado à API.
-* **exportPDF**: converte um documento do PDF em um tipo de arquivo compatível. O método aceita uma PDF como entrada e exporta o conteúdo da PDF no formato de tipo de arquivo especificado. Você pode exportar um documento do PDF em Encapsulated PostScript( eps), HTML 3.2( htm, html), HTML 4.01 com CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Documento do Microsoft Word( doc, docx) Pasta de trabalho do Microsoft Excel( xlsx), Apresentação do Microsoft PowerPoint( pptx), PNG( png), PostScript( ps), Rich Text( ps) rtf), Texto (acessível)( txt), Texto (simples)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB), PDF/A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3b(sRGB) formatos. Você também pode especificar [perfis de Comprovação personalizados](https://helpx.adobe.com/br/acrobat/using/preflight-profiles-acrobat-pro.html) para as saídas do PDF.
+* **exportPDF**: converte um documento do PDF em um tipo de arquivo compatível. O método aceita uma PDF como entrada e exporta o conteúdo da PDF no formato de tipo de arquivo especificado. Você pode exportar um documento do PDF em Encapsulated PostScript( eps), HTML 3.2( htm, html), HTML 4.01 com CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Documento do Microsoft Word( doc, docx) Pasta de trabalho do Microsoft Excel( xlsx), Apresentação do Microsoft PowerPoint( pptx), PNG( png), PostScript( ps), Rich Text( ps) rtf), Texto (acessível)( txt), Texto (simples)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB), PDF/A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3b(sRGB) formatos. Você também pode especificar [perfis de Comprovação personalizados](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html) para as saídas do PDF.
 
 * **otimizePDF**: otimiza o documento do PDF e também converte um documento do PDF de um tipo para outro. O método aceita um documento PDF como entrada.
 * **htmlToPdf2**: converte uma página do HTML em um documento do PDF. Ele aceita o URL da página do HTML como entrada.

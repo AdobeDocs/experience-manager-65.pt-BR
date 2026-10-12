@@ -10,13 +10,22 @@ exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '6118'
 ht-degree: 0%
-
 ---
-
 # Portais e portlets do AEM{#aem-portals-and-portlets}
 
 Este documento descreve o seguinte:
@@ -46,7 +55,7 @@ Para configurar o conteúdo do AEM para aparecer em um portal, consulte [Instala
 
 >[!CAUTION]
 >
->O AEM Portal Diretor está obsoleto a partir do AEM 6.4. Consulte [Recursos Preteridos e Removidos](https://helpx.adobe.com/br/experience-manager/6-4/release-notes/deprecated-removed-features.html).
+>O AEM Portal Diretor está obsoleto a partir do AEM 6.4. Consulte [Recursos Preteridos e Removidos](https://helpx.adobe.com/experience-manager/6-4/release-notes/deprecated-removed-features.html).
 
 ## Administrar o portlet de conteúdo do AEM {#administering-the-aem-content-portlet}
 
@@ -610,7 +619,7 @@ Os serviços OSGi opcionais podem ser implementados para personalizar várias pa
 
 Os serviços a seguir têm uma implementação padrão no portlet de conteúdo (com uma interface Java correspondente). Para personalizar, um pacote contendo a nova implementação do serviço precisa ser implantado no aplicativo do portlet.
 
-Ao implementar esse serviço, defina a propriedade **service.ranking** do serviço com um valor positivo. A implementação padrão usa a classificação **&#x200B; 0** e o portlet usa o serviço com a classificação mais alta.
+Ao implementar esse serviço, defina a propriedade **service.ranking** do serviço com um valor positivo. A implementação padrão usa a classificação** 0** e o portlet usa o serviço com a classificação mais alta.
 
 | **Nome** | **Descrição** | **Comportamento padrão** |
 |---|---|---|

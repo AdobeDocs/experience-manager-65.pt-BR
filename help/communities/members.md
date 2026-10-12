@@ -9,13 +9,20 @@ role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '969'
 ht-degree: 1%
-
 ---
-
 
 # Consoles de gerenciamento de membros e grupos {#members-groups-management-consoles}
 
@@ -85,11 +92,14 @@ A maioria dos campos são campos opcionais que o membro pode preencher posterior
 
 * **[!UICONTROL ID]**
 
-(*Obrigatório*) A ID autorizável é a ID de entrada do membro.Por padrão, a ID é definida como o valor do endereço de email necessário.*Uma vez criada, a ID não pode ser modificada*.
+(*Obrigatório*) A ID autorizável é a ID de entrada do membro.
+Por padrão, a ID é definida como o valor do endereço de email necessário.
+*Uma vez criada, a ID não pode ser modificada*.
 
 * **[!UICONTROL Endereço de email]**
 
-(*Obrigatório*) O endereço de email do membro.O membro pode alterar seu endereço de e-mail ao atualizar seu perfil.
+(*Obrigatório*) O endereço de email do membro.
+O membro pode alterar seu endereço de e-mail ao atualizar seu perfil.
 Se a ID tiver assumido como padrão o endereço de email, a ID *não* será alterada quando o endereço de email for alterado.
 
 * **[!UICONTROL Senha]**
@@ -115,17 +125,19 @@ Se a ID tiver assumido como padrão o endereço de email, a ID *não* será alte
 Nas Configurações da conta, é possível para um administrador da comunidade:
 
 * **[!UICONTROL Status]**
-   * Proibido
-Um membro não pode fazer logon, impedindo-o de exibir páginas ou participar de atividades que exigem logon. Eles ainda podem visitar anonimamente um site da comunidade aberto.
+  * Proibido
+    Um membro não pode fazer logon, impedindo-o de exibir páginas ou participar de atividades que exigem logon. Eles ainda podem visitar anonimamente um site da comunidade aberto.
 
-   * Não proibido
-Um membro tem acesso total ao site da comunidade.
+  * Não proibido
+    Um membro tem acesso total ao site da comunidade.
 
   O padrão é `Not Banned`.
 
 * **[!UICONTROL Limites de contribuição]**
 
-  Se marcada, a capacidade do membro de publicar conteúdo é limitada.O padrão depende da configuração dos limites de contribuição.Consulte [Limites de contribuição de membros](limits.md).
+  Se marcada, a capacidade do membro de publicar conteúdo é limitada.
+  O padrão depende da configuração dos limites de contribuição.
+  Consulte [Limites de contribuição de membros](limits.md).
 
 * **[!UICONTROL Alterar senha]**
 
@@ -152,10 +164,10 @@ Consulte também [Pontuação e medalhas](implementing-scoring.md).
 ![A janela Editar Configurações de Associação](assets/create-member2.png)
 
 * **[!UICONTROL Adicionar medalhas]**
-   * Comece a digitar para selecionar entre [selos disponíveis](badges.md). Depois que um selo é selecionado, escolha cada site ou todos os sites, nos quais o selo deve ser exibido junto com o avatar do membro.
-   * Vários selos e sites podem ser escolhidos.
+  * Comece a digitar para selecionar entre [selos disponíveis](badges.md). Depois que um selo é selecionado, escolha cada site ou todos os sites, nos quais o selo deve ser exibido junto com o avatar do membro.
+  * Vários selos e sites podem ser escolhidos.
 * **[!UICONTROL Remover medalhas]**
-   * Selecione o ícone da lixeira ao lado de um selo para removê-lo.
+  * Selecione o ícone da lixeira ao lado de um selo para removê-lo.
 
 ## Console de grupos {#groups-console}
 

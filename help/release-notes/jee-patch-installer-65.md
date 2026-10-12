@@ -7,18 +7,32 @@ hide: true
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 63b9494700aaafaa503216d037e2ad6efc8c5eac
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 19%
-
 ---
-
 # Instalador de patch do AEM Forms JEE {#aem-forms-jee-patch-installer}
 
 >[!NOTE]
 >
->[Contate o Suporte](https://experienceleague.adobe.com/pt-br?support-solution=General&support-tab=home#support) para obter mais informações ou obter o patch.
+>[Contate o Suporte](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support) para obter mais informações ou obter o patch.
 
 ## Sobre o instalador de patch {#about-the-patch-installer}
 
@@ -36,15 +50,15 @@ O instalador de patch do AEM 6.5 Forms JEE inclui todos os problemas corrigidos 
 1. No diretório nomeado de acordo com o seu sistema operacional:
 
    * **Windows**
-Navegue até o diretório apropriado na mídia ou pasta de instalação no disco rígido em que o instalador foi copiado e clique duas vezes no arquivo aemforms65_cfp_install.exe.
+     Navegue até o diretório apropriado na mídia ou pasta de instalação no disco rígido em que o instalador foi copiado e clique duas vezes no arquivo aemforms65_cfp_install.exe.
 
-      * (Windows de 32 bits) `Windows\Disk1\InstData\VM`
-      * (Windows 64-bit) `Windows_64Bit`\ `Disk1\InstData\VM`
+     * (Windows de 32 bits) `Windows\Disk1\InstData\VM`
+     * (Windows 64-bit) `Windows_64Bit`\ `Disk1\InstData\VM`
 
    * **Linux®**
-Navegue até o diretório apropriado e, em um prompt de comando, digite `./aem65_cfp_install.bin`.
+     Navegue até o diretório apropriado e, em um prompt de comando, digite `./aem65_cfp_install.bin`.
 
-      * (Linux®) `Linux/Disk1/InstData/NoVM`
+     * (Linux®) `Linux/Disk1/InstData/NoVM`
 
    Isso inicia um assistente de instalação que o guiará durante a instalação.
 
@@ -70,8 +84,8 @@ Navegue até o diretório apropriado e, em um prompt de comando, digite `./aem65
 
 1. Dependendo do servidor de aplicativos, escolha um dos seguintes documentos e siga as instruções na seção *Configuração e implantação do AEM Forms*.
 
-   * [Instalação e implantação do AEM Forms para JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65_br)
-   * [Instalação e implantação do AEM Forms para WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_br)
+   * [Instalação e implantação do AEM Forms para JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+   * [Instalação e implantação do AEM Forms para WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
 
 1. (Somente JBoss®) Após instalar o patch e configurar o servidor, exclua tmp e diretórios de trabalho do servidor de aplicativos JBoss®.
 
@@ -96,4 +110,4 @@ Se você tiver a autenticação SAML configurada e estiver enfrentando problemas
 * Segurança de documentos
 * Foundation JEE
 
-[Entrar em contato com o suporte](https://experienceleague.adobe.com/pt-br?support-solution=General&support-tab=home#support)
+[Entrar em contato com o suporte](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)

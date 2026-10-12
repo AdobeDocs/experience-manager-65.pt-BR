@@ -5,7 +5,18 @@ exl-id: 8ec4c399-b192-46fd-be77-3f49b83ce711
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 2%
@@ -33,7 +44,7 @@ O Verificador de links valida [links internos](#internal) e [links externos.](#e
 Links internos são links para outro conteúdo no repositório do AEM. Links internos podem ser adicionados usando o seletor de caminho do RTE ou usando um componente personalizado. Por exemplo:
 
 * Sua página `/content/wknd/us/en/adventures/ski-touring.html`
-* Contém um link para `/content/wknd/us/en/adventures/extreme-ironing.html` em um componente de Texto [.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=pt-BR)
+* Contém um link para `/content/wknd/us/en/adventures/extreme-ironing.html` em um componente de Texto [.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)
 
 Os links internos são validados assim que o autor de conteúdo adiciona um link interno a uma página. Se o link se tornar inválido:
 
@@ -47,7 +58,7 @@ Os links internos são validados assim que o autor de conteúdo adiciona um link
 Links externos são links para conteúdo fora do repositório do AEM. Links externos podem ser adicionados usando o RTE ou usando um componente personalizado. Por exemplo:
 
 * Sua página `/content/wknd/us/en/adventures/ski-touring.html`
-* Contém um link para `https://bunwarmerthermalunderwear.com` em um componente de Texto [.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=pt-BR)
+* Contém um link para `https://bunwarmerthermalunderwear.com` em um componente de Texto [.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)
 
 Os links externos são validados para sintaxe e por meio da verificação de sua disponibilidade. Essa verificação é feita de forma assíncrona em um local interno configurável. Se o Verificador de links encontrar um link externo inválido:
 

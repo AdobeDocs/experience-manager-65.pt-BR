@@ -6,23 +6,39 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 44516956-00aa-41d5-a7e9-746c7618e5db
-solution: "Experience Manager, Experience Manager Forms"
+solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components
-source-git-commit: 5723e9990969dff1b508062d69a68f68a20eb576
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '549'
 ht-degree: 0%
-
 ---
-
 # Criar layout personalizado da barra de ferramentas{#creating-custom-toolbar-layout}
 
 ## Layouts da barra de ferramentas {#layout}
 
 Ao criar um formulário adaptável, você pode especificar um layout de barra de ferramentas para o formulário. O layout da barra de ferramentas define os comandos e o layout da barra de ferramentas no formulário.
 
-O layout da barra de ferramentas usa muito o processamento do lado do cliente orientado por códigos JavaScript e CSS complexos. Organizar e otimizar a veiculação desse código pode ser um problema complicado. Para ajudar a lidar com esse problema, o AEM fornece Pastas de bibliotecas do lado do cliente, que permitem armazenar o código do lado do cliente no repositório, organizá-lo em categorias e definir quando e como cada categoria de código deve ser entregue ao cliente. O sistema de biblioteca do lado do cliente cuida de produzir os links corretos na página da Web final para carregar o código correto. Para obter informações detalhadas, consulte [Como as bibliotecas do lado do cliente funcionam no AEM.](/help/sites-developing/clientlibs.md)
+O layout da barra de ferramentas usa muito o processamento do lado do cliente orientado por códigos JavaScript e CSS complexos. Organizar e otimizar a veiculação desse código pode ser um problema complicado. Para ajudar a lidar com esse problema, a AEM fornece Pastas de bibliotecas do lado do cliente, que permitem armazenar o código do lado do cliente no repositório, organizá-lo em categorias e definir quando e como cada categoria de código deve ser entregue ao cliente. O sistema de biblioteca do lado do cliente cuida de produzir os links corretos na página da Web final para carregar o código correto. Para obter informações detalhadas, consulte [Como as bibliotecas do lado do cliente funcionam no AEM.](/help/sites-developing/clientlibs.md)
 
 ![Exemplo de layout da barra de ferramentas](assets/default_toolbar_layout.png)
 
@@ -30,7 +46,7 @@ Exemplo de layout da barra de ferramentas
 
 Os formulários adaptáveis fornecem um conjunto de layouts prontos para uso:
 
-![Layouts de barra de ferramentas disponíveis prontamente &#x200B;](assets/toolbar1.png)
+![Layouts de barra de ferramentas disponíveis prontamente ](assets/toolbar1.png)
 
 Layouts de barra de ferramentas disponíveis prontos para uso
 

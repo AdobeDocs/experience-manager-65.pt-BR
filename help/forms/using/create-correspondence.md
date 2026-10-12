@@ -8,13 +8,26 @@ feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3832'
+source-wordcount: '3960'
 ht-degree: 0%
-
 ---
-
 # Criar correspondência{#create-correspondence}
 
 ## Criar correspondência na interface do usuário Criar correspondência {#create-correspondence-in-the-create-correspondence-user-interface}
@@ -49,7 +62,7 @@ Selecione a correspondência a ser visualizada usando as seguintes etapas:
 
    ![Visualizar carta](assets/8_previewcustomdatafile.png)
 
-1. A pré-visualização de HTML de correspondência (pré-visualização de formulários para dispositivos móveis) é aberta com a guia Dados em foco por padrão.
+1. A visualização da correspondência HTML (visualização de formulários para dispositivos móveis) é aberta com a guia Dados em foco por padrão.
 
    Para obter mais informações sobre formulários móveis e os recursos aos quais eles dão suporte, consulte [Diferenciação de recursos entre o Mobile Forms e o PDF forms](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html).
 
@@ -57,7 +70,7 @@ Selecione a correspondência a ser visualizada usando as seguintes etapas:
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre como alternar entre o modo de representação de HTML ou PDF da pré-visualização de correspondência, consulte [Alterar modo de representação da correspondência](#changerenditionmode). Para obter mais informações sobre o suporte ao PDF no Gerenciamento de Correspondência e AEM, consulte [Descontinuação de plug-ins de navegadores NPAPI e seu impacto](https://helpx.adobe.com/br/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html). <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
+   >Para obter mais informações sobre como alternar entre o modo de representação de pré-visualização de correspondência do HTML ou do PDF, consulte [Alterar modo de representação de carta](#changerenditionmode). Para obter mais informações sobre o suporte do PDF no Gerenciamento de Correspondência e no AEM, consulte [Descontinuação de plug-ins de navegadores NPAPI e seu impacto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html). <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
 
 ### Inserir dados {#enterdata}
 
@@ -65,7 +78,7 @@ Na guia Dados, preencha os campos de layout e espaços reservados disponíveis.
 
 1. Insira os dados e as variáveis de conteúdo nos campos, conforme necessário. Preencha todos os campos obrigatórios marcados com um asterisco (&#42;) para habilitar o botão **Enviar**.
 
-   Selecione um valor de campo de dados na pré-visualização da carta de HTML para realçar o campo de dados correspondente na guia Data.
+   Selecione um valor de campo de dados na pré-visualização de correspondências do HTML para realçar o campo de dados correspondente na guia Data.
 
    ![Inserir dados na carta](assets/2_enterdata.png) ![2_1_enterdata](assets/2_1_enterdata.png)
 
@@ -83,7 +96,7 @@ Na guia content, gerencie o conteúdo, como fragmentos de documentos e variávei
 
    ![4_highlightmoduleincontent](assets/4_highlightmoduleincontent.png)
 
-   Na guia Conteúdo ou Dados, ao tocar em Realçar Módulos Selecionados ( ![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) no canto superior esquerdo da visualização da carta de HTML, você poderá desabilitar ou habilitar a funcionalidade para ir para o módulo de conteúdo/dados quando o texto, parágrafo ou campo de dados relevante for selecionado na visualização de correspondência.
+   Na guia Conteúdo ou Dados, ao tocar em Realçar Módulos Selecionados ( ![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) no canto superior esquerdo da visualização de correspondência do HTML, você pode desabilitar ou habilitar a funcionalidade para ir para o módulo de conteúdo/dados quando o texto, parágrafo ou campo de dados relevante for selecionado na visualização de correspondência.
 
    Para obter mais informações sobre as ações disponíveis para vários módulos na interface do usuário Criar correspondência, consulte [Ações e informações disponíveis na interface do usuário Criar correspondência](#actions-and-info-available-in-the-create-correspondence-content-tab).
 
@@ -99,7 +112,7 @@ Na guia content, gerencie o conteúdo, como fragmentos de documentos e variávei
 
    ![5_edittextmodule](assets/5_edittextmodule.png)
 
-   Talvez você queira reutilizar um ou mais parágrafos de texto que existem em outro aplicativo do documento. Você pode copiar e colar texto diretamente, como do MS Word, de páginas HTML ou de qualquer outro aplicativo.
+   Talvez você queira reutilizar um ou mais parágrafos de texto que existem em outro aplicativo do documento. Você pode copiar e colar texto diretamente, como de páginas do MS Word, HTML ou qualquer outro aplicativo.
 
    Você pode copiar e colar um ou mais parágrafos de texto em um módulo de texto editável. Por exemplo, você pode ter um documento do MS Word com uma lista com marcadores de provas de residência aceitáveis, como as seguintes:
 
@@ -229,7 +242,7 @@ Você pode fazer alterações no layout e no conteúdo para garantir que a corre
 
 1. Edite os módulos de conteúdo, conforme necessário, na guia Content. Para focalizar o módulo de conteúdo relevante na hierarquia de conteúdo, você pode selecionar a linha ou o parágrafo relevante na pré-visualização de correspondências ou selecionar o módulo de conteúdo diretamente na hierarquia de conteúdo.
 
-   Por exemplo, a linha &quot;To allow us to access...&quot; é selecionada no gráfico abaixo e o módulo de conteúdo correspondente é selecionado na guia Content.
+   Por exemplo, a linha &quot;Para permitir que acessemos...&quot; for selecionada no gráfico abaixo e o módulo de conteúdo correspondente for selecionado na guia Content.
 
    Ao tocar em Realçar módulos selecionados no conteúdo ( ![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)), você pode desabilitar ou habilitar a funcionalidade para realçar o módulo de conteúdo na guia Conteúdo quando o texto, parágrafo ou campo de dados relevante for tocado na pré-visualização de correspondência.
 
@@ -237,7 +250,7 @@ Você pode fazer alterações no layout e no conteúdo para garantir que a corre
 
 1. Para adicionar uma quebra de página à correspondência, selecione onde deseja inserir uma quebra de página e selecione Quebra de Página Antes ou Quebra de Página Depois ( ![pagebreakbeforeafter](assets/pagebreakbeforeafter.png)).
 
-   Um espaço reservado para quebra de página explícita é inserido na correspondência. Para ver como uma quebra de página explícita afeta a correspondência, consulte a pré-visualização de PDF nivelado.
+   Um espaço reservado para quebra de página explícita é inserido na correspondência. Para ver como uma quebra de página explícita afeta a correspondência, consulte a visualização nivelada do PDF.
 
    >[!NOTE]
    >
@@ -253,21 +266,21 @@ Você pode fazer alterações no layout e no conteúdo para garantir que a corre
 
 1. Para visualizar a carta como um PDF nivelado com o layout exato e as quebras de página como ela será enviada, selecione ( ![visualizar](assets/preview.png)) Visualizar.
 
-   A letra aparece como um PDF achatado. O PDF achatado é a representação exata da letra, pois será enviada com as fontes, quebras e layout corretos da letra.
+   A carta aparece como um PDF nivelado. O PDF achatado é a representação exata da letra, pois ela será enviada com as fontes, quebras e layout corretos da letra.
 
    >[!NOTE]
    >
-   >Se você estiver usando o Mozilla Firefox e o tipo de representação HTML, para visualizar a letra como PDF nivelado, certifique-se de usar o plug-in do navegador nativo e não o plug-in do Acrobat. Para selecionar o plug-in do navegador nativo, vá para as configurações do Mozilla Firefox e, para o tipo de conteúdo PDF, selecione Visualizar no Firefox.
+   >Se você estiver usando o Mozilla Firefox e o tipo de representação HTML, para visualizar a letra como um PDF nivelado, certifique-se de usar o plug-in do navegador nativo e não o plug-in do Acrobat. Para selecionar o plug-in do navegador nativo, vá para as configurações do Mozilla Firefox e, para o tipo de conteúdo PDF, selecione Visualizar no Firefox.
 
-1. Se você achar que a visualização de PDF nivelado é satisfatória, selecione **Enviar** para enviar a carta. Ou, para alterar a correspondência, selecione **Sair da visualização** para voltar para a visualização Criar interface de correspondência da correspondência e fazer alterações na correspondência. Ao selecionar Enviar, se a configuração Gerenciar instância de carta estiver ativada na instância do Publish, a instância de carta de envio é gerada.
+1. Se você achar a visualização plana do PDF satisfatória, selecione **Enviar** para enviar a carta. Ou, para alterar a correspondência, selecione **Sair da visualização** para voltar para a visualização Criar interface de correspondência da correspondência e fazer alterações na correspondência. Quando você seleciona Enviar, se a configuração Gerenciar instância de carta estiver ativada na instância de Publicação, a instância de carta de envio é gerada.
 
    Para obter mais informações, consulte Instância de rascunho em Salvar rascunhos e enviar instâncias de cartas.
 
    Você também pode salvar a carta como rascunho para alterá-la posteriormente.
 
-   Depois de fazer as alterações necessárias, você pode enviar a correspondência da pré-visualização do HTML5 ou selecionar Visualizar novamente para revisar a saída do PDF nivelado.
+   Depois de fazer as alterações necessárias, você pode enviar a correspondência da pré-visualização do HTML5 ou selecionar Visualizar novamente para revisar a saída nivelada do PDF.
 
-   Para obter informações sobre as diferenças entre os formulários HTML5 e PDF forms, consulte [Diferenciação de recursos entre os formulários HTML5 e PDF forms](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md).
+   Para obter informações sobre as diferenças entre os formulários HTML5 e o PDF forms, consulte [Diferenciação de recursos entre os formulários HTML5 e o PDF forms](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
 ## Salvar rascunhos e enviar instâncias de carta {#savingdrafts}
 
@@ -275,7 +288,7 @@ Quando uma correspondência é renderizada na interface do usuário Criar corres
 
 Há dois tipos de instâncias de correspondência que podem ser salvas: Instância de rascunho e Instância de envio.
 
-* **Instância de rascunho**: a instância de rascunho captura o estado atual da carta que você está visualizando. Para salvar uma instância de rascunho, primeiro verifique se a carta e todos os ativos aos quais a carta faz referência estão no estado Publicado. Para obter informações sobre como publicar uma carta, consulte [Publish e um ativo](../../forms/using/publishing-unpublishing-forms.md#publishanasset). É necessário Publish uma carta antes de salvá-la como rascunho, pois ao publicá-la, você cria uma versão da carta, seus ativos dependentes e dados nesse ponto. A versão publicada de uma correspondência não pode ser editada por você ou por outro usuário e pode ser restaurada posteriormente sem discrepâncias inesperadas em relação à versão publicada. Você pode retornar para essa instância mais tarde e continuar de onde parou.
+* **Instância de rascunho**: a instância de rascunho captura o estado atual da carta que você está visualizando. Para salvar uma instância de rascunho, primeiro verifique se a carta e todos os ativos aos quais a carta faz referência estão no estado Publicado. Para obter informações sobre como publicar uma carta, consulte [Publicar um ativo](../../forms/using/publishing-unpublishing-forms.md#publishanasset). É necessário Publicar uma carta antes de salvá-la como rascunho, pois, ao publicá-la, você cria uma versão da carta, seus ativos dependentes e dados nesse ponto. A versão publicada de uma correspondência não pode ser editada por você ou por outro usuário e pode ser restaurada posteriormente sem discrepâncias inesperadas em relação à versão publicada. Você pode retornar para essa instância mais tarde e continuar de onde parou.
 
 * **Enviar Instância**: as instâncias de envio capturam o estado da carta como foi enviada. A instância de envio armazena o estado PDF da instância de carta depois de ser pós-processada junto com os dados inseridos pelo usuário na interface do usuário Criar correspondência.
 
@@ -283,13 +296,13 @@ Essas instâncias só podem ser salvas quando a carta está sendo exibida na ins
 
 1. No AEM, abra Configuração do console da Web do Adobe Experience Manager para o servidor usando o seguinte URL: https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
 1. Localize as **[!UICONTROL Configurações de Gerenciamento de Correspondência]** e clique nela.
-1. Verifique a configuração **[!UICONTROL Gerenciar instâncias de correspondência no Publish]** e clique em **[!UICONTROL Salvar]**.
+1. Marque a configuração **[!UICONTROL Gerenciar instâncias de correspondência ao publicar]** e clique em **[!UICONTROL Salvar]**.
 
 ### Ativar o recurso Salvar rascunho {#enable-save-draft-feature}
 
 Antes de publicar cartas ou salvar rascunhos na instância de publicação, execute as seguintes etapas na instância de criação e publicação para ativar o recurso Salvar como rascunho:
 
-As propriedades *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* não são transferidas para a instância de publicação por padrão. Para transferir as propriedades *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* para a instância de publicação, desabilite o componente [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]. Para desativar o componente:
+As propriedades *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* não são transferidas para a instância de publicação por padrão. Para transferir as propriedades *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* para publicar a instância, desabilite o componente [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]. Para desativar o componente:
 
 1. Na instância do autor, abra o console Componentes do Adobe Experience Manager Web Console. A URL padrão é `http://author-server:port/system/console/components`
 
@@ -309,7 +322,7 @@ Para habilitar o recurso salvar como rascunho, substitua a URL existente na [!UI
 
 1. Clique em Salvar.
 
-![Instância do Publish](/help/forms/using/assets/correspondencemanagement.png)
+![Publicar Instância](/help/forms/using/assets/correspondencemanagement.png)
 
 Quando a opção para salvar as ocorrências de cartas está ativada, você tem a opção para selecionar onde salvar as ocorrências de cartas. Há duas opções para salvar as instâncias de carta: Salvar local ou Salvar remoto.
 
@@ -319,66 +332,66 @@ As instâncias de correspondência são salvas na instância de publicação e s
 
 ### Salvamento remoto {#remote-save}
 
-Essa opção existe para pessoas que têm preocupações com o salvamento de dados do usuário em instâncias de publicação, que em geral estão fora do firewall corporativo. Quando o salvamento remoto está ativado, as instâncias de carta não são salvas na instância de publicação, mas são salvas remotamente no autor de processamento especificado por meio das configurações do SDK do cliente do LiveCycle.
+Essa opção existe para pessoas que têm preocupações com o salvamento de dados do usuário em instâncias de publicação, que em geral estão fora do firewall corporativo. Quando o salvamento remoto está ativado, as instâncias de correspondência não são salvas na instância de publicação, mas são salvas remotamente no autor de processamento especificado pelas configurações do LiveCycle Client SDK.
 
 #### Habilitar salvamento remoto {#enable-remote-save}
 
-1. No AEM, abra a Configuração do Console da Web do Adobe Experience Manager para seu servidor usando a seguinte URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. No AEM, abra Configuração do Console da Web do Adobe Experience Manager para o servidor usando a seguinte URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
 1. Pesquise por **[!UICONTROL Configurações de gerenciamento de correspondência]** e clique nele.
 1. Localize a configuração **[!UICONTROL Salvar Remoto]**, verifique-a e clique em **[!UICONTROL Salvar]**.
 
 #### Especificar as configurações de processamento do autor {#specify-processing-author-settings}
 
-1. No AEM, abra a Configuração do Console da Web do Adobe Experience Manager para seu servidor usando a seguinte URL: `https://<server>:<port>/system/console/configMgr`
+1. No AEM, abra Configuração do Console da Web do Adobe Experience Manager para o servidor usando a seguinte URL: `https://<server>:<port>/system/console/configMgr`
 
    ![Configuração do Adobe Experience Manager Web Console](assets/2configmanager.png)
 
 1. Nesta página, localize a Configuração do SDK do cliente do Adobe LiveCycle e expanda-a clicando nela.
 
-1. Na URL do Servidor de Processamento, digite o nome do servidor do LiveCycle, forneça as informações de logon e clique em **Salvar**.
+1. Na URL do Servidor de Processamento, digite o nome do seu servidor LiveCycle, forneça as informações de logon e clique em **Salvar**.
 
-   ![Insira o nome e as informações de logon do servidor do LiveCycle](assets/3configmanager.png)
+   ![Insira o nome e as informações de logon do seu servidor LiveCycle](assets/3configmanager.png)
 
 1. Se necessário, defina o nome de usuário e a senha com os quais deseja acessar o servidor.
 
 #### Entrega do anexo {#attachmentdelivery}
 
-* Os anexos de carta estão disponíveis no pós-processamento no PDF, que é criado após o envio da carta.
-* Quando a carta é renderizada usando APIs do lado do servidor como um PDF interativo ou não interativo, o PDF renderizado contém anexos como anexos de PDF.
+* Os anexos de correspondência estão disponíveis no pós-processo na PDF, que é criado após o envio da correspondência.
+* Quando a carta é renderizada usando APIs do lado do servidor como um PDF interativo ou não interativo, o PDF renderizado contém anexos como anexos do PDF.
 * Quando um processo de publicação associado a um modelo de correspondência é carregado como parte das operações Enviar ou Concluir correspondência usando a interface do usuário Criar correspondência, os anexos são passados como a Lista&lt;com.adobe.idp.Document> no parâmetro AttachmentDocs.
 * Os mecanismos de delivery prontos para uso, como email e impressão, também fornecem anexos junto com o PDF da correspondência gerada.
 
-## Modos de representação da visualização de correspondências: visualização de formulários para dispositivos móveis e visualização de PDF {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
+## Modos de representação da pré-visualização de cartas: pré-visualização de formulários para dispositivos móveis e pré-visualização de PDF {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
 
-O Gerenciamento de correspondência da AEM Forms exibe uma correspondência como HTML na interface Criar correspondência. No entanto, o Gerenciamento de correspondência ainda é compatível com a reversão para a visualização de PDF em vez de pré-visualização de HTML. Para obter mais informações sobre como alternar entre o modo de visualização HTML e PDF, consulte [Alterar modo de representação da carta](#changerenditionmode).
+O AEM Forms Correspondence Management exibe uma correspondência como HTML na interface de usuário Criar correspondência. No entanto, o Gerenciamento de correspondência ainda é compatível com a reversão para a visualização do PDF em vez da pré-visualização do HTML. Para obter mais informações sobre como alternar entre o modo de visualização do HTML e do PDF, consulte [Alterar modo de representação da carta](#changerenditionmode).
 
-A seguir estão os benefícios e a funcionalidade disponíveis na pré-visualização de HTML e PDF.
+A seguir estão os benefícios e a funcionalidade disponíveis na pré-visualização do HTML e do PDF.
 
-**Vantagens de formulários para publicação de conteúdo para dispositivos móveis/visualização de HTML**
+**Vantagens dos formulários para dispositivos móveis/visualização do HTML**
 
 * **Selecione um valor de campo de dados para destacar o campo de dados correspondente**: na interface do usuário Criar correspondência, você pode selecionar um valor de campo de dados na correspondência para destacar o campo de dados correspondente na guia Dados. Para obter mais informações, consulte [Inserir dados](#enterdata).
 
-* **Suporte ao navegador**: os navegadores removem gradualmente o suporte para NPAPI, o que afeta a pré-visualização de PDF da correspondência. A visualização da carta nos formulários HTML/móveis não é afetada por isso.
+* **Suporte ao navegador**: os navegadores removem gradualmente o suporte para NPAPI, o que afeta a visualização da carta no PDF. A visualização da carta nos formulários HTML/móveis não é afetada por isso.
 * **Realçar conteúdo editável em uma correspondência**: na interface do usuário Criar correspondência, você pode selecionar Realçar conteúdo editável para realçar todo o conteúdo editável na correspondência em cinza. Para obter mais informações, consulte [Gerenciar conteúdo](#managecontent).
 
 `<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`
-`<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>` **Benefícios da visualização de PDF**
+`<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>` **Vantagens da visualização do PDF**
 
-* **Quebra de página**: na visualização de PDF, é possível visualizar exatamente como as quebras de página na correspondência afetam sua saída.
-* **Visualização final**: na visualização de PDF, você pode visualizar a formatação exata e a aparência da letra, pois ela aparecerá na saída.
+* **Quebra de página**: na visualização do PDF, você pode visualizar exatamente como as quebras de página na correspondência afetam sua saída.
+* **Visualização final**: na visualização do PDF, você pode visualizar a formatação e a aparência exatas da letra, pois ela aparecerá na saída.
 
-Para obter informações sobre suporte a scripts no PDF forms, consulte [Suporte a scripts](https://help.adobe.com/pt_BR/livecycle/11.0/ScriptingSupport/index.html).
+Para obter informações sobre suporte a scripts no PDF forms, consulte [Suporte a scripts](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html).
 
 Para obter mais informações sobre suporte a script em formulários HTML5, consulte [Suporte a script para formulários HTML5](/help/forms/using/scripting-support.md).
 
 ### Alterar modo de representação da carta {#changerenditionmode}
 
-Por padrão, a interface Criar correspondência usa o HTML ou formulários móveis para renderizar a pré-visualização de correspondência. A visualização de formulários móveis não tem problemas de renderização em nenhum navegador, pois usa o plug-in nativo do navegador e não requer plug-ins adicionais. É possível alterar o modo de visualização de correspondência para PDF. No entanto, as restrições do navegador podem criar problemas para diferentes recursos da pré-visualização interativa de PDF da correspondência.
+Por padrão, a interface Criar correspondência usa o HTML ou formulários móveis para renderizar a pré-visualização de correspondência. A visualização de formulários móveis não tem problemas de renderização em nenhum navegador, pois usa o plug-in nativo do navegador e não requer plug-ins adicionais. É possível alterar o modo de visualização de correspondência para PDF. No entanto, as restrições do navegador podem criar problemas para diferentes recursos da pré-visualização interativa da carta no PDF.
 
-Para obter mais informações sobre a compatibilidade do navegador com a visualização de correspondência, consulte [Descontinuação de plug-ins de navegador NPAPI e seu impacto](https://helpx.adobe.com/br/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
+Para obter mais informações sobre a compatibilidade do navegador com a visualização de correspondência, consulte [Descontinuação de plug-ins de navegador NPAPI e seu impacto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 Para alterar o modo de visualização da correspondência, conclua as seguintes etapas:
 
 1. Vá para `https://[system]:'port'/system/console/configMgr` e, se necessário, faça logon como Administrador.
-1. Vá para **[!UICONTROL Configurações de Gerenciamento de Correspondência]** > **[!UICONTROL Tipo de Representação]** e selecione **Representação de HTML** (Padrão) ou **Representação de PDF**.
+1. Vá para **[!UICONTROL Configurações do Gerenciamento de Correspondências]** > **[!UICONTROL Tipo de Representação]** e selecione **Representação do HTML** (Padrão) ou **Representação do PDF**.
 1. Clique em **[!UICONTROL Salvar]**.

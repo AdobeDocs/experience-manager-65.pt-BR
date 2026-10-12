@@ -10,14 +10,27 @@ exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '582'
 ht-degree: 80%
-
 ---
-
-# Diferencial de páginas  {#page-diff}
+# Diferencial de páginas{#page-diff}
 
 ## Introdução {#introduction}
 
@@ -40,7 +53,7 @@ O diferencial lado a lado pode comparar o seguinte:
 
 Consulte os respectivos tópicos sobre como iniciar o diferencial nesses contextos.
 
-### Apresentação das diferenças   {#presentation-of-differences}
+### Apresentação das diferenças {#presentation-of-differences}
 
 Independentemente do conteúdo sendo comparado, a apresentação do diferencial permanece a mesma.
 
@@ -69,7 +82,7 @@ O recurso diferencial detecta alterações no nível do componente e do HTML. Os
 >
 >Ao comparar cópias em idiomas diferentes, o realce é desativado, pois em uma tradução tudo é alterado e o realce não traria benefício algum.
 
-### Tela cheia e ao sair   {#fullscreen-and-exiting}
+### Tela cheia e ao sair {#fullscreen-and-exiting}
 
 Para se concentrar em um conteúdo específico, você pode clicar no ícone de tela inteira para qualquer &quot;lado&quot; da comparação lado a lado, ampliando o conteúdo até o tamanho da janela do navegador.
 
@@ -85,7 +98,7 @@ Você também pode optar por fechar a visualização em tela cheia clicando no �
 
 É possível sair do diferencial lado a lado a qualquer momento clicando no botão Fechar no cabeçalho.
 
-## Limitações   {#limitations}
+## Limitações {#limitations}
 
 Há algumas situações em que o recurso de diferencial de páginas pode não detectar uma diferença conforme esperado.
 
@@ -93,7 +106,7 @@ Há algumas situações em que o recurso de diferencial de páginas pode não de
 * Para versões, o diferencial não recria a política de controle de acesso e as relações com a Live Copy.
 * Se uma página for movida, não será mais possível fazer uma comparação com nenhuma versão feita antes da movimentação.
 
-   * Se você tiver problemas com um diferencial, verifique a [Linha do tempo](/help/sites-authoring/basic-handling.md#timeline) da página para ver se ela foi movida.
+  * Se você tiver problemas com um diferencial, verifique a [Linha do tempo](/help/sites-authoring/basic-handling.md#timeline) da página para ver se ela foi movida.
 
 >[!NOTE]
 >

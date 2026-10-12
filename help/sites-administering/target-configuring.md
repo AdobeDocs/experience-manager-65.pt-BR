@@ -1,19 +1,26 @@
 ---
 title: Configuração manual da integração com o Adobe Target
-
 description: Saiba como configurar manualmente a integração com o Adobe Target.
-
-
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: d2623c78e8c779b20303865d4bb40effd1e5fe59
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '2209'
 ht-degree: 28%
@@ -58,7 +65,7 @@ Os seguintes valores de propriedade são usados na configuração da nuvem da Co
 >* Melhores opções de implementação para aplicativos de página única
 >* A AT.js contém os componentes que foram incluídos na target.js, portanto, não é mais chamada para o target.
 
-<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=pt-BR -->
+<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
 ### Propriedades da Estrutura de Destino Provisionada {#provisioned-target-framework-properties}
 
@@ -121,7 +128,7 @@ Integrar manualmente ao Adobe Target em vez de usar o assistente de aceitação.
 >
 >É possível selecionar AT.js ou mbox.js no menu suspenso **Biblioteca do cliente**.
 
-<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=pt-BR -->
+<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
 ### Criação de uma configuração da nuvem do Target {#creating-a-target-cloud-configuration}
 
@@ -226,7 +233,7 @@ Sua estrutura foi criada. Para replicar a estrutura para a instância de publica
 
 ### Associação de atividades com a configuração de nuvem do Target  {#associating-activities-with-the-target-cloud-configuration}
 
-Associe suas [atividades do AEM](/help/sites-authoring/activitylib.md) à configuração de nuvem do Target para que você possa espelhar as atividades no [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=pt-BR).
+Associe suas [atividades do AEM](/help/sites-authoring/activitylib.md) à configuração de nuvem do Target para que você possa espelhar as atividades no [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >

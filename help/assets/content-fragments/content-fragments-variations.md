@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 59%
-
+source-wordcount: '2442'
+ht-degree: 60%
 ---
-
 # Variações - Criação dos fragmentos de conteúdo{#variations-authoring-fragment-content}
 
 [As variações](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) são um recurso importante dos fragmentos de conteúdo do AEM, pois permitem criar e editar cópias do conteúdo principal para uso em canais e/ou cenários específicos, tornando a entrega de conteúdo headless ainda mais flexível.
@@ -51,22 +63,22 @@ Por exemplo:
 
 * Fazer edições no conteúdo diretamente da guia **Variações**; cada tipo de dados fornece opções de edição diferentes, por exemplo:
 
-   * para campos de **Texto multilinha**, você também pode abrir o [editor de tela cheia](#full-screen-editor) para:
+  * para campos de **Texto multilinha**, você também pode abrir o [editor de tela cheia](#full-screen-editor) para:
 
-      * selecionar o [Formato](#formats)
-      * ver mais opções de edição (para formato [Rich text](#rich-text))
-      * acessar uma variedade de [ações](#actions)
+    * selecionar o [Formato](#formats)
+    * ver mais opções de edição (para formato [Rich text](#rich-text))
+    * acessar uma variedade de [ações](#actions)
 
-   * Para campos de **Referência do fragmento**, a opção [Editar fragmento do conteúdo](#fragment-references-edit-content-fragment) pode estar disponível, dependendo da definição do modelo.
+  * Para campos de **Referência do fragmento**, a opção [Editar fragmento do conteúdo](#fragment-references-edit-content-fragment) pode estar disponível, dependendo da definição do modelo.
 
 * Atribuir **Marcas** à variação atual; as marcas podem ser adicionadas, atualizadas e removidas
 
-   * As [Marcas](/help/sites-authoring/tags.md) são avançadas ao organizar os fragmentos, pois podem ser usadas para a classificação de conteúdo e taxonomia. As tags podem ser usadas para localizar conteúdo (por tags) e aplicar operações em massa.
+  * As [Marcas](/help/sites-authoring/tags.md) são avançadas ao organizar os fragmentos, pois podem ser usadas para a classificação de conteúdo e taxonomia. As tags podem ser usadas para localizar conteúdo (por tags) e aplicar operações em massa.
 
-      * As pesquisas por uma tag retornam o fragmento, com a variação da tag destacada.
-      * As tags de variação também podem ser usadas para agrupar variações de um perfil específico da rede de entrega de conteúdo (CDN) (para armazenamento em cache da CDN), em vez de usar o nome da variação.
+    * As pesquisas por uma tag retornam o fragmento, com a variação da tag destacada.
+    * As tags de variação também podem ser usadas para agrupar variações de um perfil específico da rede de entrega de conteúdo (CDN) (para armazenamento em cache da CDN), em vez de usar o nome da variação.
 
-     Por exemplo, você pode marcar fragmentos relevantes como “Lançamento de Natal” para permitir a navegação somente entre eles como um subconjunto ou a cópia para uso com outro lançamento futuro em uma nova pasta.
+    Por exemplo, você pode marcar fragmentos relevantes como “Lançamento de Natal” para permitir a navegação somente entre eles como um subconjunto ou a cópia para uso com outro lançamento futuro em uma nova pasta.
 
   >[!NOTE]
   >
@@ -130,10 +142,10 @@ A edição de rich text permite formatar:
 * Estilo do parágrafo: parágrafo, cabeçalho 1/2/3
 * [Inserir ativo](#inserting-assets-into-your-fragment)
 * Abrir o editor de tela cheia, onde as seguintes opções de formatação estão disponíveis:
-   * Pesquisar
-   * Localizar/substituir
-   * Verificador ortográfico
-   * [Anotações](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+  * Pesquisar
+  * Localizar/substituir
+  * Verificador ortográfico
+  * [Anotações](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [Inserir fragmento de conteúdo](#inserting-content-fragment-into-your-fragment); disponível quando o campo de **Texto de várias linhas** está configurado para **Permitir referência de fragmento**.
 
 As [ações](#actions) também podem ser acessadas pelo editor de tela cheia.
@@ -253,7 +265,7 @@ O resumo de texto foi criado para ajudar os usuários a reduzir o comprimento do
    ![resumo](assets/cfm-variations-05.png)
 
 1. Especifique o número alvo de palavras e selecione **Iniciar**:
-1. O texto original é apresentado lado a lado com o resumo proposto:
+1. O texto original é exibido lado a lado com o resumo proposto:
 
    * As frases que serão eliminadas são destacadas em vermelho e tachadas.
    * Clique em qualquer frase destacada se desejar mantê-la no conteúdo resumido.
@@ -261,7 +273,7 @@ O resumo de texto foi criado para ajudar os usuários a reduzir o comprimento do
 
 1. Selecione **Resumir** para confirmar as alterações.
 
-1. O texto original é apresentado lado a lado com o resumo proposto:
+1. O texto original é exibido lado a lado com o resumo proposto:
 
    * As frases que serão eliminadas são destacadas em vermelho e tachadas.
    * Clique em qualquer frase destacada se desejar mantê-la no conteúdo resumido.
@@ -468,7 +480,7 @@ Ao editar uma variação, você tem acesso à ação para sincronizar o elemento
 
 >[!CAUTION]
 >
->A sincronização só está disponível para copiar alterações *do **Principal**&#x200B;para a variação*.
+>A sincronização só está disponível para copiar alterações *do **Principal**para a variação*.
 >
 >Somente o elemento atual da variação será sincronizado.
 >

@@ -9,13 +9,22 @@ feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3000'
 ht-degree: 5%
-
 ---
-
 # Diretrizes de desempenho{#performance-guidelines}
 
 Esta página fornece diretrizes gerais sobre como otimizar o desempenho da sua implantação do AEM. Se você é novo no AEM, reveja as seguintes páginas antes de começar a ler as diretrizes de desempenho:
@@ -304,7 +313,7 @@ No AEM, os dados binários podem ser armazenados independentemente dos nós de c
 
 >[!CAUTION]
 >
->O Micro Kernel do Banco de Dados Relacional está sob suporte restrito. Entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/pt-br?support-solution=General&support-tab=home#support) antes de usar esse tipo de Micro Kernel.
+>O Micro Kernel do Banco de Dados Relacional está sob suporte restrito. Entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support) antes de usar esse tipo de Micro Kernel.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 
@@ -316,11 +325,11 @@ Para obter mais detalhes sobre as opções de configuração disponíveis, consu
 
 >[!NOTE]
 >
->A Adobe recomenda escolher a opção de implantação do AEM no Azure ou do Amazon Web Services (AWS) usando o Adobe Managed Services. Os clientes se beneficiam de uma equipe que tem a experiência e as habilidades de implantação e operação do AEM nesses ambientes de computação em nuvem. Consulte [documentação adicional sobre o Adobe Managed Services](https://business.adobe.com/br/products/experience-manager/managed-services.html?aemClk=t).
+>A Adobe recomenda escolher a opção de implantação do AEM no Azure ou do Amazon Web Services (AWS) usando o Adobe Managed Services. Os clientes se beneficiam de uma equipe que tem a experiência e as habilidades de implantação e operação do AEM nesses ambientes de computação em nuvem. Consulte [documentação adicional sobre o Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 >
 >Para obter recomendações sobre como implantar o AEM no Azure ou AWS, fora do Adobe Managed Services, a Adobe recomenda trabalhar diretamente com o provedor de nuvem. Ou trabalhe com um dos parceiros da Adobe que oferecem suporte à implantação do AEM no ambiente de nuvem de sua escolha. O provedor ou parceiro de nuvem selecionado é responsável pelas especificações de dimensionamento, design e implementação da arquitetura à qual dá suporte para atender aos seus requisitos específicos de desempenho, carga, escalabilidade e segurança.
 >
->&#x200B;>Consulte também a página [requisitos técnicos](/help/sites-deploying/technical-requirements.md#supported-platforms).
+>>Consulte também a página [requisitos técnicos](/help/sites-deploying/technical-requirements.md#supported-platforms).
 
 ### Pesquisar {#search-features}
 

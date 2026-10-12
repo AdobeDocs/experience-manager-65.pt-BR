@@ -5,13 +5,39 @@ exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3072'
 ht-degree: 90%
-
 ---
-
 # Introdução ao AEM Headless {#getting-started}
 
 Nesta parte da [Jornada do desenvolvedor headless do AEM,](overview.md) saiba mais sobre o que é necessário para iniciar seu próprio projeto com o AEM Headless.
@@ -144,7 +170,7 @@ Para qualquer projeto bem-sucedido, é importante definir claramente não apenas
 
 É importante ter um escopo claramente definido para o projeto. O escopo informa os critérios de aceitação e permite que você estabeleça uma definição de concluído.
 
-A primeira pergunta que você deve fazer é “O que estou tentando alcançar com AEM Headless?” A resposta geral deve ser que você tem ou terá no futuro um aplicativo de experiência que você criou com suas próprias ferramentas de desenvolvimento, não com o AEM. Esse aplicativo de experiência pode ser um aplicativo móvel, um site ou qualquer outro aplicativo de experiência voltado para o cliente final. O objetivo de usar o AEM Headless é alimentar seu aplicativo de experiência com conteúdo criado, armazenado e gerenciado no AEM com APIs de última geração que chamariam o AEM Headless para buscar conteúdo ou até mesmo conteúdo totalmente CRUD diretamente do seu aplicativo de experiência. Se isto não é o que você pretende fazer, então você provavelmente deve [voltar para a documentação do AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=pt-BR) e encontrar a seção que melhor se adapta ao que você deseja realizar.
+A primeira pergunta que você deve fazer é “O que estou tentando alcançar com AEM Headless?” A resposta geral deve ser que você tem ou terá no futuro um aplicativo de experiência que você criou com suas próprias ferramentas de desenvolvimento, não com o AEM. Esse aplicativo de experiência pode ser um aplicativo móvel, um site ou qualquer outro aplicativo de experiência voltado para o cliente do usuário final. O objetivo de usar o AEM Headless é alimentar seu aplicativo de experiência com conteúdo criado, armazenado e gerenciado no AEM com APIs de última geração que chamariam o AEM Headless para buscar conteúdo ou até mesmo conteúdo totalmente CRUD diretamente do seu aplicativo de experiência. Se isto não é o que você pretende fazer, então você provavelmente deve [voltar para a documentação do AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=pt-BR) e encontrar a seção que melhor se adapta ao que você deseja realizar.
 
 ### Funções e responsabilidades {#roles-responsibilities}
 
@@ -285,7 +311,7 @@ Mesmo sendo recomendado que você siga para a próxima parte da jornada de desen
 * [Jornada de Tradução AEM Headless](/help/journey-headless/translation/overview.md) - Essa jornada de documentação oferece uma ampla compreensão da tecnologia headless, como o AEM fornece conteúdo headless e como você pode traduzi-lo.
 
 * [Tutoriais AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - Use esses tutoriais práticos para explorar como utilizar as várias opções para fornecer conteúdo a endpoints headless com o AEM e escolha o que é certo para você.
-* [Gerenciamento de Conteúdo Headless Usando APIs GraphQL](https://experienceleague.adobe.com/pt-br?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless&lang=pt-BR#courses) - Siga este curso para obter uma visão geral da API GraphQL implementada no AEM. Autenticação via AdobeID é necessária.
+* [Gerenciamento de Conteúdo Headless Usando APIs GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless&lang=pt-BR#courses) - Siga este curso para obter uma visão geral da API GraphQL implementada no AEM. Autenticação via AdobeID é necessária.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Este projeto do GitHub inclui aplicativos exemplificativos que destacam APIs GraphQL do AEM.
 * [Conceitos de Criação](/help/sites-authoring/author.md) - Documentação técnica do ambiente de criação do AEM, incluindo detalhes sobre a configuração de publicação do autor
 * [Publicar Páginas](/help/sites-authoring/publishing-pages.md) - Documentação técnica para publicação de conteúdo no AEM

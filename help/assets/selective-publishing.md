@@ -10,13 +10,27 @@ role: User, Admin
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3000'
+source-wordcount: '3028'
 ht-degree: 3%
-
 ---
-
 # Configurar a publicação seletiva no nível da pasta no Dynamic Media {#selective-publish-configure-folder}
 
 Você pode optar por publicar ou cancelar a publicação de ativos para ou provenientes do Adobe Experience Manager ou Dynamic Media no nível da pasta. Você pode usar **[!UICONTROL Gerenciar Publicação]** ou **[!UICONTROL Publicação Rápida]**, em vez de depender exclusivamente da **[!UICONTROL Configuração do Dynamic Media]**, cujas configurações são globais para todas as pastas em sua instância do Dynamic Media.
@@ -147,7 +161,7 @@ Consulte [Criar uma configuração do Dynamic Media](#configuring-dynamic-media-
    | Ação | Descrição |
    | --- | --- |
    | **[!UICONTROL Cancelar publicação]** (do Experience Manager) | Selecione essa opção se desejar cancelar a publicação de ativos do Experience Manager. |
-   | **[!UICONTROL Cancelar publicação no Dynamic Media]** | Selecione essa opção se desejar cancelar a publicação de ativos do Dynamic Media.<br>Esta opção estará disponível somente se o **[!UICONTROL Modo de publicação do Dynamic Media]** estiver definido como **[!UICONTROL Publicação seletiva]** nas propriedades da pasta. |
+   | **[!UICONTROL Cancelar publicação no Dynamic Media]** | Selecione esta opção se quiser cancelar a publicação de ativos do Dynamic Media.<br>Esta opção só estará disponível se o **[!UICONTROL Modo de publicação do Dynamic Media]** estiver definido como **[!UICONTROL Publicação seletiva]** nas propriedades da pasta. |
 
 1. Em **[!UICONTROL Agendar]**, defina o tempo de desativação.
 

@@ -8,20 +8,34 @@ exl-id: b5e27b54-d141-48dd-a4ed-dd0a691319a5
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '432'
 ht-degree: 0%
-
 ---
-
 # Recuperando Variáveis de Tarefa no URL de Resumo {#getting-task-variables-in-summary-url}
 
 A página de resumo exibe informações relacionadas à tarefa. Este artigo descreve como você pode reutilizar informações relacionadas à tarefa na página de resumo.
 
 Nesta orquestração de exemplo, um funcionário envia um formulário de inscrição de licença. O formulário de inscrição é então enviado ao gerente do funcionário para aprovação.
 
-1. Crie um renderizador de HTML de amostra (html.esp) para resourseType **Employees/PtoApplication**.
+1. Crie um renderizador de HTML de exemplo (html.esp) para resourseType **Employees/PtoApplication**.
 
    O renderizador pressupõe que as seguintes propriedades sejam definidas no nó:
 
@@ -66,7 +80,7 @@ Nesta orquestração de exemplo, um funcionário envia um formulário de inscri�
 
    1. No processo **criar resumo de PTO**, use o componente **definir valor** para definir os detalhes de entrada em um mapa de **nodeProperty**(**nodeProps**).
 
-      As chaves neste mapa devem ser as mesmas definidas no renderizador de HTML na etapa anterior.
+      As chaves neste mapa devem ser as mesmas definidas no renderizador do HTML na etapa anterior.
 
       Além disso, adicione uma chave **sling:resourceType** com o valor **Employees/PtoApplication** no mapa.
 
@@ -76,7 +90,7 @@ Nesta orquestração de exemplo, um funcionário envia um formulário de inscri�
 
       * **Caminho da pasta**: o caminho onde o novo nó do CRX é criado. Defina o caminho como **/content**.
       * **Nome do nó**: atribua a variável de entrada nodeName a este campo. É uma string exclusiva de nome de nó.
-      * **Tipo de Nó**: defina o tipo como **nt:unstructured**. A saída desse processo é nodePath. O nodePath é o caminho CRX do nó recém-criado. O nodePath seria a saída final do processo de resumo **criar PTO**.
+      * **Tipo de nó**: defina o tipo como **nt:unstructured**. A saída desse processo é nodePath. O nodePath é o caminho CRX do nó recém-criado. O nodePath seria a saída final do processo de resumo **criar PTO**.
 
    1. Transmita os dados do formulário enviado (**employeeName**, **employeeID**, **ptoReason** e **totalDays**) como entrada para o novo processo **criar resumo PTO**. Usar a saída como **ptoSummaryNodePath**.
 
@@ -84,6 +98,6 @@ Nesta orquestração de exemplo, um funcionário envia um formulário de inscri�
 
    XPath: `concat('https://[*server*]:[*port*]/lc',/process_data/@ptoSummaryNodePath,'.html')`.
 
-Na área de trabalho do AEM Forms, ao abrir uma tarefa, o URL de resumo acessa o nó do CRX e o renderizador de HTML exibe o resumo.
+Na área de trabalho do AEM Forms, ao abrir uma tarefa, o URL do resumo acessa o nó do CRX e o renderizador do HTML exibe o resumo.
 
-O layout de resumo pode ser alterado sem modificar o processo. O renderizador de HTML exibe o resumo apropriadamente.
+O layout de resumo pode ser alterado sem modificar o processo. O renderizador do HTML exibe o resumo apropriadamente.

@@ -1,6 +1,6 @@
 ---
 title: Renderização do Forms
-description: Use o serviço Forms para criar aplicativos cliente de captura de dados interativos que validam, processam, transformam e fornecem formulários normalmente criados no Designer. Os autores de formulários podem desenvolver um único design de formulário que o serviço Forms renderiza em PDF, SWF ou HTML em vários ambientes do navegador.
+description: Use o serviço Forms para criar aplicativos cliente de captura de dados interativos que validam, processam, transformam e fornecem formulários normalmente criados no Designer. Os autores de formulários podem desenvolver um único design de formulário que o serviço do Forms renderiza no PDF, SWF ou HTML em vários ambientes do navegador.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/performing_service_operations_using_apis
@@ -10,22 +10,34 @@ role: Developer
 exl-id: ec9ccf04-7cec-493a-91ab-0e399a905338
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 939a2efa64c853928a9082aa30d7338e98deb695
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '573'
 ht-degree: 0%
-
 ---
-
 # Renderização do Forms {#rendering-forms}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
 
 **Sobre o serviço Forms**
 
-O serviço Forms permite criar aplicativos cliente de captura de dados interativos que validam, processam, transformam e fornecem formulários normalmente criados no Designer. Os autores de formulários podem desenvolver um único design de formulário que o serviço Forms renderiza em PDF, SWF ou HTML em vários ambientes do navegador.
+O serviço Forms permite criar aplicativos cliente de captura de dados interativos que validam, processam, transformam e fornecem formulários normalmente criados no Designer. Os autores de formulários podem desenvolver um único design de formulário que o serviço do Forms renderiza no PDF, SWF ou HTML em vários ambientes do navegador.
 
-Quando um usuário final solicita um formulário, um aplicativo cliente envia a solicitação ao serviço do Forms, que retorna o formulário em um formato apropriado. Assim que o serviço Forms recebe uma solicitação, ele mescla dados com um design de formulário e entrega o formulário no formato desejado. A saída do serviço de formulário é um formulário interativo, geralmente um documento PDF. Um formulário interativo permite que os usuários preencham os campos localizados no formulário.
+Quando um usuário final solicita um formulário, um aplicativo cliente envia a solicitação ao serviço do Forms, que retorna o formulário em um formato apropriado. Assim que o serviço Forms recebe uma solicitação, ele mescla dados com um design de formulário e entrega o formulário no formato desejado. A saída do serviço de formulário é um formulário interativo, geralmente um documento do PDF. Um formulário interativo permite que os usuários preencham os campos localizados no formulário.
 
 Dependendo do tipo de aplicativo cliente, você pode gravar o formulário em um navegador da Web cliente ou salvá-lo como um arquivo PDF. Um aplicativo baseado na Web pode gravar o formulário no navegador da Web. Um aplicativo de desktop pode salvar o formulário como um arquivo PDF. Para demonstrar como gravar em um navegador da Web e em um arquivo PDF, os inícios rápidos na seção *Renderização do Forms* são organizados da seguinte maneira:
 
@@ -44,14 +56,14 @@ Você pode passar um design de formulário (um arquivo XDP) ou um documento PDF 
 
 É possível realizar essas tarefas usando o serviço Forms:
 
-* Renderizar PDF forms interativos. (Consulte [Renderização de PDF forms interativos](/help/forms/developing/rendering-interactive-pdf-forms.md).)
+* Renderizar o PDF forms interativo. (Consulte [Renderização do PDF forms Interativo](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 * Renderizar formulários no cliente. (Consulte [Renderização do Forms no cliente](/help/forms/developing/rendering-forms-client.md).)
 * Renderizar formulários com base em fragmentos. (Consulte [Renderização de Forms com base em fragmentos](/help/forms/developing/rendering-forms-based-fragments.md).)
 * Renderizar formulários habilitados por direitos. (Consulte [Renderização de Forms com Direitos Habilitados](/help/forms/developing/rendering-rights-enabled-forms.md).)
 * Renderizar formulários como HTML. (Consulte [Renderização do Forms como HTML](/help/forms/developing/rendering-forms-html.md).)
-* Renderizando o HTML Forms com Arquivos CSS Personalizados ([Renderizando o HTML Forms com Arquivos CSS Personalizados](/help/forms/developing/rendering-html-forms-using-custom.md).)
+* Renderização do HTML Forms Usando Arquivos CSS Personalizados ([Renderização do HTML Forms Usando Arquivos CSS Personalizados](/help/forms/developing/rendering-html-forms-using-custom.md).)
 * Manipular formulários enviados. (Consulte [Manipulação de Forms Enviada](/help/forms/developing/handling-submitted-forms.md).)
-* Criação de Documentos PDF com Dados XML Enviados. (Consulte [Criando Documentos PDF com Dados XML Enviados](/help/forms/developing/creating-pdf-documents-submitted-xml.md).)
+* Criação de documentos do PDF com dados XML enviados. (Consulte [Criação de Documentos do PDF com Dados XML Enviados](/help/forms/developing/creating-pdf-documents-submitted-xml.md).)
 * Preencher formulários previamente. (Consulte [Preenchimento prévio de Forms com Layouts Fluxáveis](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
 * Envio de documentos. (Consulte [Passando documentos para o serviço Forms](/help/forms/developing/passing-documents-forms-service.md)
 * Calcular dados do formulário. (Consulte [Calcular Dados De Formulário](/help/forms/developing/calculating-form-data.md).)

@@ -5,22 +5,35 @@ exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1568'
 ht-degree: 61%
-
 ---
-
 # Trabalhar com versões de páginas{#working-with-page-versions}
 
 O controle de versão cria um “instantâneo” de uma página em um momento específico. Com o controle de versão, você pode executar as seguintes ações:
 
 * Criar uma versão de uma página.
 * Restaurar uma página para uma versão anterior; por exemplo:
-   * para desfazer uma alteração feita na página.
+  * para desfazer uma alteração feita na página.
 * Comparar a versão atual de uma página com uma versão anterior:
-   * para destacar diferenças no texto e nas imagens.
+  * para destacar diferenças no texto e nas imagens.
 
 >[!NOTE]
 >
@@ -29,7 +42,7 @@ O controle de versão cria um “instantâneo” de uma página em um momento es
 >* Ao visualizar versões, o conteúdo é exibido com o código atual, CSS e JavaScript do repositório.
 >* Ao restaurar versões, somente o conteúdo é restaurado e o código atual, CSS e JavaScript do repositório são aplicados a ele.
 
-## Criar uma nova versão   {#creating-a-new-version}
+## Criar uma nova versão {#creating-a-new-version}
 
 É possível criar uma versão do recurso usando:
 
@@ -77,13 +90,13 @@ Depois de criar uma versão da página, há vários métodos para restaurar uma 
 
 * a opção **Restaurar** na parte superior da [barra de ferramentas Ações](/help/sites-authoring/basic-handling.md#actions-toolbar)
 
-   * **Restaurar versão**
+  * **Restaurar versão**
 
-     Restaure as versões das páginas especificadas na pasta atualmente selecionada; isso também pode incluir a restauração de páginas que foram excluídas anteriormente.
+    Restaure as versões das páginas especificadas na pasta atualmente selecionada; isso também pode incluir a restauração de páginas que foram excluídas anteriormente.
 
-   * **Restaurar árvore**
+  * **Restaurar árvore**
 
-     Restaure uma versão de uma árvore inteira em uma data e hora especificadas; isso pode incluir páginas que foram excluídas anteriormente.
+    Restaure uma versão de uma árvore inteira em uma data e hora especificadas; isso pode incluir páginas que foram excluídas anteriormente.
 
 >[!NOTE]
 >
@@ -165,7 +178,7 @@ Esse método pode ser usado para restaurar uma versão de uma árvore, por exemp
 
 1. Selecione **Restaurar** para que a versão selecionada da árvore seja restaurada como a versão *atual*.
 
-## Visualização de uma versão   {#previewing-a-version}
+## Visualização de uma versão {#previewing-a-version}
 
 É possível visualizar uma versão específica:
 
@@ -197,7 +210,7 @@ Para comparar uma versão anterior com a página atual:
 
 1. Selecione **Comparar com a atual**. A [página diff](/help/sites-authoring/page-diff.md) é aberta para exibir as diferenças.
 
-## Timewarp   {#timewarp}
+## Timewarp {#timewarp}
 
 O Timewarp é um recursos criado para simular o estado *publicado* de uma página em ocasiões específicas no passado.
 
@@ -208,7 +221,7 @@ O Timewarp é um recursos criado para simular o estado *publicado* de uma págin
 A criação de conteúdo é um processo contínuo e colaborativo. O objetivo do Timewarp é permitir que os autores rastreiem o site publicado ao longo do tempo, para ajudá-los a entender como o conteúdo mudou. Esse recurso usa as versões de página para determinar o estado do ambiente de publicação:
 
 * O sistema procura a versão da página que estava ativa no momento selecionado.
-   * Esta versão da página foi criada/ativada *antes* do momento selecionado no Timewarp.
+  * Esta versão da página foi criada/ativada *antes* do momento selecionado no Timewarp.
 * Ao navegar para uma página que foi excluída, isso também é renderizado - desde que as versões antigas da página ainda estejam disponíveis no repositório.
 * Se nenhuma versão publicada for encontrada, o Timewarp reverterá para o estado atual da página no ambiente de criação (para evitar um erro de página/404, que impediria a navegação).
 

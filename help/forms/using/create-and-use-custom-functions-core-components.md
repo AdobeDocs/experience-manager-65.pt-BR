@@ -6,13 +6,23 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
 exl-id: 00073e3a-f1b5-4c42-9fea-4a14b8a22c81
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3498'
+source-wordcount: '3523'
 ht-degree: 1%
-
 ---
-
 # Funções personalizadas nos Componentes principais do Forms adaptável
 
 Este artigo descreve como criar funções personalizadas com o componente principal de formulário adaptável mais recente, que tem os recursos mais recentes, como:
@@ -73,17 +83,17 @@ O **Parâmetro** é uma lista de argumentos usados por funções personalizadas.
 
   `{type}` representa o tipo de parâmetro. Os tipos de parâmetros permitidos são:
 
-   * string: representa um único valor de string.
-   * number: representa um único valor numérico.
-   * booleano: representa um único valor booleano (verdadeiro ou falso).
-   * cadeia de caracteres []: representa uma matriz de valores de cadeia de caracteres.
-   * número[]: representa uma matriz de valores numéricos.
-   * booleano[]: representa uma matriz de valores booleanos.
-   * date: representa um único valor de data.
-   * date[]: representa uma matriz de valores de data.
-   * array: representa uma matriz genérica contendo valores de vários tipos.
-   * object: representa o objeto de formulário passado para uma função personalizada em vez de passar seu valor diretamente.
-   * escopo: representa o objeto global, que contém variáveis somente leitura, como instâncias de formulário, instâncias de campo de destino e métodos para executar modificações de formulário nas funções personalizadas. Ele é declarado como o último parâmetro nas anotações do JavaScript e não está visível para o editor de regras de um Formulário adaptável. O parâmetro scope acessa o objeto do formulário ou componente para acionar a regra ou o evento necessário para o processamento do formulário. Para obter mais informações sobre o objeto Globals e como usá-lo, [clique aqui](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects)
+  * string: representa um único valor de string.
+  * number: representa um único valor numérico.
+  * booleano: representa um único valor booleano (verdadeiro ou falso).
+  * cadeia de caracteres []: representa uma matriz de valores de cadeia de caracteres.
+  * número[]: representa uma matriz de valores numéricos.
+  * booleano[]: representa uma matriz de valores booleanos.
+  * date: representa um único valor de data.
+  * date[]: representa uma matriz de valores de data.
+  * array: representa uma matriz genérica contendo valores de vários tipos.
+  * object: representa o objeto de formulário passado para uma função personalizada em vez de passar seu valor diretamente.
+  * escopo: representa o objeto global, que contém variáveis somente leitura, como instâncias de formulário, instâncias de campo de destino e métodos para executar modificações de formulário nas funções personalizadas. Ele é declarado como o último parâmetro nas anotações do JavaScript e não está visível para o editor de regras de um Formulário adaptável. O parâmetro scope acessa o objeto do formulário ou componente para acionar a regra ou o evento necessário para o processamento do formulário. Para obter mais informações sobre o objeto Globals e como usá-lo, [clique aqui](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects)
 
 O tipo Parameter é **não diferencia maiúsculas de minúsculas** e espaços não são permitidos no nome do parâmetro.
 
@@ -355,7 +365,7 @@ OU
 
 ### Criar uma biblioteca do cliente usando o Arquétipo de projeto do AEM{#create-client-library-archetype}
 
-Você pode adicionar funções personalizadas adicionando uma biblioteca do cliente ao projeto criado [usando o Arquétipo de Projetos AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
+Você pode adicionar funções personalizadas adicionando uma biblioteca do cliente ao projeto criado [usando o Arquétipo de Projetos AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
 Se você tiver um projeto existente <!--and have already the project structure as shown in the image below,-->, poderá adicionar diretamente [funções personalizadas](#create-add-custom-function) ao seu projeto local.
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
@@ -572,7 +582,7 @@ Vamos visualizar o formulário para observar como as funções personalizadas s�
 
 >[!NOTE]
 >
-> Você pode consultar a seguinte pasta [funções personalizadas](/help/forms/using/assets/customfunctions.zip). Baixe e instale esta pasta na instância do AEM usando o [Gerenciador de Pacotes](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager).
+> Você pode consultar a seguinte pasta [funções personalizadas](/help/forms/using/assets/customfunctions.zip). Baixe e instale esta pasta na instância do AEM usando o [Gerenciador de Pacotes](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager).
 
 ### Suporte para funções assíncronas em funções personalizadas {#support-of-async-functions}
 
@@ -776,14 +786,14 @@ Consulte a ilustração abaixo para mostrar que, se o usuário clicar no botão 
 
 #### **Caso de uso**: para exibir uma mensagem personalizada no nível do campo e marcar o campo como inválido
 
-You can use the `markFieldAsInvalid()` function to define a field as invalid and set custom error message at a field level. The `fieldIdentifier` value can be `fieldId`, or `field qualifiedName`, or `field dataRef`. The value of the object named `option` can be `{useId: true}`, `{useQualifiedName: true}`, or `{useDataRef: true}`.
-The syntaxes used to mark field as invalid and set custom message are:
+Você pode usar a função `markFieldAsInvalid()` para definir um campo como inválido e definir uma mensagem de erro personalizada em nível de campo. O valor `fieldIdentifier` pode ser `fieldId`, `field qualifiedName` ou `field dataRef`. O valor do objeto nomeado `option` pode ser `{useId: true}`, `{useQualifiedName: true}` ou `{useDataRef: true}`.
+As sintaxes usadas para marcar o campo como inválido e definir uma mensagem personalizada são:
 
 * `globals.functions.markFieldAsInvalid(field.$id,"[custom message]",{useId: true});`
 * `globals.functions.markFieldAsInvalid(field.$qualifiedName, "[custom message]", {useQualifiedName: true});`
 * `globals.functions.markFieldAsInvalid(field.$dataRef, "[custom message]", {useDataRef: true});`
 
-Add the following code in the custom function as explained in the [create-custom-function](#create-custom-function) section, to enable custom message at the field level.
+Adicione o seguinte código na função personalizada conforme explicado na seção [create-custom-function](#create-custom-function) para habilitar a mensagem personalizada no nível do campo.
 
 ```javascript
     /**
@@ -801,30 +811,30 @@ Add the following code in the custom function as explained in the [create-custom
 }
 ```
 
-In this example, if the user enters less than 15 characters in the comments textbox, a custom message appears at the field level.
+Neste exemplo, se o usuário inserir menos de 15 caracteres na caixa de texto comentários, uma mensagem personalizada será exibida no nível do campo.
 
-Next step is to create a rule for the `comments` field:
+A próxima etapa é criar uma regra para o campo `comments`:
 
-![Mark field as Invalid](/help/forms/using/assets/custom-function-invalid-field.png)
+![Marcar campo como Inválido](/help/forms/using/assets/custom-function-invalid-field.png)
 
-See the demonstration below to display that entering negative feedback in the `comments` field triggers the display of a custom message at the field level:
+Veja a demonstração abaixo para mostrar que inserir comentários negativos no campo `comments` aciona a exibição de uma mensagem personalizada no nível do campo:
 
-![Mark field as Invalid Preview form](/help/forms/using/assets/custom-function-invalidfield-form.png)
+![Marcar campo como Formulário de visualização inválido](/help/forms/using/assets/custom-function-invalidfield-form.png)
 
-If the user enters more than 15 characters in commments textbox, the field gets validated and form is submitted:
+Se o usuário inserir mais de 15 caracteres na caixa de texto de comentários, o campo será validado e o formulário será enviado:
 
-![Mark field as valid Preview form](/help/forms/using/assets/custom-function-validfield-form.png)
+![Marcar campo como formulário de Visualização válido](/help/forms/using/assets/custom-function-validfield-form.png)
 
 
-#### **Use Case**: Submit altered data to the server
+#### **Caso de uso**: enviar dados alterados para o servidor
 
-The following line of code:
-`globals.functions.submitForm(globals.functions.exportData(), false);` is used to submit the form data after manipulation.
-* The first argument is the data to be submitted.
-* The second argument represents whether the form is to be validated before submission. It is `optional` and set as `true` by default.
-* The third argument is the `contentType` of the submission, which is also optional with the default value as `multipart/form-data`. The other values can be `application/json` and `application/x-www-form-urlencoded`.
+A seguinte linha de código:
+`globals.functions.submitForm(globals.functions.exportData(), false);` é usado para enviar os dados do formulário após manipulação.
+* O primeiro argumento diz respeito aos dados a apresentar.
+* O segundo argumento representa se o formulário deve ser validado antes do envio. Ele é `optional` e definido como `true` por padrão.
+* O terceiro argumento é o `contentType` do envio, que também é opcional com o valor padrão como `multipart/form-data`. Os outros valores podem ser `application/json` e `application/x-www-form-urlencoded`.
 
-Add the following code in the custom function as explained in the [create-custom-function](#create-custom-function) section, to submit the manipulated data at the server:
+Adicione o seguinte código na função personalizada, conforme explicado na seção [create-custom-function](#create-custom-function), para enviar os dados manipulados no servidor:
 
 ```javascript
     /**
@@ -845,13 +855,13 @@ Add the following code in the custom function as explained in the [create-custom
     }
 ```
 
-In this example, if the user leaves the `comments` textbox empty, the `NA` is submitted to the server at form submission.
+Neste exemplo, se o usuário deixar a caixa de texto `comments` vazia, o `NA` será enviado ao servidor no envio do formulário.
 
-Now create a rule for the `Submit` button which submits data:
+Agora crie uma regra para o botão `Submit` que envia dados:
 
-![Submit data](/help/forms/using/assets/custom-function-submit-data.png)
+![Enviar dados](/help/forms/using/assets/custom-function-submit-data.png)
 
-Refer to the illustration of the `console window` below to demonstrate that if the user leaves the `comments` textbox empty, then the value as `NA` is submitted at the server:
+Consulte a ilustração da `console window` abaixo para demonstrar que, se o usuário deixar a caixa de texto `comments` vazia, o valor como `NA` será enviado ao servidor:
 
 ![Enviar dados na janela do console](/help/forms/using/assets/custom-function-submit-data-form.png)
 
@@ -984,9 +994,9 @@ Caso as funções personalizadas sejam modificadas, o armazenamento em cache é 
 
 * O usuário precisa garantir que o [componente principal e a versão da especificação estejam definidos com a versão mais recente](https://github.com/adobe/aem-core-forms-components/tree/release/650). No entanto, para projetos e formulários existentes do AEM, há etapas adicionais a seguir:
 
-   * Para o projeto AEM, o usuário deve substituir todas as instâncias de `submitForm('custom:submitSuccess', 'custom:submitError')` por `submitForm()` e implantar o projeto.
+  * Para o projeto AEM, o usuário deve substituir todas as instâncias de `submitForm('custom:submitSuccess', 'custom:submitError')` por `submitForm()` e implantar o projeto.
 
-   * Para formulários existentes, se os manipuladores de envio personalizados não estiverem funcionando corretamente, o usuário precisará abrir e salvar a regra `submitForm` no botão **Enviar** usando o Editor de Regras. Esta ação substitui a regra existente de `submitForm('custom:submitSuccess', 'custom:submitError')` por `submitForm()` no formulário.
+  * Para formulários existentes, se os manipuladores de envio personalizados não estiverem funcionando corretamente, o usuário precisará abrir e salvar a regra `submitForm` no botão **Enviar** usando o Editor de Regras. Esta ação substitui a regra existente de `submitForm('custom:submitSuccess', 'custom:submitError')` por `submitForm()` no formulário.
 
 
 * Se o arquivo JavaScript que contém o código para funções personalizadas tiver um erro, as funções personalizadas não serão listadas no editor de regras de um Formulário adaptável. Para verificar a lista de funções personalizadas, você pode navegar até o arquivo `error.log` para localizar o erro. No caso de um erro, a lista de funções personalizadas aparece vazia:
@@ -1002,9 +1012,9 @@ Caso as funções personalizadas sejam modificadas, o armazenamento em cache é 
 * O `parameter type` e o `return type` não dão suporte a `None`.
 
 * As funções não suportadas na lista de funções personalizadas são:
-   * Funções geradoras
-   * Funções assíncronas/Await
-   * Definições de método
-   * Métodos de classe
-   * Parâmetros padrão
-   * Parâmetros rest
+  * Funções geradoras
+  * Funções assíncronas/Await
+  * Definições de método
+  * Métodos de classe
+  * Parâmetros padrão
+  * Parâmetros rest

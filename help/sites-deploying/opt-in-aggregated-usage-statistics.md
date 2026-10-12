@@ -10,18 +10,30 @@ exl-id: e626bdd8-b7ae-4de5-a0a0-47fb74c080d7
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 1%
-
+source-wordcount: '307'
+ht-degree: 3%
 ---
-
 # Ativando A Coleta De Estatísticas De Uso Agregado{#opting-into-aggregated-usage-statistics-collection}
 
 ## Introdução {#introduction}
 
-Você pode ajudar a melhorar o Adobe Experience Cloud enviando estatísticas de Adobe sobre como interagir com o Adobe Experience Manager (AEM). Estas informações não contêm dados sobre os visitantes do site da sua empresa e são usadas apenas para ajudar o Adobe a fornecer, suportar e melhorar a experiência do usuário.
+Você pode ajudar a melhorar a Adobe Experience Cloud enviando estatísticas do Adobe sobre como você interage com o Adobe Experience Manager (AEM). Estas informações não contêm dados sobre os visitantes do site da empresa e são usadas apenas para ajudar a Adobe a fornecer, suportar e melhorar a experiência do usuário.
 
 Você pode aderir à coleção de estatísticas de uso usando a interface para toque ou o Console da Web.
 
@@ -29,7 +41,7 @@ Você pode aderir à coleção de estatísticas de uso usando a interface para t
 >
 >Há várias regulamentações de proteção e privacidade de dados; incluindo, por exemplo, o GDPR e o CCPA. A AEM Sites está pronta para ajudar os clientes em suas obrigações de conformidade de proteção e privacidade de dados. Esta página orienta os clientes por meio dos procedimentos de aceitação (ou recusa) da Coleta de Estatísticas de Uso Agregado.
 >
->Para obter mais informações, consulte também o [Centro de Privacidade do Adobe](https://www.adobe.com/br/privacy.html).
+>Para obter mais informações, consulte também o [Centro de privacidade da Adobe](https://www.adobe.com/br/privacy.html).
 
 >[!NOTE]
 >
@@ -37,9 +49,9 @@ Você pode aderir à coleção de estatísticas de uso usando a interface para t
 
 ## Aceitar usando a interface para toque {#opt-in-by-using-the-touch-ui}
 
-Na primeira vez que você iniciar o AEM, poderá aceitar usando a interface para toque da seguinte maneira:
+Na primeira vez que você inicia o AEM, é possível aceitar usando a interface para toque da seguinte maneira:
 
-1. Na tela de Navegação do AEM, clique no ícone **Caixa de entrada** (sino).
+1. Na tela Navegação do AEM, clique no ícone **Caixa de entrada** (sino).
 
    ![usage_statistics_navigationscreen](assets/usage_statisticsnavigationscreen.png)
 
@@ -57,7 +69,7 @@ Na primeira vez que você iniciar o AEM, poderá aceitar usando a interface para
 
 Você pode aceitar (ou recusar) usando o Console da Web da seguinte maneira:
 
-1. Na tela Navegação AEM, clique em **Ferramentas** e depois em **Operações**.
+1. Na tela Navegação do AEM, clique em **Ferramentas** e depois em **Operações**.
 
    ![uso_estatísticasdashboard](assets/usage_statisticsopsdashboard.png)
 

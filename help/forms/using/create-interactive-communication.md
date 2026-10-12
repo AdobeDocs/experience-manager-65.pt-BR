@@ -8,13 +8,27 @@ feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6132'
+source-wordcount: '6227'
 ht-degree: 1%
-
 ---
-
 # Criar uma comunicação interativa{#create-an-interactive-communication}
 
 ## Visão geral {#overview}
@@ -300,7 +314,7 @@ A tabela a seguir lista um exemplo dos valores exibidos como resultado da config
 | SocialSecurityNumber | 1234567 | texto{999-99-9999} | 1-23-4567 | O número de dígitos no campo de valor padrão é menor que o número de dígitos no campo Padrão. O padrão se aplica aos 7 dígitos disponíveis. |
 | SocialSecurityNumber | 1234567890 | texto{999-99-9999} | 1234567890 | O número de dígitos no campo de valor padrão é maior que o número de dígitos no campo Padrão. Como resultado, não há alteração no valor de exibição. |
 
-Se um padrão de exibição não for especificado para uma variável ou um elemento de modelo de dados de formulário, a [configuração global de fragmento de documento](https://helpx.adobe.com/br//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html) será usada por padrão.
+Se um padrão de exibição não for especificado para uma variável ou um elemento de modelo de dados de formulário, a [configuração global de fragmento de documento](https://helpx.adobe.com//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html) será usada por padrão.
 
 Se você não aplicar um padrão de exibição a uma variável do tipo de dados Number, a Visualização de impressão exibirá o padrão de acordo com a configuração global do fragmento do documento. Se você aplicar alterações à configuração padrão do fragmento de documento global, a interface do usuário do agente ainda exibirá o padrão de acordo com os separadores padrão definidos para o local.
 
@@ -618,7 +632,7 @@ PrintChannelRenderOptions renderOptions = new PrintChannelRenderOptions();
 PrintDocument printDocument = printChannel.render(renderOptions);
 ```
 
-Para gerar a saída em qualquer outro formato, especifique o tipo de formato de saída. Consulte [PrintChannel API](https://helpx.adobe.com/br/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html) para obter a lista de tipos de formato de saída com suporte.
+Para gerar a saída em qualquer outro formato, especifique o tipo de formato de saída. Consulte [PrintChannel API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html) para obter a lista de tipos de formato de saída com suporte.
 
 Por exemplo, você pode usar a seguinte amostra para definir PCL como formato de saída para uma comunicação interativa:
 

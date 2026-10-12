@@ -10,7 +10,18 @@ feature: Upgrading
 exl-id: b777fdca-e7a5-427a-9e86-688dd7cac636
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 0%
@@ -87,7 +98,7 @@ Os mixins aplicados no CRXDE Lite mostram nós de conteúdo e árvores marcados 
 
 O AEM 6.5 vem com uma verificação de integridade para alertar os clientes se o conteúdo sobreposto ou referenciado for usado de forma inconsistente com a classificação do conteúdo.
 
-A **&#x200B; Verificação de acesso de conteúdo do Sling/Granite** é uma nova verificação de integridade que monitora o repositório para ver se o código do cliente está acessando incorretamente os nós protegidos no AEM.
+A ** Verificação de acesso de conteúdo do Sling/Granite** é uma nova verificação de integridade que monitora o repositório para ver se o código do cliente está acessando incorretamente os nós protegidos no AEM.
 
 Isso verifica **/aplicativos** e geralmente leva alguns segundos para ser concluído.
 

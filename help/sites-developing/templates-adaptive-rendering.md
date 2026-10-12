@@ -9,16 +9,25 @@ exl-id: 58cac3b1-b7cd-44b2-b89b-f5ee8811c198
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '497'
 ht-degree: 0%
-
 ---
-
 # Renderização adaptável do modelo{#adaptive-template-rendering}
 
-A renderização do modelo adaptável fornece uma maneira de gerenciar uma página com variações. Originalmente útil para fornecer várias saídas de HTML para dispositivos móveis (por exemplo, telefone de recurso versus smartphone), esse recurso é útil quando as experiências precisam ser entregues a vários dispositivos que precisam de diferentes saídas de marcação ou HTML.
+A renderização do modelo adaptável fornece uma maneira de gerenciar uma página com variações. Originalmente útil para fornecer várias saídas do HTML para dispositivos móveis (por exemplo, telefone de recurso versus smartphone), esse recurso é útil quando as experiências precisam ser entregues a vários dispositivos que precisam de marcação diferente ou saída do HTML.
 
 ## Visão geral {#overview}
 
@@ -53,7 +62,7 @@ Neste exemplo, você vai configurar o grupo de dispositivos existente **Smart Ph
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
-1. Usando o CRXDE Lite, permita que o grupo de dispositivos seja usado no modelo, adicionando-o à propriedade de cadeia de caracteres de vários valores `cq:deviceGroups` na estrutura do modelo.
+1. Usando o CRXDE Lite, permita que o grupo de dispositivos seja usado em seu modelo, adicionando-o à propriedade de cadeia de caracteres de vários valores `cq:deviceGroups` na estrutura do modelo.
 
    `/conf/<your-site>/settings/wcm/templates/<your-template>/structure/jcr:content`
 

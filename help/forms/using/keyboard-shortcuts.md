@@ -8,7 +8,25 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1208'
 ht-degree: 2%
@@ -27,22 +45,22 @@ Este artigo lista os atalhos de teclado que podem ser usados com o Editor de for
 | Feche o navegador Propriedades do componente de formulário adaptável selecionado | Ctrl+Alt+W | Command+Alt+W |
 | Salve as alterações no navegador Propriedades do componente de formulário adaptável selecionado | Ctrl+S | Command+S |
 | Editar regra para o componente de formulário adaptável selecionado | Ctrl+Alt+Enter | Command+Alt+Return |
-| Alternar entre a Visualização e o modo selecionado atualmente (por exemplo, Editar e Andaime) | Ctrl+Shift+M | Ctrl+Shift+M&ast; |
-| Desfazer a última alteração | Ctrl+Z | Ctrl+Z&ast; |
-| Refazer a última alteração | Ctrl+Y | Ctrl+S&ast; |
+| Alternar entre a Visualização e o modo selecionado atualmente (por exemplo, Editar e Andaime) | Ctrl+Shift+M | Ctrl+Shift+M&amp;ast; |
+| Desfazer a última alteração | Ctrl+Z | Ctrl+Z&amp;ast; |
+| Refazer a última alteração | Ctrl+Y | Ctrl+S&amp;ast; |
 | Selecionar vários componentes | Shift + clique | Shift + clique |
-| Copiar componente selecionado | Ctrl-C | Ctrl-C&ast; |
-| Recortar componentes selecionados. O componente recortado não desaparece até que seja colado no novo local. | Ctrl-X | Ctrl-X&ast; |
+| Copiar componente selecionado | Ctrl-C | Ctrl-C&amp;ast; |
+| Recortar componentes selecionados. O componente recortado não desaparece até que seja colado no novo local. | Ctrl-X | Ctrl-X&amp;ast; |
 | Colar componentes | Ctrl+V | Ctrl+V |
-| Excluir componentes selecionados | Ctrl+Del | Ctrl+Del&ast; |
-| Excluir componentes selecionados | Ctrl+Barra de espaços | Ctrl+Espaço&Atrasado; |
-| Tornar o texto negrito ao usar o componente Editor de Rich Text no modo Visualização | Ctrl+O | Ctrl+B&ast; |
-| Colocar texto em itálico ao usar o componente Editor de Rich Text no modo Visualização | Ctrl+I | Ctrl+I&ast; |
-| Tornar o texto negrito ao usar o componente Editor de Rich Text no modo Visualização | Ctrl+S | Ctrl+U&ast; |
+| Excluir componentes selecionados | Ctrl+Del | Ctrl+Del&amp;ast; |
+| Excluir componentes selecionados | Ctrl+Barra de espaços | Ctrl+Espaço&amp;Atrasado; |
+| Tornar o texto negrito ao usar o componente Editor de Rich Text no modo Visualização | Ctrl+O | Ctrl+B&amp;ast; |
+| Colocar texto em itálico ao usar o componente Editor de Rich Text no modo Visualização | Ctrl+I | Ctrl+I&amp;ast; |
+| Tornar o texto negrito ao usar o componente Editor de Rich Text no modo Visualização | Ctrl+S | Ctrl+U&amp;ast; |
 
 >[!NOTE]
 >
->Os atalhos marcados com um &#39;&ast;&#39; funcionam com as teclas Ctrl e Command no macOS.
+>Os atalhos marcados com um &#39;&amp;ast;&#39; funcionam com as teclas Ctrl e Command no macOS.
 
 >[!NOTE]
 >
@@ -58,13 +76,13 @@ Este artigo lista os atalhos de teclado que podem ser usados com o Editor de for
 |---|---|---|
 | Abrir o navegador Propriedades do componente selecionado em um tema | Alt+Enter | Alt+Return |
 | Fechar o navegador Propriedades do componente selecionado em um tema | Ctrl+Alt+W | Command+Alt+W |
-| Desfazer a última alteração | Ctrl+Z | Ctrl+Z&ast; |
-| Refazer a última alteração | Ctrl+Y | Ctrl+S&ast; |
-| Salvar alterações no navegador Propriedades do componente selecionado em um tema | Ctrl+S | Ctrl+S&ast; |
+| Desfazer a última alteração | Ctrl+Z | Ctrl+Z&amp;ast; |
+| Refazer a última alteração | Ctrl+Y | Ctrl+S&amp;ast; |
+| Salvar alterações no navegador Propriedades do componente selecionado em um tema | Ctrl+S | Ctrl+S&amp;ast; |
 
 >[!NOTE]
 >
->Os atalhos marcados com um &#39;&ast;&#39; funcionam com as teclas Ctrl e Command no macOS.
+>Os atalhos marcados com um &#39;&amp;ast;&#39; funcionam com as teclas Ctrl e Command no macOS.
 
 ## Navegador de conteúdo  {#contentbrowser}
 

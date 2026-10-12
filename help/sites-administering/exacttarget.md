@@ -10,21 +10,30 @@ exl-id: 4183fe78-5055-4b77-8a54-55666e86a04e
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '471'
 ht-degree: 0%
-
 ---
-
 # Integração com o ExactTarget{#integrating-with-exacttarget}
 
-Integrar o Adobe Experience Manager (AEM) com o Exact Target permite gerenciar e enviar emails criados no AEM por meio do Exact Target. Ele também permite usar os recursos de gerenciamento de clientes potenciais do Exact Target por meio de formulários AEM em páginas AEM.
+A integração do Adobe Experience Manager (AEM) com o Exact Target permite gerenciar e enviar emails criados no AEM por meio do Exact Target. Ele também permite usar os recursos de gerenciamento de clientes potenciais do Exact Target por meio de formulários do AEM em páginas do AEM.
 
 A integração do oferece os seguintes recursos:
 
 * A capacidade de criar emails no AEM e publicá-los no Exact Target para distribuição.
-* A capacidade de definir a ação de um formulário AEM para criar um assinante do Exact Target.
+* A capacidade de definir a ação de um formulário do AEM para criar um assinante do Exact Target.
 
 Depois que o ExactTarget é configurado, você pode publicar informativos ou emails no ExactTarget. Consulte [Publicar informativos em um serviço de email](/help/sites-authoring/personalization.md).
 
@@ -34,9 +43,9 @@ As configurações do ExactTarget podem ser adicionadas por meio do Cloud Servic
 
 ### Configuração do ExactTarget por meio dos serviços em nuvem {#configuring-exacttarget-via-cloudservices}
 
-Para criar uma configuração ExactTarget em Cloud Service:
+Para criar uma configuração ExactTarget no Cloud Services:
 
-1. Na página de boas-vindas, clique em **Cloud Service**. (Ou acesse diretamente em `https://<hostname>:<port>/etc/cloudservices.html`.)
+1. Na página de boas-vindas, clique em **Cloud Services**. (Ou acesse diretamente em `https://<hostname>:<port>/etc/cloudservices.html`.)
 1. Clique em **ExactTarget** e depois em **Configurar**. A janela de configuração ExactTarget é aberta.
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
@@ -65,7 +74,7 @@ Para criar uma configuração ExactTarget em Cloud Service:
 Para criar uma configuração ExactTarget em Ferramentas:
 
 1. Na página de boas-vindas, clique em **Ferramentas**. Ou navegue diretamente até `https://<hostname>:<port>/misadmin#/etc`.
-1. Selecione **Ferramentas**, depois **Configurações do Cloud Service** e depois **ExactTarget**.
+1. Selecione **Ferramentas**, depois **Configurações de Cloud Services** e depois **ExactTarget**.
 1. Clique em **Novo** para abrir a janela **Criar página**.
 
    ![chlimage_1-34](assets/chlimage_1-3.jpeg)
@@ -77,5 +86,5 @@ Para criar uma configuração ExactTarget em Ferramentas:
 
 Para adicionar várias configurações:
 
-1. Na página de boas-vindas, clique em **Cloud Service** e em **ExactTarget**. Clique em **Mostrar Configurações**, que aparecerá se uma ou mais configurações do ExactTarget estiverem disponíveis. Todas as configurações disponíveis são listadas.
+1. Na página de boas-vindas, clique em **Cloud Services** e em **ExactTarget**. Clique em **Mostrar Configurações**, que aparecerá se uma ou mais configurações do ExactTarget estiverem disponíveis. Todas as configurações disponíveis são listadas.
 1. Clique no sinal **+** ao lado de Configurações disponíveis. Isso abre a janela **Criar Configurações**. Siga o procedimento de configuração anterior para criar uma configuração.

@@ -5,20 +5,33 @@ exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6873'
-ht-degree: 4%
-
+source-wordcount: '7475'
+ht-degree: 7%
 ---
-
 # Componentes de fundação {#foundation-components}
 
 >[!CAUTION]
 >
 >A maioria dos componentes básicos agora está obsoleta com o AEM 6.5. Consulte as [notas de versão](/help/release-notes/deprecated-removed-features.md) para obter mais informações.
 >
->A Adobe recomenda usar os [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) mais modernos e extensíveis nos projetos AEM. Esses componentes fazem parte do [conteúdo de amostra do We.Retail](/help/sites-developing/we-retail.md) e também podem ser [instalados separadamente e usados para desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=pt-BR) pelo seu administrador.
+>A Adobe recomenda usar os [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) mais modernos e extensíveis nos projetos AEM. Esses componentes fazem parte do [conteúdo de amostra do We.Retail](/help/sites-developing/we-retail.md) e também podem ser [instalados separadamente e usados para desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html) pelo seu administrador.
 >
 >Você pode usar o [Conjunto de ferramentas de Modernização do AEM](https://opensource.adobe.com/aem-modernize-tools/) para refatorar seu site baseado em Componentes do Foundation para usar os Componentes principais.
 
@@ -116,31 +129,31 @@ A caixa de diálogo permite editar as propriedades da instância do componente d
 
 * **Imagem**
 
-   * **Imagem**
-Arraste uma imagem do localizador de conteúdo ou clique para abrir uma janela de navegação onde você pode carregar uma imagem. Depois que a imagem for carregada, você poderá recortá-la, girá-la ou excluí-la. Para ampliar e reduzir a imagem, use a barra deslizante abaixo da imagem (acima dos botões OK e Cancelar)
+  * **Imagem**
+    Arraste uma imagem do localizador de conteúdo ou clique para abrir uma janela de navegação onde você pode carregar uma imagem. Depois que a imagem for carregada, você poderá recortá-la, girá-la ou excluí-la. Para ampliar e reduzir a imagem, use a barra deslizante abaixo da imagem (acima dos botões OK e Cancelar)
 
-   * **Cortar**
-Recortar parte de uma imagem. Arraste a borda para cortar a imagem.
+  * **Cortar**
+    Recortar parte de uma imagem. Arraste a borda para cortar a imagem.
 
-   * **Girar**
-Clique em Girar repetidamente até que a imagem seja girada conforme desejado.
+  * **Girar**
+    Clique em Girar repetidamente até que a imagem seja girada conforme desejado.
 
-   * **Limpar**
-Remover a imagem atual.
+  * **Limpar**
+    Remover a imagem atual.
 
 * **Avançado**
 
-   * **Título**
-O componente de Imagem adaptável não usa essa propriedade.
+  * **Título**
+    O componente de Imagem adaptável não usa essa propriedade.
 
-   * **Texto Alternativo**
-O texto alternativo a ser usado para a imagem.
+  * **Texto Alternativo**
+    O texto alternativo a ser usado para a imagem.
 
-   * **Vincular a**
-O componente de Imagem adaptável não usa essa propriedade.
+  * **Vincular a**
+    O componente de Imagem adaptável não usa essa propriedade.
 
-   * **Descrição**
-O componente de Imagem adaptável não usa essa propriedade.
+  * **Descrição**
+    O componente de Imagem adaptável não usa essa propriedade.
 
 #### Extensão do componente de imagem adaptável {#extending-the-adaptive-image-component}
 
@@ -168,55 +181,55 @@ Essas propriedades estão disponíveis em duas guias:
 * **Carrossel**
 Aqui você especifica como o carrossel opera:
 
-   * Reproduzir velocidade
-O tempo em milissegundos antes do próximo slide é exibido.
-   * Tempo de transição
-O tempo em milissegundos para a transição entre dois slides.
-   * Estilo dos controles
-Várias opções estão disponíveis em um menu suspenso; por exemplo, Botões Anterior/Avançar, Comutadores Superior-Direito.
+  * Reproduzir velocidade
+    O tempo em milissegundos antes do próximo slide é exibido.
+  * Tempo de transição
+    O tempo em milissegundos para a transição entre dois slides.
+  * Estilo dos controles
+    Várias opções estão disponíveis em um menu suspenso; por exemplo, Botões Anterior/Avançar, Comutadores Superior-Direito.
 
 * **Lista**
 
   Aqui você especifica como as páginas são incluídas no carrossel:
 
-   * **Criar lista usando**
-Há várias maneiras de criar uma lista de páginas - Páginas secundárias, Lista fixa, Pesquisa ou Pesquisa avançada (todas descritas abaixo).
-Independentemente do método escolhido, as páginas incluídas na lista devem ter, cada uma, uma imagem associada à página. Essa imagem é exibida no Carrossel. Se não houver imagem para uma determinada página nas Propriedades da página, você deve associar uma imagem à página antes de começar. Caso contrário, o Carrossel exibe uma página em branco. Consulte [Editando Propriedades Da Página](/help/sites-authoring/editing-page-properties.md).
-Dependendo do item escolhido, um novo painel será exibido:
+  * **Criar lista usando**
+    Há várias maneiras de criar uma lista de páginas - Páginas secundárias, Lista fixa, Pesquisa ou Pesquisa avançada (todas descritas abaixo).
+    Independentemente do método escolhido, as páginas incluídas na lista devem ter, cada uma, uma imagem associada à página. Essa imagem é exibida no Carrossel. Se não houver imagem para uma determinada página nas Propriedades da página, você deve associar uma imagem à página antes de começar. Caso contrário, o Carrossel exibe uma página em branco. Consulte [Editando Propriedades Da Página](/help/sites-authoring/editing-page-properties.md).
+    Dependendo do item escolhido, um novo painel será exibido:
 
-      * **Opções para Páginas Secundárias**
+    * **Opções para Páginas Secundárias**
 
-         * **Página pai**
-Especifique um caminho manualmente ou usando o seletor. Deixe em branco para utilizar a página atual como principal.
+      * **Página principal**
+        Especifique um caminho manualmente ou usando o seletor. Deixe em branco para utilizar a página atual como principal.
 
-      * **Opções da Lista Fixa**
+    * **Opções da Lista Fixa**
 
-         * **Páginas**
-Selecione uma lista de páginas. Use `+` para adicionar mais entradas e os botões para cima/baixo para ajustar a ordem.
+      * **Páginas**
+        Selecione uma lista de páginas. Use `+` para adicionar mais entradas e os botões para cima/baixo para ajustar a ordem.
 
-      * **Opções de Pesquisa**
+    * **Opções de Pesquisa**
 
-         * **Iniciar em**
-Insira um caminho inicial manualmente ou usando o seletor.
+      * **Iniciar em**
+        Insira um caminho inicial manualmente ou usando o seletor.
 
-         * **Pesquisar consulta**
-Você pode inserir uma consulta de pesquisa de texto simples.
+      * **Pesquisar consulta**
+        Você pode inserir uma consulta de pesquisa de texto simples.
 
-      * **Opções de Pesquisa Avançada**
+    * **Opções de Pesquisa Avançada**
 
-         * **Notação de predicado do Querybuilder**
-Você pode inserir uma consulta de pesquisa usando a notação de predicado do Querybuilder. Por exemplo, você pode digitar &quot;fulltext=Marketing&quot; para que todas as páginas com &quot;Marketing&quot; em seu conteúdo sejam exibidas no Carrossel.
-Consulte a [API do QueryBuilder](/help/sites-developing/querybuilder-api.md) para obter uma discussão completa sobre expressões de consulta e mais exemplos.
+      * **Notação de predicado do Querybuilder**
+        Você pode inserir uma consulta de pesquisa usando a notação de predicado do Querybuilder. Por exemplo, você pode digitar &quot;fulltext=Marketing&quot; para que todas as páginas com &quot;Marketing&quot; em seu conteúdo sejam exibidas no Carrossel.
+        Consulte a [API do QueryBuilder](/help/sites-developing/querybuilder-api.md) para obter uma discussão completa sobre expressões de consulta e mais exemplos.
 
-   * **Solicitar por**
-Selecione `jcr:title`, `jcr:created`, `cq:lastModified` ou `cq:template` no menu suspenso.
+  * **Ordenar por**
+    Selecione `jcr:title`, `jcr:created`, `cq:lastModified` ou `cq:template` no menu suspenso.
 
-   * **Limite**
-Opcional. O número máximo de itens que você deseja usar no Carrossel.
+  * **Limite**
+    Opcional. O número máximo de itens que você deseja usar no Carrossel.
 
 >[!NOTE]
 >
->Você pode criar um componente de carrossel personalizado para o Adobe Experience Manager que exibe ativos digitais no AEM DAM. Consulte [Criação de componentes de Carrossel personalizados para o Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR).
+>Você pode criar um componente de carrossel personalizado para o Adobe Experience Manager que exibe ativos digitais no AEM DAM. Consulte [Criação de componentes de Carrossel personalizados para o Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
 
 ### Gráfico {#chart}
 
@@ -228,22 +241,22 @@ O componente de Gráfico permite adicionar um gráfico de barras, de linhas ou d
 
 * **Dados**
 
-   * **Dados do gráfico**
-Insira os dados do gráfico usando o formato CSV; o formato de Valores separados por vírgula usa vírgulas (&quot;,&quot;) como separador de campo.
+  * **Dados do gráfico**
+    Insira os dados do gráfico usando o formato CSV; o formato de Valores separados por vírgula usa vírgulas (&quot;,&quot;) como separador de campo.
 
 * **Avançado**
 
-   * **Tipo de gráfico**
-Selecione entre Gráfico de Pizza, Gráfico de Linhas e Gráfico de Barras.
+  * **Tipo de gráfico**
+    Selecione entre Gráfico de Pizza, Gráfico de Linhas e Gráfico de Barras.
 
-   * **Texto alternativo**
-Exibe texto alternativo em vez do gráfico.
+  * **Texto alternativo**
+    Exibe texto alternativo em vez do gráfico.
 
-   * **Largura**
-A largura do gráfico em pixels.
+  * **Largura**
+    A largura do gráfico em pixels.
 
-   * **Altura**
-A altura do gráfico em pixels.
+  * **Altura**
+    A altura do gráfico em pixels.
 
 A seguir, há um exemplo de dados de gráfico seguido pelo gráfico de Barras resultante:
 
@@ -251,7 +264,7 @@ A seguir, há um exemplo de dados de gráfico seguido pelo gráfico de Barras re
 
 >[!NOTE]
 >
->Você pode criar um controle de gráfico AEM personalizado que exibe dados no JCR do AEM. Para obter informações, consulte [Exibindo Dados do Adobe Experience Manager em um Gráfico](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR).
+>Você pode criar um controle de gráfico AEM personalizado que exibe dados no JCR do AEM. Para obter informações, consulte [Exibindo Dados do Adobe Experience Manager em um Gráfico](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
 
 ### Fragmento de conteúdo {#content-fragment}
 
@@ -279,11 +292,11 @@ O componente de Download cria um link na página da Web selecionada para baixar 
 
 * **Download**
 
-   * **Descrição**
-Uma breve descrição é exibida com o link de download.
+  * **Descrição**
+    Uma breve descrição é exibida com o link de download.
 
-   * **Arquivo**
-O arquivo está disponível para download na página da Web resultante. Arraste um ativo do localizador de conteúdo ou selecione a área para fazer upload do arquivo que deseja disponibilizar para download.
+  * **Arquivo**
+    O arquivo está disponível para download na página da Web resultante. Arraste um ativo do localizador de conteúdo ou selecione a área para fazer upload do arquivo que deseja disponibilizar para download.
 
 O exemplo a seguir mostra o componente de Download no Geometrixx:
 
@@ -299,18 +312,18 @@ O componente de integração de aplicativos externos (**Externo**) permite que v
 
 * **Externo**
 
-   * **Aplicativo de destino**
-Especifique o URL do aplicativo Web a ser integrado; por exemplo:
+  * **Aplicativo de destino**
+    Especifique o URL do aplicativo Web a ser integrado; por exemplo:
 
-     ```
-     https://en.wikipedia.org/wiki/Main_Page
-     ```
+    ```
+    https://en.wikipedia.org/wiki/Main_Page
+    ```
 
-   * **Passar parâmetros**
-Marque a caixa para que os parâmetros sejam passados para o aplicativo quando necessário.
+  * **Passar parâmetros**
+    Marque a caixa para que os parâmetros sejam passados para o aplicativo quando necessário.
 
-   * **Largura e altura
-**Defina o tamanho do iframe
+  * **Largura e altura
+    **Defina o tamanho do iframe
 
 O aplicativo externo está integrado ao sistema de parágrafo da página do AEM; por exemplo, ao usar um aplicativo do Target de `https://en.wikipedia.org/wiki/Main_Page`:
 
@@ -334,13 +347,13 @@ O componente Flash permite carregar um filme Flash. Você pode arrastar um ativo
 
 * **Flash**
 
-   * **Filme em Flash**
+  * **Filme em Flash**
 
-     O arquivo de filme flash. Arraste um ativo do localizador de conteúdo ou clique em para abrir uma janela de navegação.
+    O arquivo de filme flash. Arraste um ativo do localizador de conteúdo ou clique em para abrir uma janela de navegação.
 
-   * **Tamanho**
+  * **Tamanho**
 
-     Dimensões em pixels da área de exibição que contém o filme.
+    Dimensões em pixels da área de exibição que contém o filme.
 
 * **Imagem alternativa**
 
@@ -348,25 +361,25 @@ O componente Flash permite carregar um filme Flash. Você pode arrastar um ativo
 
 * **Avançado**
 
-   * **Menu de contexto**
+  * **Menu de contexto**
 
-     Indica se o menu de contexto deve ser exibido ou oculto.
+    Indica se o menu de contexto deve ser exibido ou oculto.
 
-   * **Modo de janela**
+  * **Modo de janela**
 
-     Como a janela aparece, por exemplo, opaca, transparente ou como uma janela distinta (sólida).
+    Como a janela aparece, por exemplo, opaca, transparente ou como uma janela distinta (sólida).
 
-   * **Cor do plano de fundo**
+  * **Cor do plano de fundo**
 
-     Uma cor de plano de fundo selecionada no gráfico de cores fornecido.
+    Uma cor de plano de fundo selecionada no gráfico de cores fornecido.
 
-   * **Versão mínima**
+  * **Versão mínima**
 
-     A versão mínima do Adobe Flash Player necessária para executar o filme. O padrão é 9.0.0.
+    A versão mínima do Adobe Flash Player necessária para executar o filme. O padrão é 9.0.0.
 
-   * **Atributos**
+  * **Atributos**
 
-     Quaisquer outros atributos necessários.
+    Quaisquer outros atributos necessários.
 
 ### Imagem {#image}
 
@@ -464,71 +477,71 @@ Este componente fornece um sistema de parágrafo de grade para que você possa a
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal de lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=pt-BR).
+>Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal de lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html).
 
 O componente Lista permite configurar critérios de pesquisa para exibir uma lista:
 
 * **Lista**
 
-   * **Criar lista usando**
+  * **Criar lista usando**
 
-     Aqui você especifica onde a lista recupera o conteúdo. Há vários métodos:
+    Aqui você especifica onde a lista recupera o conteúdo. Há vários métodos:
 
-   * Dependendo do item escolhido, um novo painel será exibido:
+  * Dependendo do item escolhido, um novo painel será exibido:
 
-      * **Opções para Páginas Secundárias**
+    * **Opções para Páginas Secundárias**
 
-         * **Filhos de** (Página Pai)
+      * **Filhos de** (Página Pai)
 
-           Especifique um caminho manualmente ou usando o seletor. Deixe em branco para utilizar a página atual como principal.
+        Especifique um caminho manualmente ou usando o seletor. Deixe em branco para utilizar a página atual como principal.
 
-      * **Opções da Lista Fixa**
+    * **Opções da Lista Fixa**
 
-         * **Páginas**
+      * **Páginas**
 
-           Selecione uma lista de páginas. Use + para adicionar mais entradas e os botões para cima/baixo para ajustar a ordem.
+        Selecione uma lista de páginas. Use + para adicionar mais entradas e os botões para cima/baixo para ajustar a ordem.
 
-      * **Opções de Pesquisa**
+    * **Opções de Pesquisa**
 
-         * Começa em
+      * Começa em
 
-           Insira um caminho inicial manualmente ou usando o seletor.
+        Insira um caminho inicial manualmente ou usando o seletor.
 
-         * Pesquisar consulta
+      * Pesquisar consulta
 
-           Você pode inserir uma consulta de pesquisa de texto simples.
+        Você pode inserir uma consulta de pesquisa de texto simples.
 
-      * **Opções de Pesquisa Avançada**
+    * **Opções de Pesquisa Avançada**
 
-         * **Notação de predicado do Querybuilder**
+      * **Notação de predicado do Querybuilder**
 
-           Você pode inserir uma consulta de pesquisa usando a notação de predicado do Querybuilder. Por exemplo, você pode digitar &quot;fulltext=Marketing&quot; para que todas as páginas com &quot;Marketing&quot; em seu conteúdo sejam exibidas no Carrossel.
+        Você pode inserir uma consulta de pesquisa usando a notação de predicado do Querybuilder. Por exemplo, você pode digitar &quot;fulltext=Marketing&quot; para que todas as páginas com &quot;Marketing&quot; em seu conteúdo sejam exibidas no Carrossel.
 
-           Consulte a [API do QueryBuilder](/help/sites-developing/querybuilder-api.md) para obter uma discussão completa sobre expressões de consulta e mais exemplos.
+        Consulte a [API do QueryBuilder](/help/sites-developing/querybuilder-api.md) para obter uma discussão completa sobre expressões de consulta e mais exemplos.
 
-      * **Tags**
+    * **Tags**
 
-        Especifique a **Página pai**, **Marcas/Palavras-chave** e os critérios de correspondência necessários.
+      Especifique a **Página pai**, **Marcas/Palavras-chave** e os critérios de correspondência necessários.
 
-   * **Exibir como**
+  * **Exibir como**
 
-     Como você deseja que os itens sejam listados; inclui Links, Teasers e Notícias.
+    Como você deseja que os itens sejam listados; inclui Links, Teasers e Notícias.
 
-   * **Solicitar por**
+  * **Solicitar por**
 
-     Se a lista deve ser ordenada e, em caso afirmativo, os critérios a serem usados para a classificação. Você pode inserir um critério ou selecionar um na lista suspensa fornecida.
+    Se a lista deve ser ordenada e, em caso afirmativo, os critérios a serem usados para a classificação. Você pode inserir um critério ou selecionar um na lista suspensa fornecida.
 
-   * **Limite**
+  * **Limite**
 
-     Especifique o número máximo de itens que deseja exibir na lista.
+    Especifique o número máximo de itens que deseja exibir na lista.
 
-   * **Habilitar Feed**
+  * **Habilitar Feed**
 
-     Indica se um feed RSS deve ser ativado para a lista.
+    Indica se um feed RSS deve ser ativado para a lista.
 
-   * **Paginar após**
+  * **Paginar após**
 
-     Aqui você pode especificar o número de itens da lista a serem exibidos de uma vez. Uma lista com mais itens do que o especificado usa a paginação para exibir a lista em várias partes.
+    Aqui você pode especificar o número de itens da lista a serem exibidos de uma vez. Uma lista com mais itens do que o especificado usa a paginação para exibir a lista em várias partes.
 
 O exemplo a seguir mostra um componente **Lista** da maneira que ele pode exibir uma lista de páginas secundárias (o design é controlado pelas definições CSS personalizadas de um design de site).
 
@@ -552,31 +565,31 @@ Você pode configurar:
 
 * Fazer Logon
 
-   * Rótulo da seção
+  * Rótulo da seção
 
-     Texto de lead-in para os campos de entrada.
+    Texto de lead-in para os campos de entrada.
 
-   * Rótulo do nome de usuário
+  * Rótulo do nome de usuário
 
-     Texto para rotular o campo de nome de usuário.
+    Texto para rotular o campo de nome de usuário.
 
-   * Rótulo da senha
+  * Rótulo da senha
 
-     Texto para rotular o campo de senha.
+    Texto para rotular o campo de senha.
 
-   * Rótulo do botão de logon
+  * Rótulo do botão de logon
 
-     Texto do botão de logon.
+    Texto do botão de logon.
 
-   * Redirecionar para
+  * Redirecionar para
 
-     Você pode especificar a página do site que deve ser aberta depois que o usuário fizer logon.
+    Você pode especificar a página do site que deve ser aberta depois que o usuário fizer logon.
 
 * Já está conectado.
 
-   * Continuar a etiqueta do botão
+  * Continuar a etiqueta do botão
 
-     Texto para indicar que o usuário já está conectado.
+    Texto para indicar que o usuário já está conectado.
 
 ### Status do pedido {#order-status}
 
@@ -586,17 +599,17 @@ Você pode configurar:
 
 * **Título**
 
-   * **Título**
+  * **Título**
 
-     Especifique o texto do título que deseja exibir.
+    Especifique o texto do título que deseja exibir.
 
-   * **Link**
+  * **Link**
 
-     Especifique a página (produto) para a qual o status do pedido deve ser exibido.
+    Especifique a página (produto) para a qual o status do pedido deve ser exibido.
 
-   * **Tipo/Tamanho**
+  * **Tipo/Tamanho**
 
-     Selecione a partir da seleção fornecida.
+    Selecione a partir da seleção fornecida.
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
@@ -610,9 +623,9 @@ O componente **Referência** permite referenciar texto de outra página do site 
 
 * **Referência do parágrafo**
 
-   * **Referência**
+  * **Referência**
 
-     Especifique o caminho para a página e o parágrafo que deseja referenciar (inclua o conteúdo).
+    Especifique o caminho para a página e o parágrafo que deseja referenciar (inclua o conteúdo).
 
 Para especificar o caminho para um parágrafo, você deve usar o seguinte sufixo no caminho (para a página):
 
@@ -638,7 +651,7 @@ Após a configuração, o conteúdo é exibido exatamente como na página de ori
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. A Adobe recomenda usar o [Componente principal de Pesquisa Rápida](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/quick-search.html?lang=pt-BR).
+>Este componente de base está obsoleto. A Adobe recomenda usar o [Componente principal de Pesquisa Rápida](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/quick-search.html).
 
 O componente de Pesquisa adiciona o recurso de pesquisa à página.
 
@@ -646,54 +659,54 @@ Você pode configurar:
 
 * Pesquisar
 
-   * **Tipos de nós**
+  * **Tipos de nós**
 
-     Se a pesquisa deve ser restrita a um tipo de nó específico, liste-os aqui; por exemplo, `cq:Page`.
+    Se a pesquisa deve ser restrita a um tipo de nó específico, liste-os aqui; por exemplo, `cq:Page`.
 
-   * **Caminho para pesquisar em**
+  * **Caminho para pesquisar em**
 
-     Especifique a página raiz da ramificação que deseja pesquisar.
+    Especifique a página raiz da ramificação que deseja pesquisar.
 
-   * **Texto do Botão de Pesquisa**
+  * **Texto do Botão de Pesquisa**
 
-     O nome exibido no botão de pesquisa real.
+    O nome exibido no botão de pesquisa real.
 
-   * **Texto de Estatísticas**
+  * **Texto de Estatísticas**
 
-     O texto exibido acima dos resultados da pesquisa.
+    O texto exibido acima dos resultados da pesquisa.
 
-   * **Nenhum texto de resultados**
+  * **Nenhum texto de resultados**
 
-     Se não houver resultados, o texto inserido aqui será exibido.
+    Se não houver resultados, o texto inserido aqui será exibido.
 
-   * **Verificar Ortografia do Texto**
+  * **Verificar Ortografia do Texto**
 
-     Se alguém inserir um termo semelhante, este texto será exibido antes do termo.
-Por exemplo, se você digitar `Geometrixxe`, o sistema exibirá &quot;Você quis dizer? Geometrixx&quot;.
+    Se alguém inserir um termo semelhante, este texto será exibido antes do termo.
+    Por exemplo, se você digitar `Geometrixxe`, o sistema exibirá &quot;Você quis dizer? Geometrixx&quot;.
 
-   * **Texto de Páginas Semelhantes**
+  * **Texto de Páginas Semelhantes**
 
-     O texto que é exibido ao lado de um resultado para páginas semelhantes. Para ver páginas com conteúdo semelhante, clique neste link.
+    O texto que é exibido ao lado de um resultado para páginas semelhantes. Para ver páginas com conteúdo semelhante, clique neste link.
 
-   * **Texto de Pesquisas Relacionadas**
+  * **Texto de Pesquisas Relacionadas**
 
-     O texto que aparece ao lado das pesquisas por termos e tópicos relacionados.
+    O texto que aparece ao lado das pesquisas por termos e tópicos relacionados.
 
-   * **Texto de Tendências de Pesquisa**
+  * **Texto de Tendências de Pesquisa**
 
-     O título acima dos termos de pesquisa que um usuário insere.
+    O título acima dos termos de pesquisa que um usuário insere.
 
-   * **Rótulo das Páginas de Resultado**
+  * **Rótulo das Páginas de Resultado**
 
-     O texto que aparece na parte inferior desta lista com links para outras páginas de resultados.
+    O texto que aparece na parte inferior desta lista com links para outras páginas de resultados.
 
-   * **Rótulo Anterior**
+  * **Rótulo Anterior**
 
-     O nome que aparece no link para as páginas de pesquisa anteriores.
+    O nome que aparece no link para as páginas de pesquisa anteriores.
 
-   * **Próximo Rótulo**
+  * **Próximo Rótulo**
 
-     O nome que aparece no link para as páginas de pesquisa subsequentes.
+    O nome que aparece no link para as páginas de pesquisa subsequentes.
 
 O exemplo a seguir mostra o componente de Pesquisa após uma pesquisa pela palavra *`geometrixx`* no diretório raiz de uma instalação padrão. Também ilustra a paginação de resultados:
 
@@ -707,7 +720,7 @@ O exemplo a seguir mostra um termo de pesquisa com ortografia incorreta e indisp
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. A Adobe recomenda usar os [Componentes principais de Navegação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html?lang=pt-BR), [Navegação de Idioma](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/language-navigation.html?lang=pt-BR) e [Navegação estrutural](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/breadcrumb.html?lang=pt-BR).
+>Este componente de base está obsoleto. A Adobe recomenda usar os [Componentes principais de Navegação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html), [Navegação de Idioma](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/language-navigation.html) e [Navegação estrutural](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/breadcrumb.html).
 
 Uma listagem automática de mapa de site, que (com as configurações padrão) lista todas as páginas (como links ativos) no site atual. Por exemplo, um extrato mostra:
 
@@ -717,9 +730,9 @@ Se necessário, você pode configurar o seguinte:
 
 * **Mapa do site**
 
-   * **Caminho raiz**
+  * **Caminho raiz**
 
-     Caminho de onde a listagem deve começar.
+    Caminho de onde a listagem deve começar.
 
 ### Slideshow {#slideshow}
 
@@ -737,19 +750,19 @@ Você pode configurar:
 
 * **Slides**
 
-   * **Novo Slide**
+  * **Novo Slide**
 
-     Você pode especificar uma seleção de slides usando os botões **Adicionar** (e **Remover**).
+    Você pode especificar uma seleção de slides usando os botões **Adicionar** (e **Remover**).
 
-   * **Título**
+  * **Título**
 
-     Especifique um título, se necessário. O título é sobreposto no slide apropriado.
+    Especifique um título, se necessário. O título é sobreposto no slide apropriado.
 
 * **Avançado**
 
-   * **Tamanho**
+  * **Tamanho**
 
-     Especifique a largura e a altura em pixels.
+    Especifique a largura e a altura em pixels.
 
 O componente de apresentação de slides exibe repetidamente cada um em sequência, por um curto período, antes de passar para o próximo slide:
 
@@ -759,7 +772,7 @@ O componente de apresentação de slides exibe repetidamente cada um em sequênc
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=pt-BR).
+>Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html).
 
 >[!NOTE]
 >
@@ -808,7 +821,7 @@ Para obter mais informações sobre como aplicar tags, visite [Usando Tags](/hel
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=pt-BR).
+>Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html).
 
 >[!NOTE]
 >
@@ -837,7 +850,7 @@ Além do modo de edição de Rich Text baseado em caixas de diálogo, o AEM tamb
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente de Imagem](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=pt-BR) e o [Componente principal de Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=pt-BR).
+>Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente de Imagem](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=pt-BR) e o [Componente principal de Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html).
 
 O componente de Texto e imagem adiciona um bloco de texto e uma imagem. Também é possível adicionar e editar texto e imagens separadamente. Consulte os componentes [Texto](#text) e [Imagem](#image) para obter detalhes.
 
@@ -853,29 +866,29 @@ Você pode configurar:
 
   Permite especificar o seguinte:
 
-   * **Ativos da imagem**
+  * **Ativos da imagem**
 
-     Carregue a imagem necessária.
+    Carregue a imagem necessária.
 
-   * **Título**
+  * **Título**
 
-     O título do bloco, mostrado por mouseover.
+    O título do bloco, mostrado por mouseover.
 
-   * **Texto Alternativo**
+  * **Texto Alternativo**
 
-     Texto alternativo a ser mostrado se a imagem não puder ser exibida. Se deixado em branco, o título será usado.
+    Texto alternativo a ser mostrado se a imagem não puder ser exibida. Se deixado em branco, o título será usado.
 
-   * **Vincular a**
+  * **Vincular a**
 
-     Especifique um caminho de destino.
+    Especifique um caminho de destino.
 
-   * **Descrição**
+  * **Descrição**
 
-     Uma descrição da imagem.
+    Uma descrição da imagem.
 
-   * **Tamanho**
+  * **Tamanho**
 
-     Define a altura e a largura da imagem.
+    Define a altura e a largura da imagem.
 
 O exemplo a seguir mostra um componente de Imagem de texto que exibe a imagem alinhada à esquerda:
 
@@ -885,7 +898,7 @@ O exemplo a seguir mostra um componente de Imagem de texto que exibe a imagem al
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal de Título](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=pt-BR).
+>Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal de Título](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html).
 
 O componente de título pode:
 
@@ -914,7 +927,7 @@ O exemplo a seguir mostra um componente **Título** sendo exibido; o design é d
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente de Incorporação dos Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=pt-BR).
+>Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente de Incorporação dos Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html).
 
 >[!CAUTION]
 >
@@ -928,13 +941,13 @@ Depois de colocar uma instância do componente na página, você pode configurar
 
 * Vídeo
 
-   * **Ativo de vídeo**
+  * **Ativo de vídeo**
 
-     Carregue ou solte seu ativo de vídeo.
+    Carregue ou solte seu ativo de vídeo.
 
-   * **Tamanho**
+  * **Tamanho**
 
-     O tamanho nativo do vídeo (largura x altura em pixels) é exibido nas caixas ao lado de Tamanho (veja acima). Insira manualmente as dimensões de largura e altura aqui se desejar substituir as dimensões nativas do vídeo. Selecionar **OK** ignora a caixa de diálogo.
+    O tamanho nativo do vídeo (largura x altura em pixels) é exibido nas caixas ao lado de Tamanho (veja acima). Insira manualmente as dimensões de largura e altura aqui se desejar substituir as dimensões nativas do vídeo. Selecionar **OK** ignora a caixa de diálogo.
 
 >[!NOTE]
 >
@@ -966,9 +979,9 @@ O componente de Controle de coluna permite que os usuários selecionem como dese
 
 * **Controle de coluna**
 
-   * **Layout da coluna**
+  * **Layout da coluna**
 
-     Selecione o número de colunas que você deseja renderizar. Depois de criada, cada coluna tem seu próprio link para arrastar componentes ou ativos ao adicionar conteúdo.
+    Selecione o número de colunas que você deseja renderizar. Depois de criada, cada coluna tem seu próprio link para arrastar componentes ou ativos ao adicionar conteúdo.
 
 ## Formulário {#form}
 
@@ -1034,67 +1047,67 @@ Essas guias fornecem os parâmetros necessários. As guias podem depender do tip
 
 * **Título e texto**
 
-   * **Nome do elemento**
+  * **Nome do elemento**
 
-     Nome do elemento de formulário. Indica onde os dados estão armazenados no repositório.
-Este campo é obrigatório e deve conter apenas os seguintes caracteres:
+    Nome do elemento de formulário. Indica onde os dados estão armazenados no repositório.
+    Este campo é obrigatório e deve conter apenas os seguintes caracteres:
 
-      * caracteres alfanuméricos
-      * `_ . / : -`
+    * caracteres alfanuméricos
+    * `_ . / : -`
 
-   * **Título**
+  * **Título**
 
-     O título exibido com o campo. Se deixado em branco, o título padrão é exibido.
+    O título exibido com o campo. Se deixado em branco, o título padrão é exibido.
 
-   * **Descrição**
+  * **Descrição**
 
-     Permite fornecer informações adicionais ao usuário, se necessário. No formulário, ele é mostrado abaixo do campo, em uma fonte menor do que o título.
+    Permite fornecer informações adicionais ao usuário, se necessário. No formulário, ele é mostrado abaixo do campo, em uma fonte menor do que o título.
 
-   * **Mostrar/Ocultar**
+  * **Mostrar/Ocultar**
 
-     Determina quando o campo está visível.
+    Determina quando o campo está visível.
 
 * **Valores iniciais**
 
-   * **Valor padrão**
+  * **Valor padrão**
 
-     O valor exibido no campo quando o formulário é aberto. Ou seja, antes que o usuário tenha feito qualquer entrada.
+    O valor exibido no campo quando o formulário é aberto. Ou seja, antes que o usuário tenha feito qualquer entrada.
 
 * **Restrições**
 
-   * **Obrigatório**
+  * **Obrigatório**
 
-     As restrições dependem do tipo de componente de formulário, mas fornecem uma ou mais caixas de clique para indicar que este campo é obrigatório, ou determinadas partes deste campo, são obrigatórias.
+    As restrições dependem do tipo de componente de formulário, mas fornecem uma ou mais caixas de clique para indicar que este campo é obrigatório, ou determinadas partes deste campo, são obrigatórias.
 
-   * **Mensagem necessária**
+  * **Mensagem necessária**
 
-     Uma mensagem para informar aos usuários que esse campo é obrigatório. Um campo obrigatório também é sinalizado com um asterisco.
+    Uma mensagem para informar aos usuários que esse campo é obrigatório. Um campo obrigatório também é sinalizado com um asterisco.
 
-   * **Restrição**
+  * **Restrição**
 
-     As restrições disponíveis para seleção dependem do tipo de componente de formulário.
+    As restrições disponíveis para seleção dependem do tipo de componente de formulário.
 
-   * **Mensagem de restrição**
+  * **Mensagem de restrição**
 
-     Uma mensagem para informar aos usuários o que é necessário.
+    Uma mensagem para informar aos usuários o que é necessário.
 
 * **Estilo**
 
-   * **Tamanho**
+  * **Tamanho**
 
-     Em linhas e colunas.
+    Em linhas e colunas.
 
-   * **Largura**
+  * **Largura**
 
-     Em pixels.
+    Em pixels.
 
-   * **CSS**
+  * **CSS**
 
 ### Formulário (componente) {#form-component}
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal do Contêiner de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=pt-BR).
+>Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal do Contêiner de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html).
 
 O componente de Formulário define o início e o fim de um formulário usando os elementos **Início do Formulário** e **Fim do Formulário**. O início e o fim são sempre emparelhados para garantir que o formulário seja definido corretamente.
 
@@ -1112,181 +1125,181 @@ Esse componente define o início de um novo formulário em uma página. Você po
 
 * **Formulário**
 
-   * **Página de Agradecimento**
+  * **Página de Agradecimento**
 
-     A página a ser referenciada para agradecer aos visitantes por fornecer sua entrada. Se deixado em branco, o formulário será exibido novamente após o envio.
+    A página a ser referenciada para agradecer aos visitantes por fornecer sua entrada. Se deixado em branco, o formulário será exibido novamente após o envio.
 
-   * **Iniciar Fluxo de Trabalho**
+  * **Iniciar Fluxo de Trabalho**
 
-     Determina qual fluxo de trabalho será acionado depois que um formulário for enviado.
+    Determina qual fluxo de trabalho será acionado depois que um formulário for enviado.
 
 * **Avançado**
 
-   * **Tipo de ação**
+  * **Tipo de ação**
 
-     Um formulário precisa de uma ação. A ação define a operação que é acionada para execução com os dados enviados pelo usuário (semelhante à ação= no HTML). Alguns precisam de uma **Configuração de Ação** correspondente.
-Uma seleção de tipos de ação está incluída em uma instalação padrão do AEM:
+    Um formulário precisa de uma ação. A ação define a operação que é acionada para execução com os dados enviados pelo usuário (semelhante à ação= no HTML). Alguns precisam de uma **Configuração de Ação** correspondente.
+    Uma seleção de tipos de ação está incluída em uma instalação padrão do AEM:
 
-      * **Solicitação de conta**
-      * **Criar conteúdo**
-      * **Criar cliente em potencial**
-      * **Criar e atualizar a conta**
-      * **Serviço de Email: Criar Assinante e adicionar à lista**
-      * **Serviço de Email: Enviar email de resposta automática**
-      * **Serviço de Email: Cancelar inscrição do usuário na lista**
-      * **Editar Comunidade**
-      * **Editar Recursos**
-      * **Editar Recursos Controlados por Fluxo de Trabalho**
-      * **Email**
-      * **Detalhes do Pedido Feito**
-      * **Atualização de perfil**
-      * **Redefinir senha**
-      * **Definir senha**
-      * **Armazenar conteúdo**
+    * **Solicitação de conta**
+    * **Criar conteúdo**
+    * **Criar cliente em potencial**
+    * **Criar e atualizar a conta**
+    * **Serviço de Email: Criar Assinante e adicionar à lista**
+    * **Serviço de Email: Enviar email de resposta automática**
+    * **Serviço de Email: Cancelar inscrição do usuário na lista**
+    * **Editar Comunidade**
+    * **Editar Recursos**
+    * **Editar Recursos Controlados por Fluxo de Trabalho**
+    * **Email**
+    * **Detalhes do Pedido Feito**
+    * **Atualização de perfil**
+    * **Redefinir senha**
+    * **Definir senha**
+    * **Armazenar conteúdo**
 
-        O tipo de ação padrão.
+      O tipo de ação padrão.
 
-      * **Armazenar conteúdo com carregamentos**
-      * **Enviar Pedido**
-      * **Cancelar assinatura do Assinante**
-      * **Atualizar Ordem**
+    * **Armazenar conteúdo com carregamentos**
+    * **Enviar Pedido**
+    * **Cancelar assinatura do Assinante**
+    * **Atualizar Ordem**
 
-   * **Identificador de formulário**
+  * **Identificador de formulário**
 
-     O identificador do formulário identifica exclusivamente o formulário. Use o identificador de formulário se você tiver vários formulários em uma única página; verifique se eles têm identificadores diferentes.
+    O identificador do formulário identifica exclusivamente o formulário. Use o identificador de formulário se você tiver vários formulários em uma única página; verifique se eles têm identificadores diferentes.
 
-   * **Carregar Caminho**
+  * **Carregar Caminho**
 
-     O caminho para as propriedades do nó usadas para carregar valores predefinidos nos campos de formulário.
+    O caminho para as propriedades do nó usadas para carregar valores predefinidos nos campos de formulário.
 
-     Um campo opcional que especifica o caminho para um nó no repositório. Quando esse nó tem propriedades que correspondem aos nomes dos campos, os campos apropriados no formulário são pré-carregados com o valor dessas propriedades. Se não houver correspondência, o campo conterá o valor padrão.
+    Um campo opcional que especifica o caminho para um nó no repositório. Quando esse nó tem propriedades que correspondem aos nomes dos campos, os campos apropriados no formulário são pré-carregados com o valor dessas propriedades. Se não houver correspondência, o campo conterá o valor padrão.
 
-     Usando o **Caminho de Carregamento**, você pode pré-carregar o formulário com valores nos campos obrigatórios. Consulte [Pré-Carregando Valores de Formulário](/help/sites-developing/developing-forms.md#preloading-form-values).
+    Usando o **Caminho de Carregamento**, você pode pré-carregar o formulário com valores nos campos obrigatórios. Consulte [Pré-Carregando Valores de Formulário](/help/sites-developing/developing-forms.md#preloading-form-values).
 
-   * **Validação do cliente**
+  * **Validação do cliente**
 
-     Indica se a validação do cliente é necessária para este formulário (a validação do servidor *sempre* ocorre). A validação do cliente pode ser obtida com o componente **Forms Captcha**.
+    Indica se a validação do cliente é necessária para este formulário (a validação do servidor *sempre* ocorre). A validação do cliente pode ser obtida com o componente **Forms Captcha**.
 
-   * **Tipo de recurso de validação**
+  * **Tipo de recurso de validação**
 
-     Define o tipo de recurso de validação de formulário se desejar validar o formulário inteiro (em vez de campos individuais). Se você estiver validando o formulário completo, inclua também um dos seguintes:
+    Define o tipo de recurso de validação de formulário se desejar validar o formulário inteiro (em vez de campos individuais). Se você estiver validando o formulário completo, inclua também um dos seguintes:
 
-      * Um script para validação de cliente:
+    * Um script para validação de cliente:
 
-        `/apps/<*myApp*>/form/<*myValidation*>/formclientvalidation.jsp`
+      `/apps/<*myApp*>/form/<*myValidation*>/formclientvalidation.jsp`
 
-      * Um script para validação no lado do servidor:
+    * Um script para validação no lado do servidor:
 
-        `/apps/<*myApp*>/form/<*myValidation*>/formservervalidation.jsp`
+      `/apps/<*myApp*>/form/<*myValidation*>/formservervalidation.jsp`
 
-   * **Configuração de ação**
+  * **Configuração de ação**
 
-     As opções disponíveis em **Configuração de Ação** dependem do **Tipo de Ação** selecionado:
+    As opções disponíveis em **Configuração de Ação** dependem do **Tipo de Ação** selecionado:
 
-      * **Solicitação de conta**
+    * **Solicitação de conta**
 
-         * **Criar página de conta**
+      * **Criar página de conta**
 
-           A página usada ao criar uma conta.
+        A página usada ao criar uma conta.
 
-      * **Criar conteúdo**
+    * **Criar conteúdo**
 
-         * Caminho do conteúdo
+      * Caminho do conteúdo
 
-           O caminho de conteúdo para qualquer conteúdo que o formulário despeja. Digite um caminho que termine com uma barra `/`. A barra significa que, para cada porta de formulário, um novo nó é criado no local determinado; por exemplo:
+        O caminho de conteúdo para qualquer conteúdo que o formulário despeja. Digite um caminho que termine com uma barra `/`. A barra significa que, para cada porta de formulário, um novo nó é criado no local determinado; por exemplo:
 
-           `/forms/feedback/`
+        `/forms/feedback/`
 
-         * **Tipo**
+      * **Tipo**
 
-           Selecione o tipo necessário.
+        Selecione o tipo necessário.
 
-         * **Formulário**
+      * **Formulário**
 
-           Especifique o formulário.
+        Especifique o formulário.
 
-         * **Renderizar com**
+      * **Renderizar com**
 
-           Selecione a opção necessária na lista.
+        Selecione a opção necessária na lista.
 
-         * **Tipo de recurso**
+      * **Tipo de recurso**
 
-           Se definido, ele é adicionado a cada comentário como `sling:resourceType`
+        Se definido, ele é adicionado a cada comentário como `sling:resourceType`
 
-         * **Exibir seletor**
+      * **Exibir seletor**
 
-      * **Criar cliente em potencial**
+    * **Criar cliente em potencial**
 
-         * **O lead foi adicionado a esta lista**
+      * **O lead foi adicionado a esta lista**
 
-           Especifique a lista de clientes potenciais necessária.
+        Especifique a lista de clientes potenciais necessária.
 
-      * **Criar e atualizar a conta**
+    * **Criar e atualizar a conta**
 
-         * **Grupo inicial**
+      * **Grupo inicial**
 
-           Grupo ao qual atribuir o novo usuário.
+        Grupo ao qual atribuir o novo usuário.
 
-         * **Residência**
+      * **Residência**
 
-           Página a ser exibida após o logon bem-sucedido.
+        Página a ser exibida após o logon bem-sucedido.
 
-         * **Caminho**
+      * **Caminho**
 
-           O caminho (relativo) para onde a nova conta é criada e armazenada.
+        O caminho (relativo) para onde a nova conta é criada e armazenada.
 
-         * **Exibir Dados...**
+      * **Exibir Dados...**
 
-           Selecionar esse botão acessa as informações sobre os resultados do formulário no Editor de itens em massa. Aqui, você pode exportar as informações para um arquivo `.tsv` (separado por tabulação) (para uso, por exemplo, em uma planilha do Excel).
+        Selecionar esse botão acessa as informações sobre os resultados do formulário no Editor de itens em massa. Aqui, você pode exportar as informações para um arquivo `.tsv` (separado por tabulação) (para uso, por exemplo, em uma planilha do Excel).
 
-      * **Email**
+    * **Email**
 
-         * **De**
+      * **De**
 
-           Insira o endereço de email do qual o email deve vir.
+        Insira o endereço de email do qual o email deve vir.
 
-         * **Mailto**
+      * **Mailto**
 
-           Insira um ou mais endereços de email para os quais o formulário é enviado.
+        Insira um ou mais endereços de email para os quais o formulário é enviado.
 
-         * **CC**
+      * **CC**
 
-           Insira um ou mais endereços de email CC.
+        Insira um ou mais endereços de email CC.
 
-         * **CCO**
+      * **CCO**
 
-           Insira um ou mais endereços de email CCO.
+        Insira um ou mais endereços de email CCO.
 
-         * **Assunto**
+      * **Assunto**
 
-           Insira um assunto para o email.
+        Insira um assunto para o email.
 
-      * **Redefinir senha**
+    * **Redefinir senha**
 
-         * **Alterar página de senha**
+      * **Alterar página de senha**
 
-           A página usada ao alterar a senha.
+        A página usada ao alterar a senha.
 
-      * **Armazenar conteúdo**
+    * **Armazenar conteúdo**
 
-         * **Caminho do conteúdo**
+      * **Caminho do conteúdo**
 
-           O caminho de conteúdo para qualquer conteúdo que o formulário despeja. Digite um caminho que termine com uma barra `/`. A barra significa que, para cada porta de formulário, um novo nó é criado no local determinado; por exemplo:
-           `/forms/feedback/`
+        O caminho de conteúdo para qualquer conteúdo que o formulário despeja. Digite um caminho que termine com uma barra `/`. A barra significa que, para cada porta de formulário, um novo nó é criado no local determinado; por exemplo:
+        `/forms/feedback/`
 
-         * **Exibir Dados...**
+      * **Exibir Dados...**
 
-           Clique nesse botão para poder acessar as informações sobre os resultados do formulário no Editor de itens em massa. Aqui, é possível exportar as informações para um arquivo .tsv (separado por tabulação) (para uso em uma planilha do Excel, por exemplo).
+        Clique nesse botão para poder acessar as informações sobre os resultados do formulário no Editor de itens em massa. Aqui, é possível exportar as informações para um arquivo .tsv (separado por tabulação) (para uso em uma planilha do Excel, por exemplo).
 
-      * **Armazenar Conteúdo Com Carregamentos**
+    * **Armazenar Conteúdo Com Carregamentos**
 
-        Tem as mesmas opções que **Armazenar Conteúdo**.
+      Tem as mesmas opções que **Armazenar Conteúdo**.
 
-      * **Cancelar assinatura do Assinante**
+    * **Cancelar assinatura do Assinante**
 
-         * **O cliente em potencial foi excluído desta lista**
+      * **O cliente em potencial foi excluído desta lista**
 
-           Especifique a lista de clientes potenciais necessária.
+        Especifique a lista de clientes potenciais necessária.
 
 #### Final do formulário {#end-of-form}
 
@@ -1294,35 +1307,35 @@ Marca o fim do formulário. Você pode configurar o seguinte:
 
 * **Fim do formulário**
 
-   * **Mostrar Botão Enviar**
+  * **Mostrar Botão Enviar**
 
-     Indica se um botão Enviar deve ser mostrado ou não.
+    Indica se um botão Enviar deve ser mostrado ou não.
 
-   * **Enviar Nome**
+  * **Enviar Nome**
 
-     Um identificador se estiver usando vários botões de envio em um formulário.
+    Um identificador se estiver usando vários botões de envio em um formulário.
 
-   * **Enviar Título**
+  * **Enviar Título**
 
-     O nome que aparece no botão, como Enviar ou Enviar.
+    O nome que aparece no botão, como Enviar ou Enviar.
 
-   * **Mostrar botão de redefinição**
+  * **Mostrar botão de redefinição**
 
-     Marcar a caixa de seleção torna visível o botão Redefinir.
+    Marcar a caixa de seleção torna visível o botão Redefinir.
 
-   * **Redefinir título**
+  * **Redefinir título**
 
-     O nome que aparece no botão Redefinir.
+    O nome que aparece no botão Redefinir.
 
-   * **Descrição**
+  * **Descrição**
 
-     Informações que aparecem abaixo do botão.
+    Informações que aparecem abaixo do botão.
 
 ### Nome da conta {#account-name}
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal de Texto de Formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html?lang=pt-BR).
+>Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal de Texto de Formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html).
 
 Permite que o usuário insira um nome de conta:
 
@@ -1332,7 +1345,7 @@ Permite que o usuário insira um nome de conta:
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal de Texto de Formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html?lang=pt-BR).
+>Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal de Texto de Formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html).
 
 Permite adicionar um campo de endereço internacional com o seguinte formato:
 
@@ -1360,7 +1373,7 @@ Você pode configurar vários parâmetros para esse componente, incluindo uma me
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal de Opções de Formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html?lang=pt-BR).
+>Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal de Opções de Formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html).
 
 Uma caixa de seleção permite criar uma lista de uma ou mais caixas de seleção, várias das quais podem ser selecionadas ao mesmo tempo.
 
@@ -1388,7 +1401,7 @@ Permite fornecer os campos necessários para inserir detalhes do cartão de cré
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal de Opções de Formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html?lang=pt-BR).
+>Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal de Opções de Formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html).
 
 Uma lista suspensa pode ser configurada para fornecer ao usuário um intervalo de valores para seleção:
 
@@ -1414,13 +1427,13 @@ O componente de carregamento de arquivo fornece ao usuário um mecanismo para se
 
 >[!NOTE]
 >
->Você pode criar um componente de upload personalizado para carregar arquivos em um Sling Servlet. Para obter informações, consulte [Carregando arquivos para o Adobe Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-cloud-service-create-asset-servlet-for-uploading-small-files/td-p/404276?profile.language=pt).
+>Você pode criar um componente de upload personalizado para carregar arquivos em um Sling Servlet. Para obter informações, consulte [Carregando arquivos para o Adobe Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-cloud-service-create-asset-servlet-for-uploading-small-files/td-p/404276).
 
 ### Campo oculto {#hidden-field}
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal Formulário Oculto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-hidden.html?lang=pt-BR).
+>Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal Formulário Oculto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-hidden.html).
 
 Permite criar um campo oculto. Esses campos ocultos podem ser usados para vários propósitos. Por exemplo, quando você deve executar uma ação após enviar o formulário ou quando dados ocultos são necessários no pós-processamento.
 
@@ -1436,7 +1449,7 @@ Permite criar um campo oculto. Esses campos ocultos podem ser usados para vário
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal do botão de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html?lang=pt-BR).
+>Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal do botão de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html).
 
 Um botão de imagem permite criar um botão com sua própria imagem e texto:
 
@@ -1493,7 +1506,7 @@ Com as configurações padrão, o componente é exibido da seguinte maneira:
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal de Opções de Formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html?lang=pt-BR).
+>Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal de Opções de Formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html).
 
 Um grupo de opções fornece uma lista de uma ou mais caixas de seleção, das quais apenas uma pode ser selecionada em um momento específico.
 
@@ -1511,7 +1524,7 @@ Você pode especificar o nome do elemento junto com um título e uma descrição
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal do botão de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html?lang=pt-BR).
+>Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal do botão de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html).
 
 Este componente permite criar um botão de envio, com o texto padrão:
 
@@ -1535,24 +1548,24 @@ Você pode especificar vários parâmetros, incluindo os namespaces que podem se
 
 * **Campo de Marca**
 
-   * **Namespaces permitidos**
+  * **Namespaces permitidos**
 
-      * **Geometrixx Outdoors**
-      * **Fluxo de trabalho**
-      * **Fórum**
-      * **Banco de imagens**
-      * **Geometrixx Media**
-      * **Marcas Padrão**
-      * **Marketing**
-      * **Propriedades do ativo**
-      * **Largura em pixels**
-      * **Tamanho do Popup**
+    * **Geometrixx Outdoors**
+    * **Fluxo de trabalho**
+    * **Fórum**
+    * **Banco de imagens**
+    * **Geometrixx Media**
+    * **Marcas Padrão**
+    * **Marketing**
+    * **Propriedades do ativo**
+    * **Largura em pixels**
+    * **Tamanho do Popup**
 
 ### Campo de texto {#text-field}
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal de Texto de Formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html?lang=pt-BR).
+>Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal de Texto de Formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html).
 
 O campo de texto padrão pode ser configurado para o tamanho necessário e com seu próprio lead na mensagem:
 
@@ -1562,7 +1575,7 @@ O campo de texto padrão pode ser configurado para o tamanho necessário e com s
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal do botão de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html?lang=pt-BR).
+>Este componente de base está obsoleto. Em vez disso, a Adobe recomenda usar o [Componente principal do botão de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html).
 
 Permite criar um botão Submit para uso em um workflow.
 

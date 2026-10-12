@@ -6,7 +6,18 @@ exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3073'
 ht-degree: 1%
@@ -181,9 +192,9 @@ Para obter configurações detalhadas dos plug-ins RTE, consulte [como ativar e 
 
 >[!NOTE]
 >
->O [componente de texto dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=pt-BR#the-text-component-and-the-rich-text-editor) permite que os editores de modelo configurem vários plug-ins de RTE em uma GUI como políticas de conteúdo, eliminando a necessidade de configuração técnica. As políticas de conteúdo podem funcionar com as configurações da interface do usuário de RTE conforme descrito neste documento.
+>O [componente de texto dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) permite que os editores de modelo configurem vários plug-ins de RTE em uma GUI como políticas de conteúdo, eliminando a necessidade de configuração técnica. As políticas de conteúdo podem funcionar com as configurações da interface do usuário de RTE conforme descrito neste documento.
 >
->Para obter mais informações, consulte a seção [Configurações da interface do usuário do RTE e políticas de conteúdo](/help/sites-administering/rich-text-editor.md) deste documento e a [documentação do desenvolvedor sobre Criação de Modelos de Página](/help/sites-authoring/templates.md) e os [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=pt-BR).
+>Para obter mais informações, consulte a seção [Configurações da interface do usuário do RTE e políticas de conteúdo](/help/sites-administering/rich-text-editor.md) deste documento e a [documentação do desenvolvedor sobre Criação de Modelos de Página](/help/sites-authoring/templates.md) e os [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >[!NOTE]
 >
@@ -259,7 +270,7 @@ As opções disponíveis no fluxo de RTE downstream das configurações da inter
 * Se a configuração da interface do usuário do RTE tiver sido removida ou não ativar um item, a política de conteúdo não poderá configurá-lo.
 * Um autor tem acesso somente a essas funcionalidades, conforme disponibilizado pelas configurações da interface do usuário e pelas políticas de conteúdo.
 
-Como exemplo, você pode ver a [documentação do Componente principal de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=pt-BR#the-text-component-and-the-rich-text-editor).
+Como exemplo, você pode ver a [documentação do Componente principal de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html#the-text-component-and-the-rich-text-editor).
 
 ## Personalizar o mapeamento entre ícones e comandos da barra de ferramentas {#iconstoolbar}
 
@@ -389,7 +400,7 @@ Além disso, verifique se o código de implementação de vários campos e a est
 
 **As configurações disponíveis para administradores não estão disponíveis para autores**
 
-Se as atualizações das configurações de interface forem refletidas para administradores, mas não para contas de autor, verifique se o nó de configuração não é nomeado como `config`. Use a propriedade [`configPath` &#x200B;](/help/sites-developing/components-basics.md#cq-inplaceediting).
+Se as atualizações das configurações de interface forem refletidas para administradores, mas não para contas de autor, verifique se o nó de configuração não é nomeado como `config`. Use a propriedade [`configPath` ](/help/sites-developing/components-basics.md#cq-inplaceediting).
 
 >[!MORELIKETHIS]
 >

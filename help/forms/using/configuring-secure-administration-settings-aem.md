@@ -8,13 +8,29 @@ role: Admin,User
 exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '852'
 ht-degree: 0%
-
 ---
-
 # Definição de configurações de administração segura para o AEM Forms no JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
 Saiba como administrar contas de usuário e serviços que, embora necessários em um ambiente de desenvolvimento privado, não são necessários em um ambiente de produção do AEM Forms no JEE.
@@ -25,7 +41,7 @@ Este artigo descreve métodos para reduzir a superfície de ataque geral por mei
 
 ## Desativar o acesso remoto não essencial aos serviços {#disabling-non-essential-remote-access-to-services}
 
-Depois que o AEM Forms no JEE é instalado e configurado, muitos serviços ficam disponíveis para invocação remota sobre SOAP e Enterprise JavaBeans™ (EJB). O termo remoto, neste caso, se refere a qualquer chamador que tenha acesso de rede às portas SOAP, EJB ou Action Message Format (AMF) do servidor de aplicativos.
+Depois que o AEM Forms no JEE é instalado e configurado, muitos serviços ficam disponíveis para invocação remota no SOAP e Enterprise JavaBeans™ (EJB). O termo remoto, neste caso, se refere a qualquer chamador que tenha acesso de rede às portas SOAP, EJB ou Action Message Format (AMF) do servidor de aplicativos.
 
 Embora os serviços do AEM Forms no JEE exijam que credenciais válidas sejam passadas para um chamador autorizado, você deve permitir somente o acesso remoto aos serviços que precisam ser acessíveis remotamente. Para obter acessibilidade limitada, você deve reduzir o conjunto de serviços acessíveis remotamente ao mínimo possível para um sistema em funcionamento e, em seguida, habilitar a invocação remota para os serviços adicionais necessários.
 
@@ -45,8 +61,8 @@ Conclua este procedimento usando a página da Web Aplicativos e Serviços no Con
 1. Selecione **EJB** na lista **Provider** e clique em **Filtro**.
 1. Para desativar todos os pontos de extremidade EJB, marque a caixa de seleção ao lado de cada um na lista e clique em **Desativar**.
 1. Clique em **Avançar** e repita a etapa anterior para todos os pontos de extremidade EJB. Certifique-se de que o EJB esteja listado na coluna Provedor antes de desativar os pontos finais.
-1. Selecione **SOAP** na lista **Provedor** e clique em **Filtro**.
-1. Para remover pontos de extremidade SOAP, marque a caixa de seleção ao lado de cada um na lista e clique em **Remover**. Não remova os seguintes pontos de extremidade:
+1. Selecione **SOAP** na lista **Provider** e clique em **Filtro**.
+1. Para remover pontos de extremidade do SOAP, marque a caixa de seleção ao lado de cada um na lista e clique em **Remover**. Não remova os seguintes pontos de extremidade:
 
    * AuthenticationManagerService
    * DiretoryManagerService
@@ -62,7 +78,7 @@ Conclua este procedimento usando a página da Web Aplicativos e Serviços no Con
    * LogonÚnicoWorkspace
    * ApplicationManager
 
-1. Clique em **Avançar** e repita a etapa anterior para pontos de extremidade SOAP que não estejam na lista acima. Verifique se o SOAP está listado na coluna Provedor antes de remover os pontos de extremidade.
+1. Clique em **Avançar** e repita a etapa anterior para os pontos de extremidade do SOAP que não estão na lista acima. Verifique se o SOAP está listado na coluna Provedor antes de remover os pontos de extremidade.
 
 ## Desabilitação de acesso anônimo não essencial a serviços {#disabling-non-essential-anonymous-access-to-services}
 

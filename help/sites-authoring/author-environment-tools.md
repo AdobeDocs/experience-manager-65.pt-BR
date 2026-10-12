@@ -10,13 +10,26 @@ exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: 33bf1d9f64c32691f6a9c0568c1c5cb2150f331a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2262'
 ht-degree: 42%
-
 ---
-
 # Criação - o ambiente e as ferramentas{#authoring-the-environment-and-tools}
 
 O ambiente de criação do AEM fornece vários mecanismos para organização e edição de conteúdo. As ferramentas fornecidas são acessadas de vários consoles e editores de página.
@@ -86,17 +99,17 @@ A aparência e o manuseio real dependem do tipo de dispositivo que você está u
 
   Os componentes são representados por
 
-   * Nome do componente
-   * Grupo do componente (em cinza)
-   * Ícone ou abreviação
+  * Nome do componente
+  * Grupo do componente (em cinza)
+  * Ícone ou abreviação
 
-      * Os ícones dos componentes padrão são monocromáticos.
-      * As abreviações são sempre os dois primeiros caracteres do nome do componente.
+    * Os ícones dos componentes padrão são monocromáticos.
+    * As abreviações são sempre os dois primeiros caracteres do nome do componente.
 
   Na barra de ferramentas superior, no navegador **Componentes**, você pode fazer o seguinte:
 
-   * Filtrar componentes por nome.
-   * Limitar a exibição para um grupo específico usando a seleção suspensa.
+  * Filtrar componentes por nome.
+  * Limitar a exibição para um grupo específico usando a seleção suspensa.
 
   Para obter uma descrição mais detalhada do componente, clique no ícone de informações ao lado do componente no navegador **Componentes** (se disponível). Por exemplo, para o **Contêiner de layout**:
 
@@ -124,11 +137,11 @@ Para adicionar um ativo à sua página, selecione-o e arraste-o até o local des
 
 * Um componente existente do tipo apropriado.
 
-   * Por exemplo, você pode arrastar um ativo de imagem para um componente de imagem.
+  * Por exemplo, você pode arrastar um ativo de imagem para um componente de imagem.
 
 * Um [espaço reservado](/help/sites-authoring/editing-content.md#component-placeholder) no sistema de parágrafo para criar um componente do tipo apropriado.
 
-   * Por exemplo, você pode arrastar um ativo de imagem para o sistema de parágrafo para criar um componente de imagem.
+  * Por exemplo, você pode arrastar um ativo de imagem para o sistema de parágrafo para criar um componente de imagem.
 
 >[!NOTE]
 >
@@ -141,7 +154,7 @@ Na barra de ferramentas superior do navegador de ativos, é possível filtrar os
 * Tipo de ativo, como imagens, manuscritos, documentos, vídeos, páginas, parágrafos e produtos
 * Características do ativo, como Orientação (Retrato, Paisagem, Quadrado) e Estilo (Cor, Monocromático, Tons de cinza)
 
-   * Disponível somente para certos tipos de ativos
+  * Disponível somente para certos tipos de ativos
 
 A aparência e o manuseio real dependem do tipo de dispositivo que você está usando:
 
@@ -239,7 +252,7 @@ Selecione o tipo de referência apropriado para obter mais informações. Em det
 
 * **Links de Entrada** fornece uma lista de páginas que fazem referência à página, juntamente com acesso direto a **Editar** uma dessas páginas ao selecionar um link específico.
 
-   * Isso só pode mostrar links estáticos, não links gerados dinamicamente; por exemplo, do componente List.
+  * Isso só pode mostrar links estáticos, não links gerados dinamicamente; por exemplo, do componente List.
 
 * Instâncias de conteúdo emprestado e concedido usando o componente **Referência**, daqui você pode navegar até a página de referência/referenciada
 
@@ -255,7 +268,7 @@ Por exemplo, você pode corrigir uma referência quebrada em um componente Refer
 
 ## Eventos - Linha do tempo {#events-timeline}
 
-Para os recursos adequados (por exemplo, as páginas do console **Sites** ou os ativos do console **Assets**), a linha do tempo [&#x200B; pode ser usada para mostrar a atividade recente de qualquer item selecionado](/help/sites-authoring/basic-handling.md#timeline).
+Para os recursos adequados (por exemplo, as páginas do console **Sites** ou os ativos do console **Assets**), a linha do tempo [ pode ser usada para mostrar a atividade recente de qualquer item selecionado](/help/sites-authoring/basic-handling.md#timeline).
 
 Abra o console e navegue até o recurso desejado, e abra **Linha do tempo** usando:
 

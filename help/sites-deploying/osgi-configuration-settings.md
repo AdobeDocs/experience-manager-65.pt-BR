@@ -1,21 +1,27 @@
 ---
 title: Configurações do OSGi
-
 description: Este artigo detalha as definições de configuração do OSGi (listadas de acordo com o pacote) que são relevantes para a implementação do projeto. A lista serve de orientação e não é exaustiva.
-
-
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-
 docset: aem65
-
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3453'
 ht-degree: 0%
@@ -276,7 +282,7 @@ Ao criar uma configuração, não altere a configuração de fábrica. Em vez di
 
 >[!CAUTION]
 >
->Ao alterar a configuração para **Minify** ou **Gzip**, exclua o conteúdo do cache clientlibs. Consulte o [artigo da Base de Dados de Conhecimento](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=pt-BR) para obter detalhes.
+>Ao alterar a configuração para **Minify** ou **Gzip**, exclua o conteúdo do cache clientlibs. Consulte o [artigo da Base de Dados de Conhecimento](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html) para obter detalhes.
 
 >[!NOTE]
 >

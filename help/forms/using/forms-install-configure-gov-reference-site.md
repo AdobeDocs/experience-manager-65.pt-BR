@@ -7,13 +7,31 @@ exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '4819'
 ht-degree: 2%
-
 ---
-
 # Configurar o site de referência We.Gov e We.Finance {#set-up-and-configure-we-gov-reference-site}
 
 ## Detalhes do pacote de demonstração {#demo-package-details}
@@ -88,7 +106,7 @@ Esta seção contém informações sobre a instalação do pacote de demonstraç
    1. Selecione **[!UICONTROL Forms]** na lista suspensa **[!UICONTROL Solução]**.
    2. Selecione a versão e o tipo do pacote. Você também pode usar a opção **[!UICONTROL Downloads de Pesquisa]** para filtrar os resultados.
 1. Selecione o nome do pacote **we-gov-forms.pkg.all-&lt;version>.zip**, selecione **[!UICONTROL Aceitar termos do EULA]** e selecione **[!UICONTROL Baixar]**.
-1. Abra o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
+1. Abra o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
    ![pacote de formulários do we gov](assets/wegov_forms_package.jpg)
@@ -226,7 +244,7 @@ Esta seção contém detalhes e instruções sobre a configuração do MS® Dyna
 **Referências:**
 
 1. [Configuração OData do Microsoft® Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md)
-1. [Configuração do Microsoft® Dynamics para AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html?lang=pt-BR)
+1. [Configuração do Microsoft® Dynamics para AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html)
 
 #### Serviço de nuvem OData do MS® Dynamics {#ms-dynamics-odata-cloud-service}
 
@@ -579,7 +597,7 @@ Quando a configuração IMS estiver concluída, você poderá prosseguir para re
 
 1. Para essa configuração, deixamos os dois valores da caixa de seleção vazios.
 
-   * Para saber mais sobre essas opções, consulte [Configurar o serviço de nuvem](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=pt-BR#configure-the-cloud-service).
+   * Para saber mais sobre essas opções, consulte [Configurar o serviço de nuvem](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service).
 
 #### Configurar a configuração na nuvem (We.Finance AFC Production) {#configure-cloud-configuration-wefinance}
 
@@ -609,7 +627,7 @@ Quando a configuração do IMS estiver concluída, poderemos prosseguir para cri
 
 1. Para essa configuração, deixamos os dois valores da caixa de seleção vazios.
 
-   * Para saber mais sobre essas opções, consulte [Configurar o serviço de nuvem](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=pt-BR#configure-the-cloud-service).
+   * Para saber mais sobre essas opções, consulte [Configurar o serviço de nuvem](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service).
 
 #### Teste da conversão de formulários (aplicação de inscrição We.Gov) {#test-forms-conversion}
 
@@ -649,7 +667,7 @@ Após definir a configuração, os usuários podem testá-la fazendo upload de u
 
 #### Problemas conhecidos e observações {#known-issues-notes}
 
-O serviço de Conversão automática de formulários inclui determinadas [práticas recomendadas, padrões complexos conhecidos](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html?lang=pt-BR) e [problemas conhecidos](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/known-issues.html?lang=pt-BR). Revise-as antes de começar a usar o serviço de conversão automática de formulários do AEM Forms.
+O serviço de Conversão automática de formulários inclui determinadas [práticas recomendadas, padrões complexos conhecidos](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html) e [problemas conhecidos](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/known-issues.html). Revise-as antes de começar a usar o serviço de conversão automática de formulários do AEM Forms.
 
 1. Gere o formulário com a opção Gerar formulários adaptáveis sem vínculos de dados habilitada caso deseje vincular o formulário a um FDM após a conversão.
 

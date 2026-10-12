@@ -9,13 +9,27 @@ exl-id: 6b57d00e-5ba0-41ee-8497-49ecfec5b9ed
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1631'
 ht-degree: 0%
-
 ---
-
 # Configuração de armazenamento em cache para o Forms{#configuring-caching-for-forms}
 
 >[!NOTE]
@@ -44,7 +58,7 @@ O Forms oferece suporte a dois modos de armazenamento em cache:
 * incondicional
 * usando o ponto de verificação do cache
 
-Se você alternar entre os modos de cache, reinicie o serviço Forms para que a alteração tenha efeito. Para reiniciar este serviço, use o Workbench ou consulte [Iniciar ou parar os serviços associados aos módulos de formulários AEM](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obter instruções.
+Se você alternar entre os modos de cache, reinicie o serviço Forms para que a alteração tenha efeito. Para reiniciar este serviço, use o Workbench ou consulte [Iniciar ou parar os serviços associados aos módulos do AEM Forms](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obter instruções.
 
 O tempo do ponto de verificação do cache é redefinido automaticamente quando você alterna entre os modos.
 
@@ -84,7 +98,7 @@ Você pode limpar o conteúdo do cache a qualquer momento. Após uma redefiniç�
 
 ## Definição das configurações de cache {#configuring-cache-settings}
 
-Você pode especificar as configurações que o Forms usa para armazenamento em cache, o que pode otimizar o desempenho do seu ambiente de formulários AEM.
+Você pode especificar as configurações que o Forms usa para armazenamento em cache, o que pode otimizar o desempenho do seu ambiente de formulários do AEM.
 
 Para acessar essas configurações, no console de administração, clique em Serviços > Forms.
 
@@ -94,7 +108,7 @@ Para acessar essas configurações, no console de administração, clique em Ser
 
 ### Especificando configurações globais de cache {#specifying-global-cache-settings}
 
-As configurações na área **Configurações Globais do Cache** afetam todos os tipos de caches. Se você alterar qualquer uma dessas configurações, reinicie o serviço Forms para que a alteração tenha efeito. Para reiniciar este serviço, use o Workbench ou consulte [Iniciar ou parar os serviços associados aos módulos de formulários AEM](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obter instruções.
+As configurações na área **Configurações Globais do Cache** afetam todos os tipos de caches. Se você alterar qualquer uma dessas configurações, reinicie o serviço Forms para que a alteração tenha efeito. Para reiniciar este serviço, use o Workbench ou consulte [Iniciar ou parar os serviços associados aos módulos do AEM Forms](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obter instruções.
 
 **Tamanho Máximo do Documento de Cache (KB):** O tamanho máximo, em quilobytes, de um design de formulário ou outro recurso que pode ser armazenado em qualquer cache de memória. Essa é uma configuração global que se aplica a todos os caches em memória. Se um recurso for maior que esse valor, ele não será armazenado em cache na memória. O valor padrão é 1024 quilobytes. Essa configuração não afeta o cache de disco.
 
@@ -104,7 +118,7 @@ As configurações na área **Configurações Globais do Cache** afetam todos os
 
 Quando o serviço do Forms recebe uma solicitação de renderização, ele recupera o design do formulário do repositório e o armazena em cache. Esse armazenamento em cache melhora o desempenho porque, para solicitações de renderização subsequentes, o serviço Forms recupera o design do formulário do cache, em vez do repositório.
 
-O serviço Forms sempre armazena em cache designs de formulário no disco. Se os designs de formulário forem armazenados no servidor, esses arquivos serão considerados cache de disco. O serviço Forms também armazena em cache designs de formulário na memória, de acordo com a configuração na área **Cache do Modelo na Memória**. Se você alterar qualquer uma dessas configurações, reinicie o serviço Forms para que a alteração tenha efeito. Para reiniciar este serviço, use o Workbench ou consulte [Iniciar ou parar os serviços associados aos módulos de formulários AEM](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obter instruções.
+O serviço Forms sempre armazena em cache designs de formulário no disco. Se os designs de formulário forem armazenados no servidor, esses arquivos serão considerados cache de disco. O serviço Forms também armazena em cache designs de formulário na memória, de acordo com a configuração na área **Cache do Modelo na Memória**. Se você alterar qualquer uma dessas configurações, reinicie o serviço Forms para que a alteração tenha efeito. Para reiniciar este serviço, use o Workbench ou consulte [Iniciar ou parar os serviços associados aos módulos do AEM Forms](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obter instruções.
 
 **Tamanho do Cache de Configuração de Modelo:** O número máximo de objetos de configuração de modelo a serem mantidos na memória. O valor padrão é 100. É recomendável definir esse valor como maior ou igual ao valor Tamanho do Cache de Modelo. Essa configuração não afeta o cache de disco.
 
@@ -116,7 +130,7 @@ O serviço Forms sempre armazena em cache designs de formulário no disco. Se os
 
 O serviço do Forms armazena formulários renderizados em cache para que ele não precise resolver e renderizar o mesmo formulário em solicitações subsequentes. Os formulários renderizados são armazenados em cache no disco e na memória.
 
-Essas configurações estão na área **Cache de Renderização do Formulário na Memória**. Se você alterar qualquer uma dessas configurações, reinicie o serviço Forms para que a alteração tenha efeito. Para reiniciar este serviço, use o Workbench ou consulte [Iniciar ou parar os serviços associados aos módulos de formulários AEM](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obter instruções.
+Essas configurações estão na área **Cache de Renderização do Formulário na Memória**. Se você alterar qualquer uma dessas configurações, reinicie o serviço Forms para que a alteração tenha efeito. Para reiniciar este serviço, use o Workbench ou consulte [Iniciar ou parar os serviços associados aos módulos do AEM Forms](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obter instruções.
 
 **Tamanho do Cache:** Especifica o número máximo de formulários renderizados que podem residir no cache de memória. O valor padrão é 100. Essa configuração não afeta o cache de disco.
 
@@ -136,7 +150,7 @@ Você pode usar as configurações a seguir para controlar o armazenamento em ca
 
 **Desabilitado:** o serviço Forms não armazena fragmentos ou imagens em cache.
 
-**Intervalo de Limpeza (Segundos):** Especifica a frequência com que o serviço Forms remove arquivos de cache inválidos antigos. O serviço Forms não remove arquivos de cache válidos. Se você alterar o intervalo de limpeza, reinicie o serviço Forms para que a alteração tenha efeito. Para reiniciar esse serviço, use o Workbench ou consulte Iniciar ou parar os serviços associados aos módulos de formulários AEM para obter instruções. O valor padrão é de 600 segundos.
+**Intervalo de Limpeza (Segundos):** Especifica a frequência com que o serviço Forms remove arquivos de cache inválidos antigos. O serviço Forms não remove arquivos de cache válidos. Se você alterar o intervalo de limpeza, reinicie o serviço Forms para que a alteração tenha efeito. Para reiniciar esse serviço, use o Workbench ou consulte Iniciar ou parar os serviços associados aos módulos do AEM Forms para obter instruções. O valor padrão é de 600 segundos.
 
 ## Considerações de cluster para caches {#clustering-considerations-for-caches}
 

@@ -9,7 +9,23 @@ feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2265'
 ht-degree: 1%
@@ -174,8 +190,8 @@ Você pode invocar [a API de lote](https://experienceleague.adobe.com/en/tools/a
 Antes de implantar o servlet Java™, certifique-se de que você tenha uma comunicação interativa e que os arquivos de dados correspondentes estejam prontos. Execute as seguintes etapas para criar e implantar o servlet Java™:
 
 1. Faça logon na instância do AEM e crie uma Comunicação interativa. Para usar a comunicação interativa mencionada no código de exemplo fornecido abaixo, [clique aqui](assets/SimpleMediumIC.zip).
-1. [Crie e implante um projeto do AEM usando o Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=pt-BR) na sua instância do AEM.
-1. Adicione o [AEM Forms Client SDK versão 6.0.12 ou posterior](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR) à lista de dependências do arquivo POM do seu projeto do AEM. Por exemplo,
+1. [Crie e implante um projeto do AEM usando o Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html) na sua instância do AEM.
+1. Adicione o [AEM Forms Client SDK versão 6.0.12 ou posterior](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) à lista de dependências do arquivo POM do seu projeto do AEM. Por exemplo,
 
    ```xml
        <dependency>
@@ -325,7 +341,7 @@ Antes de implantar o servlet Java™, certifique-se de que você tenha uma comun
    * Quando você especifica a opção da WEB, um arquivo JSON por registro é gerado. Você pode usar o arquivo JSON para [preencher previamente um modelo da Web](#web-template).
    * Quando você especifica as opções IMPRIMIR e WEB, ambos os documentos PDF e um arquivo JSON por registro são gerados.
 
-1. [Use o Maven para implantar o código atualizado em sua instância do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=pt-BR).
+1. [Use o Maven para implantar o código atualizado em sua instância do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html).
 1. Para gerar a comunicação interativa, chame a API em lote. A API de lote imprime um fluxo de arquivos PDF e .json dependendo do número de registros. Você pode usar o arquivo JSON para [preencher previamente um modelo da Web](#web-template). Se você usar o código acima, a API será implantada em `http://localhost:4502/bin/batchServlet`. O código imprime e retorna um fluxo de um PDF e um arquivo JSON.
 
 ### Preencher previamente um modelo da Web {#web-template}
@@ -361,4 +377,4 @@ Além de salvar os dados no sistema de arquivos, você armazena arquivos JSON no
 
 >[!NOTE]
 >
->Somente o protocolo CRX é ativado por padrão. Para habilitar outros protocolos com suporte, consulte [Configurando o serviço de preenchimento prévio usando o Gerenciador de Configurações](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=pt-BR).
+>Somente o protocolo CRX é ativado por padrão. Para habilitar outros protocolos com suporte, consulte [Configurando o serviço de preenchimento prévio usando o Gerenciador de Configurações](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en).

@@ -9,13 +9,20 @@ exl-id: a43c1c4d-a6c2-4ef9-9047-a945978e618b
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '211'
 ht-degree: 15%
-
 ---
-
 # Fundamentos de componentes, funções e recursos  {#component-function-and-feature-essentials}
 
 Os recursos do Adobe Experience Manager (AEM) Communities exigem que os visitantes do site se tornem membros e façam logon no [site da comunidade](overview.md#communitiessites) antes de poder publicar conteúdo. Assim, os [modelos de site da comunidade](sites.md), dos quais um site da comunidade é [criado](sites-console.md), foram projetados para incluir um recurso de logon e perfis de usuário, mensagens, pesquisa, moderação e tradução.
@@ -30,10 +37,10 @@ A seguir estão links para informações essenciais para componentes, funções 
 * [Revisões](reviews-basics.md)
 * [Tally](tally.md)
 
-   * [Curtir](essentials-liking.md)
-   * [Avaliação](rating-basics.md)
-   * [Votação](essentials-voting.md)
-   * *Votação (não está mais disponível)*
+  * [Curtir](essentials-liking.md)
+  * [Avaliação](rating-basics.md)
+  * [Votação](essentials-voting.md)
+  * *Votação (não está mais disponível)*
 
 ## Componentes com funções {#components-with-functions}
 
@@ -75,9 +82,9 @@ Para cada [pacote de recursos](deploy-communities.md#latestfeaturepack), um jar 
 
 * [Estrutura de componente social (SCF)](scf.md)
 
-   * [Personalizações do lado do cliente](client-customize.md)
-   * [Personalizações do lado do servidor](server-customize.md)
-   * [Visão geral do provedor de recursos de armazenamento](srp.md)
+  * [Personalizações do lado do cliente](client-customize.md)
+  * [Personalizações do lado do servidor](server-customize.md)
+  * [Visão geral do provedor de recursos de armazenamento](srp.md)
 
 * [Diretrizes de codificação](code-guide.md)
 * [Tutoriais](tutorials.md)

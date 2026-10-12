@@ -8,13 +8,29 @@ role: Admin,User
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: b6714ae8f3464ef600c252c7ae5dcc75cbe6610b
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '7949'
 ht-degree: 1%
-
 ---
-
 # Fortalecimento do AEM Forms no ambiente JEE {#hardening-your-aem-forms-on-jee-environment}
 
 Conheça uma variedade de configurações de fortalecimento de segurança para melhorar a segurança do AEM Forms no JEE executado em uma intranet corporativa.
@@ -106,7 +122,7 @@ A tabela a seguir descreve algumas abordagens possíveis para minimizar as vulne
  </tbody> 
 </table>
 
-Para obter informações de segurança adicionais para o seu sistema operacional, consulte [&quot;Informações de segurança do sistema operacional&quot;](https://helpx.adobe.com/br/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information).
+Para obter informações de segurança adicionais para o seu sistema operacional, consulte [&quot;Informações de segurança do sistema operacional&quot;](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information).
 
 ## Instalação {#installation}
 
@@ -190,12 +206,12 @@ Para executar o servidor de aplicativos no qual o AEM Forms no JEE é implantado
    * **Diretório GDS (Armazenamento Global de Documentos)**: o local do diretório GDS é configurado manualmente durante o processo de instalação do AEM Forms. Se a configuração de local permanecer vazia durante a instalação, o local assumirá como padrão um diretório na instalação do servidor de aplicativos em `[JBoss root]/server/[type]/svcnative/DocumentStorage`
    * **Diretório CRX-Repository**: o local padrão é `[AEM-Forms-installation-location]\crx-repository`
    * **diretórios temporários do AEM Forms**:
-      * Caminho TMP ou TEMP (Windows) conforme definido nas variáveis de ambiente
-      * (AIX, Linux ou Solaris) Diretório inicial do usuário conectado
-Em sistemas baseados em UNIX, um usuário não-raiz pode usar o seguinte diretório como o diretório temporário:
-      * (Linux) /var/tmp ou /usr/tmp
-      * (AIX) /tmp ou /usr/tmp
-      * (Solaris) /var/tmp ou /usr/tmp
+     * Caminho TMP ou TEMP (Windows) conforme definido nas variáveis de ambiente
+     * (AIX, Linux ou Solaris) Diretório inicial do usuário conectado
+       Em sistemas baseados em UNIX, um usuário não-raiz pode usar o seguinte diretório como o diretório temporário:
+     * (Linux) /var/tmp ou /usr/tmp
+     * (AIX) /tmp ou /usr/tmp
+     * (Solaris) /var/tmp ou /usr/tmp
 1. Conceda à nova conta de usuário permissões de gravação nos seguintes diretórios:
    * [JBoss-diretory]\standalone\deployment
    * [JBoss-diretory]\autônomo\
@@ -262,17 +278,17 @@ O Configuration Manager usou um servlet implantado em seu servidor de aplicativo
 1. Inicie o servidor do AEM Forms.
 1. Digite o URL abaixo em um navegador para testar a alteração e garantir que ela não funcione mais.
 
-   https://&lt;localhost>:&lt;port>/adobe-bootstrapper/bootstrap
+   https://<localhost>:<port>/adobe-bootstrapper/bootstrap
 
 **Bloquear acesso remoto ao Armazenamento Confiável**
 
 O Configuration Manager permite que você faça upload de uma credencial de extensões do Acrobat Reader DC para o AEM Forms no armazenamento de confiança JEE. Isso significa que o acesso ao Serviço de Credenciais do Armazenamento de Confiança em protocolos remotos (SOAP e EJB) foi habilitado por padrão. Esse acesso não será mais necessário depois que você tiver carregado a credencial de Direitos usando o Configuration Manager ou se decidir usar o Console de Administração posteriormente para gerenciar credenciais.
 
-Você pode desabilitar o acesso remoto a todos os serviços de Armazenamento Confiável seguindo as etapas da seção [Desabilitando o acesso remoto não essencial aos serviços](https://helpx.adobe.com/br/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
+Você pode desabilitar o acesso remoto a todos os serviços de Armazenamento Confiável seguindo as etapas da seção [Desabilitando o acesso remoto não essencial aos serviços](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
 
 **Desabilitar todo o acesso anônimo não essencial**
 
-Alguns serviços do Forms Server têm operações que podem ser chamadas por um chamador anônimo. Se o acesso anônimo a esses serviços não for necessário, desabilite-o seguindo as etapas em [Desabilitando o acesso anônimo não essencial aos serviços](https://helpx.adobe.com/br/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
+Alguns serviços do Forms Server têm operações que podem ser chamadas por um chamador anônimo. Se o acesso anônimo a esses serviços não for necessário, desabilite-o seguindo as etapas em [Desabilitando o acesso anônimo não essencial aos serviços](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
 
 #### Alterar a senha padrão do administrador {#change-the-default-administrator-password}
 
@@ -351,7 +367,7 @@ A tabela a seguir descreve algumas técnicas para proteger o servidor de aplicat
 
 Ao proteger seu banco de dados, você deve implementar as medidas descritas pelo fornecedor do banco de dados. Você deve alocar um usuário do banco de dados com as permissões de banco de dados mínimas necessárias concedidas para uso pelo AEM Forms no JEE. Por exemplo, não use uma conta com privilégios de administrador de banco de dados.
 
-No Oracle, a conta de banco de dados usada precisa apenas dos privilégios CONNECT, RESOURCE e CREATE VIEW. Para requisitos semelhantes em outros bancos de dados, consulte [Preparando para instalar o AEM Forms no JEE (Servidor Único)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64_br).
+No Oracle, a conta de banco de dados usada precisa apenas dos privilégios CONNECT, RESOURCE e CREATE VIEW. Para requisitos semelhantes em outros bancos de dados, consulte [Preparando para instalar o AEM Forms no JEE (Servidor Único)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64).
 
 #### Configurando segurança integrada para SQL Server no Windows para JBoss {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
 
@@ -408,7 +424,7 @@ Como precaução adicional, você deve considerar o uso de ferramentas específi
 * Chave de criptografia do PIN HSM do armazenamento de confiança
 * Hashes de Senha de Usuário Local
 
-Para obter informações sobre ferramentas específicas do fornecedor, consulte [&quot;Informações de segurança do banco de dados&quot;](https://helpx.adobe.com/br/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information).
+Para obter informações sobre ferramentas específicas do fornecedor, consulte [&quot;Informações de segurança do banco de dados&quot;](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information).
 
 ### Segurança LDAP {#ldap-security}
 
@@ -972,9 +988,9 @@ Para obter informações sobre as portas do WebSphere exigidas pelo AEM Forms no
 
 Referindo-se à arquitetura física descrita na seção [AEM Forms na arquitetura física JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), você deve configurar o SSL para todas as conexões que planeja usar. Especificamente, todas as conexões do SOAP devem ser conduzidas por SSL para evitar a exposição das credenciais do usuário em uma rede.
 
-Para obter instruções sobre como configurar o SSL em JBoss, WebLogic e WebSphere, consulte &quot;Configuring SSL&quot; na [ajuda de administração](https://www.adobe.com/go/learn_aemforms_admin_64_br).
+Para obter instruções sobre como configurar o SSL em JBoss, WebLogic e WebSphere, consulte &quot;Configuring SSL&quot; na [ajuda de administração](https://www.adobe.com/go/learn_aemforms_admin_64).
 
-Para obter instruções sobre como importar certificados para a JVM (Java Virtual Machine) configurada para um servidor AEM Forms, consulte a seção Autenticação Mútua na [Ajuda do AEM Forms Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65_br).
+Para obter instruções sobre como importar certificados para a JVM (Java Virtual Machine) configurada para um servidor AEM Forms, consulte a seção Autenticação Mútua na [Ajuda do AEM Forms Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ### Configuração do redirecionamento de SSL {#configuring-ssl-redirect}
 
@@ -1030,12 +1046,12 @@ A instalação completa do AEM Forms no JEE configura uma conta de serviço, por
    * **Diretório GDS (Armazenamento Global de Documentos)**: o local do diretório GDS é configurado manualmente durante o processo de instalação do AEM Forms. Se a configuração de local permanecer vazia durante a instalação, o local assumirá como padrão um diretório na instalação do servidor de aplicativos em `[JBoss root]/server/[type]/svcnative/DocumentStorage`
    * **Diretório CRX-Repository**: o local padrão é `[AEM-Forms-installation-location]\crx-repository`
    * **diretórios temporários do AEM Forms**:
-      * Caminho TMP ou TEMP (Windows) conforme definido nas variáveis de ambiente
-      * (AIX, Linux ou Solaris) Diretório inicial do usuário conectado
-Em sistemas baseados em UNIX, um usuário não-raiz pode usar o seguinte diretório como o diretório temporário:
-      * (Linux) /var/tmp ou /usr/tmp
-      * (AIX) /tmp ou /usr/tmp
-      * (Solaris) /var/tmp ou /usr/tmp
+     * Caminho TMP ou TEMP (Windows) conforme definido nas variáveis de ambiente
+     * (AIX, Linux ou Solaris) Diretório inicial do usuário conectado
+       Em sistemas baseados em UNIX, um usuário não-raiz pode usar o seguinte diretório como o diretório temporário:
+     * (Linux) /var/tmp ou /usr/tmp
+     * (AIX) /tmp ou /usr/tmp
+     * (Solaris) /var/tmp ou /usr/tmp
 1. Conceda à nova conta de usuário permissões de gravação nos seguintes diretórios:
    * [JBoss-diretory]\standalone\deployment
    * [JBoss-diretory]\autônomo\

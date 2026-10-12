@@ -10,7 +10,20 @@ exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: f965c449da06a1b7e60428e0734c621f004d318c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2898'
 ht-degree: 2%
@@ -64,7 +77,7 @@ Como o HTL é a tecnologia preferida para desenvolver sites do AEM, o HTL deve s
 
 ### Uso do HTL {#using-htl}
 
-No HTL, as bibliotecas do cliente são carregadas por meio de um modelo auxiliar fornecido pela AEM, que pode ser acessado por meio de [`data-sly-use`](https://helpx.adobe.com/br/experience-manager/htl/using/block-statements.html#use). Três modelos estão disponíveis neste arquivo, que pode ser chamado por meio de [`data-sly-call`](https://helpx.adobe.com/br/experience-manager/htl/using/block-statements.html#template-call):
+No HTL, as bibliotecas do cliente são carregadas por meio de um modelo auxiliar fornecido pela AEM, que pode ser acessado por meio de [`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). Três modelos estão disponíveis neste arquivo, que pode ser chamado por meio de [`data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call):
 
 * **css** - Carrega somente os arquivos CSS das bibliotecas de clientes referenciadas.
 * **js** - Carrega somente os arquivos JavaScript das bibliotecas de clientes referenciadas.
@@ -72,7 +85,7 @@ No HTL, as bibliotecas do cliente são carregadas por meio de um modelo auxiliar
 
 Cada modelo auxiliar espera uma opção `categories` para fazer referência às bibliotecas de clientes desejadas. Essa opção pode ser uma matriz de valores de cadeias de caracteres ou uma cadeia contendo uma lista de valores separados por vírgula.
 
-Para obter mais detalhes e exemplos de uso, consulte o documento [Introdução à Linguagem de Modelo do HTML](https://helpx.adobe.com/br/experience-manager/htl/using/getting-started.html#loading-client-libraries).
+Para obter mais detalhes e exemplos de uso, consulte o documento [Introdução à Linguagem de Modelo do HTML](https://helpx.adobe.com/experience-manager/htl/using/getting-started.html#loading-client-libraries).
 
 ### Usando JSP {#using-jsp}
 

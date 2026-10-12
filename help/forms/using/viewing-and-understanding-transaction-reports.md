@@ -8,7 +8,22 @@ feature: Transaction Reports
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: bcb3e79d-a57e-59a4-ad50-e03803c9f153
+    internal-label: Transaction Reports
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 0%
@@ -24,7 +39,7 @@ O recurso Relatórios de transação está disponível como parte do pacote comp
 * Habilitar replicação reversa em todas as instâncias de publicação
 * Ativar relatórios de transações
 * Fornecer direitos para visualizar um relatório de transações
-* (Opcional) Configurar Período de Liberação da Transação e Caixas de Saída [&#128279;](/help/forms/using/installing-configuring-aem-forms-osgi.md)
+* (Opcional) Configurar Período de Liberação da Transação e Caixas de Saída [](/help/forms/using/installing-configuring-aem-forms-osgi.md)
 
 >[!NOTE]
 >

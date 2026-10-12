@@ -10,13 +10,26 @@ exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: ed9b9f3835af2dc40ed4c5d3f9e3209dfc6bed90
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3030'
 ht-degree: 45%
-
 ---
-
 # Editar conteúdo da página{#editing-page-content}
 
 Depois que a página é criada (nova ou como parte de um lançamento ou uma live copy), você pode editar o conteúdo para fazer as atualizações necessárias.
@@ -269,9 +282,9 @@ As ações de fato disponíveis para o usuário serão mostradas conforme apropr
 
   Isso cola o componente da área de transferência na página. O restante do original depende se você usou copiar ou recortar.
 
-   * É possível colar para a mesma página para outra.
-   * O item colado será posicionado acima do item onde você usou a ação de colagem.
-   * A ação Colar só será exibida se houver conteúdo na área de transferência.
+  * É possível colar para a mesma página para outra.
+  * O item colado será posicionado acima do item onde você usou a ação de colagem.
+  * A ação Colar só será exibida se houver conteúdo na área de transferência.
 
   ![Colar](assets/screen_shot_2018-03-22at113553.png)
 
@@ -514,15 +527,15 @@ Uma página pode ser bloqueada a partir do:
 
 * Console do **Sites**
 
-   1. Selecione a página com o [modo de seleção](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-   1. Selecione o ícone de bloqueio.
+  1. Selecione a página com o [modo de seleção](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+  1. Selecione o ícone de bloqueio.
 
   ![Ícone de bloqueio](assets/screen_shot_2018-03-22at134928.png)
 
 * **Editor de página**
 
-   1. Para abrir o menu, selecione o ícone **Informações da página**.
-   1. Selecione a opção **Bloquear página**.
+  1. Para abrir o menu, selecione o ícone **Informações da página**.
+  1. Selecione a opção **Bloquear página**.
 
 Uma vez bloqueadas, as informações de exibição do console são atualizadas e, ao editar, um símbolo de cadeado é exibido na barra de ferramentas.
 

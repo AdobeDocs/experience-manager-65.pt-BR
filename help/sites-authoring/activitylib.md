@@ -10,13 +10,28 @@ exl-id: f510ca08-977d-45d5-86af-c4b7634b01ba
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1936'
+source-wordcount: '1941'
 ht-degree: 75%
-
 ---
-
 # Gerenciamento de atividades{#managing-activities}
 
 O console Atividades permite criar, organizar e gerenciar as [atividades](/help/sites-authoring/personalization.md#activities) de marketing de suas marcas:
@@ -80,7 +95,7 @@ Adicione uma atividade ou edite uma atividade já existente para concentrar seus
 * **Mecanismo de direcionamento:** o [AEM](/help/sites-authoring/personalization.md#aem) ou o [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) como mecanismo de conteúdo direcionado.
 
 * **Selecionar uma configuração de destino:** (somente no Adobe Target) a configuração em nuvem que essa atividade deve usar para se conectar ao Adobe Target. Essa opção aparece somente quando o Adobe Target é selecionado para o Mecanismo de direcionamento.
-* **Tipo de atividade: &#x200B;** o tipo de atividade — teste A/B ou direcionamento de experiência
+* **Tipo de atividade: **o tipo de atividade — teste A/B ou direcionamento de experiência
 * **Objetivo:** (opcional) uma descrição da atividade.
 * **Experiências:** mapeamentos entre os nomes de público-alvo e os segmentos de marketing que você está direcionando.
 * **Porcentagens de tráfego:** se o teste A/B for selecionado, você poderá alterar a quantidade de tráfego (em porcentagem) de cada experiência.
@@ -108,7 +123,7 @@ Para adicionar uma atividade:
 1. Adicione uma ou mais experiências à atividade. Clique em **Adicionar experiência**.
 1. Se estiver usando o direcionamento do AEM ou o direcionamento de experiência do Adobe Target:
 
-   1. Clique em **Selecionar público-alvo &#x200B;** e selecione o segmento ao qual a sua experiência está direcionado.
+   1. Clique em **Selecionar público-alvo **e selecione o segmento ao qual a sua experiência está direcionado.
    1. Clique em **Adicionar experiência**, digite um nome e clique em **OK**.
 
    1. Clique em **Avançar**.

@@ -9,13 +9,31 @@ feature: CDN Cache,Dynamic Media Classic
 role: User, Admin
 exl-id: 7020343a-b556-4091-9717-93fcc55e623b
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: e17747bc-9b7b-44e6-a443-f54229a02620
+    internal-label: Integrations
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: fc27aefe-8efd-48a6-89bf-c46e0e334a63
+    internal-label: CDN cache
+  - id: c12bda38-aa1a-4647-b62e-42cd4537dac6
+    internal-label: Dynamic Media Classic
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '737'
 ht-degree: 13%
-
 ---
-
 # Invalidar o cache da rede de entrega de conteúdo por meio do Dynamic Media Classic {#invalidating-your-cdn-cached-content}
 
 Os ativos do Dynamic Media são armazenados em cache pela CDN (Content Delivery Network) para entrega rápida. No entanto, quando você atualiza um ativo, deseja que essas alterações entrem em vigor imediatamente. Invalidar o conteúdo em cache do CDN permite atualizar rapidamente os ativos entregues pelo Dynamic Media, em vez de esperar a expiração do cache.
@@ -26,15 +44,15 @@ Os ativos do Dynamic Media são armazenados em cache pela CDN (Content Delivery 
 
 >[!IMPORTANT]
 >
->As etapas a seguir se aplicam apenas ao Dynamic Media no Adobe Experience Manager 6.5, Service Pack 5 (Experience Manager 6.5.5) ou anterior.<br>Se você usar o Dynamic Media no Experience Manager 6.5, Service Pack 6 (Experience Manager 6.5.6) ou posterior, siga as etapas encontradas em [Invalidar o cache CDN por meio do Dynamic Media](/help/assets/invalidate-cdn-cache-dynamic-media.md).
+>As etapas a seguir se aplicam somente ao Dynamic Media no Adobe Experience Manager 6.5, Service Pack 5 (Experience Manager 6.5.5) ou anterior.<br>Se você usar o Dynamic Media no Experience Manager 6.5, Service Pack 6 (Experience Manager 6.5.6) ou posterior, siga as etapas encontradas em [Invalidar o cache da CDN por meio do Dynamic Media](/help/assets/invalidate-cdn-cache-dynamic-media.md).
 
 <!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Cache overview in Dynamic Media Classic (Scene7)](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
 
 **Para invalidar o cache CDN por meio do Dynamic Media Classic:**
 
-1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=pt-BR#system-requirements-dmc-app) e entre na sua conta.
+1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) e entre na sua conta.
 
-   Suas credenciais e logon foram fornecidos pelo Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte ao cliente da Adobe.
+   Suas credenciais e logon foram fornecidos pela Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte ao cliente da Adobe.
 
 1. Próximo ao canto superior direito da página, navegue até **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do Aplicativo]** > **[!UICONTROL Configurações Gerais]**.
 1. Na página Configurações Gerais do Aplicativo, no cabeçalho do grupo Servidores, localize a caixa de texto **[!UICONTROL Modelo de Invalidação de CDN]**.
@@ -45,7 +63,7 @@ Os ativos do Dynamic Media são armazenados em cache pela CDN (Content Delivery 
 
    `https://server.com/is/image/Company/<ID>?$product$`
 
-   Se o Modelo contiver apenas `<ID>`, o Dynamic Media preencherá `https://<server>/is/image`, onde `<server>` é o Nome do Servidor do Publish definido em Configurações Gerais e &lt;ID> são os ativos selecionados para serem invalidados.
+   Se o Modelo contiver apenas `<ID>`, o Dynamic Media preencherá `https://<server>/is/image`, onde `<server>` é o Nome do Servidor de Publicação definido em Configurações Gerais e &lt;ID> são os ativos selecionados para serem invalidados.
 
 1. No canto inferior direito da página, selecione **[!UICONTROL Fechar]**.
 1. Na interface do usuário do Dynamic Media Classic, selecione um ou mais ativos, depois vá para **[!UICONTROL Arquivo]** > **[!UICONTROL Invalidar CDN]**. Você verá uma lista de um ou mais URLs gerados a partir do modelo criado e dos ativos selecionados. Ele usa o URL do servidor listado em &quot;Nome do servidor publicado&quot; nas Configurações gerais do aplicativo.

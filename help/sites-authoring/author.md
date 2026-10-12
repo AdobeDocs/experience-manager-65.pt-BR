@@ -5,13 +5,26 @@ exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '560'
 ht-degree: 28%
-
 ---
-
 # Criação{#authoring}
 
 ## Conceito de criação (e publicação) {#concept-of-authoring-and-publishing}
@@ -72,13 +85,13 @@ Quando o site do AEM é um [site da comunidade](/help/communities/overview.md) o
 >
 >Infelizmente, às vezes há uma sobreposição na terminologia usada. Isso pode acontecer com:
 >
->* **Publicar/Desfazer a publicação**
+>* **Publicar/Desfazer publicação**
 >  Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
 >
 >* **Ativar / Desativar**
 >  Estes termos são sinônimos de publicar/desfazer a publicação.
 >
->* **Replicar / Replicação**
+>* **Replicar/Replicar**
 >  Esses são os termos técnicos usados para indicar a movimentação de dados (por exemplo, conteúdo da página, arquivos, código, comentários do usuário) de um ambiente para outro; ou seja, ao publicar ou reverter a replicação de comentários do usuário.
 >
 

@@ -8,13 +8,29 @@ exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: User, Developer
-source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3742'
+source-wordcount: '3734'
 ht-degree: 2%
-
 ---
-
 # Fluxo de trabalho centrado no Forms no OSGi{#forms-centric-workflow-on-osgi}
 
 ![imagem-herói](do-not-localize/header.png)
@@ -276,7 +292,7 @@ Minimizar o número de instâncias de fluxo de trabalho aumenta o desempenho do 
 
 ## Parametrizar dados sigilosos para variáveis de fluxo de trabalho e armazená-los em armazenamentos de dados externos {#externalize-wf-variables}
 
-Quaisquer dados enviados de formulários adaptáveis para fluxos de trabalho do [!DNL Experience Manager] podem ter PII (Informações de identificação pessoal) ou SPD (Dados pessoais confidenciais) dos usuários finais de sua empresa. No entanto, não é obrigatório armazenar seus dados no [!DNL Adobe Experience Manager] [repositório JCR](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html?lang=pt-BR). Você pode externalizar o armazenamento de dados do usuário final para seu armazenamento de dados gerenciado (por exemplo, armazenamento Azure blob) parametrizando as informações em [variáveis de fluxo de trabalho](/help/forms/using/variable-in-aem-workflows.md).
+Quaisquer dados enviados de formulários adaptáveis para fluxos de trabalho do [!DNL Experience Manager] podem ter PII (Informações de identificação pessoal) ou SPD (Dados pessoais confidenciais) dos usuários finais de sua empresa. No entanto, não é obrigatório armazenar seus dados no [!DNL Adobe Experience Manager] [repositório JCR](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html). Você pode externalizar o armazenamento de dados do usuário final para seu armazenamento de dados gerenciado (por exemplo, armazenamento Azure blob) parametrizando as informações em [variáveis de fluxo de trabalho](/help/forms/using/variable-in-aem-workflows.md).
 
 Em um fluxo de trabalho do Forms [!DNL Adobe Experience Manager], os dados são processados e transmitidos por uma série de etapas do fluxo de trabalho por meio de variáveis de fluxo de trabalho. Essas variáveis são propriedades nomeadas ou pares de valores chave que são armazenados no nó de metadados das instâncias de fluxo de trabalho; por exemplo, `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. Essas variáveis de fluxo de trabalho podem ser externalizadas para um repositório separado que não seja o JCR e processadas por [!DNL Adobe Experience Manager] fluxos de trabalho. [!DNL Adobe Experience Manager] fornece a API `[!UICONTROL UserMetaDataPersistenceProvider]` para armazenar as variáveis de fluxo de trabalho no armazenamento externo gerenciado. Para saber mais sobre como Usar variáveis de fluxo de trabalho para armazenamentos de dados de propriedade do cliente no [!DNL Adobe Experience Manager], consulte [Administrar variáveis de fluxo de trabalho para armazenamentos de dados externos](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
 [!DNL Adobe] fornece a seguinte [amostra](https://github.com/adobe/workflow-variable-externalizer) para armazenar variáveis do mapa de metadados do fluxo de trabalho para o armazenamento de blobs do Azure, usando a API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md). Nas linhas semelhantes, você pode usar a amostra como guia para usar a API [UserMetaDataPersistenceProvider] para externalizar as variáveis de fluxo de trabalho em qualquer outro armazenamento de dados externo a [!DNL Adobe Experience Manager] e gerenciar as mesmas.

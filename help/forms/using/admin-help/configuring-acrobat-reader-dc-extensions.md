@@ -9,7 +9,27 @@ exl-id: 0f8e1e46-4fc5-43f6-abb1-19a3f20e1f1d
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Document Services,Reader Extensions
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 621ad6f8-3769-57bb-838c-1d26cfb18d50
+    internal-label: Reader Extensions
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 1%
@@ -22,7 +42,7 @@ ht-degree: 1%
 
 Se os usuários da instalação do AEM Forms usarem a funcionalidade de captura de dados do Content Services (Obsoleto), será recomendável criar uma função com acesso somente leitura para esses usuários.
 
-***Observação &#x200B;**: o Adobe® LiveCycle® Content Services ES (obsoleto) é um sistema de gerenciamento de conteúdo instalado com o LiveCycle. Ele permite que os usuários projetem, gerenciem, monitorem e otimizem processos centrados no ser humano. O suporte aos Content Services (obsoleto) termina em 31/12/2014. Consulte o [documento sobre o ciclo de vida do produto Adobe](https://helpx.adobe.com/br/support/programs/eol-matrix.html).*
+***Observação **: o Adobe® LiveCycle® Content Services ES (obsoleto) é um sistema de gerenciamento de conteúdo instalado com o LiveCycle. Ele permite que os usuários projetem, gerenciem, monitorem e otimizem processos centrados no ser humano. O suporte aos Content Services (obsoleto) termina em 31/12/2014. Consulte o [documento sobre o ciclo de vida do produto Adobe](https://helpx.adobe.com/br/support/programs/eol-matrix.html).*
 
 A captura de dados exige que você atribua uma função de usuário para acessar SampleReaderExtensionsCredential. Você pode atribuir a função Administrador Confiável padrão. No entanto, considere que essa função oferece privilégios gerais de administrador de usuários não administrativos que controlam as configurações de Confiança da PKI e gerenciam Credenciais da PKI, o que pode comprometer a segurança da instalação dos AEM Forms em um ambiente de produção. Recomenda-se que o administrador do sistema do AEM Forms crie uma função que conceda somente leitura ao Armazenamento de confiança e atribua essa nova função a usuários não administradores que usam captura de dados.
 

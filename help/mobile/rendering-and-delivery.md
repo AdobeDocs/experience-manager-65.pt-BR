@@ -8,13 +8,17 @@ exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
 solution: Experience Manager
 feature: Mobile
 role: Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 5%
-
+source-wordcount: '571'
+ht-degree: 4%
 ---
-
 # Renderização e entrega{#rendering-and-delivery}
 
 {{ue-over-mobile}}
@@ -156,7 +160,7 @@ A tabela a seguir mostra as propriedades:
    <td>String[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>Para os seguintes tipos de recursos sling, não retorne a exportação json CaaS padrão.<br /> Retorne uma exportação json do cliente renderizando o recurso como;<br /> &lt;RESOURCE&gt;.&lt;SELETOR_TO_INC&gt;.json </td>
+   <td>Para os seguintes tipos de recursos sling, não retorne a exportação json CaaS padrão.<br /> Retorne uma exportação json do cliente renderizando o recurso como;<br /> &lt;RESOURCE&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
   </tr>
  </tbody>
 </table>
@@ -219,7 +223,7 @@ A configuração de exportação padrão do Content Services é aplicada se uma 
 
 Essa configuração estende o padrão para incluir o agrupamento de filhos em um nó filho.
 
-&lt;PÁGINA_SITE>.caas.page[.&lt;DEPTH-INT>].json
+&lt;PÁGINA_SITE>.caas.page[.&lt;INTENSIDADE-INT>].json
 
 ### Recursos adicionais {#additional-resources}
 

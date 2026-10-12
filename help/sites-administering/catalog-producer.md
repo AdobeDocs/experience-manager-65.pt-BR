@@ -9,13 +9,22 @@ exl-id: 76a46c62-d47d-4970-8a3a-d56015639548
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '859'
 ht-degree: 0%
-
 ---
-
 # Produtor do catálogo{#catalog-producer}
 
 Saiba como usar o Produtor de catálogo no AEM Assets para gerar catálogos de produtos usando seus ativos digitais.
@@ -28,9 +37,9 @@ Como parte do processo de integração, configure o fluxo de trabalho **Ativo de
 
 >[!NOTE]
 >
->Você pode gerar modelos InDesign a partir de arquivos InDesign antes de importá-los para o AEM Assets. Para obter detalhes, consulte [Trabalhando com arquivos e modelos](https://helpx.adobe.com/br/indesign/using/files-templates.html).
+>Você pode gerar modelos InDesign a partir de arquivos InDesign antes de importá-los para o AEM Assets. Para obter detalhes, consulte [Trabalhando com arquivos e modelos](https://helpx.adobe.com/indesign/using/files-templates.html).
 >
->Você pode mapear os elementos nos modelos InDesign para tags XML. As tags mapeadas são exibidas como propriedades quando você mapeia propriedades de produto com propriedades de modelo no Produtor de catálogo. Para saber mais sobre marcação XML em arquivos InDesign, consulte [Marcação de conteúdo para XML](https://helpx.adobe.com/br/indesign/using/tagging-content-xml.html).
+>Você pode mapear os elementos nos modelos InDesign para tags XML. As tags mapeadas são exibidas como propriedades quando você mapeia propriedades de produto com propriedades de modelo no Produtor de catálogo. Para saber mais sobre marcação XML em arquivos InDesign, consulte [Marcação de conteúdo para XML](https://helpx.adobe.com/indesign/using/tagging-content-xml.html).
 
 >[!NOTE]
 >

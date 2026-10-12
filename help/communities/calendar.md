@@ -10,13 +10,20 @@ exl-id: c9b34b00-525d-4ca3-bd18-11bb7ce66787
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1169'
 ht-degree: 0%
-
 ---
-
 # Recurso de calendário {#calendar-feature}
 
 ## Introdução {#introduction}
@@ -92,7 +99,7 @@ Na guia **Configurações**, especifique se deseja permitir a aplicação de mar
 
 * **Tamanho máx. do arquivo de imagem a ser anexado**
 
-  Relevante somente se Permitir uploads de arquivo estiver marcado. Número máximo de bytes que um arquivo de imagem carregado pode ter. O padrão é 2097152 **&#x200B; ** (2 Mb).
+  Relevante somente se Permitir uploads de arquivo estiver marcado. Número máximo de bytes que um arquivo de imagem carregado pode ter. O padrão é 2097152** ** (2 Mb).
 
 * **Tipos de imagem de capa permitidos**
 
@@ -164,7 +171,7 @@ Na guia **Campo de marca**, as marcas que podem ser aplicadas, se permitidas na 
 
 * **Limite sugerido**
 
-  Insira o número de tags a serem exibidas como sugestão para a publicação do membro no fórum. O padrão é **-**&#x200B;1 (sem limites).
+  Insira o número de tags a serem exibidas como sugestão para a publicação do membro no fórum. O padrão é **-**1 (sem limites).
 
 >[!NOTE]
 >
