@@ -137,7 +137,7 @@ As opções a seguir determinam como os arquivos de imagem são convertidos para
 
 **Usar OCR:** Especifica se o OCR (reconhecimento óptico de caracteres) deve ser aplicado à PDF. O software de OCR permite pesquisar, corrigir e copiar o texto no PDF.
 
-***observação **: o recurso OCR PDF (PDF pesquisável) só tem suporte no Microsoft Windows.*
+***observação &#x200B;**: o recurso OCR PDF (PDF pesquisável) só tem suporte no Microsoft Windows.*
 
 **Idioma de OCR Primário:** Especifica o idioma a ser usado pelo mecanismo de OCR para identificar os caracteres.
 
@@ -276,7 +276,7 @@ Para obter instruções sobre como acessar esta configuração, consulte [Criar 
 
    >[!NOTE]
    >
-   >*Se você estiver usando esta opção em combinação com **Desincorporar algumas fontes**, as fontes da lista **Adicionar fontes a desincorporar**ainda serão completamente desincorporadas.*
+   >*Se você estiver usando esta opção em combinação com **Desincorporar algumas fontes**, as fontes da lista **Adicionar fontes a desincorporar**&#x200B;ainda serão completamente desincorporadas.*
 
    >[!NOTE]
    >

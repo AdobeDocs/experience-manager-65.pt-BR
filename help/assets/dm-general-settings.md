@@ -77,7 +77,7 @@ Consulte também [Opcional - Configuração do Dynamic Media - Configurações d
    * Guia [Illustrator](#illustrator-tab)
 
    ![Página de configurações gerais do Dynamic Media](/help/assets/assets-dm/dm-general-settings.png)
-   *Página Configurações Gerais do Dynamic Media, com a guia **[!UICONTROL Edição de Imagem]**selecionada.*<br><br>
+   *Página Configurações Gerais do Dynamic Media, com a guia **[!UICONTROL Edição de Imagem]**&#x200B;selecionada.*<br><br>
 
 1. Quando terminar, próximo ao canto superior direito da página, selecione **[!UICONTROL Salvar]**.
 

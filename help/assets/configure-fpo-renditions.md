@@ -133,7 +133,7 @@ Para usar os recursos de processamento do ImageMagick para gerar a representaç�
 
 1. Siga a etapa 1 a etapa 3 da configuração [para gerar a representação de ativos existentes usando a seção de fluxo de trabalho do Experience Manager](#generate-renditions-of-existing-assets-using-aem-workflow).
 
-1. Siga a etapa 4 a etapa 8 da configuração [ para gerar a representação de novos ativos usando a seção ImageMagick](#generate-renditions-of-new-assets-using-imagemagick).
+1. Siga a etapa 4 a etapa 8 da configuração [&#x200B; para gerar a representação de novos ativos usando a seção ImageMagick](#generate-renditions-of-new-assets-using-imagemagick).
 
 
 ## Exibir representações FPO {#view-fpo-renditions}

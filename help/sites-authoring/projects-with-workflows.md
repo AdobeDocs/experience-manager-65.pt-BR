@@ -54,12 +54,12 @@ Dependendo do modelo de projeto selecionado, há determinados fluxos de trabalho
 | Solicitar inicialização | x |  |  |  |
 | Solicitar página de destino | x |  |  |  |
 | Solicitar email | x |  |  |  |
-| Criar cópia de idioma do DAM&amp;ast; |  |  |  | x |
-| Criar e traduzir cópia de idioma do DAM; &amp;ast; |  |  |  | x |
+| Criar cópia de idioma do DAM&ast; |  |  |  | x |
+| Criar e traduzir cópia de idioma do DAM; &ast; |  |  |  | x |
 
 >[!NOTE]
 >
->&amp;ast; Esses fluxos de trabalho não são iniciados no bloco **Fluxo de Trabalho** em Projetos. Consulte [Criando Cópias de Idioma para o Assets.](/help/sites-administering/tc-manage.md)
+>&ast; Esses fluxos de trabalho não são iniciados no bloco **Fluxo de Trabalho** em Projetos. Consulte [Criando Cópias de Idioma para o Assets.](/help/sites-administering/tc-manage.md)
 
 As etapas para iniciar e concluir fluxos de trabalho são as mesmas, independentemente do fluxo de trabalho escolhido. Somente as etapas são alteradas.
 

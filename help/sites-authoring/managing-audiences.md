@@ -88,7 +88,7 @@ Para criar um público-alvo do Adobe Target:
 
    ![captura de tela_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
 
-1. No console Públicos-alvo, clique em **Criar** e** Criar público-alvo**.
+1. No console Públicos-alvo, clique em **Criar** e **&#x200B; Criar público-alvo**.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 

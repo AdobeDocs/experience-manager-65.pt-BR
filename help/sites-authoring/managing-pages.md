@@ -176,7 +176,7 @@ Uma lista de modelos disponíveis para uso ao gerar a nova página.
 
 >[!NOTE]
 >
->Se configurado na instância,[ os autores de modelo poderão criá-los com o Editor de modelo](/help/sites-authoring/templates.md).
+>Se configurado na instância,[&#x200B; os autores de modelo poderão criá-los com o Editor de modelo](/help/sites-authoring/templates.md).
 
 ### Componentes {#components}
 

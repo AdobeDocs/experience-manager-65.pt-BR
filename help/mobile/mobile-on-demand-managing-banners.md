@@ -82,7 +82,7 @@ Use o editor de arrastar e soltar integrado do AEM para adicionar ou alterar um 
 O workflow para editar um artigo:
 
 1. Em Dispositivo móvel, escolha seu aplicativo móvel por demanda no catálogo.
-1. Selecione um banner originado na AEM no bloco ** Gerenciar banners**.
+1. Selecione um banner originado na AEM no bloco **&#x200B; Gerenciar banners**.
 1. Clique no banner destacado da exibição de lista para abri-lo no editor de conteúdo.
 1. Use o editor de conteúdo para arrastar o conteúdo do banner (manuscritos, imagens, texto etc.).
 
