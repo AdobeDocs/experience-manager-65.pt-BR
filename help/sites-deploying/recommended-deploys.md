@@ -87,7 +87,7 @@ As desvantagens:
 
 >[!NOTE]
 >
->A implantação do Modo de espera desativado neste exemplo do TarMK requer que as instâncias principal e de espera sejam licenciadas separadamente, pois há replicação constante para o servidor de failover. Para obter mais informações sobre licenciamento, consulte os [Termos gerais de licenciamento da Adobe](https://www.adobe.com/legal/terms/enterprise-licensing.html).
+>A implantação do Modo de espera desativado neste exemplo do TarMK requer que as instâncias principal e de espera sejam licenciadas separadamente, pois há replicação constante para o servidor de failover. Para obter mais informações sobre licenciamento, consulte os [Termos gerais de licenciamento da Adobe](https://www.adobe.com/br/legal/terms/enterprise-licensing.html).
 
 ### Farm TarMK {#tarmk-farm}
 

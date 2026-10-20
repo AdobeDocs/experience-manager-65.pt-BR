@@ -40,7 +40,7 @@ O Adobe Experience Manager Forms integra-se ao Adobe Analytics, o que permite ca
 
 O recurso de análise no AEM Forms está disponível como parte do pacote complementar do AEM Forms. Para obter informações sobre como instalar o pacote complementar, consulte [Instalação e configuração do AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
 
-Além do pacote complementar, você precisa de uma conta do Adobe Analytics. Para obter informações sobre a solução, consulte [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
+Além do pacote complementar, você precisa de uma conta do Adobe Analytics. Para obter informações sobre a solução, consulte [Adobe Analytics](https://www.adobe.com/br/solutions/digital-analytics.html).
 
 Depois de ter o pacote complementar do AEM Forms e uma conta do Adobe Analytics, integre a conta do Adobe Analytics ao AEM Forms e habilite o rastreamento nos seus formulários ou documentos, conforme descrito em [Configurar análises e relatórios](../../forms/using/configure-analytics-forms-documents.md).
 

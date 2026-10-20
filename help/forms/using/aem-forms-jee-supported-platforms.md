@@ -648,7 +648,7 @@ Para requisitos adicionais, consulte:
 >
 >O Adobe Acrobat 2020 (faixa clássica) não é compatível com o AEM Forms. Use o Adobe Acrobat Pro DC (Continuous track, versão mais recente).
 >
->A família de produtos do Acrobat DC apresenta duas faixas para o Acrobat e o Reader, que são produtos diferentes: &quot;Clássico&quot; e &quot;Contínuo&quot;. Para obter detalhes e uma comparação das duas faixas, consulte [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
+>A família de produtos do Acrobat DC apresenta duas faixas para o Acrobat e o Reader, que são produtos diferentes: &quot;Clássico&quot; e &quot;Contínuo&quot;. Para obter detalhes e uma comparação das duas faixas, consulte [https://www.adobe.com/br/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/br/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
 
 ## Clientes compatíveis com o AEM Forms no JEE {#supported-clients-for-aem-forms-on-jee}
 

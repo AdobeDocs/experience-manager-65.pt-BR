@@ -93,5 +93,5 @@ Consulte [Vídeo no Dynamic Media - Adicionar legendas ocultas ao vídeo](/help/
 
 >[!MORELIKETHIS]
 >
->* [Acessibilidade para soluções da Adobe](https://www.adobe.com/accessibility.html)
+>* [Acessibilidade para soluções da Adobe](https://www.adobe.com/br/accessibility.html)
 >* [Acessibilidade em [!DNL Experience Manager Assets]](/help/assets/accessibility.md)
