@@ -44,7 +44,7 @@ Os mapas de imagem permitem adicionar uma ou mais áreas com hiperlink que funci
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
 
-1. Clique no ponto de acesso e insira o URL e o texto Alt. Na lista **[!UICONTROL Target]**, especifique onde deseja que o mapa de imagem seja exibido, por exemplo, a mesma guia, uma nova guia ou um iFrame. Por exemplo, digite `https://www.adobe.com` como a URL, `Adobe website` como o texto Alt e especifique **[!UICONTROL Nova Guia]** da lista **[!UICONTROL Target]** para que o mapa de imagem seja aberto em uma nova guia.
+1. Clique no ponto de acesso e insira o URL e o texto Alt. Na lista **[!UICONTROL Target]**, especifique onde deseja que o mapa de imagem seja exibido, por exemplo, a mesma guia, uma nova guia ou um iFrame. Por exemplo, digite `https://www.adobe.com/br` como a URL, `Adobe website` como o texto Alt e especifique **[!UICONTROL Nova Guia]** da lista **[!UICONTROL Target]** para que o mapa de imagem seja aberto em uma nova guia.
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 

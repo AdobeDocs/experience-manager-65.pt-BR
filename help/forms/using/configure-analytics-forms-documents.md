@@ -46,7 +46,7 @@ O AEM Forms integra-se ao Analytics, o que permite capturar e rastrear as métri
 >
 >O recurso de análise no AEM Forms está disponível como parte do pacote complementar do AEM Forms. Para obter informações sobre como instalar o pacote complementar, consulte [Instalação e configuração do AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
 >
->Além do pacote complementar, é necessário ter uma conta do Adobe Analytics e privilégios de administrador na instância do AEM. Para obter informações sobre a solução, consulte [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
+>Além do pacote complementar, é necessário ter uma conta do Adobe Analytics e privilégios de administrador na instância do AEM. Para obter informações sobre a solução, consulte [Adobe Analytics](https://www.adobe.com/br/solutions/digital-analytics.html).
 
 Também é possível executar a análise usando o Adobe Launch. Para obter mais informações sobre como integrar o AEM Forms com o Adobe Launch, consulte [Analytics usando o Adobe Launch](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md).
 

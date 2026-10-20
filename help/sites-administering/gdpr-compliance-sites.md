@@ -44,7 +44,7 @@ O Regulamento Geral sobre a Proteção de Dados da União Europeia entra em vigo
 
 A AEM Sites está pronta para ajudar os clientes em suas obrigações de conformidade com o GDPR. Esta página orienta os clientes por meio de procedimentos para lidar com solicitações do GDPR na AEM Sites. Ele descreve a localização dos dados privados armazenados e como removê-los manualmente ou com um código.
 
-Para obter mais informações, consulte a [página do GDPR no Centro de Privacidade da Adobe](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+Para obter mais informações, consulte a [página do GDPR no Centro de Privacidade da Adobe](https://www.adobe.com/br/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >

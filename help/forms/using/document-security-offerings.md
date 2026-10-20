@@ -66,7 +66,7 @@ Você pode usar o Document Security SDK, Adobe Acrobat, Document Security Extens
 
 * **Adobe Acrobat:** Você pode usar o Adobe Acrobat para aplicar políticas de segurança a documentos do PDF criados com aplicativos de desktop populares, como o Microsoft® Office, navegadores da Web ou qualquer aplicativo que ofereça suporte para impressão no formato PDF.
 
-  Você pode comprar e baixar o Adobe Acrobat do [site do Adobe](https://www.adobe.com/acrobat/free-trial-download.html). O artigo [configuração de políticas de segurança para PDFs](https://helpx.adobe.com/br/acrobat/using/setting-security-policies-pdfs.html) da Adobe Acrobat fornece informações detalhadas sobre como criar e aplicar políticas no Adobe Acrobat.
+  Você pode comprar e baixar o Adobe Acrobat do [site do Adobe](https://www.adobe.com/br/acrobat/free-trial-download.html). O artigo [configuração de políticas de segurança para PDFs](https://helpx.adobe.com/br/acrobat/using/setting-security-policies-pdfs.html) da Adobe Acrobat fornece informações detalhadas sobre como criar e aplicar políticas no Adobe Acrobat.
 
 * **Document Security Extension for Microsoft® Office**: você pode usar o Document Security Extension for Microsoft® Office para aplicar políticas predefinidas a seus arquivos do Microsoft® Office de dentro dos programas do Microsoft® Office. A extensão garante que somente pessoas autorizadas possam usar arquivos do Microsoft® Word, Excel e PowerPoint protegidos por política. Somente os usuários autorizados que têm o plug-in instalado podem usar os arquivos protegidos por política.
 

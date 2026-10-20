@@ -32,7 +32,7 @@ ht-degree: 3%
 
 O AEM Communities expõe APIs prontas para uso para gerenciar perfis de usuários e gerenciar conteúdo gerado pelo usuário (UGC) em massa. Depois de habilitado, o serviço **UserUgcManagement** permite que os usuários privilegiados (administradores e moderadores da comunidade) desabilitem perfis de usuário e excluam em massa ou exportem em massa o UGC para usuários específicos. Essas APIs também permitem que controladores e processadores de dados do cliente estejam em conformidade com os Regulamentos Gerais de Proteção de Dados (GDPR) da União Europeia e outras determinações de privacidade inspiradas no GDPR.
 
-Para obter mais informações, consulte a [página do GDPR no Centro de privacidade da Adobe.](https://www.adobe.com/privacy/general-data-protection-regulation.html)
+Para obter mais informações, consulte a [página do GDPR no Centro de privacidade da Adobe.](https://www.adobe.com/br/privacy/general-data-protection-regulation.html)
 
 >[!NOTE]
 >
