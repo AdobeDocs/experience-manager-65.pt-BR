@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Use a documentação do Adobe Experience Manager 6.5 para saber como funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM 6.5
-source-git-commit: 1af0281a94789888e87ba959f82ff491f4d7ee60
+source-git-commit: 9240de61985dc32f17593f416e5d054cadb8a392
 workflow-type: tm+mt
-source-wordcount: '8302'
+source-wordcount: '8310'
 ht-degree: 20%
 ---
 
@@ -566,6 +566,7 @@ ht-degree: 20%
       + [Redução de problemas de serialização no AEM Forms JEE](/help/forms/using/mitigating-serialization-issues-forms-jee.md)
     + Configurar AEM Forms {#configure-aem-forms}
       + [Ajuste de desempenho do servidor do AEM Forms](/help/forms/using/performance-tuning-aem-forms.md)
+      + [Criar um índice personalizado para referências de formulário adaptáveis](/help/forms/using/create-custom-index-for-adaptive-forms-references.md)
       + [Configurar cache de formulários adaptáveis](/help/forms/using/configure-adaptive-forms-cache.md)
       + [Definição das configurações do AEM DS](/help/forms/using/configuring-the-processing-server-url.md)
       + [Configuração do scheduler de sincronização](/help/forms/using/configure-synchronization-scheduler.md)
