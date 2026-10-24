@@ -22,9 +22,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: 9eee0eef3e19a4787b7104f470d35b4c98fd53db
 workflow-type: tm+mt
-source-wordcount: '7612'
+source-wordcount: '7677'
 ht-degree: 4%
 ---
 # Notas de Versão do Service Pack Mais Recente do [!DNL Adobe Experience Manager] 6.5 {#aem-service-pack-release-notes}
@@ -612,11 +612,13 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 
 ### Problema conhecido do AEM Sites {#known-issues-aem-sites-6525}
 
-A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
 ### Problemas conhecidos do AEM Forms {#known-issues-aem-forms-6525}
 
 * **FORMS-23722** Quando um formulário contendo o campo **Anexo de Arquivo** que usa `bindref` é enviado a um Fluxo de Trabalho do AEM com uma etapa **Atribuir Tarefa**, os anexos não são exibidos. Como resultado, eles não aparecem quando a tarefa é aberta da Caixa de entrada. Os arquivos são salvos corretamente no repositório, mas a interface do usuário da etapa Atribuir tarefa não exibe os anexos.
+
+* **FORMS-28517** Quando um PDF assinado digitalmente é anexado a uma tarefa no AEM Forms JEE Workspace, o carregamento permanece preso no estado de carregamento ou falha com um erro &quot;Arquivo inválido&quot;. Como resultado, anexos maiores e assinados do PDF não podem ser adicionados à tarefa. Esse problema foi corrigido em uma versão posterior. Para obter uma correção na versão atual/existente, entre em contato com o Suporte da Adobe.
 
 #### Problemas conhecidos com Hotfixes disponíveis {#aem-forms-issues-with-hotfixes}
 
@@ -651,13 +653,13 @@ Os arquivos zip a seguir contêm os documentos de texto que listam os pacotes OS
 Esses sites estão disponíveis somente para clientes do. Se você for cliente e precisar de acesso, entre em contato com o seu gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] página do produto](https://business.adobe.com/br/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65)
->* [Inscreva-se para obter atualizações de produto prioritárias da Adobe](https://www.adobe.com/br/subscription/priority-product-update.html)
+>* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65)
+>* [Inscreva-se para obter atualizações de produto prioritárias da Adobe](https://www.adobe.com/subscription/priority-product-update.html)
 
 
 
