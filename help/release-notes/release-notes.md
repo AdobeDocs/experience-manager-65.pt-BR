@@ -22,9 +22,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: 9eee0eef3e19a4787b7104f470d35b4c98fd53db
 workflow-type: tm+mt
-source-wordcount: '7612'
+source-wordcount: '7677'
 ht-degree: 4%
 ---
 # Notas de Versão do Service Pack Mais Recente do [!DNL Adobe Experience Manager] 6.5 {#aem-service-pack-release-notes}
@@ -617,6 +617,8 @@ A visualização dos fragmentos de conteúdo falha devido à proteção do DoS p
 ### Problemas conhecidos do AEM Forms {#known-issues-aem-forms-6525}
 
 * **FORMS-23722** Quando um formulário contendo o campo **Anexo de Arquivo** que usa `bindref` é enviado a um Fluxo de Trabalho do AEM com uma etapa **Atribuir Tarefa**, os anexos não são exibidos. Como resultado, eles não aparecem quando a tarefa é aberta da Caixa de entrada. Os arquivos são salvos corretamente no repositório, mas a interface do usuário da etapa Atribuir tarefa não exibe os anexos.
+
+* **FORMS-28517** Quando um PDF assinado digitalmente é anexado a uma tarefa no AEM Forms JEE Workspace, o carregamento permanece preso no estado de carregamento ou falha com um erro &quot;Arquivo inválido&quot;. Como resultado, anexos maiores e assinados do PDF não podem ser adicionados à tarefa. Esse problema foi corrigido em uma versão posterior. Para obter uma correção na versão atual/existente, entre em contato com o Suporte da Adobe.
 
 #### Problemas conhecidos com Hotfixes disponíveis {#aem-forms-issues-with-hotfixes}
 
