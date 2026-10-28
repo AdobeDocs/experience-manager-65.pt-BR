@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Use a documentação do Adobe Experience Manager 6.5 para saber como funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM 6.5
-source-git-commit: 9240de61985dc32f17593f416e5d054cadb8a392
+source-git-commit: 1919f4aff8dd2cb07b1e298511001e2f51ed520b
 workflow-type: tm+mt
-source-wordcount: '8310'
+source-wordcount: '8303'
 ht-degree: 20%
 ---
 
@@ -76,7 +76,6 @@ ht-degree: 20%
   + [Filtro de disposição de conteúdo](/help/sites-administering/content-disposition-filter.md)
   + [Mapeamento personalizado de grupo de usuários no AEM 6.5](/help/sites-administering/cug-mapping.md)
   + [Suporte a cookie Same Site](/help/sites-administering/same-site-cookie-support.md)
-  + [Descontinuação de credenciais JWT no Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
   + [Configuração de integrações do IMS para o AEM](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
 + Experience Hub {#experience-hub}
   + [Sobre o Experience Hub](/help/experience-hub.md)

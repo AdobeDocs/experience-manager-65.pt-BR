@@ -18,7 +18,7 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: 1919f4aff8dd2cb07b1e298511001e2f51ed520b
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 4%
@@ -46,7 +46,7 @@ As integrações usam uma integração IMS, configurada com S2S OAuth.
 
 >[!CAUTION]
 >
->Anteriormente, as configurações eram feitas com [Credenciais JWT que agora estão sujeitas a desativação no Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
+>Anteriormente, as configurações eram feitas com Credenciais JWT que agora estão sujeitas a desativação no Adobe Developer Console.
 >
 >Essas configurações não podem mais ser criadas ou atualizadas, mas podem ser migradas para configurações OAuth.
 
