@@ -490,7 +490,7 @@ Os usuários podem ver as propriedades de ativos licenciados e não licenciados.
 
 >[!MORELIKETHIS]
 >
->* [Tutorial em vídeo sobre o uso de [!DNL Adobe Stock] ativos com [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [Tutorial em vídeo sobre o uso de [!DNL Adobe Stock] ativos com [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=pt-BR)
 >* [[!DNL Adobe Stock] ajuda do plano da empresa](https://helpx.adobe.com/br/enterprise/using/adobe-stock-enterprise.html)
 >* [[!DNL Adobe Stock] Perguntas frequentes](https://helpx.adobe.com/br/stock/faq.html)
 

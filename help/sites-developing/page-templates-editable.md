@@ -64,7 +64,7 @@ Este documento supõe que você já esteja familiarizado com a criação e ediç
 
 A criação de modelos editáveis é feita principalmente com o [console de modelo e o editor de modelo](/help/sites-authoring/templates.md), por um autor de modelo. Esta seção fornece uma visão geral desse processo e segue com uma descrição do que ocorre em nível técnico.
 
-Para obter informações sobre como usar modelos editáveis em um projeto AEM, consulte [Criação de um projeto AEM usando Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478).
+Para obter informações sobre como usar modelos editáveis em um projeto AEM, consulte [Criação de um projeto AEM usando Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478?profile.language=pt).
 
 Ao criar um modelo editável, você:
 
