@@ -20,10 +20,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
+source-git-commit: 6fb39326f3a012bb7e774f65200feae143d2d30d
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 40%
+source-wordcount: '780'
+ht-degree: 35%
 ---
 # Preparação de conteúdo para tradução{#preparing-content-for-translation}
 
@@ -64,6 +64,14 @@ Para criar a raiz do idioma, crie uma página e use um código de idioma ISO com
 * `<language-code>`O código de idioma com suporte é um código de duas letras, conforme definido pela ISO-639-1, como por exemplo, `en`.
 
 * `<language-code>_<country-code>` ou `<language-code>-<country-code>`O código do país aceito é um código de duas letras em minúsculas ou maiúsculas, conforme definido pela norma ISO 3166, por exemplo, `en_US`, `en_us`, `en_GB`, `en-gb`.
+
+>[!NOTE]
+>
+>Para instalações do AEM em execução no Java 17 ou Java 21, o mapeamento de localidade Java padrão usa `he` para hebraico, `yi` para iídiche e `id` para indonésio em vez dos códigos herdados `iw`, `ji` e `in`. Os dicionários i18n existentes que usam os códigos herdados podem não ser encontrados.
+>
+>Use os códigos atuais para raízes de idioma e dicionários i18n: substitua `iw` por `he`, `ji` por `yi` e `in` por `id`.
+>
+>Se você precisar manter os códigos herdados como uma solução alternativa de compatibilidade, defina a propriedade do sistema Java `java.locale.useOldISOCodes` como `true` ao iniciar o AEM, usando o argumento JVM `-Djava.locale.useOldISOCodes=true`. A propriedade é somente leitura na inicialização do tempo de execução do Java; alterá-la enquanto o AEM estiver em execução não tem efeito.
 
 É possível usar qualquer um dos formatos, de acordo com a estrutura escolhida para o site global.  Por exemplo, a página raiz da cópia em francês do site do Geometrixx tem `fr` como a propriedade Nome. A propriedade Nome é usada como o nome do nó da página no repositório e, portanto, determina o caminho da página. (http://localhost:4502/content/geometrixx/fr.html)
 
