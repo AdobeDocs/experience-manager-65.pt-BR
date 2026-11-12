@@ -19,10 +19,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: efd3c8e390cdbb5b5cc526906f7a2d756a978c21
 workflow-type: tm+mt
-source-wordcount: '2442'
-ht-degree: 60%
+source-wordcount: '2078'
+ht-degree: 58%
 ---
 # Variações - Criação dos fragmentos de conteúdo{#variations-authoring-fragment-content}
 
@@ -42,8 +42,6 @@ Executar uma série de outras ações, dependendo do tipo de dados que está sen
 * [Fazer upload de conteúdo](#uploading-content)
 
 * [Visualizar as principais estatísticas](#viewing-key-statistics) (sobre textos multilinha)
-
-* [Resumir texto](#summarizing-text)
 
 * [Sincronizar as variações com o conteúdo Principal](#synchronizing-with-master)
 
@@ -112,8 +110,6 @@ As seguintes ações também estão disponíveis (para todos os [formatos](#form
 * [Mostrar estatísticas do texto](#viewing-key-statistics)
 
 * [Sincronizar com o Principal](#synchronizing-with-master) (ao editar uma variação)
-
-* [Resumir texto](#summarizing-text)
 
 ### Formatos {#formats}
 
@@ -228,60 +224,6 @@ Por exemplo:
 ### Fazer upload de conteúdo {#uploading-content}
 
 Para facilitar o processo de criação de fragmentos de conteúdo, você pode fazer upload de um texto preparado em um editor externo e adicioná-lo diretamente ao fragmento.
-
-### Resumo de texto {#summarizing-text}
-
-O resumo de texto foi criado para ajudar os usuários a reduzir o comprimento do texto para um número predefinido de palavras, mas mantendo os pontos principais e o significado geral.
-
->[!NOTE]
->
->Em um nível mais técnico, o sistema mantém as frases que julga fornecer a *melhor relação entre densidade e exclusividade das informações* de acordo com algoritmos específicos.
-
->[!CAUTION]
->
->O fragmento de conteúdo deve ter uma pasta de idioma válida (código ISO) como ancestral; ela serve para determinar o modelo de idioma a ser usado.
->
->Por exemplo, `en/`, como no seguinte caminho:
->
->  `/content/dam/my-brand/en/path-down/my-content-fragment`
-
->[!CAUTION]
->
->O inglês está disponível pronto para uso.
->
->Outros idiomas estão disponíveis como Pacotes de modelo de idioma no Compartilhamento de pacotes:
->
->* [Francês (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Alemão (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italiano (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Espanhol (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
->
-
-1. Selecione o **Principal** ou a variação exigida.
-1. Abra o editor de tela cheia.
-
-1. Selecione **Resumir texto** na barra de ferramentas.
-
-   ![resumo](assets/cfm-variations-05.png)
-
-1. Especifique o número alvo de palavras e selecione **Iniciar**:
-1. O texto original é exibido lado a lado com o resumo proposto:
-
-   * As frases que serão eliminadas são destacadas em vermelho e tachadas.
-   * Clique em qualquer frase destacada se desejar mantê-la no conteúdo resumido.
-   * Clique em qualquer frase não destacada se desejar eliminá-la.
-
-1. Selecione **Resumir** para confirmar as alterações.
-
-1. O texto original é exibido lado a lado com o resumo proposto:
-
-   * As frases que serão eliminadas são destacadas em vermelho e tachadas.
-   * Clique em qualquer frase destacada se desejar mantê-la no conteúdo resumido.
-   * Clique em qualquer frase não destacada se desejar eliminá-la.
-   * As estatísticas do resumo são apresentadas: **Real** e **Alvo**-
-   * Você pode **Visualizar** as alterações.
-
-   ![comparação de resumo](assets/cfm-variations-06.png)
 
 ### Anotação de um fragmento de conteúdo {#annotating-a-content-fragment}
 
@@ -480,7 +422,7 @@ Ao editar uma variação, você tem acesso à ação para sincronizar o elemento
 
 >[!CAUTION]
 >
->A sincronização só está disponível para copiar alterações *do **Principal**&#x200B;para a variação*.
+>A sincronização só está disponível para copiar alterações *do **Principal**para a variação*.
 >
 >Somente o elemento atual da variação será sincronizado.
 >
