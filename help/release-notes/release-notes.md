@@ -365,7 +365,7 @@ Melhoria: a integração do Adobe Analytics com o Adobe Experience Manager Launc
 
 #### Platform{#foundation-platform-6526}
 
-* O link Ajuda no rodapé da página de logon do AEM agora abre uma página de trabalho. Anteriormente, o link apontava para um URL marketing.adobe.com que não existe mais. A configuração do rodapé agora usa a URL da [documentação do Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager). (NPR-44388)
+* O link Ajuda no rodapé da página de logon do AEM agora abre uma página de trabalho. Anteriormente, o link apontava para um URL marketing.adobe.com que não existe mais. A configuração do rodapé agora usa a URL da [documentação do Adobe Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager). (NPR-44388)
 * Aprimoramento: uma solicitação do cliente solicitou a API Graph do Microsoft como alternativa ao SMTP quando o AEM envia email. O tíquete foi resolvido como uma duplicata, pois outro tíquete já implementa o fluxo da API gráfica. O SMTP com OAuth 2.0 permanece disponível para clientes que precisam sair da autenticação básica SMTP. (GRANITE-57478)
 
 * As cadeias de caracteres na caixa de diálogo Permissões Efetivas agora estão alinhadas corretamente no Navegador **Ferramentas** > **Geral** > **Configuração**. Anteriormente, uma string era exibida fora de linha depois de selecionar uma pasta, clicar em Propriedades e em Permissões efetivas. As regras de layout atualizadas restauram o alinhamento. (CQ-4359166)
@@ -602,7 +602,7 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
   To resolve this issue, download and install the hotfix [cq-6.5.26-hotfix-GRANITE-76725.zip](https://artifactory.corp.adobe.com/ui/native/maven-aem-release-local/com/adobe/cq/hotfix/cq-6.5.26-hotfix-GRANITE-76725/1.0/cq-6.5.26-hotfix-GRANITE-76725.zip). The hotfix updates CRXDE Lite to `com.adobe.granite.crxde-lite-1.1.44-CQ651-B0026`, and it contains a version change only, with no code or functional changes. (GRANITE-76725)
 -->
 
-* A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+* A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
 ### Problemas conhecidos do AEM Forms {#known-issues-aem-forms-6526}
 
@@ -637,13 +637,13 @@ Os arquivos zip a seguir contêm os documentos de texto que listam os pacotes OS
 Esses sites estão disponíveis somente para clientes do. Se você for cliente e precisar de acesso, entre em contato com o seu gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] página do produto](https://business.adobe.com/br/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65)
->* [Inscreva-se para obter atualizações de produto prioritárias da Adobe](https://www.adobe.com/subscription/priority-product-update.html)
+>* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65)
+>* [Inscreva-se para obter atualizações de produto prioritárias da Adobe](https://www.adobe.com/br/subscription/priority-product-update.html)
 
 
 
