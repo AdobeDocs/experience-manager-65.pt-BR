@@ -23,9 +23,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: d777049ff8873ab60b286ec268fd544dc61fb038
+source-git-commit: 56b13809475a59f188750b86503e316e69171fe1
 workflow-type: tm+mt
-source-wordcount: '7172'
+source-wordcount: '7273'
 ht-degree: 2%
 ---
 # Notas de Versão do Service Pack Mais Recente do [!DNL Adobe Experience Manager] 6.5 {#aem-service-pack-release-notes}
@@ -428,7 +428,7 @@ Melhoria: o Editor de páginas da interface para toque agora renderiza a Árvore
 
 >[!NOTE]
 >
->Às vezes, a caixa de diálogo na interface do usuário do Gerenciador de pacotes sai durante a instalação do Service Pack. A Adobe recomenda que você aguarde os logs de erro pararem de mudar antes de acessar a implantação. Aguarde os registros específicos relacionados à desinstalação do pacote do atualizador antes de confirmar se a instalação foi bem-sucedida. Este problema ocorre no navegador [!DNL Safari], mas pode ocorrer ocasionalmente em qualquer navegador.
+>Às vezes, a caixa de diálogo na interface do usuário do Gerenciador de pacotes é fechada durante a instalação do Service Pack. A Adobe recomenda que você aguarde os logs de erro pararem de mudar antes de acessar a implantação. Aguarde os registros específicos relacionados à desinstalação do pacote do atualizador antes de confirmar se a instalação foi bem-sucedida. Este problema ocorre no navegador [!DNL Safari], mas pode ocorrer ocasionalmente em qualquer navegador.
 
 **Instalação automática**
 
@@ -594,13 +594,9 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 
 ### Problema conhecido do AEM Sites {#known-issues-aem-sites-6526}
 
-<!--
-* Known issue with a hotfix available for AEM Foundation {#known-issue-foundation-hotfix-6526}
+* **Problema conhecido com uma correção disponível para o AEM Foundation**
 
-  After you upgrade from an earlier service pack to Experience Manager 6.5.26.0, the OSGi version ordering for CRXDE Lite can prevent Experience Manager from selecting the intended bundle. An earlier service pack contains a higher CRXDE Lite version than the artifact that Service Pack 26 includes (`com.adobe.granite.crxde-lite-1.1.44-CQ651-B00024`).
-  
-  To resolve this issue, download and install the hotfix [cq-6.5.26-hotfix-GRANITE-76725.zip](https://artifactory.corp.adobe.com/ui/native/maven-aem-release-local/com/adobe/cq/hotfix/cq-6.5.26-hotfix-GRANITE-76725/1.0/cq-6.5.26-hotfix-GRANITE-76725.zip). The hotfix updates CRXDE Lite to `com.adobe.granite.crxde-lite-1.1.44-CQ651-B0026`, and it contains a version change only, with no code or functional changes. (GRANITE-76725)
--->
+  Depois de atualizar de um pacote de serviços anterior para o Experience Manager 6.5.26.0, a ordenação de versão do pacote de CRXDE Lite pode impedir a Experience Manager de selecionar o pacote desejado. Para corrigir a solicitação de versão, instale o Service Pack 26 e baixe e instale o hotfix [`CRXDE Lite hotfix GRANITE-76725`](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq660%2Fhotfixes%2Fgranite-76725%2Fcq-6.5.26-hotfix-GRANITE-76725-1.0.zip) da Distribuição de Software. A correção é uma atualização somente de versão. Ele não contém alterações funcionais ou de código. (GRANITE-76725)
 
 * A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
