@@ -75,7 +75,7 @@ Fragmentos de experiência devem ser usados:
   * Variações específicas de canal ou contexto
   * Experiências que fazem sentido agrupar (por exemplo, uma campanha com diferentes experiências entre canais)
 
-* Quando você usar o Comércio omnichannel.
+* Quando você usar o Comércio omnicanal.
 
   * Compartilhando conteúdo comercial em [redes sociais](/help/sites-developing/experience-fragments.md#social-variations) canais em escala
   * Tornar pontos de contato transacionais
