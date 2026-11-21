@@ -21,30 +21,30 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: 60c08113c2587df0758ccf073938f7575f81c14e
 workflow-type: tm+mt
-source-wordcount: '10238'
+source-wordcount: '10143'
 ht-degree: 3%
 ---
 # Organize seus ativos digitais {#manage-digital-assets}
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
 No [!DNL Adobe Experience Manager Assets], você pode fazer mais do que armazenar e controlar seus ativos. O [!DNL Experience Manager] oferece recursos de gerenciamento de ativos de nível empresarial. Você pode editar e compartilhar ativos, executar pesquisas avançadas e criar várias representações de dezenas de formatos de arquivo compatíveis. Você também pode gerenciar versões e direitos digitais, automatizar o processamento de ativos, gerenciar e controlar metadados, colaborar usando anotações e muito mais.
 
-Este artigo descreve as tarefas básicas de gerenciamento de ativos, como criar ou fazer upload; atualizações de metadados; copiar, mover e excluir; publicar, cancelar a publicação e pesquisar ativos. Para entender a interface do usuário, consulte [introdução à interface do usuário do assets](/help/sites-authoring/basic-handling.md). Para gerenciar Fragmentos de conteúdo, consulte [gerenciar Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-managing.md) ativos.
+Este artigo descreve as tarefas básicas de gerenciamento de ativos: criar, fazer upload, atualizar metadados, copiar, mover, excluir, publicar, cancelar a publicação e pesquisar. Para entender a interface do usuário, consulte [introdução à interface do usuário do assets](/help/sites-authoring/basic-handling.md). Para gerenciar Fragmentos de conteúdo, consulte [gerenciar Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-managing.md).
 
 ## Criar pastas {#creating-folders}
 
-Ao organizar uma coleção de ativos, por exemplo, todas as imagens do `Nature`, você pode criar pastas para mantê-las juntas. Você pode usar pastas para categorizar e organizar seus ativos. [!DNL Experience Manager Assets] não requer que você organize os ativos nas pastas para que funcionem melhor.
+Para manter uma coleção de ativos, como `Nature` imagens, juntas, crie pastas. Você pode usar pastas para categorizar e organizar seus ativos. [!DNL Experience Manager Assets] não requer que você organize ativos em pastas para funcionar.
 
 >[!NOTE]
 >
 >* Não há suporte para o compartilhamento de uma pasta [!DNL Assets] do tipo `sling:OrderedFolder` ao compartilhar com a Experience Cloud. Para compartilhar uma pasta, não selecione [!UICONTROL Ordenados] ao criar uma pasta.
->* [!DNL Experience Manager] não permite usar a palavra `subassets` como o nome de uma pasta. É uma palavra-chave reservada para um nó que contém subativos para ativos compostos.
+>* A Experience Manager não permite usar a palavra `subassets` como o nome de uma pasta. É uma palavra-chave reservada para um nó que contém subativos para ativos compostos.
 
 1. Navegue até o local na pasta de ativos digitais em que deseja criar uma pasta. No menu, clique em **[!UICONTROL Criar]**. Selecione **[!UICONTROL Nova Pasta]**.
 1. No campo **[!UICONTROL Título]**, forneça um nome de pasta. Por padrão, o DAM usa o título fornecido como o nome da pasta. Depois que a pasta for criada, você poderá substituir o padrão e especificar outro nome de pasta.
@@ -65,7 +65,7 @@ Move this section into a new article. CQDOC-14874 ticket is created for this.
 In this complete article, replace emphasis with UICONTROL where appropriate.
 -->
 
-Você pode carregar vários tipos de ativos (incluindo imagens, arquivos PDF, arquivos RAW e assim por diante) de sua pasta local ou de uma unidade de rede para [!DNL Experience Manager Assets].
+Você pode fazer upload de vários ativos (imagens, arquivos PDF, arquivos RAW etc.) da pasta local ou de uma unidade de rede para [!DNL Experience Manager Assets].
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ Você pode carregar vários tipos de ativos (incluindo imagens, arquivos PDF, ar
 >
 >O Assets que você carrega na Experience Manager com um nome de arquivo maior que 100 caracteres terá um nome encurtado quando for usado no Dynamic Media.
 >
->Os primeiros 100 caracteres no nome do arquivo são usados como estão; todos os caracteres restantes são substituídos por uma sequência alfanumérica. Esse método de renomeação garante um nome exclusivo quando o ativo é usado no Dynamic Media. Também se destina a acomodar o tamanho máximo permitido para o nome do arquivo do ativo no Dynamic Media.
+>O sistema usa os primeiros 100 caracteres no nome do arquivo como está; ele substitui todos os caracteres restantes por uma sequência alfanumérica. Esse método de renomeação garante um nome exclusivo quando o ativo é usado no Dynamic Media. Também se destina a acomodar o tamanho máximo permitido para o nome do arquivo do ativo no Dynamic Media.
 
 Você pode optar por fazer upload de ativos para pastas com ou sem um perfil de processamento atribuído a eles.
 
@@ -87,21 +87,21 @@ Antes de carregar um ativo, verifique se ele está em um [formato](/help/assets/
 1. Para fazer upload dos ativos, siga um destes procedimentos:
 
    * Na barra de ferramentas, clique em **[!UICONTROL Criar]**. No menu, clique em **[!UICONTROL Arquivos]**. Você pode renomear o arquivo na caixa de diálogo apresentada, se necessário.
-   * Em um navegador compatível com HTML5, arraste os ativos diretamente para a interface do usuário do [!DNL Assets]. A caixa de diálogo para renomear arquivo não é exibida.
+   * Em um navegador compatível com HTML5, arraste os ativos diretamente para a interface do usuário do [!DNL Assets]. A caixa de diálogo para renomear o arquivo não é exibida.
 
    ![Criar opção para carregar ativos](assets/create-options.png)
 
-   Para selecionar vários arquivos, selecione a chave `Ctrl` ou `Command` e selecione os ativos na caixa de diálogo do seletor de arquivos. Ao usar uma iPad, você pode selecionar apenas um arquivo por vez.
+   Para selecionar vários arquivos, pressione a tecla `Ctrl` ou `Command` e selecione os ativos na caixa de diálogo do seletor de arquivos. Ao usar uma iPad, você pode selecionar apenas um arquivo por vez.
 
    Você pode pausar o upload de ativos grandes (maiores que 500 MB) e retomá-lo posteriormente da mesma página. Clique em **[!UICONTROL Pausar]** ao lado da barra de progresso que aparece quando um carregamento é iniciado.
 
    ![Barra de progresso de carregar ativos](assets/upload-progress-bar.png)
 
-O tamanho acima do qual um ativo é considerado um ativo grande é configurável. Por exemplo, você pode configurar o sistema para considerar ativos acima de 1000 MB (em vez de 500 MB) como ativos grandes. Nesse caso, **[!UICONTROL Pausar]** aparece na barra de progresso quando ativos de tamanho superior a 1000 MB são carregados.
+O tamanho acima do qual um ativo é considerado um ativo grande é configurável. Para considerar ativos acima de 1000 MB (em vez de 500 MB) como ativos grandes, configure o sistema. Nesse caso, **[!UICONTROL Pausar]** aparece na barra de progresso quando ativos de tamanho superior a 1000 MB são carregados.
 
 A opção [!UICONTROL Pausar] não mostra se um arquivo com mais de 1000 MB foi carregado com um arquivo com menos de 1000 MB. No entanto, se você cancelar o carregamento de arquivo com menos de 1000 MB, a opção **[!UICONTROL Pausar]** será exibida.
 
-Para modificar o limite de tamanho, configure a propriedade `chunkUploadMinFileSize` do nó `fileupload` no repositório do CRX disponível em `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`.
+Para modificar o limite de tamanho, configure a propriedade `chunkUploadMinFileSize` do nó `fileupload` no repositório do Adobe CRX disponível em `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`.
 
 Ao clicar em **[!UICONTROL Pausar]**, ele alterna para a opção **[!UICONTROL Reproduzir]**. Para retomar o carregamento, clique em **[!UICONTROL Reproduzir]**.
 
@@ -109,17 +109,17 @@ Para cancelar um carregamento em andamento, clique em fechar (`X`) ao lado da ba
 
 A capacidade de retomar o upload é especialmente útil em cenários de baixa largura de banda e falhas de rede, em que leva muito tempo para carregar um grande ativo. Você pode pausar a operação de upload e continuar mais tarde quando a situação melhorar. Ao retomar, o upload começa no ponto em que você o pausou.
 
-Durante a operação de carregamento, [!DNL Experience Manager] salva as partes do ativo que estão sendo carregadas como partes de dados no repositório do CRX. Quando o carregamento for concluído, [!DNL Experience Manager] consolida essas partes em um único bloco de dados no repositório.
+Durante a operação de carregamento, [!DNL Experience Manager] salva as partes do ativo que estão sendo carregadas como partes de dados no repositório do Adobe CRX. Quando o carregamento for concluído, [!DNL Experience Manager] consolida essas partes em um único bloco de dados no repositório.
 
 Para configurar a tarefa de limpeza para os trabalhos de carregamento de partes não concluídos, vá para `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 
 >[!CAUTION]
 >
->O upload de partes é acionado quando o valor padrão é 500 MB e o tamanho da parte é 50 MB. Se você editar o [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html?lang=pt-BR) e definir o `timeout configuration` como um tempo menor que o necessário para um ativo carregar, você encontrará uma situação de tempo limite de sessão enquanto o carregamento do ativo estiver em andamento. Portanto, altere o `chunkUploadMinFileSize` e o `chunksize` para que cada solicitação de segmento atualize a sessão.
+>O upload de partes é acionado quando o valor padrão é 500 MB e o tamanho da parte é 50 MB. Se você editar o [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html) e definir o `timeout configuration` como um tempo menor que o necessário para um ativo carregar, você encontrará uma situação de tempo limite de sessão enquanto o carregamento do ativo estiver em andamento. Portanto, altere o `chunkUploadMinFileSize` e o `chunksize` para que cada solicitação de segmento atualize a sessão.
 >
->Considerando o tempo limite de expiração de credencial, a latência, a largura de banda e os uploads simultâneos esperados, o valor mais alto que permite garantir que o seguinte seja escolhido:
+>Considerando o tempo limite de expiração da credencial, a latência, a largura de banda e os uploads simultâneos esperados, o valor mais alto que garante que o seguinte seja escolhido:
 >
->* Para garantir que o carregamento de partes esteja habilitado para arquivos com tamanhos que possam causar expiração de credencial enquanto o carregamento estiver em andamento.
+>* Habilite o carregamento de partes para arquivos com tamanhos que causam expiração de credencial enquanto o carregamento está em andamento.
 >
 >* Para garantir que cada parte seja concluída antes que a credencial expire.
 
@@ -166,15 +166,15 @@ A caixa de diálogo de progresso do carregamento em [!DNL Assets] exibe a contag
 
 ### Uploads seriais {#serialuploads}
 
-O carregamento de vários ativos em massa consome recursos significativos de E/S, o que pode afetar negativamente o desempenho da implantação do [!DNL Assets]. Especificamente, se você tiver uma conexão lenta com a Internet, o tempo para fazer upload aumenta drasticamente devido a um pico na E/S de disco. Além disso, seu navegador da Web pode introduzir restrições adicionais ao número de solicitações POST que [!DNL Assets] pode manipular para uploads de ativos simultâneos. Como resultado, a operação de upload falha ou é encerrada prematuramente. Em outras palavras, [!DNL Experience Manager Assets] pode perder alguns arquivos ao assimilar um conjunto de arquivos ou não conseguir assimilar nenhum arquivo.
+O carregamento de vários ativos em massa consome recursos significativos de E/S, o que afeta negativamente o desempenho da implantação do [!DNL Assets]. Especificamente, se você tiver uma conexão lenta com a Internet, o tempo para fazer upload aumenta drasticamente devido a um pico na E/S de disco. Além disso, seu navegador da Web introduz restrições adicionais ao número de solicitações POST [!DNL Assets] manipuladas para uploads de ativos simultâneos. Como resultado, a operação de upload falha ou é encerrada prematuramente. Consequentemente, [!DNL Experience Manager Assets] perde alguns arquivos ao assimilar vários arquivos ou não consegue assimilar nenhum arquivo.
 
-Para superar essa situação, o [!DNL Assets] assimila um ativo de cada vez (carregamento serial) durante uma operação de carregamento em massa, em vez de assimilar todos os ativos simultaneamente.
+Para resolver essa situação, o [!DNL Assets] assimila um ativo de cada vez (carregamento serial) durante uma operação de carregamento em massa, em vez de assimilar simultaneamente todos os ativos.
 
-O upload serial de ativos é ativado por padrão. Para desabilitar o recurso e permitir o carregamento simultâneo, sobreponha o nó `fileupload` no Crx-de e defina o valor da propriedade `parallelUploads` como `true`.
+[!DNL Experience Manager Assets] habilita o carregamento serial de ativos por padrão. Para desabilitar o recurso e permitir o carregamento simultâneo, sobreponha o nó `fileupload` no Adobe CRX-de e defina o valor da propriedade `parallelUploads` como `true`.
 
 ### Fazer upload de ativos usando FTP {#uploading-assets-using-ftp}
 
-O Dynamic Media permite o upload em lote de ativos por meio do servidor FTP. Se você pretende fazer upload de ativos grandes (>1 GB) ou fazer upload de pastas e subpastas inteiras, use o FTP. Você pode até configurar o upload do FTP para que ele ocorra de forma recorrente e programada.
+O Dynamic Media permite o upload em lote de ativos por meio do servidor FTP. Se você pretende fazer upload de ativos grandes (>1 GB) ou fazer upload de pastas e subpastas inteiras, use o FTP. Para configurar o upload do FTP de forma recorrente e programada, defina as configurações.
 
 >[!NOTE]
 >
@@ -190,9 +190,9 @@ O Dynamic Media permite o upload em lote de ativos por meio do servidor FTP. Se 
 
 1. Usando sua escolha de cliente FTP, faça logon no servidor FTP usando o nome de usuário e a senha FTP recebidos do email de provisionamento. No cliente FTP, carregue arquivos ou pastas para o servidor FTP.
 
-1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=pt-BR#system-requirements-dmc-app) e entre na sua conta.
+1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app#system-requirements-dmc-app) e entre na sua conta.
 
-   Suas credenciais e o logon foram fornecidos pela Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte ao cliente da Adobe.
+   A Adobe forneceu suas credenciais e fez logon no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte ao cliente da Adobe.
 
 1. Na Barra de navegação global, clique em **[!UICONTROL Carregar]**.
 1. Na página Upload, próximo ao canto superior esquerdo, clique na guia **[!UICONTROL Via FTP]**.
@@ -234,7 +234,7 @@ O Dynamic Media permite o upload em lote de ativos por meio do servidor FTP. Se 
 
 #### Definir opções para edições de imagem no upload {#setting-image-editing-options-at-upload}
 
-Ao carregar arquivos de imagem, incluindo arquivos AI, EPS e PSD, você pode realizar as seguintes ações de edição na caixa de diálogo [!UICONTROL Carregar Opções de Trabalho]:
+Ao carregar arquivos de imagem (AI, EPS, PSD), você pode realizar estas ações na caixa de diálogo [!UICONTROL Opções de Trabalho de Upload]:
 
 * Cortar espaço em branco da borda das imagens (consulte a descrição na tabela acima).
 * Recortar manualmente nas laterais das imagens (consulte a descrição na tabela acima).
@@ -258,9 +258,9 @@ Ao carregar arquivos de imagem, incluindo arquivos AI, EPS e PSD, você pode rea
 | | Tolerance | Optional.<br> Controls the allowable amount of variation in pixel color matching based on the Corner location that you set.<br> Use a value of 0.0 to match pixel colors exactly or, use a value of 1.0 to allow for the greatest variation. |
 -->
 
-#### Definir opções de upload do PostScript e do Illustrator {#setting-postscript-and-illustrator-upload-options}
+#### Definir opções de upload do PostScript e do Adobe Illustrator {#setting-postscript-and-illustrator-upload-options}
 
-Ao fazer upload de arquivos de imagem do PostScript (EPS) ou do Illustrator (AI), você pode formatá-los de várias maneiras. É possível rasterizar os arquivos, manter o plano de fundo transparente, escolher uma resolução e escolher um espaço de cores. As opções de formatação de arquivos PostScript e Illustrator estão disponíveis na caixa de diálogo [!UICONTROL Opções de Trabalho de Carregamento] em [!UICONTROL Opções do PostScript] e [!UICONTROL Opções do Illustrator].
+Ao fazer upload de arquivos de imagem do PostScript (EPS) ou do Adobe Illustrator (AI), você pode formatá-los de várias maneiras. É possível rasterizar os arquivos, manter o plano de fundo transparente, escolher uma resolução e escolher um espaço de cores. As opções de formatação de arquivos PostScript e Adobe Illustrator estão disponíveis na caixa de diálogo [!UICONTROL Opções de Trabalho de Carregamento] em [!UICONTROL Opções do PostScript] e [!UICONTROL Opções do Illustrator].
 
 | Opção | Subopção | Descrição |
 |---|---|---|
@@ -273,13 +273,13 @@ Ao fazer upload de arquivos de imagem do PostScript (EPS) ou do Illustrator (AI)
 | | Forçar como CMYK | Converte para o espaço de cores CMYK. |
 | | Forçar como escala de cinza | Converte para o espaço de cor de tons de cinza. |
 
-#### Definir opções de upload do Photoshop {#setting-photoshop-upload-options}
+#### Definir opções de upload do Adobe Photoshop {#setting-photoshop-upload-options}
 
-Os arquivos de documento do Photoshop (PSD) são usados com mais frequência para criar modelos de imagem. Ao carregar um arquivo do PSD, você pode criar um modelo de imagem automaticamente a partir do arquivo (selecione a opção [!UICONTROL Criar modelo] na tela de Carregamento).
+Os arquivos de documento do Adobe Photoshop (PSD) são usados com mais frequência para criar modelos de imagem. Ao carregar um arquivo do PSD, você pode criar um modelo de imagem automaticamente a partir do arquivo (selecione a opção [!UICONTROL Criar modelo] na tela de Carregamento).
 
 O Dynamic Media cria várias imagens de um arquivo PSD com camadas, se você usar o arquivo para criar um modelo; ele cria uma imagem para cada camada.
 
-Use as [!UICONTROL Opções de Corte] e as [!UICONTROL Opções de Perfil de Cores], descritas acima, com as opções de carregamento do Photoshop.
+Use as [!UICONTROL Opções de Corte] e as [!UICONTROL Opções de Perfil de Cores], descritas acima, com as opções de carregamento do Adobe Photoshop.
 
 >[!NOTE]
 >
@@ -336,13 +336,13 @@ Para transcodificar um arquivo de vídeo escolhendo entre várias predefiniçõe
 
 #### Definir predefinições de conjunto de lotes no upload {#setting-batch-set-presets-at-upload}
 
-Se quiser criar automaticamente um Conjunto de imagens ou um Conjunto de rotação a partir de imagens carregadas, clique na coluna Ativo da predefinição que deseja usar. É possível selecionar mais de uma predefinição.
+Se quiser criar um Conjunto de imagens ou um Conjunto de rotação automaticamente a partir de imagens carregadas, clique na coluna Ativo da predefinição que deseja usar. É possível selecionar mais de uma predefinição.
 
-Consulte [Configuração de predefinições de conjunto de lotes para gerar automaticamente conjuntos de imagens e conjuntos de rotação](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) para saber mais sobre como criar predefinições de conjunto de lotes.
+Para saber mais sobre como criar predefinições de conjunto de lotes, consulte [Configuração de predefinições de conjunto de lotes para gerar automaticamente conjuntos de imagens e conjuntos de rotação](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
 ### Uploads transmitidos {#streamed-uploads}
 
-Se você fizer upload de muitos ativos para o Adobe Experience Manager, as solicitações de E/S para o servidor aumentarão drasticamente, o que reduz a eficiência do upload e pode até fazer com que algumas tarefas de upload atinjam o tempo limite. O [!DNL Experience Manager Assets] oferece suporte ao carregamento transmitido de ativos. O upload transmitido reduz a E/S de disco durante a operação de upload, evitando o armazenamento de ativos em uma pasta temporária no servidor antes de copiá-lo para o repositório. Em vez disso, os dados são transferidos diretamente para o repositório. Dessa forma, o tempo para carregar grandes ativos e a possibilidade de tempos limite é reduzido. O carregamento transmitido está habilitado por padrão em [!DNL Assets].
+Fazer upload de muitos ativos para o Adobe Experience Manager aumenta as solicitações de E/S, reduzindo a eficiência e causando tempos limite. [!DNL Experience Manager Assets] dá suporte ao carregamento transmitido para atenuar isso. O upload transmitido reduz a E/S de disco durante a operação de upload, evitando o armazenamento de ativos em uma pasta temporária no servidor antes de copiá-lo para o repositório. Em vez disso, os dados são transferidos diretamente para o repositório. Dessa forma, o tempo para carregar grandes ativos e a possibilidade de tempos limite é reduzido. [!DNL Assets] habilita o carregamento transmitido por padrão.
 
 >[!NOTE]
 >
@@ -352,7 +352,7 @@ Se você fizer upload de muitos ativos para o Adobe Experience Manager, as solic
 
 Você pode carregar arquivos ZIP como qualquer outro ativo compatível. As mesmas regras de nome de arquivo se aplicam a arquivos ZIP. [!DNL Experience Manager] permite extrair um arquivo ZIP para um local DAM. Se os arquivos compactados não contiverem ZIP como extensão, habilite a detecção de tipo de arquivo usando conteúdo.
 
-Selecione um arquivo ZIP por vez, clique em **[!UICONTROL Extrair arquivo]** e selecione uma pasta de destino. Selecione uma opção que resolva conflitos, se houver. Se os ativos no arquivo ZIP existirem na pasta de destino, é possível selecionar uma destas opções: ignorar a extração, substituir arquivos existentes, manter ambos os ativos renomeando ou criar uma versão.
+Selecione um arquivo ZIP por vez, clique em **[!UICONTROL Extrair arquivo]** e selecione uma pasta de destino. Selecione uma opção que resolva conflitos, se houver. Se o ZIP Assets existir na pasta de destino, selecione uma opção: ignorar extração, substituir arquivos, renomear novos ativos ou criar uma versão.
 
 Após a conclusão da extração, [!DNL Experience Manager] o notifica na área de notificação. Enquanto o [!DNL Experience Manager] extrai o ZIP, você pode voltar ao seu trabalho sem interromper a extração.
 
@@ -374,9 +374,9 @@ Para visualizar um ativo, siga estas etapas.
 
 1. No modo de visualização, as opções de zoom estão disponíveis para [tipos de imagem com suporte](/help/assets/assets-formats.md#supported-raster-image-formats) (com edição interativa).
 
-   Para ampliar um ativo, clique em `+` (ou clique na lupa do ativo). Para reduzir, clique em `-`. Ao ampliar, você pode observar de perto qualquer área da imagem com um movimento panorâmico. A seta para redefinir zoom leva você de volta à exibição original. Para redefinir o modo de exibição para o tamanho original, clique em **[!UICONTROL Redefinir]** ![Redefinir modo de exibição](assets/do-not-localize/revert.png).
+   Para ampliar um ativo, clique em `+` (ou clique na lupa do ativo). Para reduzir, clique em `-`. Ao ampliar, você pode visualizar qualquer área da imagem com um movimento panorâmico. A seta para redefinir zoom leva você de volta à exibição original. Para redefinir o modo de exibição para o tamanho original, clique em **[!UICONTROL Redefinir]** ![Redefinir modo de exibição](assets/do-not-localize/revert.png).
 
-**Visualizar ativos usando apenas teclas de teclado**
+**Para visualizar ativos usando apenas teclas de teclado:**
 
 Para visualizar um ativo usando o teclado, siga estas etapas:
 
@@ -447,7 +447,7 @@ Para visualizar um ativo usando o teclado, siga estas etapas:
    Para obter mais detalhes, consulte [Assets Insights](/help/assets/asset-insights.md).
 
 1. Clique em **[!UICONTROL Salvar e fechar]**.
-1. Navegue até a interface de usuário [!DNL Assets]. As propriedades de metadados editados, incluindo título, descrição, classificações e assim por diante, são exibidas no cartão de ativos na exibição Cartão e em colunas relevantes na exibição Lista.
+1. Navegue até a interface de usuário [!DNL Assets]. As propriedades dos metadados editados (título, descrição, classificações etc.) aparecem no cartão de ativos na exibição Cartão e em colunas relevantes na exibição Lista.
 
 ## Copiar ativos {#copying-assets}
 
@@ -455,11 +455,13 @@ Ao copiar um ativo ou uma pasta, o ativo inteiro ou a pasta é copiada, juntamen
 
 Alguns atributos exclusivos de uma cópia específica de um ativo não são transferidos. Alguns exemplos são:
 
-* ID do ativo, data e hora de criação e versões e histórico de versões. Algumas dessas propriedades são indicadas pelas propriedades `jcr:uuid`, `jcr:created` e `cq:name`.
+* ID do ativo, data e hora de criação e versões e histórico de versões. As propriedades `jcr:uuid`, `jcr:created` e `cq:name` indicam algumas dessas propriedades.
 
-* O tempo de criação e os caminhos referenciados são exclusivos para cada ativo e cada representação.
+* O tempo de criação e os caminhos referenciados são exclusivos para cada ativo e cada uma de suas representações.
 
 As outras propriedades e informações de metadados são retidas. Uma cópia parcial não é criada ao copiar um ativo.
+
+**Para copiar ativos:**
 
 1. Na interface do [!DNL Assets], selecione um ou mais ativos e clique em **[!UICONTROL Copiar]** na barra de ferramentas. Como alternativa, selecione a opção **[!UICONTROL Copiar]** ![Copiar na barra de ferramentas da interface do Assets](assets/do-not-localize/copy_icon.png) para ação rápida a partir do cartão de ativos.
 
@@ -481,12 +483,12 @@ As outras propriedades e informações de metadados são retidas. Uma cópia par
 
 ## Mover e renomear ativos {#moving-or-renaming-assets}
 
-Ao mover ativos (ou pastas) para outro local, os ativos (ou pastas) não são duplicados, ao contrário da cópia do ativo. Os ativos (ou as pastas) são colocados no local de destino e são removidos do local de origem. Você também pode renomear o ativo ao movê-lo para o novo local.
+Quando você move ativos (ou pastas) para outro local, os ativos (ou pastas) não são duplicados, ao contrário de quando copia o ativo. Os ativos (ou as pastas) são colocados no local de destino e são removidos do local de origem. Você também pode renomear o ativo ao movê-lo para o novo local.
 Se você estiver movendo um ativo publicado para um local diferente, será possível republicar o ativo. Por padrão, a operação Mover em um ativo publicado cancela a publicação automaticamente. Um ativo movido será republicado se o autor selecionar a opção [!UICONTROL Republicar] ao mover o ativo.
 
 ![É possível republicar um ativo já publicado ao movê-lo](assets/republish-on-move.png)
 
-Para mover ativos ou pastas:
+**Para mover ativos ou pastas:**
 
 1. Navegue até o local do ativo que deseja mover.
 
@@ -527,7 +529,7 @@ Para mover ativos ou pastas:
 
 Você pode mover ativos (ou pastas) para uma pasta irmã arrastando-os para o local de destino, em vez de usar a opção [!UICONTROL Mover] na interface. No entanto, essa operação é possível somente na exibição de lista.
 
-Mover ativos arrastando-os não abre o assistente [!UICONTROL Mover ativo]. Portanto, você não tem a opção de renomear os ativos enquanto os move. Além disso, os ativos já publicados são republicados ao movê-los arrastando, sem buscar a aprovação do usuário para republicar.
+Mover ativos arrastando-os não abre o assistente [!UICONTROL Mover ativos]. Portanto, você não tem a opção de renomear os ativos enquanto os move. Além disso, os ativos já publicados são republicados ao movê-los arrastando, sem buscar a aprovação dos usuários para republicar.
 
 ![Mover ativos para pastas irmãs arrastando ativos](assets/move-by-drag.gif)
 
@@ -549,7 +551,7 @@ Mover ativos arrastando-os não abre o assistente [!UICONTROL Mover ativo]. Port
 
    **Excluir uma representação**
 
-   Selecione uma representação no painel **[!UICONTROL Representações]** e clique na opção **[!UICONTROL Excluir Representação]** ![Para excluir uma representação](assets/do-not-localize/deleteoutline.png) da barra de ferramentas. As representações não podem ser excluídas em massa após a conclusão do processamento de ativos. Para ativos individuais, é possível remover representações manualmente da interface do usuário. Para vários ativos, é possível personalizar o Experience Manager para excluir representações específicas ou excluir os ativos e fazer upload novamente dos ativos excluídos.
+   Selecione uma representação no painel **[!UICONTROL Representações]** e clique na opção **[!UICONTROL Excluir Representação]** ![Para excluir uma representação](assets/do-not-localize/deleteoutline.png) da barra de ferramentas. As representações não podem ser excluídas em massa após a conclusão do processamento de ativos. Para ativos individuais, é possível remover representações manualmente da interface do usuário. Para excluir representações específicas ou excluir e recarregar ativos, personalize o Experience Manager.
 
    **Carregar uma nova representação**
 
@@ -561,13 +563,13 @@ Mover ativos arrastando-os não abre o assistente [!UICONTROL Mover ativo]. Port
 
    É possível configurar as dimensões da representação que deseja exibir na página de detalhes de um ativo de imagem ou vídeo. Com base nas dimensões especificadas, [!DNL Assets] exibe a representação com as dimensões exatas ou mais próximas.
 
-   Para configurar as dimensões de representação de uma imagem no nível de detalhes do ativo, sobreponha o nó `renditionpicker` (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) e configure o valor da propriedade largura. Configure a propriedade **[!UICONTROL size (Long) em KB]** no lugar da largura para que você possa personalizar a representação na página de detalhes do ativo com base no tamanho da imagem. Para personalização baseada em tamanho, a propriedade `preferOriginal` atribui preferência ao original se o tamanho da representação correspondente for maior que o original.
+   Para configurar as dimensões de representação de uma imagem no nível de detalhes do ativo, sobreponha o nó `renditionpicker` (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) e configure o valor da propriedade largura. Para personalizar a representação na página de detalhes do ativo com base no tamanho da imagem, configure a propriedade **[!UICONTROL size (Long) in KB]** em vez da largura. Para personalização baseada em tamanho, a propriedade `preferOriginal` atribui preferência ao original se o tamanho da representação correspondente for maior que o original.
 
    Da mesma forma, você pode personalizar a imagem da página de Anotação sobrepondo `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
    ![Sobrepor nó do seletor de representações no CRXDE para personalizar a imagem da página de anotações](assets/renditionpicker-node.png)
 
-   Para configurar as dimensões de representação para um ativo de vídeo, navegue até o nó `videopicker` no repositório do CRX no local `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, sobreponha o nó e edite a propriedade apropriada.
+   Para configurar as dimensões de representação para um ativo de vídeo, navegue até o nó `videopicker` no repositório do Adobe CRX no local `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, sobreponha o nó e edite a propriedade apropriada.
 
    >[!NOTE]
    >
@@ -581,7 +583,11 @@ Para excluir ativos, um usuário precisa de permissões de exclusão em `dam/ass
 
 Para resolver ou remover as referências recebidas de outras páginas, atualize as referências relevantes antes de excluir um ativo. Para impedir que os usuários excluam ativos referenciados e deixem links desfeitos, desative a opção Forçar exclusão usando uma sobreposição.
 
-Para excluir um ativo ou uma pasta contendo ativo:
+>[!IMPORTANT]
+>
+>Quando o modo Dynamic Media - Scene7 é ativado, a exclusão de um ativo no Experience Manager também o exclui permanentemente do Dynamic Media. O ativo não é movido para a pasta Lixeira do Dynamic Media, portanto, não é possível restaurá-lo do Dynamic Media.
+
+**Para excluir ativos:**
 
 1. Navegue até o local do ativo ou a pasta que deseja excluir.
 
@@ -591,7 +597,7 @@ Para excluir um ativo ou uma pasta contendo ativo:
 
    * Se o ativo não tiver referências, o ativo é excluído.
 
-   * Se o ativo tiver referências, uma mensagem de erro informará que **Um ou mais ativos são referenciados**. Você pode selecionar **[!UICONTROL Forçar Exclusão]** ou **[!UICONTROL Cancelar]**.
+   * Se o ativo tiver referências, uma mensagem de erro informará que **Um ou mais ativos são mencionados**. Você pode selecionar **[!UICONTROL Forçar Exclusão]** ou **[!UICONTROL Cancelar]**.
 
    >[!NOTE]
    >
@@ -602,7 +608,7 @@ Para excluir um ativo ou uma pasta contendo ativo:
 >
 >Se você excluir uma pasta usando o método acima na interface do usuário do, os grupos de usuários associados também serão excluídos.
 >
->No entanto, grupos de usuários redundantes, não utilizados e gerados automaticamente podem ser apagados do repositório usando o método `clean` no JMX em sua instância do autor (`https://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
+>No entanto, limpe grupos de usuários redundantes, não utilizados e gerados automaticamente do repositório usando o método JMX `clean` na instância do autor (`https://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
 
 ## Baixar ativos {#downloading-assets}
 
@@ -610,9 +616,9 @@ Consulte [Baixar ativos da Experience Manager](/help/assets/download-assets-from
 
 ## Publicar ou cancelar a publicação de ativos {#publish-assets}
 
-Depois de carregar, processar ou editar os ativos no autor do [!DNL Experience Manager], você os publica no servidor de publicação. A publicação disponibiliza o ativo publicamente. A ação de desfazer a publicação removeu o ativo do servidor de publicação, mas não do servidor de criação.
+Depois de carregar, processar ou editar os ativos no autor do [!DNL Experience Manager], você os publica no servidor de publicação. A publicação disponibiliza o ativo publicamente. A ação de desfazer a publicação remove o ativo do servidor de publicação, mas não do servidor de criação.
 
-Para obter informações específicas do [!DNL Dynamic Media], consulte [publicação [!DNL Dynamic Media] ativos](/help/assets/publishing-dynamicmedia-assets.md).
+Para obter informações específicas de [!DNL Dynamic Media], consulte [publicação [!DNL Dynamic Media] Assets](/help/assets/publishing-dynamicmedia-assets.md).
 
 1. Navegue até o local do ativo ou da pasta de ativos que deseja publicar ou remover do ambiente de publicação (cancelar publicação).
 
@@ -625,20 +631,20 @@ Para obter informações específicas do [!DNL Dynamic Media], consulte [publica
 
 1. Selecione **[!UICONTROL Agora]** para atuar no ativo imediatamente ou selecione **[!UICONTROL Mais tarde]** para agendar a ação. Selecione uma data e hora se você escolher a opção **[!UICONTROL Mais tarde]**. Clique em **[!UICONTROL Avançar]**.
 
-1. Ao publicar, se um ativo fizer referência a outros ativos, suas referências serão listadas no assistente. Somente essas referências são exibidas, não publicadas ou modificadas desde a última publicação. Escolha as referências que deseja publicar.
+1. Ao publicar, se um ativo fizer referência a outros ativos, suas referências serão listadas no assistente. Somente as referências exibidas não foram publicadas ou foram modificadas desde a última publicação. Escolha as referências que deseja publicar.
 
-1. Ao desfazer a publicação, se um ativo fizer referência a outros ativos, escolha as referências que deseja desfazer a publicação. Clique em **[!UICONTROL Desfazer a publicação]**. Na caixa de diálogo de confirmação, clique em **[!UICONTROL Cancelar]** para interromper a ação ou em **[!UICONTROL Cancelar publicação]** para confirmar se a publicação dos ativos será desfeita na data especificada.
+1. Ao desfazer a publicação, se um ativo fizer referência a outros ativos, escolha as referências que deseja desfazer a publicação. Clique em **[!UICONTROL Desfazer a publicação]**. Na caixa de diálogo de confirmação, clique em **[!UICONTROL Cancelar]** para interromper a ação. Clique em **[!UICONTROL Cancelar publicação]** para confirmar que a publicação dos ativos será desfeita na data especificada.
 
 Entenda as seguintes limitações e dicas relacionadas à publicação ou ao cancelamento da publicação de ativos ou pastas:
 
 * A opção [!UICONTROL Gerenciar Publicação] está disponível somente para as contas de usuário que têm permissões de replicação.
-* Ao desfazer a publicação de um ativo complexo, cancele a publicação somente do ativo. Evite desfazer a publicação das referências, pois elas podem ser referenciadas por outros ativos publicados.
+* Ao desfazer a publicação de um ativo complexo, cancele a publicação somente do ativo. Evite desfazer a publicação das referências porque outros ativos publicados fazem referência a elas.
 * Pastas vazias não são publicadas.
 * Se você publicar um ativo que está sendo processado, somente o conteúdo original será publicado. As representações estão ausentes. Aguarde a conclusão do processamento e publique ou republique o ativo depois que o processamento for concluído.
 
 ## Grupo de usuário fechado {#closed-user-group}
 
-Um grupo de usuários fechado (CUG) é usado para limitar o acesso a pastas de ativos específicas publicadas de [!DNL Experience Manager]. Se você criar um CUG para uma pasta, o acesso à pasta (incluindo ativos e subpastas da pasta) será restrito somente aos membros ou grupos atribuídos. Para acessar a pasta, é necessário fazer logon usando suas credenciais de segurança.
+Um grupo de usuários fechado (CUG) é usado para limitar o acesso a pastas de ativos específicas publicadas de [!DNL Experience Manager]. Se você criar um CUG para uma pasta, o acesso à pasta (incluindo ativos e subpastas da pasta) será restrito aos membros ou grupos atribuídos. Para acessar a pasta, é necessário fazer logon usando suas credenciais de segurança.
 
 Os CUGs são uma maneira extra de restringir o acesso aos seus ativos. Você também pode configurar uma página de logon para a pasta.
 
@@ -679,9 +685,9 @@ Na exibição em lista e na exibição em coluna, a opção **[!UICONTROL Seleci
 
 No modo de exibição de cartão, a opção **[!UICONTROL Selecionar]** é exibida como uma ação rápida.
 
-Ao navegar em uma pasta ou coleção na interface de usuário do [!DNL Assets] em um navegador, você pode selecionar todos os ativos exibidos ou carregados usando a opção [!UICONTROL Selecionar tudo] no canto superior direito. Inicialmente, apenas 100 ativos são carregados na exibição de cartão e 200 na exibição de lista. Mais ativos são carregados na exibição ao rolar a página de resultados da pesquisa. A opção [!UICONTROL Selecionar tudo] seleciona somente os ativos carregados.
+Ao navegar em uma pasta ou coleção na interface do usuário do [!DNL Assets], você pode selecionar todos os ativos exibidos ou carregados usando a opção [!UICONTROL Selecionar tudo] no canto superior direito. Inicialmente, apenas 100 ativos são carregados na exibição de cartão e 200 na exibição de lista. Mais ativos são carregados na exibição ao rolar a página de resultados da pesquisa. A opção [!UICONTROL Selecionar tudo] seleciona somente os ativos carregados.
 
-Para obter mais informações, consulte [exibir e selecionar seus recursos](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+Para obter mais informações, consulte [vendo e selecionando seus recursos](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
 ## Editar imagens {#editing-images}
 
@@ -691,7 +697,7 @@ As ferramentas de edição da interface do [!DNL Assets] permitem executar peque
 >
 >Para alguns componentes, o modo Tela cheia tem opções adicionais disponíveis.
 
-1. Siga um destes procedimentos para abrir um ativo no modo de edição:
+1. Para abrir um ativo no modo de edição, siga um destes procedimentos:
 
    * Selecione o ativo e clique em **[!UICONTROL Editar]** na barra de ferramentas.
    * Clique na opção **[!UICONTROL Editar]** que aparece em um ativo na exibição de cartão.
@@ -699,7 +705,7 @@ As ferramentas de edição da interface do [!DNL Assets] permitem executar peque
 
 1. Para recortar a imagem, clique em **[!UICONTROL Cortar]** ![Opção para recortar uma imagem](assets/do-not-localize/crop.png).
 
-1. Selecione a opção desejada na lista. A área de corte aparece na imagem com base na opção escolhida. A opção **Mão livre** permite cortar a imagem sem restrições de proporção.
+1. Selecione a opção desejada na lista. A área de corte aparece na imagem com base na sua seleção. A opção **Mão livre** permite cortar a imagem sem restrições de proporção.
 
 1. Selecione a área a ser cortada e redimensione-a ou reposicione-a na imagem.
 
@@ -714,7 +720,7 @@ As ferramentas de edição da interface do [!DNL Assets] permitem executar peque
 
 >[!NOTE]
 >
->A edição de imagens é compatível com formatos de arquivos BMP, GIF, PNG e JPEG.
+>A edição de imagens é compatível com formatos de arquivo BMP, GIF, PNG e JPEG.
 
 Também é possível adicionar mapas de imagem usando o editor de imagens. Para obter detalhes, consulte [Adicionando Mapas de Imagens](/help/assets/image-maps.md).
 
@@ -724,7 +730,7 @@ Também é possível adicionar mapas de imagem usando o editor de imagens. Para 
 
 ## Linha do tempo {#timeline}
 
-A linha do tempo permite exibir vários eventos para um item selecionado, como fluxos de trabalho ativos para um ativo, comentários/anotações, logs de atividades e versões.
+A linha do tempo permite exibir eventos de um item selecionado, como fluxos de trabalho, comentários, anotações, logs e versões.
 
 ![Classificar entradas de linha do tempo para um ativo](assets/sort_timeline.gif)
 
@@ -756,7 +762,7 @@ As anotações de vídeo são suportadas apenas em navegadores com formatos de v
 
 1. Adicione um comentário na caixa **[!UICONTROL Comentário]** na parte inferior da linha do tempo. Como alternativa, marque uma área na imagem e adicione uma anotação na caixa de diálogo **[!UICONTROL Adicionar anotação]**.
 
-1. Para notificar um usuário sobre uma anotação, especifique o endereço de email do usuário e adicione o comentário. Por exemplo, para notificar Aaron MacDonald sobre uma anotação, digite @aa. As dicas para todos os usuários correspondentes são exibidas em uma lista. Selecione o endereço de email de Aaron na lista para que você possa marcar a pessoa com o comentário. Da mesma forma, é possível marcar mais usuários em qualquer lugar na anotação, ou antes ou depois dela.
+1. Para notificar um usuário sobre uma anotação, especifique o endereço de email do usuário e adicione o comentário. Por exemplo, para notificar um usuário sobre uma anotação, digite @aa. As dicas para todos os usuários correspondentes são exibidas em uma lista. Selecione o endereço de email do usuário na lista para que você possa marcar a pessoa com o comentário. Da mesma forma, é possível marcar mais usuários em qualquer lugar na anotação, ou antes ou depois dela.
 
    ![Especificar o endereço de email do usuário e adicionar comentário para notificar o usuário](assets/annotate-gif.gif)
 
@@ -764,14 +770,14 @@ As anotações de vídeo são suportadas apenas em navegadores com formatos de v
    >
    >Para um usuário não administrador, as sugestões serão exibidas somente se o usuário tiver permissões de leitura no caminho `/home` no CRXDE.
 
-1. Depois de adicionar a anotação, clique em **[!UICONTROL Adicionar]** para salvá-la. Uma notificação para a anotação é enviada a Aaron.
+1. Depois de adicionar a anotação, clique em **[!UICONTROL Adicionar]** para salvá-la. Uma notificação para a anotação é enviada ao usuário.
 
    >[!NOTE]
    >
    >É possível adicionar várias anotações antes de salvá-las.
 
 1. Clique em **[!UICONTROL Fechar]** para sair do modo de Anotação.
-1. Para exibir a notificação, faça logon em [!DNL Assets] com as credenciais de Aaron MacDonald&#39;s e clique na opção **[!UICONTROL Notificações]** para exibir a notificação.
+1. Para exibir a notificação, faça logon em [!DNL Assets] com as credenciais do usuário e clique na opção **[!UICONTROL Notificações]** para exibir a notificação.
 
    >[!NOTE]
    >
@@ -838,7 +844,7 @@ Para imprimir as anotações e revisar o status, clique em **[!UICONTROL Imprimi
 
 1. Clique em **[!UICONTROL Imprimir]** na barra de ferramentas.
 
-1. Na caixa de diálogo Imprimir, escolha a posição em que deseja que o status das anotações/revisões seja exibido no PDF. Por exemplo, se você quiser que as anotações/status sejam impressas no canto superior direito da página que contém a imagem impressa, use a configuração **Canto superior esquerdo**. Ela é selecionada por padrão.
+1. Na caixa de diálogo Imprimir, escolha a posição em que deseja que o status das anotações/revisões seja exibido no PDF. Por exemplo, se você quiser que as anotações/status sejam impressas no canto superior direito da página que contém a imagem impressa, use a configuração **Canto superior esquerdo**. O sistema o seleciona por padrão.
 
    É possível escolher outras configurações, dependendo da posição em que deseja que as anotações/status apareçam no PDF impresso. Se desejar que as anotações/status apareçam em uma página separada do ativo impresso, escolha **[!UICONTROL Próxima página]**.
 
@@ -852,18 +858,18 @@ Para imprimir as anotações e revisar o status, clique em **[!UICONTROL Imprimi
    >
    >Se o ativo tiver subativos, você poderá imprimir todos os subativos junto com suas anotações específicas em toda a página.
 
-   Para editar a aparência do arquivo PDF renderizado, por exemplo, a cor, o tamanho e o estilo da fonte, abra a **[!UICONTROL Configuração de PDF de Anotação]** no Configuration Manager e modifique as opções desejadas. Por exemplo, para alterar a cor de exibição do status de aprovado, modifique o código de cor no campo correspondente. Para obter informações sobre como alterar a cor da fonte das anotações, consulte [Anotação](/help/assets/manage-assets.md#annotating).
+   Para editar a aparência do arquivo PDF renderizado, como configurações de fonte, abra a **[!UICONTROL Configuração de PDF de Anotação]** no Configuration Manager e modifique as opções desejadas. Por exemplo, para alterar a cor de exibição do status de aprovado, modifique o código de cor no campo correspondente. Para obter informações sobre como alterar a cor da fonte das anotações, consulte [Anotação](/help/assets/manage-assets.md#annotating).
 
    ![Configuração para imprimir a anotação de ativo no documento do PDF](assets/annotation-print-pdf-config.png)
 
    Retorne ao arquivo PDF renderizado e atualize-o. O PDF atualizado reflete as alterações que você fez.
 
-Se um ativo incluir anotações em idiomas estrangeiros (especialmente em idiomas não latinos), primeiro você deverá configurar o CQ-DAM-Handler-Gibson Font Manager Service no servidor [!DNL Experience Manager] para poder imprimir essas anotações. Ao configurar o CQ-DAM-Handler-Gibson Font Manager Service, forneça o caminho onde as fontes dos idiomas desejados estão localizadas.
+Para imprimir anotações para ativos com anotações em idioma estrangeiro (especialmente não latinas), primeiro configure o Serviço de Gerenciador de Fontes CQ-DAM-Handler-Gibson no servidor [!DNL Experience Manager]. Ao configurar o CQ-DAM-Handler-Gibson Font Manager Service, forneça o caminho onde as fontes dos idiomas desejados estão localizadas.
 
 1. Abra a página de configuração do serviço de gerenciador de fontes CQ-DAM-Handler-Gibson na URL `https://[aem_server]:[port]/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl`.
 1. Para configurar o CQ-DAM-Handler-Gibson Font Manager Service, siga um destes procedimentos:
 
-   * Na opção de diretório Fontes do sistema, especifique o caminho completo para o diretório de fontes no sistema. Por exemplo, se você for um usuário do Mac, poderá especificar o caminho como */Biblioteca/Fontes* na opção de diretório Fontes do Sistema. [!DNL Experience Manager] busca as fontes deste diretório.
+   * Na opção de diretório Fontes do sistema, especifique o caminho completo para o diretório de fontes no sistema. Por exemplo, se você usar uma Mac, poderá especificar o caminho como */Library/Fonts* na opção de diretório Fontes do Sistema. [!DNL Experience Manager] busca as fontes deste diretório.
    * Crie um diretório chamado `fonts` dentro da pasta `crx-quickstart`. O CQ-DAM-Handler-Gibson Font Manager Service busca automaticamente as fontes no local `crx-quickstart/fonts`. É possível substituir esse caminho padrão na opção de diretório Adobe Server Fonts.
 
    * Crie uma pasta para fontes no sistema e armazene as fontes desejadas na pasta. Em seguida, especifique o caminho completo para essa pasta na opção de diretório Fontes do cliente.
@@ -890,12 +896,12 @@ Este é um exemplo de como você pode configurar o [!DNL Experience Manager] par
 
 O controle de versão cria um instantâneo dos ativos digitais em um ponto específico do tempo. O controle de versão ajuda a restaurar ativos para um estado anterior posteriormente. Por exemplo, se você deseja desfazer uma alteração feita em um ativo, restaure a versão não editada do ativo. No [!DNL Experience Manager], você pode criar uma versão, exibir a revisão atual, exibir as diferenças lado a lado entre duas versões de imagens e restaurar um ativo para a versão anterior.
 
-Você pode criar versões em [!DNL Experience Manager] nos seguintes cenários:
+Você pode criar versões em [!DNL Experience Manager] para os seguintes cenários:
 
 * Faça upload de um ativo com o mesmo nome de arquivo que existe no mesmo local. Pode ser um novo ativo ou uma versão modificada do mesmo ativo.
 * Edite uma imagem em [!DNL Experience Manager] e salve as alterações.
 * Editar os metadados de um ativo.
-* Use o aplicativo de desktop [!DNL Experience Manager] para fazer check-out de um ativo existente, editá-lo e [carregar suas alterações](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR#edit-assets-upload-updated-assets).
+* Use o aplicativo de desktop [!DNL Experience Manager] para fazer check-out de um ativo existente, editá-lo e [carregar suas alterações](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
 
 Você também pode ativar o controle automático de versão por meio de um fluxo de trabalho. Ao criar uma versão para um ativo, os metadados e as representações são salvos junto com a versão. As representações são alternativas renderizadas das mesmas imagens, por exemplo, uma representação PNG de um arquivo JPEG carregado.
 
@@ -933,7 +939,7 @@ Você também pode ativar o controle automático de versão por meio de um fluxo
 
 1. Para comparar entre duas versões de uma imagem, siga estas etapas:
    * Clique na versão a ser comparada com a versão atual.
-   * Arraste o controle deslizante para a esquerda para sobrepor esta versão à versão atual e comparar.
+   * Para comparar esta versão com a atual, arraste o controle deslizante para a esquerda.
 
    ![Use o controle deslizante para comparar as versões selecionadas de um ativo com a versão atual](assets/version-slider.gif)
 
@@ -948,7 +954,7 @@ Para aplicar um fluxo de trabalho para processar um ativo, consulte [iniciar flu
 Uma coleção é um conjunto ordenado de ativos. Use coleções para compartilhar ativos relacionados entre usuários ou para agrupar ativos semelhantes para facilitar a descoberta.
 
 * Uma coleção pode incluir ativos de locais diferentes, pois eles contêm apenas referências a esses ativos. Cada coleção mantém a integridade referencial dos ativos.
-* Você pode compartilhar coleções com vários usuários com diferentes níveis de privilégio, incluindo edição, visualização e assim por diante.
+* Você pode compartilhar coleções com vários usuários com diferentes níveis de privilégio, incluindo edição e visualização.
 
 Para saber detalhes do Gerenciamento de coleções, consulte [Gerenciar coleções de ativos digitais](/help/assets/manage-collections.md).
 
@@ -970,4 +976,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Para saber mais, veja como [navegar pelos ativos DAM usando o aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR#browse-search-preview-assets) e [como usar o Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html).
+Para saber mais, veja como [navegar no DAM Assets usando o aplicativo de desktop](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/get-started#browse-search-preview-assets).
