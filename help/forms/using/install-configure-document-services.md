@@ -22,9 +22,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: 1695a13865ac21e7827e36bccb67a2f877c42c1a
 workflow-type: tm+mt
-source-wordcount: '10825'
+source-wordcount: '11350'
 ht-degree: 1%
 ---
 # Instalar e configurar serviços de documento {#installing-and-configuring-document-services}
@@ -296,6 +296,10 @@ Essas etapas pressupõem que você tenha os privilégios administrativos necess�
 
 Estas etapas devem ser executadas com acesso de *Administrador do Sistema* à Adobe Admin Console.
 
+>[!NOTE]
+>
+>Os pacotes de FRL normalmente são executados em um ciclo anual de renovação de assinatura (1 ano). Quando a licença tiver que ser renovada, crie um novo pacote de FRL, remova a licença expirada do AEM Forms Server e implante e ative o novo pacote. Para obter etapas detalhadas, consulte [licença do Adobe Acrobat expirada ou desativada no AEM Forms Server](#troubleshooting).
+
 ###### Etapa 1: fazer logon na Adobe Admin Console
 
 1. Abra um navegador e navegue até a [Adobe Admin Console](https://adminconsole.adobe.com/)
@@ -445,6 +449,10 @@ Essas etapas pressupõem que você tenha os privilégios administrativos necess�
 ##### Preparar o pacote de FRL (Adobe Admin Console)
 
 Estas etapas devem ser executadas com acesso de *Administrador do Sistema* à Adobe Admin Console.
+
+>[!NOTE]
+>
+>Os pacotes de FRL normalmente são executados em um ciclo anual de renovação de assinatura (1 ano). Quando a licença tiver que ser renovada, crie um novo pacote de FRL, remova a licença expirada do AEM Forms Server e implante e ative o novo pacote. Para obter etapas detalhadas, consulte [licença do Adobe Acrobat expirada ou desativada no AEM Forms Server](#troubleshooting).
 
 ###### Etapa 1: fazer logon na Adobe Admin Console
 
@@ -602,6 +610,10 @@ Essas etapas pressupõem que você tenha os privilégios administrativos necess�
 
 Estas etapas devem ser executadas com acesso de *Administrador do Sistema* à Adobe Admin Console.
 
+>[!NOTE]
+>
+>Os pacotes de FRL normalmente são executados em um ciclo anual de renovação de assinatura (1 ano). Quando a licença tiver que ser renovada, crie um novo pacote de FRL, remova a licença expirada do AEM Forms Server e implante e ative o novo pacote. Para obter etapas detalhadas, consulte [licença do Adobe Acrobat expirada ou desativada no AEM Forms Server](#troubleshooting).
+
 ###### Etapa 1: fazer logon na Adobe Admin Console
 
 1. Abra um navegador e navegue até a [Adobe Admin Console](https://adminconsole.adobe.com/)
@@ -758,6 +770,10 @@ Essas etapas pressupõem que você tenha os privilégios administrativos necess�
 ##### Preparar o pacote de FRL (Adobe Admin Console)
 
 Estas etapas devem ser executadas com acesso de *Administrador do Sistema* à Adobe Admin Console.
+
+>[!NOTE]
+>
+>Os pacotes de FRL normalmente são executados em um ciclo anual de renovação de assinatura (1 ano). Quando a licença tiver que ser renovada, crie um novo pacote de FRL, remova a licença expirada do AEM Forms Server e implante e ative o novo pacote. Para obter etapas detalhadas, consulte [licença do Adobe Acrobat expirada ou desativada no AEM Forms Server](#troubleshooting).
 
 ###### Etapa 1: fazer logon na Adobe Admin Console
 
@@ -1558,6 +1574,52 @@ Antes de executar as seguintes verificações, verifique se a [Ferramenta de Pre
 
 +++
 -->
+
++++ A licença do Adobe Acrobat expirou ou foi desativada no AEM Forms Server
+
+Quando a Licença de recurso restrito (FRL) do Adobe Acrobat no servidor do AEM Forms expira ou é desativada, a PDF Generator não pode usar o Acrobat PDFMaker para converter documentos do Microsoft® Office. A conversão retorna para OpenOffice e, se OpenOffice não estiver configurado, falha com os seguintes erros:
+
+*Mensagem de erro do conversor primário:
+ALC-PDG-010-012-PDFMaker relatou um erro ao imprimir o documento.*
+
+*Mensagem de erro do conversor de fallback:
+ALC-PDG-011-030-O documento OpenOffice enviado não pôde ser convertido para o PDF. O OpenOffice não está instalado neste sistema ou a variável de ambiente OpenOffice_PATH não está definida como o caminho correto.*
+
+Para resolver o problema, verifique o status da licença e reative-a:
+
+1. Faça logon no AEM Forms Server como administrador e abra o Prompt de comando como administrador.
+1. Navegue até o diretório em que você extraiu o pacote de FRL. Por exemplo, `C:\AcrobatFRL`.
+1. Execute o seguinte comando para verificar o status da licença:
+
+   ```cmd
+   adobe-licensing-toolkit.exe -l
+   ```
+
+1. Se a licença tiver expirado, substitua o pacote de FRL. Os pacotes de FRL normalmente são executados em um ciclo anual de renovação de assinatura (1 ano).
+   1. No [Adobe Admin Console](https://adminconsole.adobe.com/), crie e baixe um novo pacote de FRL. Para obter detalhes, consulte as Etapas de 2 a 7 em [Instalar o Adobe Acrobat Pro DC](#install-adobe-acrobat-pro-dc).
+   1. Execute o seguinte comando para remover a licença expirada:
+
+      ```cmd
+      adobe-licensing-toolkit.exe --precondition --uninstall --all
+      ```
+
+      >[!NOTE]
+      >
+      >Para apagar todos os dados de licença do servidor, execute `adobe-licensing-toolkit.exe --deactivate --all`.
+
+   1. Extraia o novo pacote de FRL para um diretório no servidor e navegue até esse diretório.
+
+1. Execute o seguinte comando para ativar a licença. Substitua `ngl-preconditioning-data.json` pelo nome exato, que diferencia maiúsculas e minúsculas, do arquivo JSON no pacote FRL.
+
+   ```cmd
+   adobe-licensing-toolkit.exe -p -i -f ngl-preconditioning-data.json
+   ```
+
+1. Abra o Adobe Acrobat e instale as atualizações disponíveis.
+1. Reinicie o AEM Forms Server para interromper todos os processos do Acrobat PDFMaker em execução.
+1. Converta um documento do Microsoft® Office em PDF para verificar se o PDF Generator usa o Acrobat para a conversão.
+
++++
 
 +++ Não é possível converter o arquivo do Word ou Excel em PDF no Windows Server
 
