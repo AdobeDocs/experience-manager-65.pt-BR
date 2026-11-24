@@ -23,9 +23,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 3e77f49e02762b555aa7acc821a8307daf2b27df
+source-git-commit: 8e3fd4184adcd62256cb7faea6592b06796e7ddf
 workflow-type: tm+mt
-source-wordcount: '7369'
+source-wordcount: '8356'
 ht-degree: 2%
 ---
 # Notas de Versão do Service Pack Mais Recente do [!DNL Adobe Experience Manager] 6.5 {#aem-service-pack-release-notes}
@@ -60,6 +60,9 @@ Os principais destaques do Service Pack 26 incluem o seguinte:
 * Localização. Dezenas de correções traduzem strings e corrigem problemas de layout em sites, Assets, segurança e operações.
 * Confiabilidade. Correções abordam a contenção de bloqueio do GraphQL em instâncias de publicação, implantações MSM, ações da barra de ferramentas do Editor de rich text e ativação de página na interface clássica.
 * Analytics. A integração do Launch usa a API do Adobe Analytics 2.0 antes do fim da vida útil do Analytics 1.4 em 31 de agosto de 2026.
+* Acessibilidade do Forms. O Forms Designer e o Serviço de saída geram marcadores aninhados do Formato de Documento Portátil (PDF) a partir de funções de cabeçalho, rolam o cabeçalho selecionado para a parte superior da página e adicionam o elemento `extras` do marcador para você. As listas em Rich Text também carregam tags de acessibilidade.
+* Exportação de dados do Forms. Uma API de tempo de execução seleciona o modo de exportação de dados XML herdado ou padrão para cada solicitação, em vez de uma configuração Java Virtual Machine (JVM) para todo o servidor.
+* FORMS JEE A Segurança de documentos adiciona suporte à chave de acesso (WebAuthn) para o Adobe Acrobat, e o conector do IBM Content Manager é compatível com a versão 8.7.
 
 >[!IMPORTANT]
 >
@@ -312,27 +315,24 @@ Exibir carga agora abre o editor de pacote da interface para toque para fluxos d
 ### [!DNL Forms]{#forms-6526}
 
 * Novo recurso: suporte para tags de acessibilidade em listas em Rich Text. Anteriormente, as tags de lista apareciam na árvore de tags de acessibilidade somente quando o modelo seguia uma estrutura específica. A solicitação foi fechada como uma duplicata de um tíquete relacionado que fornece o recurso. (LC-3923202)
+* Aprimoramento: o AEM Forms adiciona uma API de tempo de execução que seleciona o modo de exportação de dados herdado ou padrão da Linguagem de marcação extensível (XML) para cada solicitação. Anteriormente, somente o parâmetro Java Virtual Machine (JVM) `-Dcom.adobe.fd.forms.export.legacy` controlava o modo e a configuração aplicada a cada exportação no servidor. Quando uma solicitação não usa a API, o parâmetro JVM continua a controlar o comportamento. (FORMS-23114, FORMS-22983)
+* Os arquivos Portable Document Format (PDF) certificados com uma assinatura de certificação invisível não abrem mais lentamente no Adobe Acrobat. A correção que antes se aplicava apenas a assinaturas de certificação visíveis agora também abrange as invisíveis. (FORMS-25171)
+* No Forms adaptável baseado em Componentes de base, o componente de Anexo de arquivo agora verifica os arquivos em relação à lista de tipos de arquivo permitidos no upload. Anteriormente, arquivos como `.xsd` passavam da etapa de carregamento mesmo quando a lista permitia somente `application/pdf`, `image/jpeg` e `image/png`. O formulário os rejeitou somente ao enviar com um alerta genérico de arquivo não suportado. (FORMS-24295)
 
-<!--
-* Enhancement: AEM Forms adds a runtime API that selects the legacy or default Extensible Markup Language (XML) data export mode for each request. Previously, only the `-Dcom.adobe.fd.forms.export.legacy` Java Virtual Machine (JVM) parameter controlled the mode, and the setting applied to every export on the server. When a request does not use the API, the JVM parameter continues to control the behavior. (FORMS-23114, FORMS-22983)
-* Portable Document Format (PDF) files certified with an invisible certification signature no longer open slowly in Adobe Acrobat. The fix that earlier applied only to visible certification signatures now also covers invisible ones. (FORMS-25171)
-* In Foundation Components based Adaptive Forms, the File Attachment component now checks files against the allowed file types list at upload. Previously, files such as `.xsd` passed the upload step even when the list allowed only `application/pdf`, `image/jpeg`, and `image/png`. The form rejected them only on submit with a generic unsupported file alert. (FORMS-24295)
+#### FORMS JEE {#forms-jee-6526}
 
-#### Forms JEE {#forms-jee-6526}
+* Aprimoramento: a Segurança de documentos do AEM Forms adiciona o suporte à chave de acesso (Autenticação da Web ou WebAuthn) para o Adobe Acrobat (PPKLite). (FORMS-21762)
+* Aprimoramento: o conector do IBM Content Manager agora é compatível com o IBM Content Manager 8.7, pois a IBM encerrou o suporte para as versões 8.5 e 8.6. (FORMS-6827)
+* No Windows, o serviço ConvertPDF não trava mais ao converter determinados arquivos Portable Document Format (PDF) em imagens, como o TIFF. (FORMS-25796)
+* A autenticação SAML (Security Assertion Markup Language) agora valida assinaturas de asserção com o certificado dos metadados do provedor de identidade (IdP) carregados. A autenticação falha quando o certificado IdP é alterado e os metadados não são atualizados. (FORMS-24679)
+* Depois de atualizar para o AEM Forms Service Pack 6.5.24.0, `server.log` e `error.log` não são mais preenchidos com `[XMLSecurity]` mensagens de AVISO como &quot;Falha na criação da fábrica do analisador seguro, qualquer analisador XML criado pode estar vulnerável a explorações baseadas em XML.&quot; As mensagens apareciam várias vezes por segundo, mesmo em servidores ociosos, e consumiam espaço em disco rapidamente. (FORMS-23717)
+* Os componentes no lado do JEE agora empacotam o Apache POI 5.4.0. Anteriormente, alguns pacotes ainda incluíam o Apache POI 3.17 e 3.9, que verificações de segurança sinalizavam após a atualização para o AEM Forms Service Pack 6.5.24.0. (FORMS-23678)
 
-* Enhancement: AEM Forms Document Security adds passkey (Web Authentication, or WebAuthn) support for Adobe Acrobat (PPKLite). (FORMS-21762)
-* Enhancement: The IBM Content Manager connector now supports IBM Content Manager 8.7, because IBM ended support for versions 8.5 and 8.6. (FORMS-6827)
-* On Windows, the ConvertPDF service no longer hangs when converting certain Portable Document Format (PDF) files to images such as TIFF. (FORMS-25796)
-* Security Assertion Markup Language (SAML) authentication now validates assertion signatures with the certificate from the uploaded identity provider (IdP) metadata. Authentication fails when the IdP certificate changes and the metadata is not updated. (FORMS-24679)
-* After upgrading to AEM Forms Service Pack 6.5.24.0, `server.log` and `error.log` no longer fill with `[XMLSecurity]` WARN messages such as "Secure parser factory creation failed, any XML parser created may be vulnerable to XML-based exploits." The messages appeared several times per second, even on idle servers, and consumed disk space quickly. (FORMS-23717)
-* Components on the JEE side now package Apache POI 5.4.0. Previously, some bundles still included Apache POI 3.17 and 3.9, which security scans flagged after upgrading to AEM Forms Service Pack 6.5.24.0. (FORMS-23678)
+#### Designer do Forms {#forms-designer-6526}
 
-#### Forms Designer {#forms-designer-6526}
-
-* Enhancement: Forms Designer and Output Service generate nested Portable Document Format (PDF) bookmarks from Heading Level 1 through Heading Level 6 accessibility roles in static interactive and flat PDF files. Heading Level 1 becomes the top-level bookmark, without the empty or duplicate entry that authors previously removed manually in Adobe Acrobat. To restore the earlier bookmark behavior, add `<behaviorOverride>patch-LC-3922369:1</behaviorOverride>` to a custom XCI file. (LC-3923490, LC-3922369)
-* Enhancement: Selecting a bookmark in a static interactive or flat Portable Document Format (PDF) file now scrolls the matching heading to the top of the page. (LC-3923489, LC-3923289)
-* Enhancement: Forms Designer can add the bookmark `extras` element to text objects that use a Heading Level 1 through Heading Level 6 accessibility role. Previously, authors had to add `<extras name="bookmark">` manually in XML Source for each heading to generate bookmarks. (FORMS-24361)
--->
+* Aprimoramento: o Forms Designer e o Serviço de saída geram marcadores aninhados do Formato de documento portátil (PDF) do Nível de cabeçalho 1 até as funções de acessibilidade do Nível de cabeçalho 6 em arquivos estáticos interativos e simples do PDF. O Nível de cabeçalho 1 se torna o marcador de nível superior, sem a entrada vazia ou duplicada que os autores removeram manualmente no Adobe Acrobat anteriormente. Para restaurar o comportamento anterior do marcador, adicione `<behaviorOverride>patch-LC-3922369:1</behaviorOverride>` a um arquivo XCI personalizado. (LC-3923490, LC-3922369)
+* Aprimoramento: a seleção de um marcador em um arquivo PDF (Portable Document Format) estático, interativo ou plano, agora rola o cabeçalho correspondente para a parte superior da página. (LC-3923489, LC-3923289)
+* Aprimoramento: o Forms Designer pode adicionar o elemento `extras` do marcador a objetos de texto que usam a função de acessibilidade Nível de Cabeçalho 1 até Nível de Cabeçalho 6. Anteriormente, os autores precisavam adicionar `<extras name="bookmark">` manualmente no XML Source para cada cabeçalho gerar marcadores. (FORMS-24361)
 
 
 ### Foundation {#foundation-6526}
@@ -622,25 +622,48 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 
 ### Problemas conhecidos do AEM Forms {#known-issues-aem-forms-6526}
 
+* No WebLogic com AEM Forms no JEE Service Pack 26 patch 136, a etapa `validateApplicationServerTopology` do Configuration Manager falha nos modos GUI e CLI. Para aplicar a solução alternativa manual, expanda **4. Instale o AEM Forms no service pack JEE** nas [instruções de instalação do service pack JEE](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md#download-and-install-for-jee-service-pack) e siga a solução alternativa de validação da topologia WebLogic. (FORMS-30037)
+
 * Quando um formulário contendo um campo **Anexo de Arquivo** que usa `bindref` é enviado a um Fluxo de Trabalho do AEM com uma etapa **Atribuir Tarefa**, os anexos não são exibidos. Como resultado, eles não aparecem quando a tarefa é aberta da Caixa de entrada. Os arquivos são salvos corretamente no repositório, mas a interface do usuário da etapa Atribuir tarefa não exibe os anexos. (FORMS-23722)
 
 * Quando um PDF assinado digitalmente é anexado a uma tarefa no AEM Forms JEE Workspace, o upload permanece preso no estado de upload ou falha com um erro &quot;Arquivo inválido&quot;. Como resultado, anexos maiores e assinados do PDF não podem ser adicionados à tarefa. Esse problema foi corrigido em uma versão posterior. Para obter uma correção para a versão do, entre em contato com o Suporte da Adobe. (FORMS-28517)
 
-<!--
-* On IBM WebSphere, loading a Web Services Description Language (WSDL) file through the Invoke Web Service activity in AEM Forms Workbench can fail with AEM Forms JEE 6.5.26.0 (Service Pack 26), as reported on patch 135. The same operation works on JBoss. (FORMS-29972)
+* A importação de um LiveCycle Archive (LCA) por meio do console de administração ou do código Java (EJB/SOA) pode causar falha nas operações subsequentes do PDF Generator (PDFG) e do ConvertPDF. Esse problema afeta a pilha do JDK e do Oracle WebLogic 14c no Windows e no Linux com uma instância de autor incorporada do AEM. (FORMS-30031)
 
-  **Workaround:** Add a Java Virtual Machine (JVM) argument on the WebSphere application server that hosts AEM Forms JEE. This is a server-side setting, not a Workbench client setting.
+  O log do servidor mostra o seguinte erro:
 
-  1. Open the JVM configuration for the WebSphere application server that hosts AEM Forms JEE.
-  1. Add the following argument to the server JVM arguments. Keep the existing arguments.
+  ```text
+  org.omg.CORBA.INITIALIZE: can't instantiate default ORB implementation org.jacorb.orb.ORB
+  ```
+
+  **Recuperação temporária:** uma reinicialização interrompe os serviços no servidor afetado.
+
+  1. Planeje a reinicialização do servidor gerenciado WebLogic afetado usando o procedimento operacional normal da implantação.
+  1. Reinicie o servidor afetado e aguarde até que os serviços da AEM Forms estejam disponíveis.
+  1. Repita as operações do PDF Generator e ConvertPDF para verificar a recuperação.
+
+  Em implantações de patch 136 do AEM Forms JEE SP26 afetadas no WebLogic 14c, reiniciar o servidor gerenciado restaura temporariamente as operações PDF Generator e ConvertPDF após uma importação de LCA. Uma importação de LCA subsequente pode acionar a falha novamente.
+
+* **Falha na conversão de URL para PDF do WebLogic.** No WebLogic, a conversão de HTML para PDF com entrada de URL por meio da interface do usuário ou da API de administração falha no AEM Forms JEE 6.5.26.0 (Service Pack 26), conforme relatado no patch 135. O erro é `ALC-PDG-052-018: Connection to host cannot be resolved (URL does not exist).` A conversão com entrada binária HTML não foi afetada.
+
+  O erro é causado por uma incompatibilidade entre a verificação de acessibilidade do URL e o manipulador de conexão HTTPS do WebLogic. Isso não significa necessariamente que o URL é inválido. Não altere um URL válido apenas porque esse erro aparece.
+
+  A correção para a conversão de URL para PDF do WebLogic não está incluída no patch 136 e requer uma correção separada.
+
+
+* No IBM WebSphere, o carregamento de um arquivo WSDL (Web Services Description Language) por meio da atividade Chamar serviço da Web no AEM Forms Workbench pode falhar com o AEM Forms JEE 6.5.26.0 (Service Pack 26), conforme relatado no patch 135. A mesma operação funciona no JBoss. (FORMS-29972)
+
+  **Solução alternativa:** adicione um argumento JVM (Java Virtual Machine) no servidor de aplicativos WebSphere que hospeda o AEM Forms JEE. Essa é uma configuração do lado do servidor, não do cliente Workbench.
+
+  1. Abra a configuração da JVM para o servidor de aplicativos WebSphere que hospeda o AEM Forms JEE.
+  1. Adicione o argumento a seguir aos argumentos JVM do servidor. Mantenha os argumentos existentes.
 
      ```shell
      -Dcom.adobe.idp.dsc.webservice.loadSOAPClasses=true
      ```
 
-  1. Save the configuration, and then restart the WebSphere application server so that the argument takes effect.
-  1. Reconnect from AEM Forms Workbench, and then load the WSDL in the Invoke Web Service activity again.
--->
+  1. Salve a configuração e reinicie o servidor de aplicativos WebSphere para que o argumento entre em vigor.
+  1. Reconecte-se do AEM Forms Workbench e carregue o WSDL na atividade Chamar serviço Web novamente.
 
 #### Problemas conhecidos com Hotfixes disponíveis {#aem-forms-issues-with-hotfixes}
 

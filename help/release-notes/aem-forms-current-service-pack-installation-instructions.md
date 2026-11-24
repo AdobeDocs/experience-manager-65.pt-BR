@@ -21,10 +21,10 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: ed215ea94e2db8589da7734dd4533fb0e55043d4
 workflow-type: tm+mt
-source-wordcount: '2149'
-ht-degree: 8%
+source-wordcount: '2293'
+ht-degree: 7%
 ---
 # Instruções de instalação do AEM 6.5 Forms Service Pack {#aem-form-patch-installation-instructions}
 
@@ -153,6 +153,16 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 >* Após instalar o AEM Forms no service pack JEE, é necessário remover o pacote complementar do Forms da pasta `crx-repository\install` antes de reiniciar o appserver. Baixe o pacote complementar mais recente do Forms no [Portal de Distribuição de Software](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR).
 >* É recomendável usar o comando &#39;Ctrl + C&#39; para reiniciar o SDK. Reiniciar o AEM SDK usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 >* Para [Hotfix para Redução de vulnerabilidades do Spring Framework para AEM Forms no JEE](/help/release-notes/aem-forms-hotfix.md), ao implantar em um ambiente de cluster, é essencial garantir que os localizadores sejam iniciados usando o JDK 17.
+
+### Contornar a falha de validação da topologia do WebLogic {#weblogic-topology-validation}
+
+No WebLogic com AEM Forms no JEE Service Pack 26 patch 136, a etapa `validateApplicationServerTopology` do Configuration Manager (LCM) falha nos modos GUI e CLI. Se você encontrar esse problema, aplique a seguinte solução alternativa manual. (FORMS-30037)
+
+1. Baixar [`forms-security-commons-1.0.6.jar`](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/forms-security-commons-1.0.6.jar) da Distribuição de Software.
+1. Coloque o JAR no diretório `configurationManager/lib` no diretório de instalação do AEM Forms. Por exemplo, no Windows, o caminho é `C:\Adobe\Adobe_Experience_Manager_Forms\configurationManager\lib`; use seu diretório de instalação real se ele for diferente.
+1. No diretório do Configuration Manager `bin`, edite `ConfigurationManager.bat` (Windows) ou `ConfigurationManager.sh` (Unix/Linux). Adicione o caminho completo de `forms-security-commons-1.0.6.jar` para o caminho de classe existente, mantendo todas as entradas do caminho de classe existentes.
+1. Reinicie o Configuration Manager no modo GUI ou CLI usando o iniciador modificado.
+1. Execute `validateApplicationServerTopology` novamente e verifique se a validação da topologia foi concluída com êxito.
 
 +++
 
