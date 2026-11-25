@@ -23,9 +23,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 8e3fd4184adcd62256cb7faea6592b06796e7ddf
+source-git-commit: 0619d81cc1270ec91062fc1f4e4ca0a59a388cfc
 workflow-type: tm+mt
-source-wordcount: '8356'
+source-wordcount: '8294'
 ht-degree: 2%
 ---
 # Notas de Versão do Service Pack Mais Recente do [!DNL Adobe Experience Manager] 6.5 {#aem-service-pack-release-notes}
@@ -385,7 +385,7 @@ Melhoria: a integração do Adobe Analytics com o Adobe Experience Manager Launc
 
 #### Platform{#foundation-platform-6526}
 
-* O link Ajuda no rodapé da página de logon do AEM agora abre uma página de trabalho. Anteriormente, o link apontava para um URL marketing.adobe.com que não existe mais. A configuração do rodapé agora usa a URL da [documentação do Adobe Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager). (NPR-44388)
+* O link Ajuda no rodapé da página de logon do AEM agora abre uma página de trabalho. Anteriormente, o link apontava para um URL marketing.adobe.com que não existe mais. A configuração do rodapé agora usa a URL da [documentação do Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager). (NPR-44388)
 * Aprimoramento: uma solicitação do cliente solicitou a API Graph do Microsoft como alternativa ao SMTP quando o AEM envia email. O tíquete foi resolvido como uma duplicata, pois outro tíquete já implementa o fluxo da API gráfica. O SMTP com OAuth 2.0 permanece disponível para clientes que precisam sair da autenticação básica SMTP. (GRANITE-57478)
 
 * As cadeias de caracteres na caixa de diálogo Permissões Efetivas agora estão alinhadas corretamente no Navegador **Ferramentas** > **Geral** > **Configuração**. Anteriormente, uma string era exibida fora de linha depois de selecionar uma pasta, clicar em Propriedades e em Permissões efetivas. As regras de layout atualizadas restauram o alinhamento. (CQ-4359166)
@@ -618,15 +618,13 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 
   Depois de atualizar de um pacote de serviços anterior para o Experience Manager 6.5.26.0, a ordenação de versão do pacote de CRXDE Lite pode impedir a Experience Manager de selecionar o pacote desejado. Para corrigir a solicitação de versão, instale o Service Pack 26 e baixe e instale o hotfix [`CRXDE Lite hotfix GRANITE-76725`](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq660%2Fhotfixes%2Fgranite-76725%2Fcq-6.5.26-hotfix-GRANITE-76725-1.0.zip) da Distribuição de Software. A correção é uma atualização somente de versão. Ele não contém alterações funcionais ou de código. (GRANITE-76725)
 
-* A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+* A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
 ### Problemas conhecidos do AEM Forms {#known-issues-aem-forms-6526}
 
 * No WebLogic com AEM Forms no JEE Service Pack 26 patch 136, a etapa `validateApplicationServerTopology` do Configuration Manager falha nos modos GUI e CLI. Para aplicar a solução alternativa manual, expanda **4. Instale o AEM Forms no service pack JEE** nas [instruções de instalação do service pack JEE](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md#download-and-install-for-jee-service-pack) e siga a solução alternativa de validação da topologia WebLogic. (FORMS-30037)
 
 * Quando um formulário contendo um campo **Anexo de Arquivo** que usa `bindref` é enviado a um Fluxo de Trabalho do AEM com uma etapa **Atribuir Tarefa**, os anexos não são exibidos. Como resultado, eles não aparecem quando a tarefa é aberta da Caixa de entrada. Os arquivos são salvos corretamente no repositório, mas a interface do usuário da etapa Atribuir tarefa não exibe os anexos. (FORMS-23722)
-
-* Quando um PDF assinado digitalmente é anexado a uma tarefa no AEM Forms JEE Workspace, o upload permanece preso no estado de upload ou falha com um erro &quot;Arquivo inválido&quot;. Como resultado, anexos maiores e assinados do PDF não podem ser adicionados à tarefa. Esse problema foi corrigido em uma versão posterior. Para obter uma correção para a versão do, entre em contato com o Suporte da Adobe. (FORMS-28517)
 
 * A importação de um LiveCycle Archive (LCA) por meio do console de administração ou do código Java (EJB/SOA) pode causar falha nas operações subsequentes do PDF Generator (PDFG) e do ConvertPDF. Esse problema afeta a pilha do JDK e do Oracle WebLogic 14c no Windows e no Linux com uma instância de autor incorporada do AEM. (FORMS-30031)
 
@@ -692,13 +690,13 @@ Os arquivos zip a seguir contêm os documentos de texto que listam os pacotes OS
 Esses sites estão disponíveis somente para clientes do. Se você for cliente e precisar de acesso, entre em contato com o seu gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] página do produto](https://business.adobe.com/br/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65)
->* [Inscreva-se para obter atualizações de produto prioritárias da Adobe](https://www.adobe.com/br/subscription/priority-product-update.html)
+>* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65)
+>* [Inscreva-se para obter atualizações de produto prioritárias da Adobe](https://www.adobe.com/subscription/priority-product-update.html)
 
 
 
