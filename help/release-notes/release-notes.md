@@ -23,9 +23,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 8e3fd4184adcd62256cb7faea6592b06796e7ddf
+source-git-commit: 0619d81cc1270ec91062fc1f4e4ca0a59a388cfc
 workflow-type: tm+mt
-source-wordcount: '8356'
+source-wordcount: '8294'
 ht-degree: 2%
 ---
 # Notas de Versão do Service Pack Mais Recente do [!DNL Adobe Experience Manager] 6.5 {#aem-service-pack-release-notes}
@@ -625,8 +625,6 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 * No WebLogic com AEM Forms no JEE Service Pack 26 patch 136, a etapa `validateApplicationServerTopology` do Configuration Manager falha nos modos GUI e CLI. Para aplicar a solução alternativa manual, expanda **4. Instale o AEM Forms no service pack JEE** nas [instruções de instalação do service pack JEE](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md#download-and-install-for-jee-service-pack) e siga a solução alternativa de validação da topologia WebLogic. (FORMS-30037)
 
 * Quando um formulário contendo um campo **Anexo de Arquivo** que usa `bindref` é enviado a um Fluxo de Trabalho do AEM com uma etapa **Atribuir Tarefa**, os anexos não são exibidos. Como resultado, eles não aparecem quando a tarefa é aberta da Caixa de entrada. Os arquivos são salvos corretamente no repositório, mas a interface do usuário da etapa Atribuir tarefa não exibe os anexos. (FORMS-23722)
-
-* Quando um PDF assinado digitalmente é anexado a uma tarefa no AEM Forms JEE Workspace, o upload permanece preso no estado de upload ou falha com um erro &quot;Arquivo inválido&quot;. Como resultado, anexos maiores e assinados do PDF não podem ser adicionados à tarefa. Esse problema foi corrigido em uma versão posterior. Para obter uma correção para a versão do, entre em contato com o Suporte da Adobe. (FORMS-28517)
 
 * A importação de um LiveCycle Archive (LCA) por meio do console de administração ou do código Java (EJB/SOA) pode causar falha nas operações subsequentes do PDF Generator (PDFG) e do ConvertPDF. Esse problema afeta a pilha do JDK e do Oracle WebLogic 14c no Windows e no Linux com uma instância de autor incorporada do AEM. (FORMS-30031)
 
